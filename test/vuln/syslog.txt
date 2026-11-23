@@ -1,0 +1,3 @@
+Nov 22 19:05:42 aod-target inetd[7854]: madvise() failed: Operation not permitted
+Nov 22 19:05:42 aod-target inetd[7854]: 10.99.0.14:ingreslock/tcp: unknown service
+Nov 22 19:05:54 aod-target inetd[7900]: madvise() failed: Operation not permitted

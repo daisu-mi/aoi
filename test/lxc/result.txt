@@ -1,0 +1,24 @@
+
+== 1. ssh で入る場面
+bpftrace: コンテナ全体 2543 行、接続元つき 708 行 {'10.0.3.1:37642': 708}
+  種類: {'open': 330, 'write': 11, 'exec': 26, 'read': 162, 'open-failed': 99, 'tty-out': 69, 'tty-in': 10, 'signal': 1}
+  exec: ['uname -o', 'uname -r', 'uname -m', 'id', 'uname -sr', 'cat /etc/hosts', 'cat /nonexistent-file', 'env SECRET=xyz /bin/echo hello', '/bin/echo hello', 'passwd foo']
+  signal(子の終了通知 17 番以外): ['15 to 14724 bash']
+  端末の入力 149 文字、パスワード foobar! 2 回、端末の出力 69 行
+  jail-mark: [('open', 'bash')]  nonexistent: [('exec', 'cat'), ('open-failed', 'cat')]
+監査: 同じプロセスの記録 460 件
+  exec 成功 26(bpftrace 26)、open 成功/失敗 330/99(bpftrace 330/99)、kill 1
+  持ち主(auid) {'ubuntu': 460}  接続元 10.0.3.1 が出る件数 0
+
+== 2. 穴のあるサーバから入る場面
+bpftrace: コンテナ全体 800 行、接続元つき 261 行 {'10.0.3.1:36164': 261}
+  種類: {'exec': 9, 'open': 143, 'read': 22, 'open-failed': 86, 'signal': 1}
+  exec: ['sh -i', 'id', 'uname -sr', 'cat /etc/hosts', 'cat /nonexistent-file', 'sleep 30', 'env SECRET=xyz /bin/echo hello', '/bin/echo hello']
+  signal(子の終了通知 17 番以外): ['15 to 14781 sh']
+  端末の入力 0 文字、パスワード foobar! 0 回、端末の出力 0 行
+  jail-mark: [('open', 'sh')]  nonexistent: [('exec', 'cat'), ('open-failed', 'cat')]
+監査: 同じプロセスの記録 242 件
+  exec 成功 9(bpftrace 9)、open 成功/失敗 143/86(bpftrace 143/86)、kill 1
+  持ち主(auid) {'ubuntu': 242}  接続元 10.0.3.1 が出る件数 0
+
+監査の記録全体で 10.0.3.1 を含む行: 0

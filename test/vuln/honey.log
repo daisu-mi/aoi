@@ -1,0 +1,487 @@
+1795374329.780963,-,exec,7713,0,jexec,/sbin/ifconfig | ifconfig lo0 inet 127.0.0.1/8 up | SSH_CLIENT=10.0.2.2 44498 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 44498 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374329.781349,-,open,7713,0,ifconfig,r /etc/libmap.conf
+1795374329.781377,-,read,7713,0,ifconfig,/etc/libmap.conf
+1795374329.781396,-,open-failed,7713,0,ifconfig,r /usr/local/etc/libmap.d errno=2
+1795374329.781424,-,open,7713,0,ifconfig,r /var/run/ld-elf.so.hints
+1795374329.781442,-,read,7713,0,ifconfig,/var/run/ld-elf.so.hints
+1795374329.781460,-,open,7713,0,ifconfig,r /lib/libm.so.5
+1795374329.781531,-,open,7713,0,ifconfig,r /lib/libutil.so.10
+1795374329.781609,-,open,7713,0,ifconfig,r /lib/lib80211.so.1
+1795374329.781676,-,open,7713,0,ifconfig,r /lib/libjail.so.1
+1795374329.781741,-,open,7713,0,ifconfig,r /lib/libnv.so.1
+1795374329.781811,-,open,7713,0,ifconfig,r /lib/libc.so.7
+1795374329.781952,-,open,7713,0,ifconfig,r /lib/libsbuf.so.6
+1795374329.782020,-,open,7713,0,ifconfig,r /lib/libbsdxml.so.4
+1795374329.782093,-,open,7713,0,ifconfig,r /lib/libsys.so.7
+1795374329.786903,-,exec,7715,0,jexec,/sbin/ifconfig | ifconfig epair1b inet 10.99.0.14/30 up | SSH_CLIENT=10.0.2.2 44498 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 44498 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374329.787237,-,open,7715,0,ifconfig,r /etc/libmap.conf
+1795374329.787266,-,read,7715,0,ifconfig,/etc/libmap.conf
+1795374329.787287,-,open-failed,7715,0,ifconfig,r /usr/local/etc/libmap.d errno=2
+1795374329.787318,-,open,7715,0,ifconfig,r /var/run/ld-elf.so.hints
+1795374329.787337,-,read,7715,0,ifconfig,/var/run/ld-elf.so.hints
+1795374329.787355,-,open,7715,0,ifconfig,r /lib/libm.so.5
+1795374329.787430,-,open,7715,0,ifconfig,r /lib/libutil.so.10
+1795374329.787513,-,open,7715,0,ifconfig,r /lib/lib80211.so.1
+1795374329.787580,-,open,7715,0,ifconfig,r /lib/libjail.so.1
+1795374329.787645,-,open,7715,0,ifconfig,r /lib/libnv.so.1
+1795374329.787716,-,open,7715,0,ifconfig,r /lib/libc.so.7
+1795374329.787894,-,open,7715,0,ifconfig,r /lib/libsbuf.so.6
+1795374329.787967,-,open,7715,0,ifconfig,r /lib/libbsdxml.so.4
+1795374329.788043,-,open,7715,0,ifconfig,r /lib/libsys.so.7
+1795374329.965957,10.0.2.2>10.0.2.15,exec,7797,0,jexec,/usr/sbin/inetd | /usr/sbin/inetd -l -p /var/run/inetd-j1.pid /tmp/inetd-test.conf | SSH_CLIENT=10.0.2.2 44512 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 44512 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374329.966722,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /etc/libmap.conf
+1795374329.966747,10.0.2.2>10.0.2.15,read,7797,0,inetd,/etc/libmap.conf
+1795374329.966766,10.0.2.2>10.0.2.15,open-failed,7797,0,inetd,r /usr/local/etc/libmap.d errno=2
+1795374329.966794,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /var/run/ld-elf.so.hints
+1795374329.966810,10.0.2.2>10.0.2.15,read,7797,0,inetd,/var/run/ld-elf.so.hints
+1795374329.966827,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /lib/libutil.so.10
+1795374329.966898,10.0.2.2>10.0.2.15,open-failed,7797,0,inetd,r /lib/libwrap.so.6 errno=2
+1795374329.966921,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /usr/lib/libwrap.so.6
+1795374329.967008,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /lib/libipsec.so.4
+1795374329.967133,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /lib/libc.so.7
+1795374329.967344,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /lib/libsys.so.7
+1795374329.968814,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /var/run
+1795374329.968877,10.0.2.2>10.0.2.15,open,7797,0,inetd,wc /var/run/inetd-j1.pid
+1795374329.968922,10.0.2.2>10.0.2.15,write,7797,0,inetd,/var/run/inetd-j1.pid
+1795374329.968967,10.0.2.2>10.0.2.15,open,7797,0,inetd,rw /dev/null
+1795374329.968995,10.0.2.2>10.0.2.15,open,7797,0,inetd,r /
+1795374329.969471,10.0.2.2>10.0.2.15,write,7802,0,inetd,/var/run/inetd-j1.pid
+1795374329.969838,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /dev/pvclock
+1795374329.969923,10.0.2.2>10.0.2.15,open-failed,7802,0,inetd,r /etc/localtime errno=2
+1795374329.970404,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/netconfig
+1795374329.970437,10.0.2.2>10.0.2.15,read,7802,0,inetd,/etc/netconfig
+1795374329.970702,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/netconfig
+1795374329.970736,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/netconfig
+1795374329.970750,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/netconfig
+1795374329.970787,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /tmp/inetd-test.conf
+1795374329.970803,10.0.2.2>10.0.2.15,read,7802,0,inetd,/tmp/inetd-test.conf
+1795374329.970898,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/nsswitch.conf
+1795374329.970962,10.0.2.2>10.0.2.15,read,7802,0,inetd,/etc/nsswitch.conf
+1795374329.971313,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/spwd.db
+1795374329.971331,10.0.2.2>10.0.2.15,read,7802,0,inetd,/etc/spwd.db
+1795374329.971494,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/login.conf.db
+1795374329.971505,10.0.2.2>10.0.2.15,read,7802,0,inetd,/etc/login.conf.db
+1795374329.971594,10.0.2.2>10.0.2.15,open,7802,0,inetd,r /etc/services
+1795374329.971619,10.0.2.2>10.0.2.15,read,7802,0,inetd,/etc/services
+1795374330.974183,10.0.2.2>10.0.2.15,exec,7813,0,jexec,/usr/bin/sockstat | sockstat -4l | SSH_CLIENT=10.0.2.2 44512 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 44512 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374330.974808,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /etc/libmap.conf
+1795374330.974833,10.0.2.2>10.0.2.15,read,7813,0,sockstat,/etc/libmap.conf
+1795374330.974851,10.0.2.2>10.0.2.15,open-failed,7813,0,sockstat,r /usr/local/etc/libmap.d errno=2
+1795374330.974877,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /var/run/ld-elf.so.hints
+1795374330.974881,10.0.2.2>10.0.2.15,read,7813,0,sockstat,/var/run/ld-elf.so.hints
+1795374330.974898,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libjail.so.1
+1795374330.974958,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libxo.so.0
+1795374330.975066,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libcasper.so.1
+1795374330.975153,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libcap_net.so.1
+1795374330.975295,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libcap_netdb.so.1
+1795374330.975623,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libcap_pwd.so.1
+1795374330.975909,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libcap_sysctl.so.2
+1795374330.976179,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libc.so.7
+1795374330.976329,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libutil.so.10
+1795374330.976406,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libnv.so.1
+1795374330.976476,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /lib/libsys.so.7
+1795374330.978027,10.0.2.2>10.0.2.15,open,7813,0,sockstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374330.983214,10.0.2.2>10.0.2.15,open,7817,0,sockstat,rw /dev/null
+1795374330.985645,10.0.2.2>10.0.2.15,open,7818,0,sockstat,rw /dev/null
+1795374330.986077,10.0.2.2>10.0.2.15,open,7819,0,sockstat,rw /dev/null
+1795374330.987541,10.0.2.2>10.0.2.15,open,7820,0,sockstat,rw /dev/null
+1795374330.988748,10.0.2.2>10.0.2.15,open,7818,0,sockstat,r /etc/nsswitch.conf
+1795374330.988855,10.0.2.2>10.0.2.15,read,7818,0,sockstat,/etc/nsswitch.conf
+1795374330.989192,10.0.2.2>10.0.2.15,open,7818,0,sockstat,r /etc/protocols
+1795374330.989218,10.0.2.2>10.0.2.15,read,7818,0,sockstat,/etc/protocols
+1795374330.989725,10.0.2.2>10.0.2.15,open,7818,0,sockstat,r /etc/protocols
+1795374330.989835,10.0.2.2>10.0.2.15,open,7818,0,sockstat,r /etc/protocols
+1795374330.989947,10.0.2.2>10.0.2.15,open,7818,0,sockstat,r /etc/protocols
+1795374330.990127,10.0.2.2>10.0.2.15,open,7818,0,sockstat,r /etc/protocols
+1795374330.992723,10.0.2.2>10.0.2.15,open,7820,0,sockstat,r /etc/nsswitch.conf
+1795374330.992913,10.0.2.2>10.0.2.15,read,7820,0,sockstat,/etc/nsswitch.conf
+1795374330.993655,10.0.2.2>10.0.2.15,open,7820,0,sockstat,r /etc/spwd.db
+1795374330.993678,10.0.2.2>10.0.2.15,read,7820,0,sockstat,/etc/spwd.db
+1795374330.994146,10.0.2.2>10.0.2.15,open,7820,0,sockstat,r /etc/spwd.db
+1795374335.042971,10.0.2.2>10.0.2.15,exec,7828,0,jexec,/usr/bin/sockstat | sockstat -l | SSH_CLIENT=10.0.2.2 44528 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 44528 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374335.043272,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /etc/libmap.conf
+1795374335.043295,10.0.2.2>10.0.2.15,read,7828,0,sockstat,/etc/libmap.conf
+1795374335.043314,10.0.2.2>10.0.2.15,open-failed,7828,0,sockstat,r /usr/local/etc/libmap.d errno=2
+1795374335.043341,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /var/run/ld-elf.so.hints
+1795374335.043357,10.0.2.2>10.0.2.15,read,7828,0,sockstat,/var/run/ld-elf.so.hints
+1795374335.043374,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libjail.so.1
+1795374335.043437,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libxo.so.0
+1795374335.043514,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libcasper.so.1
+1795374335.043589,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libcap_net.so.1
+1795374335.043656,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libcap_netdb.so.1
+1795374335.043712,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libcap_pwd.so.1
+1795374335.043795,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libcap_sysctl.so.2
+1795374335.043858,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libc.so.7
+1795374335.043999,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libutil.so.10
+1795374335.044074,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libnv.so.1
+1795374335.044146,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /lib/libsys.so.7
+1795374335.045685,10.0.2.2>10.0.2.15,open,7828,0,sockstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374335.052729,10.0.2.2>10.0.2.15,open,7832,0,sockstat,rw /dev/null
+1795374335.054124,10.0.2.2>10.0.2.15,open,7833,0,sockstat,rw /dev/null
+1795374335.055759,10.0.2.2>10.0.2.15,open,7834,0,sockstat,rw /dev/null
+1795374335.062384,10.0.2.2>10.0.2.15,open,7835,0,sockstat,rw /dev/null
+1795374335.063385,10.0.2.2>10.0.2.15,open,7833,0,sockstat,r /etc/nsswitch.conf
+1795374335.063580,10.0.2.2>10.0.2.15,read,7833,0,sockstat,/etc/nsswitch.conf
+1795374335.064362,10.0.2.2>10.0.2.15,open,7833,0,sockstat,r /etc/protocols
+1795374335.064386,10.0.2.2>10.0.2.15,read,7833,0,sockstat,/etc/protocols
+1795374335.064710,10.0.2.2>10.0.2.15,open,7833,0,sockstat,r /etc/protocols
+1795374335.064883,10.0.2.2>10.0.2.15,open,7833,0,sockstat,r /etc/protocols
+1795374335.065004,10.0.2.2>10.0.2.15,open,7833,0,sockstat,r /etc/protocols
+1795374335.065203,10.0.2.2>10.0.2.15,open,7833,0,sockstat,r /etc/protocols
+1795374335.068566,10.0.2.2>10.0.2.15,open,7835,0,sockstat,r /etc/nsswitch.conf
+1795374335.068707,10.0.2.2>10.0.2.15,read,7835,0,sockstat,/etc/nsswitch.conf
+1795374335.069117,10.0.2.2>10.0.2.15,open,7835,0,sockstat,r /etc/spwd.db
+1795374335.069137,10.0.2.2>10.0.2.15,read,7835,0,sockstat,/etc/spwd.db
+1795374335.069502,10.0.2.2>10.0.2.15,open,7835,0,sockstat,r /etc/spwd.db
+1795374335.082716,10.0.2.2>10.0.2.15,exec,7841,0,jexec,/usr/sbin/inetd | /usr/sbin/inetd -d -l /tmp/inetd-test.conf | SSH_CLIENT=10.0.2.2 44528 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 44528 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374335.083008,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/libmap.conf
+1795374335.083031,10.0.2.2>10.0.2.15,read,7841,0,inetd,/etc/libmap.conf
+1795374335.083057,10.0.2.2>10.0.2.15,open-failed,7841,0,inetd,r /usr/local/etc/libmap.d errno=2
+1795374335.083083,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /var/run/ld-elf.so.hints
+1795374335.083097,10.0.2.2>10.0.2.15,read,7841,0,inetd,/var/run/ld-elf.so.hints
+1795374335.083115,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /lib/libutil.so.10
+1795374335.083187,10.0.2.2>10.0.2.15,open-failed,7841,0,inetd,r /lib/libwrap.so.6 errno=2
+1795374335.083210,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /usr/lib/libwrap.so.6
+1795374335.083267,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /lib/libipsec.so.4
+1795374335.083337,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /lib/libc.so.7
+1795374335.083475,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /lib/libsys.so.7
+1795374335.085036,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /dev/pvclock
+1795374335.085119,10.0.2.2>10.0.2.15,open-failed,7841,0,inetd,r /etc/localtime errno=2
+1795374335.085260,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/netconfig
+1795374335.085291,10.0.2.2>10.0.2.15,read,7841,0,inetd,/etc/netconfig
+1795374335.085387,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/netconfig
+1795374335.085415,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/netconfig
+1795374335.085435,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/netconfig
+1795374335.085468,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /tmp/inetd-test.conf
+1795374335.085485,10.0.2.2>10.0.2.15,read,7841,0,inetd,/tmp/inetd-test.conf
+1795374335.085568,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/nsswitch.conf
+1795374335.085644,10.0.2.2>10.0.2.15,read,7841,0,inetd,/etc/nsswitch.conf
+1795374335.085947,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/spwd.db
+1795374335.085966,10.0.2.2>10.0.2.15,read,7841,0,inetd,/etc/spwd.db
+1795374335.086109,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/login.conf.db
+1795374335.086123,10.0.2.2>10.0.2.15,read,7841,0,inetd,/etc/login.conf.db
+1795374335.086212,10.0.2.2>10.0.2.15,open,7841,0,inetd,r /etc/services
+1795374335.086235,10.0.2.2>10.0.2.15,read,7841,0,inetd,/etc/services
+1795374342.592089,10.0.2.2>10.0.2.15,exec,7853,0,jexec,/usr/sbin/inetd | /usr/sbin/inetd -l -p /var/run/inetd-j1.pid /tmp/inetd-test.conf | SSH_CLIENT=10.0.2.2 36656 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 36656 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374342.592393,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /etc/libmap.conf
+1795374342.592416,10.0.2.2>10.0.2.15,read,7853,0,inetd,/etc/libmap.conf
+1795374342.592435,10.0.2.2>10.0.2.15,open-failed,7853,0,inetd,r /usr/local/etc/libmap.d errno=2
+1795374342.592459,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /var/run/ld-elf.so.hints
+1795374342.592468,10.0.2.2>10.0.2.15,read,7853,0,inetd,/var/run/ld-elf.so.hints
+1795374342.592483,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /lib/libutil.so.10
+1795374342.592552,10.0.2.2>10.0.2.15,open-failed,7853,0,inetd,r /lib/libwrap.so.6 errno=2
+1795374342.592573,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /usr/lib/libwrap.so.6
+1795374342.592629,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /lib/libipsec.so.4
+1795374342.592702,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /lib/libc.so.7
+1795374342.592845,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /lib/libsys.so.7
+1795374342.594250,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /var/run
+1795374342.594277,10.0.2.2>10.0.2.15,open,7853,0,inetd,wc /var/run/inetd-j1.pid
+1795374342.594307,10.0.2.2>10.0.2.15,write,7853,0,inetd,/var/run/inetd-j1.pid
+1795374342.594380,10.0.2.2>10.0.2.15,open,7853,0,inetd,rw /dev/null
+1795374342.594396,10.0.2.2>10.0.2.15,open,7853,0,inetd,r /
+1795374342.594817,10.0.2.2>10.0.2.15,write,7854,0,inetd,/var/run/inetd-j1.pid
+1795374342.595190,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /dev/pvclock
+1795374342.595247,10.0.2.2>10.0.2.15,open-failed,7854,0,inetd,r /etc/localtime errno=2
+1795374342.595404,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/netconfig
+1795374342.595434,10.0.2.2>10.0.2.15,read,7854,0,inetd,/etc/netconfig
+1795374342.595541,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/netconfig
+1795374342.595572,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/netconfig
+1795374342.595595,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/netconfig
+1795374342.595627,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /tmp/inetd-test.conf
+1795374342.595643,10.0.2.2>10.0.2.15,read,7854,0,inetd,/tmp/inetd-test.conf
+1795374342.595704,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/nsswitch.conf
+1795374342.595764,10.0.2.2>10.0.2.15,read,7854,0,inetd,/etc/nsswitch.conf
+1795374342.596055,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/spwd.db
+1795374342.596073,10.0.2.2>10.0.2.15,read,7854,0,inetd,/etc/spwd.db
+1795374342.596228,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/login.conf.db
+1795374342.596245,10.0.2.2>10.0.2.15,read,7854,0,inetd,/etc/login.conf.db
+1795374342.596296,10.0.2.2>10.0.2.15,open,7854,0,inetd,r /etc/services
+1795374342.596319,10.0.2.2>10.0.2.15,read,7854,0,inetd,/etc/services
+1795374343.599872,10.0.2.2>10.0.2.15,exec,7856,0,jexec,/usr/bin/sockstat | sockstat -4l | SSH_CLIENT=10.0.2.2 36656 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 36656 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374343.600178,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /etc/libmap.conf
+1795374343.600203,10.0.2.2>10.0.2.15,read,7856,0,sockstat,/etc/libmap.conf
+1795374343.600222,10.0.2.2>10.0.2.15,open-failed,7856,0,sockstat,r /usr/local/etc/libmap.d errno=2
+1795374343.600243,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /var/run/ld-elf.so.hints
+1795374343.600255,10.0.2.2>10.0.2.15,read,7856,0,sockstat,/var/run/ld-elf.so.hints
+1795374343.600274,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libjail.so.1
+1795374343.600337,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libxo.so.0
+1795374343.600415,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libcasper.so.1
+1795374343.600490,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libcap_net.so.1
+1795374343.600564,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libcap_netdb.so.1
+1795374343.600626,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libcap_pwd.so.1
+1795374343.600690,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libcap_sysctl.so.2
+1795374343.600753,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libc.so.7
+1795374343.600896,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libutil.so.10
+1795374343.600977,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libnv.so.1
+1795374343.601052,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /lib/libsys.so.7
+1795374343.602582,10.0.2.2>10.0.2.15,open,7856,0,sockstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374343.606718,10.0.2.2>10.0.2.15,open,7860,0,sockstat,rw /dev/null
+1795374343.608750,10.0.2.2>10.0.2.15,open,7861,0,sockstat,rw /dev/null
+1795374343.610344,10.0.2.2>10.0.2.15,open,7862,0,sockstat,rw /dev/null
+1795374343.612264,10.0.2.2>10.0.2.15,open,7863,0,sockstat,rw /dev/null
+1795374343.613289,10.0.2.2>10.0.2.15,open,7861,0,sockstat,r /etc/nsswitch.conf
+1795374343.613387,10.0.2.2>10.0.2.15,read,7861,0,sockstat,/etc/nsswitch.conf
+1795374343.613674,10.0.2.2>10.0.2.15,open,7861,0,sockstat,r /etc/protocols
+1795374343.613695,10.0.2.2>10.0.2.15,read,7861,0,sockstat,/etc/protocols
+1795374343.613951,10.0.2.2>10.0.2.15,open,7861,0,sockstat,r /etc/protocols
+1795374343.614080,10.0.2.2>10.0.2.15,open,7861,0,sockstat,r /etc/protocols
+1795374343.614226,10.0.2.2>10.0.2.15,open,7861,0,sockstat,r /etc/protocols
+1795374343.614399,10.0.2.2>10.0.2.15,open,7861,0,sockstat,r /etc/protocols
+1795374343.616668,10.0.2.2>10.0.2.15,open,7863,0,sockstat,r /etc/nsswitch.conf
+1795374343.616757,10.0.2.2>10.0.2.15,read,7863,0,sockstat,/etc/nsswitch.conf
+1795374343.617021,10.0.2.2>10.0.2.15,open,7863,0,sockstat,r /etc/spwd.db
+1795374343.617040,10.0.2.2>10.0.2.15,read,7863,0,sockstat,/etc/spwd.db
+1795374343.617414,10.0.2.2>10.0.2.15,open,7863,0,sockstat,r /etc/spwd.db
+1795374346.961744,10.0.2.2>10.0.2.15,exec,7869,0,jexec,/usr/bin/sockstat | sockstat -l | SSH_CLIENT=10.0.2.2 36658 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 36658 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374346.962084,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /etc/libmap.conf
+1795374346.962104,10.0.2.2>10.0.2.15,read,7869,0,sockstat,/etc/libmap.conf
+1795374346.962123,10.0.2.2>10.0.2.15,open-failed,7869,0,sockstat,r /usr/local/etc/libmap.d errno=2
+1795374346.962150,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /var/run/ld-elf.so.hints
+1795374346.962158,10.0.2.2>10.0.2.15,read,7869,0,sockstat,/var/run/ld-elf.so.hints
+1795374346.962174,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libjail.so.1
+1795374346.962238,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libxo.so.0
+1795374346.962312,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libcasper.so.1
+1795374346.962381,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libcap_net.so.1
+1795374346.962447,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libcap_netdb.so.1
+1795374346.962504,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libcap_pwd.so.1
+1795374346.962563,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libcap_sysctl.so.2
+1795374346.962622,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libc.so.7
+1795374346.962762,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libutil.so.10
+1795374346.962854,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libnv.so.1
+1795374346.962941,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /lib/libsys.so.7
+1795374346.964473,10.0.2.2>10.0.2.15,open,7869,0,sockstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374346.969073,10.0.2.2>10.0.2.15,open,7873,0,sockstat,rw /dev/null
+1795374346.969538,10.0.2.2>10.0.2.15,open,7874,0,sockstat,rw /dev/null
+1795374346.971615,10.0.2.2>10.0.2.15,open,7875,0,sockstat,rw /dev/null
+1795374346.971794,10.0.2.2>10.0.2.15,open,7876,0,sockstat,rw /dev/null
+1795374346.972751,10.0.2.2>10.0.2.15,open,7874,0,sockstat,r /etc/nsswitch.conf
+1795374346.972869,10.0.2.2>10.0.2.15,read,7874,0,sockstat,/etc/nsswitch.conf
+1795374346.973166,10.0.2.2>10.0.2.15,open,7874,0,sockstat,r /etc/protocols
+1795374346.973190,10.0.2.2>10.0.2.15,read,7874,0,sockstat,/etc/protocols
+1795374346.973467,10.0.2.2>10.0.2.15,open,7874,0,sockstat,r /etc/protocols
+1795374346.973616,10.0.2.2>10.0.2.15,open,7874,0,sockstat,r /etc/protocols
+1795374346.973731,10.0.2.2>10.0.2.15,open,7874,0,sockstat,r /etc/protocols
+1795374346.973914,10.0.2.2>10.0.2.15,open,7874,0,sockstat,r /etc/protocols
+1795374346.976413,10.0.2.2>10.0.2.15,open,7876,0,sockstat,r /etc/nsswitch.conf
+1795374346.976507,10.0.2.2>10.0.2.15,read,7876,0,sockstat,/etc/nsswitch.conf
+1795374346.976804,10.0.2.2>10.0.2.15,open,7876,0,sockstat,r /etc/spwd.db
+1795374346.976846,10.0.2.2>10.0.2.15,read,7876,0,sockstat,/etc/spwd.db
+1795374346.977324,10.0.2.2>10.0.2.15,open,7876,0,sockstat,r /etc/spwd.db
+1795374346.980987,10.0.2.2>10.0.2.15,exec,7877,0,jexec,/usr/bin/sockstat | sockstat -l | SSH_CLIENT=10.0.2.2 36658 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 36658 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374346.981302,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /etc/libmap.conf
+1795374346.981322,10.0.2.2>10.0.2.15,read,7877,0,sockstat,/etc/libmap.conf
+1795374346.981341,10.0.2.2>10.0.2.15,open-failed,7877,0,sockstat,r /usr/local/etc/libmap.d errno=2
+1795374346.981374,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /var/run/ld-elf.so.hints
+1795374346.981387,10.0.2.2>10.0.2.15,read,7877,0,sockstat,/var/run/ld-elf.so.hints
+1795374346.981404,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libjail.so.1
+1795374346.981471,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libxo.so.0
+1795374346.981544,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libcasper.so.1
+1795374346.981617,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libcap_net.so.1
+1795374346.981684,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libcap_netdb.so.1
+1795374346.981742,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libcap_pwd.so.1
+1795374346.981808,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libcap_sysctl.so.2
+1795374346.981895,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libc.so.7
+1795374346.982040,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libutil.so.10
+1795374346.982116,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libnv.so.1
+1795374346.982186,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /lib/libsys.so.7
+1795374346.983701,10.0.2.2>10.0.2.15,open,7877,0,sockstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374346.989378,10.0.2.2>10.0.2.15,open,7881,0,sockstat,rw /dev/null
+1795374346.989864,10.0.2.2>10.0.2.15,open,7882,0,sockstat,rw /dev/null
+1795374346.991280,10.0.2.2>10.0.2.15,open,7883,0,sockstat,rw /dev/null
+1795374346.991386,10.0.2.2>10.0.2.15,open,7884,0,sockstat,rw /dev/null
+1795374346.992357,10.0.2.2>10.0.2.15,open,7882,0,sockstat,r /etc/nsswitch.conf
+1795374346.992476,10.0.2.2>10.0.2.15,read,7882,0,sockstat,/etc/nsswitch.conf
+1795374346.992770,10.0.2.2>10.0.2.15,open,7882,0,sockstat,r /etc/protocols
+1795374346.992796,10.0.2.2>10.0.2.15,read,7882,0,sockstat,/etc/protocols
+1795374346.993099,10.0.2.2>10.0.2.15,open,7882,0,sockstat,r /etc/protocols
+1795374346.993247,10.0.2.2>10.0.2.15,open,7882,0,sockstat,r /etc/protocols
+1795374346.993361,10.0.2.2>10.0.2.15,open,7882,0,sockstat,r /etc/protocols
+1795374346.993538,10.0.2.2>10.0.2.15,open,7882,0,sockstat,r /etc/protocols
+1795374346.996290,10.0.2.2>10.0.2.15,open,7884,0,sockstat,r /etc/nsswitch.conf
+1795374346.996387,10.0.2.2>10.0.2.15,read,7884,0,sockstat,/etc/nsswitch.conf
+1795374346.996679,10.0.2.2>10.0.2.15,open,7884,0,sockstat,r /etc/spwd.db
+1795374346.996699,10.0.2.2>10.0.2.15,read,7884,0,sockstat,/etc/spwd.db
+1795374346.997047,10.0.2.2>10.0.2.15,open,7884,0,sockstat,r /etc/spwd.db
+1795374347.006192,10.0.2.2>10.0.2.15,exec,7887,0,jexec,/usr/bin/netstat | netstat -an -p tcp | SSH_CLIENT=10.0.2.2 36658 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 36658 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374347.006531,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /etc/libmap.conf
+1795374347.006554,10.0.2.2>10.0.2.15,read,7887,0,netstat,/etc/libmap.conf
+1795374347.006571,10.0.2.2>10.0.2.15,open-failed,7887,0,netstat,r /usr/local/etc/libmap.d errno=2
+1795374347.006606,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /var/run/ld-elf.so.hints
+1795374347.006620,10.0.2.2>10.0.2.15,read,7887,0,netstat,/var/run/ld-elf.so.hints
+1795374347.006637,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /lib/libkvm.so.7
+1795374347.006702,10.0.2.2>10.0.2.15,open-failed,7887,0,netstat,r /lib/libmemstat.so.3 errno=2
+1795374347.006725,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /usr/lib/libmemstat.so.3
+1795374347.006834,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /lib/libxo.so.0
+1795374347.006911,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /lib/libutil.so.10
+1795374347.006984,10.0.2.2>10.0.2.15,open-failed,7887,0,netstat,r /lib/libnetgraph.so.4 errno=2
+1795374347.007004,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /usr/lib/libnetgraph.so.4
+1795374347.007079,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /lib/libjail.so.1
+1795374347.007142,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /lib/libc.so.7
+1795374347.007287,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /lib/libelf.so.2
+1795374347.007362,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /lib/libsys.so.7
+1795374347.008923,10.0.2.2>10.0.2.15,open,7887,0,netstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374354.672348,10.0.2.2>10.0.2.15,exec,7899,0,jexec,/usr/sbin/inetd | /usr/sbin/inetd -l -a 10.99.0.14 -p /var/run/inetd-j1.pid /tmp/inetd-test.conf | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374354.672646,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /etc/libmap.conf
+1795374354.672668,10.0.2.2>10.0.2.15,read,7899,0,inetd,/etc/libmap.conf
+1795374354.672683,10.0.2.2>10.0.2.15,open-failed,7899,0,inetd,r /usr/local/etc/libmap.d errno=2
+1795374354.672707,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /var/run/ld-elf.so.hints
+1795374354.672719,10.0.2.2>10.0.2.15,read,7899,0,inetd,/var/run/ld-elf.so.hints
+1795374354.672736,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /lib/libutil.so.10
+1795374354.672805,10.0.2.2>10.0.2.15,open-failed,7899,0,inetd,r /lib/libwrap.so.6 errno=2
+1795374354.672833,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /usr/lib/libwrap.so.6
+1795374354.672889,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /lib/libipsec.so.4
+1795374354.672958,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /lib/libc.so.7
+1795374354.673099,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /lib/libsys.so.7
+1795374354.674564,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /var/run
+1795374354.674592,10.0.2.2>10.0.2.15,open,7899,0,inetd,wc /var/run/inetd-j1.pid
+1795374354.674617,10.0.2.2>10.0.2.15,write,7899,0,inetd,/var/run/inetd-j1.pid
+1795374354.674686,10.0.2.2>10.0.2.15,open,7899,0,inetd,rw /dev/null
+1795374354.674693,10.0.2.2>10.0.2.15,open,7899,0,inetd,r /
+1795374354.675131,10.0.2.2>10.0.2.15,write,7900,0,inetd,/var/run/inetd-j1.pid
+1795374354.675535,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /dev/pvclock
+1795374354.675603,10.0.2.2>10.0.2.15,open-failed,7900,0,inetd,r /etc/localtime errno=2
+1795374354.675748,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /etc/netconfig
+1795374354.675775,10.0.2.2>10.0.2.15,read,7900,0,inetd,/etc/netconfig
+1795374354.675842,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /etc/netconfig
+1795374354.675895,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /tmp/inetd-test.conf
+1795374354.675912,10.0.2.2>10.0.2.15,read,7900,0,inetd,/tmp/inetd-test.conf
+1795374354.675982,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /etc/nsswitch.conf
+1795374354.676032,10.0.2.2>10.0.2.15,read,7900,0,inetd,/etc/nsswitch.conf
+1795374354.676245,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /etc/spwd.db
+1795374354.676264,10.0.2.2>10.0.2.15,read,7900,0,inetd,/etc/spwd.db
+1795374354.676373,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /etc/login.conf.db
+1795374354.676389,10.0.2.2>10.0.2.15,read,7900,0,inetd,/etc/login.conf.db
+1795374354.676444,10.0.2.2>10.0.2.15,open,7900,0,inetd,r /etc/services
+1795374354.676469,10.0.2.2>10.0.2.15,read,7900,0,inetd,/etc/services
+1795374355.679955,10.0.2.2>10.0.2.15,exec,7902,0,jexec,/usr/bin/netstat | netstat -an -p tcp | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374355.680285,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /etc/libmap.conf
+1795374355.680307,10.0.2.2>10.0.2.15,read,7902,0,netstat,/etc/libmap.conf
+1795374355.680322,10.0.2.2>10.0.2.15,open-failed,7902,0,netstat,r /usr/local/etc/libmap.d errno=2
+1795374355.680348,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /var/run/ld-elf.so.hints
+1795374355.680361,10.0.2.2>10.0.2.15,read,7902,0,netstat,/var/run/ld-elf.so.hints
+1795374355.680378,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /lib/libkvm.so.7
+1795374355.680440,10.0.2.2>10.0.2.15,open-failed,7902,0,netstat,r /lib/libmemstat.so.3 errno=2
+1795374355.680459,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /usr/lib/libmemstat.so.3
+1795374355.680514,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /lib/libxo.so.0
+1795374355.680591,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /lib/libutil.so.10
+1795374355.680667,10.0.2.2>10.0.2.15,open-failed,7902,0,netstat,r /lib/libnetgraph.so.4 errno=2
+1795374355.680685,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /usr/lib/libnetgraph.so.4
+1795374355.680737,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /lib/libjail.so.1
+1795374355.680797,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /lib/libc.so.7
+1795374355.680943,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /lib/libelf.so.2
+1795374355.681014,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /lib/libsys.so.7
+1795374355.682622,10.0.2.2>10.0.2.15,open,7902,0,netstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374362.656025,-,open,7910,0,inetd,r /etc/spwd.db
+1795374362.656048,-,read,7910,0,inetd,/etc/spwd.db
+1795374362.656227,-,open,7910,0,inetd,r /etc/login.conf.db
+1795374362.656245,-,read,7910,0,inetd,/etc/login.conf.db
+1795374362.656645,-,open,7910,0,inetd,r /etc/group
+1795374362.656689,-,read,7910,0,inetd,/etc/group
+1795374362.657328,-,open-failed,7910,0,inetd,r /root/.login_conf.db errno=2
+1795374362.657347,-,open-failed,7910,0,inetd,r /root/.login_conf errno=2
+1795374362.657354,-,open,7910,0,inetd,r /etc/login.conf.db
+1795374362.657360,-,read,7910,0,inetd,/etc/login.conf.db
+1795374362.657399,-,exec,7910,0,inetd,/bin/sh | sh /root/honey/vuln.sh | inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374362.657786,-,open,7910,0,sh,r /etc/libmap.conf
+1795374362.657806,-,read,7910,0,sh,/etc/libmap.conf
+1795374362.657822,-,open-failed,7910,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374362.657845,-,open,7910,0,sh,r /var/run/ld-elf.so.hints
+1795374362.657858,-,read,7910,0,sh,/var/run/ld-elf.so.hints
+1795374362.657875,-,open,7910,0,sh,r /lib/libedit.so.8
+1795374362.657946,-,open,7910,0,sh,r /lib/libc.so.7
+1795374362.658094,-,open,7910,0,sh,r /lib/libtinfow.so.9
+1795374362.658179,-,open,7910,0,sh,r /lib/libsys.so.7
+1795374362.659605,-,open,7910,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374362.659993,-,open,7910,0,sh,r /root/honey/vuln.sh
+1795374362.660062,-,read,7910,0,sh,/root/honey/vuln.sh
+1795374363.655774,10.99.0.13>10.99.0.14,exec,7911,0,sh,/bin/sh | sh -i | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su USER=root HOME=/root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374363.656006,10.99.0.13>10.99.0.14,open,7911,0,sh,r /etc/libmap.conf
+1795374363.656028,10.99.0.13>10.99.0.14,read,7911,0,sh,/etc/libmap.conf
+1795374363.656050,10.99.0.13>10.99.0.14,open-failed,7911,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374363.656073,10.99.0.13>10.99.0.14,open,7911,0,sh,r /var/run/ld-elf.so.hints
+1795374363.656085,10.99.0.13>10.99.0.14,read,7911,0,sh,/var/run/ld-elf.so.hints
+1795374363.656102,10.99.0.13>10.99.0.14,open,7911,0,sh,r /lib/libedit.so.8
+1795374363.656183,10.99.0.13>10.99.0.14,open,7911,0,sh,r /lib/libc.so.7
+1795374363.656349,10.99.0.13>10.99.0.14,open,7911,0,sh,r /lib/libtinfow.so.9
+1795374363.656439,10.99.0.13>10.99.0.14,open,7911,0,sh,r /lib/libsys.so.7
+1795374363.657969,10.99.0.13>10.99.0.14,open,7911,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374363.658426,10.99.0.13>10.99.0.14,open-failed,7911,0,sh,rw /dev/tty errno=6
+1795374363.658587,10.99.0.13>10.99.0.14,open,7911,0,sh,r /root/.sh_history
+1795374363.658615,10.99.0.13>10.99.0.14,read,7911,0,sh,/root/.sh_history
+1795374364.656158,10.99.0.13>10.99.0.14,exec,7912,0,sh,/usr/bin/id | id | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374364.656620,10.99.0.13>10.99.0.14,open,7912,0,id,r /etc/libmap.conf
+1795374364.656643,10.99.0.13>10.99.0.14,read,7912,0,id,/etc/libmap.conf
+1795374364.656665,10.99.0.13>10.99.0.14,open-failed,7912,0,id,r /usr/local/etc/libmap.d errno=2
+1795374364.656689,10.99.0.13>10.99.0.14,open,7912,0,id,r /var/run/ld-elf.so.hints
+1795374364.656693,10.99.0.13>10.99.0.14,read,7912,0,id,/var/run/ld-elf.so.hints
+1795374364.656712,10.99.0.13>10.99.0.14,open,7912,0,id,r /lib/libc.so.7
+1795374364.656867,10.99.0.13>10.99.0.14,open,7912,0,id,r /lib/libsys.so.7
+1795374364.658035,10.99.0.13>10.99.0.14,open,7912,0,id,r /etc/nsswitch.conf
+1795374364.658125,10.99.0.13>10.99.0.14,read,7912,0,id,/etc/nsswitch.conf
+1795374364.658338,10.99.0.13>10.99.0.14,open,7912,0,id,r /etc/spwd.db
+1795374364.658355,10.99.0.13>10.99.0.14,read,7912,0,id,/etc/spwd.db
+1795374364.658510,10.99.0.13>10.99.0.14,open,7912,0,id,r /etc/group
+1795374364.658529,10.99.0.13>10.99.0.14,read,7912,0,id,/etc/group
+1795374364.658559,10.99.0.13>10.99.0.14,open,7912,0,id,r /etc/group
+1795374364.658575,10.99.0.13>10.99.0.14,open,7912,0,id,r /etc/group
+1795374365.656216,10.99.0.13>10.99.0.14,exec,7913,0,sh,/usr/bin/uname | uname -sr | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374365.656583,10.99.0.13>10.99.0.14,open,7913,0,uname,r /etc/libmap.conf
+1795374365.656606,10.99.0.13>10.99.0.14,read,7913,0,uname,/etc/libmap.conf
+1795374365.656628,10.99.0.13>10.99.0.14,open-failed,7913,0,uname,r /usr/local/etc/libmap.d errno=2
+1795374365.656654,10.99.0.13>10.99.0.14,open,7913,0,uname,r /var/run/ld-elf.so.hints
+1795374365.656658,10.99.0.13>10.99.0.14,read,7913,0,uname,/var/run/ld-elf.so.hints
+1795374365.656674,10.99.0.13>10.99.0.14,open,7913,0,uname,r /lib/libc.so.7
+1795374365.656818,10.99.0.13>10.99.0.14,open,7913,0,uname,r /lib/libsys.so.7
+1795374366.657112,10.99.0.13>10.99.0.14,open,7914,0,sh,wct /tmp/jail-mark
+1795374366.657348,10.99.0.13>10.99.0.14,exec,7914,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374366.657873,10.99.0.13>10.99.0.14,open,7914,0,cat,r /etc/libmap.conf
+1795374366.657896,10.99.0.13>10.99.0.14,read,7914,0,cat,/etc/libmap.conf
+1795374366.657918,10.99.0.13>10.99.0.14,open-failed,7914,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374366.657951,10.99.0.13>10.99.0.14,open,7914,0,cat,r /var/run/ld-elf.so.hints
+1795374366.657959,10.99.0.13>10.99.0.14,read,7914,0,cat,/var/run/ld-elf.so.hints
+1795374366.657976,10.99.0.13>10.99.0.14,open,7914,0,cat,r /lib/libc.so.7
+1795374366.658138,10.99.0.13>10.99.0.14,open,7914,0,cat,r /lib/libsys.so.7
+1795374366.659425,10.99.0.13>10.99.0.14,open,7914,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374366.659722,10.99.0.13>10.99.0.14,open,7914,0,cat,r /etc/hosts
+1795374366.659774,10.99.0.13>10.99.0.14,read,7914,0,cat,/etc/hosts
+1795374366.659786,10.99.0.13>10.99.0.14,write,7914,0,cat,/tmp/jail-mark
+1795374367.656475,10.99.0.13>10.99.0.14,exec,7915,0,sh,/bin/cat | cat /nonexistent-file | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374367.656828,10.99.0.13>10.99.0.14,open,7915,0,cat,r /etc/libmap.conf
+1795374367.656850,10.99.0.13>10.99.0.14,read,7915,0,cat,/etc/libmap.conf
+1795374367.656872,10.99.0.13>10.99.0.14,open-failed,7915,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374367.656895,10.99.0.13>10.99.0.14,open,7915,0,cat,r /var/run/ld-elf.so.hints
+1795374367.656908,10.99.0.13>10.99.0.14,read,7915,0,cat,/var/run/ld-elf.so.hints
+1795374367.656924,10.99.0.13>10.99.0.14,open,7915,0,cat,r /lib/libc.so.7
+1795374367.657061,10.99.0.13>10.99.0.14,open,7915,0,cat,r /lib/libsys.so.7
+1795374367.658273,10.99.0.13>10.99.0.14,open,7915,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374367.658560,10.99.0.13>10.99.0.14,open-failed,7915,0,cat,r /nonexistent-file errno=2
+1795374368.656521,10.99.0.13>10.99.0.14,signal,7911,0,sh,15 to 7916 sh
+1795374368.656594,10.99.0.13>10.99.0.14,open,7916,0,sh,r /dev/null
+1795374368.656759,10.99.0.13>10.99.0.14,exec,7916,0,sh,/bin/sleep | sleep 30 | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374368.657171,10.99.0.13>10.99.0.14,open,7916,0,sleep,r /etc/libmap.conf
+1795374368.657201,10.99.0.13>10.99.0.14,read,7916,0,sleep,/etc/libmap.conf
+1795374368.657223,10.99.0.13>10.99.0.14,open-failed,7916,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374368.657253,10.99.0.13>10.99.0.14,open,7916,0,sleep,r /var/run/ld-elf.so.hints
+1795374368.657264,10.99.0.13>10.99.0.14,read,7916,0,sleep,/var/run/ld-elf.so.hints
+1795374368.657285,10.99.0.13>10.99.0.14,open,7916,0,sleep,r /lib/libc.so.7
+1795374368.657438,10.99.0.13>10.99.0.14,open,7916,0,sleep,r /lib/libsys.so.7
+1795374369.656753,10.99.0.13>10.99.0.14,exec,7917,0,sh,/usr/bin/env | env SECRET=xyz /bin/echo hello | SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374369.657152,10.99.0.13>10.99.0.14,open,7917,0,env,r /etc/libmap.conf
+1795374369.657174,10.99.0.13>10.99.0.14,read,7917,0,env,/etc/libmap.conf
+1795374369.657196,10.99.0.13>10.99.0.14,open-failed,7917,0,env,r /usr/local/etc/libmap.d errno=2
+1795374369.657218,10.99.0.13>10.99.0.14,open,7917,0,env,r /var/run/ld-elf.so.hints
+1795374369.657232,10.99.0.13>10.99.0.14,read,7917,0,env,/var/run/ld-elf.so.hints
+1795374369.657250,10.99.0.13>10.99.0.14,open,7917,0,env,r /lib/libutil.so.10
+1795374369.657331,10.99.0.13>10.99.0.14,open,7917,0,env,r /lib/libc.so.7
+1795374369.657480,10.99.0.13>10.99.0.14,open,7917,0,env,r /lib/libsys.so.7
+1795374369.658825,10.99.0.13>10.99.0.14,exec,7917,0,env,/bin/echo | /bin/echo hello | SECRET=xyz SSH_CLIENT=10.0.2.2 33364 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 33364 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374369.659137,10.99.0.13>10.99.0.14,open,7917,0,echo,r /etc/libmap.conf
+1795374369.659159,10.99.0.13>10.99.0.14,read,7917,0,echo,/etc/libmap.conf
+1795374369.659179,10.99.0.13>10.99.0.14,open-failed,7917,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374369.659203,10.99.0.13>10.99.0.14,open,7917,0,echo,r /var/run/ld-elf.so.hints
+1795374369.659210,10.99.0.13>10.99.0.14,read,7917,0,echo,/var/run/ld-elf.so.hints
+1795374369.659226,10.99.0.13>10.99.0.14,open,7917,0,echo,r /lib/libc.so.7
+1795374369.659365,10.99.0.13>10.99.0.14,open,7917,0,echo,r /lib/libsys.so.7
+1795374370.656318,10.99.0.13>10.99.0.14,open,7911,0,sh,rwc /root/.sh_history.Sys8hznWeC
+1795374370.656912,10.99.0.13>10.99.0.14,write,7911,0,sh,/root/.sh_history
+1795374370.657284,10.99.0.13>10.99.0.14,read,7910,0,sh,/root/honey/vuln.sh

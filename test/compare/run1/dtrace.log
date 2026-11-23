@@ -1,0 +1,764 @@
+1795373899921289,open,6834,0,sshd,/etc/hosts.allow
+1795373899921289,exec,6853,0,sshd-session,/usr/libexec/sshd-session -o ListenAddress=10.99.0.14 -o PidFile=/var/run/sshd-j1.pid -R
+1795373899921289,open,6853,0,sshd-session,/etc/libmap.conf
+1795373899921289,open-failed,6853,0,sshd-session,/usr/local/etc/libmap.d
+1795373899921289,open,6853,0,sshd-session,/var/run/ld-elf.so.hints
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libpam.so.6
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libpam.so.6
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libprivatessh.so.5
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libprivatessh.so.5
+1795373899921289,open,6853,0,sshd-session,/lib/libutil.so.10
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libbsm.so.3
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libbsm.so.3
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libblocklist.so.0
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libblocklist.so.0
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libgssapi_krb5.so.122
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libgssapi_krb5.so.122
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libkrb5.so.122
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libkrb5.so.122
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libwrap.so.6
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libwrap.so.6
+1795373899921289,open,6853,0,sshd-session,/lib/libcrypto.so.35
+1795373899921289,open,6853,0,sshd-session,/lib/libc.so.7
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libprivateldns.so.5
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libprivateldns.so.5
+1795373899921289,open,6853,0,sshd-session,/lib/libcrypt.so.5
+1795373899921289,open,6853,0,sshd-session,/lib/libz.so.6
+1795373899921289,open,6853,0,sshd-session,/lib/libthr.so.3
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libk5crypto.so.122
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libk5crypto.so.122
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libcom_err.so.122
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libcom_err.so.122
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libkrb5support.so.122
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libkrb5support.so.122
+1795373899921289,open,6853,0,sshd-session,/lib/libsys.so.7
+1795373899921289,open-failed,6853,0,sshd-session,/lib/libssl.so.35
+1795373899921289,open,6853,0,sshd-session,/usr/lib/libssl.so.35
+1795373899921289,open,6853,0,sshd-session,/lib/libmd.so.7
+1795373899931277,open,6853,0,sshd-session,/dev/null
+1795373899931277,open,6853,0,sshd-session,/dev/null
+1795373899931277,open,6853,0,sshd-session,/lib/libcrypto.so.35
+1795373899931277,open,6853,0,sshd-session,/etc/ssl/openssl.cnf
+1795373899931277,open,6853,0,sshd-session,/dev/pvclock
+1795373899931277,open,6853,0,sshd-session,/etc/nsswitch.conf
+1795373899931277,open,6853,0,sshd-session,/etc/spwd.db
+1795373899941282,open,6853,0,sshd-session,/dev/null
+1795373899941282,open,6853,0,sshd-session,/etc/resolv.conf
+1795373899941282,open,6853,0,sshd-session,/etc/hosts
+1795373899941282,exec,6854,0,sshd-auth,/usr/libexec/sshd-auth -o ListenAddress=10.99.0.14 -o PidFile=/var/run/sshd-j1.pid -R
+1795373899941282,open,6854,0,sshd-auth,/etc/libmap.conf
+1795373899941282,open-failed,6854,0,sshd-auth,/usr/local/etc/libmap.d
+1795373899941282,open,6854,0,sshd-auth,/var/run/ld-elf.so.hints
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libpam.so.6
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libpam.so.6
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libprivatessh.so.5
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libprivatessh.so.5
+1795373899941282,open,6854,0,sshd-auth,/lib/libutil.so.10
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libbsm.so.3
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libbsm.so.3
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libblocklist.so.0
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libblocklist.so.0
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libgssapi_krb5.so.122
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libgssapi_krb5.so.122
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libkrb5.so.122
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libkrb5.so.122
+1795373899941282,open,6854,0,sshd-auth,/lib/libcrypto.so.35
+1795373899941282,open,6854,0,sshd-auth,/lib/libc.so.7
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libprivateldns.so.5
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libprivateldns.so.5
+1795373899941282,open,6854,0,sshd-auth,/lib/libcrypt.so.5
+1795373899941282,open,6854,0,sshd-auth,/lib/libz.so.6
+1795373899941282,open,6854,0,sshd-auth,/lib/libthr.so.3
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libk5crypto.so.122
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libk5crypto.so.122
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libcom_err.so.122
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libcom_err.so.122
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libkrb5support.so.122
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libkrb5support.so.122
+1795373899941282,open,6854,0,sshd-auth,/lib/libsys.so.7
+1795373899941282,open-failed,6854,0,sshd-auth,/lib/libssl.so.35
+1795373899941282,open,6854,0,sshd-auth,/usr/lib/libssl.so.35
+1795373899941282,open,6854,0,sshd-auth,/lib/libmd.so.7
+1795373899951283,open,6854,0,sshd-auth,/lib/libcrypto.so.35
+1795373899951283,open,6854,0,sshd-auth,/etc/ssl/openssl.cnf
+1795373899951283,open,6854,0,sshd-auth,/dev/pvclock
+1795373899951283,open,6854,0,sshd-auth,/dev/null
+1795373899951283,open,6854,0,sshd-auth,/dev/null
+1795373899951283,open,6854,0,sshd-auth,/etc/nsswitch.conf
+1795373899951283,open,6854,0,sshd-auth,/etc/spwd.db
+1795373899951283,open-failed,6854,0,sshd-auth,/usr/etc/gss/mech.d/
+1795373899951283,open-failed,6854,22,sshd-auth,/etc/localtime
+1795373899951283,open-failed,6854,22,sshd-auth,/usr/share/zoneinfo/
+1795373900021909,open,6853,0,sshd-session,/etc/hosts
+1795373900021909,open,6853,0,sshd-session,/etc/spwd.db
+1795373900021909,open,6853,0,sshd-session,/etc/spwd.db
+1795373900021909,open,6853,0,sshd-session,/etc/login.conf.db
+1795373900021909,open-failed,6853,0,sshd-session,/etc/localtime
+1795373900021909,open,6853,0,sshd-session,/etc/group
+1795373900021909,open,6853,0,sshd-session,/root/.ssh/authorized_keys
+1795373900031269,open,6853,0,sshd-session,/root/.ssh/authorized_keys
+1795373900031269,signal,6854,22,sshd-auth,20 to 6853 sshd-session
+1795373900031269,open,6855,0,sshd-session,/etc/group
+1795373900031269,open-failed,6855,0,sshd-session,/root/.login_conf.db
+1795373900031269,open-failed,6855,0,sshd-session,/root/.login_conf
+1795373900031269,open,6855,0,sshd-session,/etc/login.conf.db
+1795373900031269,open-failed,6855,0,sshd-session,/root/.login_conf.db
+1795373900031269,open-failed,6855,0,sshd-session,/root/.login_conf
+1795373900031269,open,6855,0,sshd-session,/etc/login.conf.db
+1795373900031269,open-failed,6855,0,sshd-session,/root/.login_conf.db
+1795373900031269,open-failed,6855,0,sshd-session,/root/.login_conf
+1795373900031269,open,6855,0,sshd-session,/etc/login.conf.db
+1795373900081909,open,6853,0,sshd-session,/dev/pts/0
+1795373900081909,open,6853,0,sshd-session,/etc/group
+1795373900081909,open,6853,0,sshd-session,/etc/spwd.db
+1795373900081909,open,6853,0,sshd-session,/var/log/utx.lastlogin
+1795373900081909,open,6853,0,sshd-session,/etc/spwd.db
+1795373900081909,open,6853,0,sshd-session,/var/run/utx.active
+1795373900081909,open,6853,0,sshd-session,/var/run/utx.active
+1795373900081909,open,6853,0,sshd-session,/var/log/utx.lastlogin
+1795373900081909,open,6853,0,sshd-session,/var/log/utx.log
+1795373900081909,open,6853,0,sshd-session,/dev/null
+1795373900081909,open-failed,6856,0,sshd-session,/dev/tty
+1795373900081909,open-failed,6856,0,sshd-session,/dev/tty
+1795373900081909,open,6856,0,sshd-session,/dev/pts/0
+1795373900081909,open,6856,0,sshd-session,/dev/tty
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Last login: Sun Nov 22 18:51:08 2026 from 10.99.0.13\r\n\0
+1795373900081909,open,6856,0,sshd-session,/var/run/motd
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 FreeBSD 15.1-RELEASE-p7 (GENERIC) releng/15.1-n283696-bb03631fe3b7\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 \n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Welcome to FreeBSD!\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 \n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Release Notes, Errata: https://www.FreeBSD.org/releases/\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Security Advisories:   https://www.FreeBSD.org/security/\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 FreeBSD Handbook:      https://www.FreeBSD.org/handbook/\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 FreeBSD FAQ:           https://www.FreeBSD.org/faq/\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Questions List:        https://www.FreeBSD.org/lists/questions/\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 FreeBSD Forums:        https://forums.FreeBSD.org/\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 \n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Documents installed with the system are in the /usr/local/share/doc/freebsd/\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 directory, or can be installed later with:  pkg install en-freebsd-doc\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 For other languages, replace \"en\" with a language code like de or fr.\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 \n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Show the version of FreeBSD installed:  freebsd-version ; uname -a\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Please include that output and any error messages when posting questions.\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 Introduction to manual pages:  man man\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 FreeBSD directory layout:      man hier\n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 \n\0
+1795373900081909,tty-out,6856,0,sshd-session,pts/0 To change this login announcement, see motd(5).\n\0
+1795373900081909,open,6856,0,sshd-session,/etc/group
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf.db
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf
+1795373900081909,open,6856,0,sshd-session,/etc/login.conf.db
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf.db
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf
+1795373900081909,open,6856,0,sshd-session,/etc/login.conf.db
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf.db
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf
+1795373900081909,open,6856,0,sshd-session,/etc/login.conf.db
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf.db
+1795373900081909,open-failed,6856,0,sshd-session,/root/.login_conf
+1795373900081909,open,6856,0,sshd-session,/etc/login.conf.db
+1795373900081909,exec,6856,0,sh,-sh
+1795373900081909,open,6856,0,sh,/etc/libmap.conf
+1795373900081909,open-failed,6856,0,sh,/usr/local/etc/libmap.d
+1795373900081909,open,6856,0,sh,/var/run/ld-elf.so.hints
+1795373900081909,open,6856,0,sh,/lib/libedit.so.8
+1795373900081909,open,6856,0,sh,/lib/libc.so.7
+1795373900081909,open,6856,0,sh,/lib/libtinfow.so.9
+1795373900081909,open,6856,0,sh,/lib/libsys.so.7
+1795373900081909,open,6856,0,sh,/usr/share/locale/C.UTF-8/LC_CTYPE
+1795373900081909,open,6856,0,sh,/dev/pvclock
+1795373900091270,open-failed,6856,0,sh,/etc/termcap.db
+1795373900091270,open,6856,0,sh,/etc/termcap
+1795373900091270,open-failed,6856,0,sh,/root/.editrc
+1795373900091270,open,6856,0,sh,/dev/tty
+1795373900091270,open,6856,0,sh,/etc/profile
+1795373900091270,open,6856,0,sh,/etc/profile.d
+1795373900091270,open-failed,6856,0,sh,/usr/local/etc/profile.d
+1795373900091270,open,6856,0,sh,/root/.profile
+1795373900091270,exec,6857,0,resizewin,/usr/bin/resizewin -z
+1795373900091270,open,6857,0,resizewin,/etc/libmap.conf
+1795373900091270,open-failed,6857,0,resizewin,/usr/local/etc/libmap.d
+1795373900091270,open,6857,0,resizewin,/var/run/ld-elf.so.hints
+1795373900091270,open,6857,0,resizewin,/lib/libc.so.7
+1795373900091270,open,6857,0,resizewin,/lib/libsys.so.7
+1795373900091270,open,6857,0,resizewin,/dev/tty
+1795373900091270,tty-out,6857,0,resizewin,pts/0 \0337\033[r\033[999;999H\033[6n\0338\0
+1795373900091270,open,6857,0,resizewin,/dev/pvclock
+1795373902101904,tty-out,6857,0,resizewin,pts/0 resizewin: \0
+1795373902101904,tty-out,6857,0,resizewin,pts/0 timeout reading from terminal\0
+1795373902101904,tty-out,6857,0,resizewin,pts/0 \n\0
+1795373902101904,signal,6857,0,resizewin,20 to 6856 sh
+1795373902101904,open,6856,0,sh,/root/.shrc
+1795373902101904,open,6856,0,sh,/root/.sh_history
+1795373902101904,open,6856,0,sh,/etc/nsswitch.conf
+1795373902101904,open,6856,0,sh,/etc/spwd.db
+1795373902101904,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373903931910,tty-in,6855,0,sshd-session,105
+1795373903931910,tty-in,6855,0,sshd-session,105
+1795373903931910,tty-in,6855,0,sshd-session,100
+1795373903931910,tty-in,6855,0,sshd-session,100
+1795373903931910,tty-in,6855,0,sshd-session,10
+1795373903931910,tty-in,6855,0,sshd-session,10
+1795373903931910,tty-out,6856,0,sh,pts/0 i\0
+1795373903931910,tty-out,6856,0,sh,pts/0 d\0
+1795373903931910,tty-out,6856,0,sh,pts/0 \n\0
+1795373903931910,exec,6858,0,id,id
+1795373903931910,open,6858,0,id,/etc/libmap.conf
+1795373903931910,open-failed,6858,0,id,/usr/local/etc/libmap.d
+1795373903931910,open,6858,0,id,/var/run/ld-elf.so.hints
+1795373903931910,open,6858,0,id,/lib/libc.so.7
+1795373903931910,open,6858,0,id,/lib/libsys.so.7
+1795373903941268,open,6858,0,id,/etc/nsswitch.conf
+1795373903941268,open,6858,0,id,/etc/spwd.db
+1795373903941268,open,6858,0,id,/etc/group
+1795373903941268,open,6858,0,id,/etc/group
+1795373903941268,open,6858,0,id,/etc/group
+1795373903941268,tty-out,6858,0,id,pts/0 uid=0(root) gid=0(wheel) groups=0(wheel),5(operator)\n\0
+1795373903941268,signal,6858,0,id,20 to 6856 sh
+1795373903941268,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373904961910,tty-in,6855,0,sshd-session,117
+1795373904961910,tty-in,6855,0,sshd-session,117
+1795373904961910,tty-in,6855,0,sshd-session,110
+1795373904961910,tty-in,6855,0,sshd-session,110
+1795373904961910,tty-in,6855,0,sshd-session,97
+1795373904961910,tty-in,6855,0,sshd-session,97
+1795373904961910,tty-in,6855,0,sshd-session,109
+1795373904961910,tty-in,6855,0,sshd-session,109
+1795373904961910,tty-in,6855,0,sshd-session,101
+1795373904961910,tty-in,6855,0,sshd-session,101
+1795373904961910,tty-in,6855,0,sshd-session,32
+1795373904961910,tty-in,6855,0,sshd-session,32
+1795373904961910,tty-in,6855,0,sshd-session,45
+1795373904961910,tty-in,6855,0,sshd-session,45
+1795373904961910,tty-in,6855,0,sshd-session,115
+1795373904961910,tty-in,6855,0,sshd-session,115
+1795373904961910,tty-in,6855,0,sshd-session,114
+1795373904961910,tty-in,6855,0,sshd-session,114
+1795373904961910,tty-in,6855,0,sshd-session,10
+1795373904961910,tty-in,6855,0,sshd-session,10
+1795373904961910,tty-out,6856,0,sh,pts/0 u\0
+1795373904961910,tty-out,6856,0,sh,pts/0 n\0
+1795373904961910,tty-out,6856,0,sh,pts/0 a\0
+1795373904961910,tty-out,6856,0,sh,pts/0 m\0
+1795373904961910,tty-out,6856,0,sh,pts/0 e\0
+1795373904961910,tty-out,6856,0,sh,pts/0  \0
+1795373904961910,tty-out,6856,0,sh,pts/0 -\0
+1795373904961910,tty-out,6856,0,sh,pts/0 s\0
+1795373904961910,tty-out,6856,0,sh,pts/0 r\0
+1795373904961910,tty-out,6856,0,sh,pts/0 \n\0
+1795373904961910,exec,6859,0,uname,uname -sr
+1795373904961910,open,6859,0,uname,/etc/libmap.conf
+1795373904961910,open-failed,6859,0,uname,/usr/local/etc/libmap.d
+1795373904961910,open,6859,0,uname,/var/run/ld-elf.so.hints
+1795373904961910,open,6859,0,uname,/lib/libc.so.7
+1795373904961910,open,6859,0,uname,/lib/libsys.so.7
+1795373904961910,tty-out,6859,0,uname,pts/0 FreeBSD 15.1-RELEASE-p7\n\0
+1795373904961910,signal,6859,0,uname,20 to 6856 sh
+1795373904961910,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373905981905,tty-in,6855,0,sshd-session,99
+1795373905981905,tty-in,6855,0,sshd-session,99
+1795373905981905,tty-in,6855,0,sshd-session,97
+1795373905981905,tty-in,6855,0,sshd-session,97
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,32
+1795373905981905,tty-in,6855,0,sshd-session,32
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,101
+1795373905981905,tty-in,6855,0,sshd-session,101
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,99
+1795373905981905,tty-in,6855,0,sshd-session,99
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,104
+1795373905981905,tty-in,6855,0,sshd-session,104
+1795373905981905,tty-in,6855,0,sshd-session,111
+1795373905981905,tty-in,6855,0,sshd-session,111
+1795373905981905,tty-in,6855,0,sshd-session,115
+1795373905981905,tty-in,6855,0,sshd-session,115
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,115
+1795373905981905,tty-in,6855,0,sshd-session,115
+1795373905981905,tty-in,6855,0,sshd-session,32
+1795373905981905,tty-in,6855,0,sshd-session,32
+1795373905981905,tty-in,6855,0,sshd-session,62
+1795373905981905,tty-in,6855,0,sshd-session,62
+1795373905981905,tty-in,6855,0,sshd-session,32
+1795373905981905,tty-in,6855,0,sshd-session,32
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,116
+1795373905981905,tty-in,6855,0,sshd-session,109
+1795373905981905,tty-in,6855,0,sshd-session,109
+1795373905981905,tty-in,6855,0,sshd-session,112
+1795373905981905,tty-in,6855,0,sshd-session,112
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,47
+1795373905981905,tty-in,6855,0,sshd-session,106
+1795373905981905,tty-in,6855,0,sshd-session,106
+1795373905981905,tty-in,6855,0,sshd-session,97
+1795373905981905,tty-in,6855,0,sshd-session,97
+1795373905981905,tty-in,6855,0,sshd-session,105
+1795373905981905,tty-in,6855,0,sshd-session,105
+1795373905981905,tty-in,6855,0,sshd-session,108
+1795373905981905,tty-in,6855,0,sshd-session,108
+1795373905981905,tty-in,6855,0,sshd-session,45
+1795373905981905,tty-in,6855,0,sshd-session,45
+1795373905981905,tty-in,6855,0,sshd-session,109
+1795373905981905,tty-in,6855,0,sshd-session,109
+1795373905981905,tty-in,6855,0,sshd-session,97
+1795373905981905,tty-in,6855,0,sshd-session,97
+1795373905981905,tty-in,6855,0,sshd-session,114
+1795373905981905,tty-in,6855,0,sshd-session,114
+1795373905981905,tty-in,6855,0,sshd-session,107
+1795373905981905,tty-in,6855,0,sshd-session,107
+1795373905981905,tty-in,6855,0,sshd-session,10
+1795373905981905,tty-in,6855,0,sshd-session,10
+1795373905981905,tty-out,6856,0,sh,pts/0 c\0
+1795373905981905,tty-out,6856,0,sh,pts/0 a\0
+1795373905981905,tty-out,6856,0,sh,pts/0 t\0
+1795373905981905,tty-out,6856,0,sh,pts/0  \0
+1795373905981905,tty-out,6856,0,sh,pts/0 /\0
+1795373905981905,tty-out,6856,0,sh,pts/0 e\0
+1795373905981905,tty-out,6856,0,sh,pts/0 t\0
+1795373905981905,tty-out,6856,0,sh,pts/0 c\0
+1795373905981905,tty-out,6856,0,sh,pts/0 /\0
+1795373905981905,tty-out,6856,0,sh,pts/0 h\0
+1795373905981905,tty-out,6856,0,sh,pts/0 o\0
+1795373905981905,tty-out,6856,0,sh,pts/0 s\0
+1795373905981905,tty-out,6856,0,sh,pts/0 t\0
+1795373905981905,tty-out,6856,0,sh,pts/0 s\0
+1795373905981905,tty-out,6856,0,sh,pts/0  \0
+1795373905981905,tty-out,6856,0,sh,pts/0 >\0
+1795373905981905,tty-out,6856,0,sh,pts/0  \0
+1795373905981905,tty-out,6856,0,sh,pts/0 /\0
+1795373905981905,tty-out,6856,0,sh,pts/0 t\0
+1795373905981905,tty-out,6856,0,sh,pts/0 m\0
+1795373905981905,tty-out,6856,0,sh,pts/0 p\0
+1795373905981905,tty-out,6856,0,sh,pts/0 /\0
+1795373905981905,tty-out,6856,0,sh,pts/0 j\0
+1795373905981905,tty-out,6856,0,sh,pts/0 a\0
+1795373905981905,tty-out,6856,0,sh,pts/0 i\0
+1795373905981905,tty-out,6856,0,sh,pts/0 l\0
+1795373905981905,tty-out,6856,0,sh,pts/0 -\0
+1795373905981905,tty-out,6856,0,sh,pts/0 m\0
+1795373905981905,tty-out,6856,0,sh,pts/0 a\0
+1795373905981905,tty-out,6856,0,sh,pts/0 r\0
+1795373905981905,tty-out,6856,0,sh,pts/0 k\0
+1795373905981905,tty-out,6856,0,sh,pts/0 \n\0
+1795373905981905,open,6860,0,sh,/tmp/jail-mark
+1795373905981905,exec,6860,0,cat,cat /etc/hosts
+1795373905981905,open,6860,0,cat,/etc/libmap.conf
+1795373905981905,open-failed,6860,0,cat,/usr/local/etc/libmap.d
+1795373905981905,open,6860,0,cat,/var/run/ld-elf.so.hints
+1795373905981905,open,6860,0,cat,/lib/libc.so.7
+1795373905981905,open,6860,0,cat,/lib/libsys.so.7
+1795373905991268,open,6860,0,cat,/usr/share/locale/C.UTF-8/LC_CTYPE
+1795373905991268,open,6860,0,cat,/etc/hosts
+1795373905991268,signal,6860,0,cat,20 to 6856 sh
+1795373905991268,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373907011909,tty-in,6855,0,sshd-session,99
+1795373907011909,tty-in,6855,0,sshd-session,99
+1795373907011909,tty-in,6855,0,sshd-session,97
+1795373907011909,tty-in,6855,0,sshd-session,97
+1795373907011909,tty-in,6855,0,sshd-session,116
+1795373907011909,tty-in,6855,0,sshd-session,116
+1795373907011909,tty-in,6855,0,sshd-session,32
+1795373907011909,tty-in,6855,0,sshd-session,32
+1795373907011909,tty-in,6855,0,sshd-session,47
+1795373907011909,tty-in,6855,0,sshd-session,47
+1795373907011909,tty-in,6855,0,sshd-session,110
+1795373907011909,tty-in,6855,0,sshd-session,110
+1795373907011909,tty-in,6855,0,sshd-session,111
+1795373907011909,tty-in,6855,0,sshd-session,111
+1795373907011909,tty-in,6855,0,sshd-session,110
+1795373907011909,tty-in,6855,0,sshd-session,110
+1795373907011909,tty-in,6855,0,sshd-session,101
+1795373907011909,tty-in,6855,0,sshd-session,101
+1795373907011909,tty-in,6855,0,sshd-session,120
+1795373907011909,tty-in,6855,0,sshd-session,120
+1795373907011909,tty-in,6855,0,sshd-session,105
+1795373907011909,tty-in,6855,0,sshd-session,105
+1795373907011909,tty-in,6855,0,sshd-session,115
+1795373907011909,tty-in,6855,0,sshd-session,115
+1795373907011909,tty-in,6855,0,sshd-session,116
+1795373907011909,tty-in,6855,0,sshd-session,116
+1795373907011909,tty-in,6855,0,sshd-session,101
+1795373907011909,tty-in,6855,0,sshd-session,101
+1795373907011909,tty-in,6855,0,sshd-session,110
+1795373907011909,tty-in,6855,0,sshd-session,110
+1795373907011909,tty-in,6855,0,sshd-session,116
+1795373907011909,tty-in,6855,0,sshd-session,116
+1795373907011909,tty-in,6855,0,sshd-session,45
+1795373907011909,tty-in,6855,0,sshd-session,45
+1795373907011909,tty-in,6855,0,sshd-session,102
+1795373907011909,tty-in,6855,0,sshd-session,102
+1795373907011909,tty-in,6855,0,sshd-session,105
+1795373907011909,tty-in,6855,0,sshd-session,105
+1795373907011909,tty-in,6855,0,sshd-session,108
+1795373907011909,tty-in,6855,0,sshd-session,108
+1795373907011909,tty-in,6855,0,sshd-session,101
+1795373907011909,tty-in,6855,0,sshd-session,101
+1795373907011909,tty-in,6855,0,sshd-session,10
+1795373907011909,tty-in,6855,0,sshd-session,10
+1795373907011909,tty-out,6856,0,sh,pts/0 c\0
+1795373907011909,tty-out,6856,0,sh,pts/0 a\0
+1795373907011909,tty-out,6856,0,sh,pts/0 t\0
+1795373907011909,tty-out,6856,0,sh,pts/0  \0
+1795373907011909,tty-out,6856,0,sh,pts/0 /\0
+1795373907011909,tty-out,6856,0,sh,pts/0 n\0
+1795373907011909,tty-out,6856,0,sh,pts/0 o\0
+1795373907011909,tty-out,6856,0,sh,pts/0 n\0
+1795373907011909,tty-out,6856,0,sh,pts/0 e\0
+1795373907011909,tty-out,6856,0,sh,pts/0 x\0
+1795373907011909,tty-out,6856,0,sh,pts/0 i\0
+1795373907011909,tty-out,6856,0,sh,pts/0 s\0
+1795373907011909,tty-out,6856,0,sh,pts/0 t\0
+1795373907011909,tty-out,6856,0,sh,pts/0 e\0
+1795373907011909,tty-out,6856,0,sh,pts/0 n\0
+1795373907011909,tty-out,6856,0,sh,pts/0 t\0
+1795373907011909,tty-out,6856,0,sh,pts/0 -\0
+1795373907011909,tty-out,6856,0,sh,pts/0 f\0
+1795373907011909,tty-out,6856,0,sh,pts/0 i\0
+1795373907011909,tty-out,6856,0,sh,pts/0 l\0
+1795373907011909,tty-out,6856,0,sh,pts/0 e\0
+1795373907011909,tty-out,6856,0,sh,pts/0 \n\0
+1795373907011909,exec,6861,0,cat,cat /nonexistent-file
+1795373907011909,open,6861,0,cat,/etc/libmap.conf
+1795373907011909,open-failed,6861,0,cat,/usr/local/etc/libmap.d
+1795373907011909,open,6861,0,cat,/var/run/ld-elf.so.hints
+1795373907011909,open,6861,0,cat,/lib/libc.so.7
+1795373907011909,open,6861,0,cat,/lib/libsys.so.7
+1795373907011909,open,6861,0,cat,/usr/share/locale/C.UTF-8/LC_CTYPE
+1795373907011909,open-failed,6861,0,cat,/nonexistent-file
+1795373907011909,tty-out,6861,0,cat,pts/0 cat: \0
+1795373907011909,tty-out,6861,0,cat,pts/0 /nonexistent-file\0
+1795373907011909,tty-out,6861,0,cat,pts/0 : \0
+1795373907011909,tty-out,6861,0,cat,pts/0 No such file or directory\0
+1795373907011909,tty-out,6861,0,cat,pts/0 \n\0
+1795373907011909,signal,6861,0,cat,20 to 6856 sh
+1795373907011909,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373908031269,tty-in,6855,0,sshd-session,115
+1795373908031269,tty-in,6855,0,sshd-session,115
+1795373908031269,tty-in,6855,0,sshd-session,108
+1795373908031269,tty-in,6855,0,sshd-session,108
+1795373908031269,tty-in,6855,0,sshd-session,101
+1795373908031269,tty-in,6855,0,sshd-session,101
+1795373908031269,tty-in,6855,0,sshd-session,101
+1795373908031269,tty-in,6855,0,sshd-session,101
+1795373908031269,tty-in,6855,0,sshd-session,112
+1795373908031269,tty-in,6855,0,sshd-session,112
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,51
+1795373908031269,tty-in,6855,0,sshd-session,51
+1795373908031269,tty-in,6855,0,sshd-session,48
+1795373908031269,tty-in,6855,0,sshd-session,48
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,38
+1795373908031269,tty-in,6855,0,sshd-session,38
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,107
+1795373908031269,tty-in,6855,0,sshd-session,107
+1795373908031269,tty-in,6855,0,sshd-session,105
+1795373908031269,tty-in,6855,0,sshd-session,105
+1795373908031269,tty-in,6855,0,sshd-session,108
+1795373908031269,tty-in,6855,0,sshd-session,108
+1795373908031269,tty-in,6855,0,sshd-session,108
+1795373908031269,tty-in,6855,0,sshd-session,108
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,32
+1795373908031269,tty-in,6855,0,sshd-session,36
+1795373908031269,tty-in,6855,0,sshd-session,36
+1795373908031269,tty-in,6855,0,sshd-session,33
+1795373908031269,tty-in,6855,0,sshd-session,33
+1795373908031269,tty-in,6855,0,sshd-session,10
+1795373908031269,tty-in,6855,0,sshd-session,10
+1795373908031269,tty-out,6856,0,sh,pts/0 s\0
+1795373908031269,tty-out,6856,0,sh,pts/0 l\0
+1795373908031269,tty-out,6856,0,sh,pts/0 e\0
+1795373908031269,tty-out,6856,0,sh,pts/0 e\0
+1795373908031269,tty-out,6856,0,sh,pts/0 p\0
+1795373908031269,tty-out,6856,0,sh,pts/0  \0
+1795373908031269,tty-out,6856,0,sh,pts/0 3\0
+1795373908031269,tty-out,6856,0,sh,pts/0 0\0
+1795373908031269,tty-out,6856,0,sh,pts/0  \0
+1795373908031269,tty-out,6856,0,sh,pts/0 &\0
+1795373908031269,tty-out,6856,0,sh,pts/0  \0
+1795373908031269,tty-out,6856,0,sh,pts/0 k\0
+1795373908031269,tty-out,6856,0,sh,pts/0 i\0
+1795373908031269,tty-out,6856,0,sh,pts/0 l\0
+1795373908031269,tty-out,6856,0,sh,pts/0 l\0
+1795373908031269,tty-out,6856,0,sh,pts/0  \0
+1795373908031269,tty-out,6856,0,sh,pts/0 $\0
+1795373908031269,tty-out,6856,0,sh,pts/0 !\0
+1795373908031269,tty-out,6856,0,sh,pts/0 \n\0
+1795373908031269,signal,6856,0,sh,15 to 6862 sh
+1795373908031269,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373908031269,signal,6862,0,sh,20 to 6856 sh
+1795373909041908,tty-in,6855,0,sshd-session,101
+1795373909041908,tty-in,6855,0,sshd-session,101
+1795373909041908,tty-in,6855,0,sshd-session,110
+1795373909041908,tty-in,6855,0,sshd-session,110
+1795373909041908,tty-in,6855,0,sshd-session,118
+1795373909041908,tty-in,6855,0,sshd-session,118
+1795373909041908,tty-in,6855,0,sshd-session,32
+1795373909041908,tty-in,6855,0,sshd-session,32
+1795373909041908,tty-in,6855,0,sshd-session,83
+1795373909041908,tty-in,6855,0,sshd-session,83
+1795373909041908,tty-in,6855,0,sshd-session,69
+1795373909041908,tty-in,6855,0,sshd-session,69
+1795373909041908,tty-in,6855,0,sshd-session,67
+1795373909041908,tty-in,6855,0,sshd-session,67
+1795373909041908,tty-in,6855,0,sshd-session,82
+1795373909041908,tty-in,6855,0,sshd-session,82
+1795373909041908,tty-in,6855,0,sshd-session,69
+1795373909041908,tty-in,6855,0,sshd-session,69
+1795373909041908,tty-in,6855,0,sshd-session,84
+1795373909041908,tty-in,6855,0,sshd-session,84
+1795373909041908,tty-in,6855,0,sshd-session,61
+1795373909041908,tty-in,6855,0,sshd-session,61
+1795373909041908,tty-in,6855,0,sshd-session,120
+1795373909041908,tty-in,6855,0,sshd-session,120
+1795373909041908,tty-in,6855,0,sshd-session,121
+1795373909041908,tty-in,6855,0,sshd-session,121
+1795373909041908,tty-in,6855,0,sshd-session,122
+1795373909041908,tty-in,6855,0,sshd-session,122
+1795373909041908,tty-in,6855,0,sshd-session,32
+1795373909041908,tty-in,6855,0,sshd-session,32
+1795373909041908,tty-in,6855,0,sshd-session,47
+1795373909041908,tty-in,6855,0,sshd-session,47
+1795373909041908,tty-in,6855,0,sshd-session,98
+1795373909041908,tty-in,6855,0,sshd-session,98
+1795373909041908,tty-in,6855,0,sshd-session,105
+1795373909041908,tty-in,6855,0,sshd-session,105
+1795373909041908,tty-in,6855,0,sshd-session,110
+1795373909041908,tty-in,6855,0,sshd-session,110
+1795373909041908,tty-in,6855,0,sshd-session,47
+1795373909041908,tty-in,6855,0,sshd-session,47
+1795373909041908,tty-in,6855,0,sshd-session,101
+1795373909041908,tty-in,6855,0,sshd-session,101
+1795373909041908,tty-in,6855,0,sshd-session,99
+1795373909041908,tty-in,6855,0,sshd-session,99
+1795373909041908,tty-in,6855,0,sshd-session,104
+1795373909041908,tty-in,6855,0,sshd-session,104
+1795373909041908,tty-in,6855,0,sshd-session,111
+1795373909041908,tty-in,6855,0,sshd-session,111
+1795373909041908,tty-in,6855,0,sshd-session,32
+1795373909041908,tty-in,6855,0,sshd-session,32
+1795373909041908,tty-in,6855,0,sshd-session,104
+1795373909041908,tty-in,6855,0,sshd-session,104
+1795373909041908,tty-in,6855,0,sshd-session,101
+1795373909041908,tty-in,6855,0,sshd-session,101
+1795373909041908,tty-in,6855,0,sshd-session,108
+1795373909041908,tty-in,6855,0,sshd-session,108
+1795373909041908,tty-in,6855,0,sshd-session,108
+1795373909041908,tty-in,6855,0,sshd-session,108
+1795373909041908,tty-in,6855,0,sshd-session,111
+1795373909041908,tty-in,6855,0,sshd-session,111
+1795373909041908,tty-in,6855,0,sshd-session,10
+1795373909041908,tty-in,6855,0,sshd-session,10
+1795373909041908,tty-out,6856,0,sh,pts/0 e\0
+1795373909041908,tty-out,6856,0,sh,pts/0 n\0
+1795373909041908,tty-out,6856,0,sh,pts/0 v\0
+1795373909041908,tty-out,6856,0,sh,pts/0  \0
+1795373909041908,tty-out,6856,0,sh,pts/0 S\0
+1795373909041908,tty-out,6856,0,sh,pts/0 E\0
+1795373909041908,tty-out,6856,0,sh,pts/0 C\0
+1795373909041908,tty-out,6856,0,sh,pts/0 R\0
+1795373909041908,tty-out,6856,0,sh,pts/0 E\0
+1795373909041908,tty-out,6856,0,sh,pts/0 T\0
+1795373909041908,tty-out,6856,0,sh,pts/0 =\0
+1795373909041908,tty-out,6856,0,sh,pts/0 x\0
+1795373909041908,tty-out,6856,0,sh,pts/0 y\0
+1795373909041908,tty-out,6856,0,sh,pts/0 z\0
+1795373909041908,tty-out,6856,0,sh,pts/0  \0
+1795373909041908,tty-out,6856,0,sh,pts/0 /\0
+1795373909041908,tty-out,6856,0,sh,pts/0 b\0
+1795373909041908,tty-out,6856,0,sh,pts/0 i\0
+1795373909041908,tty-out,6856,0,sh,pts/0 n\0
+1795373909041908,tty-out,6856,0,sh,pts/0 /\0
+1795373909041908,tty-out,6856,0,sh,pts/0 e\0
+1795373909041908,tty-out,6856,0,sh,pts/0 c\0
+1795373909041908,tty-out,6856,0,sh,pts/0 h\0
+1795373909041908,tty-out,6856,0,sh,pts/0 o\0
+1795373909041908,tty-out,6856,0,sh,pts/0  \0
+1795373909041908,tty-out,6856,0,sh,pts/0 h\0
+1795373909041908,tty-out,6856,0,sh,pts/0 e\0
+1795373909041908,tty-out,6856,0,sh,pts/0 l\0
+1795373909041908,tty-out,6856,0,sh,pts/0 l\0
+1795373909041908,tty-out,6856,0,sh,pts/0 o\0
+1795373909041908,tty-out,6856,0,sh,pts/0 \n\0
+1795373909041908,exec,6863,0,env,env SECRET=xyz /bin/echo hello
+1795373909041908,open,6863,0,env,/etc/libmap.conf
+1795373909041908,open-failed,6863,0,env,/usr/local/etc/libmap.d
+1795373909041908,open,6863,0,env,/var/run/ld-elf.so.hints
+1795373909041908,open,6863,0,env,/lib/libutil.so.10
+1795373909041908,open,6863,0,env,/lib/libc.so.7
+1795373909041908,open,6863,0,env,/lib/libsys.so.7
+1795373909041908,exec,6863,0,echo,/bin/echo hello
+1795373909041908,open,6863,0,echo,/etc/libmap.conf
+1795373909041908,open-failed,6863,0,echo,/usr/local/etc/libmap.d
+1795373909041908,open,6863,0,echo,/var/run/ld-elf.so.hints
+1795373909041908,open,6863,0,echo,/lib/libc.so.7
+1795373909041908,open,6863,0,echo,/lib/libsys.so.7
+1795373909041908,signal,6863,0,echo,20 to 6856 sh
+1795373909051266,tty-out,6856,0,sh,pts/0 [1]   Terminated              sleep 30\n\0
+1795373909051266,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373910061903,tty-in,6855,0,sshd-session,112
+1795373910061903,tty-in,6855,0,sshd-session,112
+1795373910061903,tty-in,6855,0,sshd-session,97
+1795373910061903,tty-in,6855,0,sshd-session,97
+1795373910061903,tty-in,6855,0,sshd-session,115
+1795373910061903,tty-in,6855,0,sshd-session,115
+1795373910061903,tty-in,6855,0,sshd-session,115
+1795373910061903,tty-in,6855,0,sshd-session,115
+1795373910061903,tty-in,6855,0,sshd-session,119
+1795373910061903,tty-in,6855,0,sshd-session,119
+1795373910061903,tty-in,6855,0,sshd-session,100
+1795373910061903,tty-in,6855,0,sshd-session,100
+1795373910061903,tty-in,6855,0,sshd-session,32
+1795373910061903,tty-in,6855,0,sshd-session,32
+1795373910061903,tty-in,6855,0,sshd-session,102
+1795373910061903,tty-in,6855,0,sshd-session,102
+1795373910061903,tty-in,6855,0,sshd-session,111
+1795373910061903,tty-in,6855,0,sshd-session,111
+1795373910061903,tty-in,6855,0,sshd-session,111
+1795373910061903,tty-in,6855,0,sshd-session,111
+1795373910061903,tty-in,6855,0,sshd-session,10
+1795373910061903,tty-in,6855,0,sshd-session,10
+1795373910061903,tty-out,6856,0,sh,pts/0 p\0
+1795373910061903,tty-out,6856,0,sh,pts/0 a\0
+1795373910061903,tty-out,6856,0,sh,pts/0 s\0
+1795373910061903,tty-out,6856,0,sh,pts/0 s\0
+1795373910061903,tty-out,6856,0,sh,pts/0 w\0
+1795373910061903,tty-out,6856,0,sh,pts/0 d\0
+1795373910061903,tty-out,6856,0,sh,pts/0  \0
+1795373910061903,tty-out,6856,0,sh,pts/0 f\0
+1795373910061903,tty-out,6856,0,sh,pts/0 o\0
+1795373910061903,tty-out,6856,0,sh,pts/0 o\0
+1795373910061903,tty-out,6856,0,sh,pts/0 \n\0
+1795373910061903,exec,6864,0,passwd,passwd foo
+1795373910061903,open,6864,0,passwd,/etc/libmap.conf
+1795373910061903,open-failed,6864,0,passwd,/usr/local/etc/libmap.d
+1795373910061903,open,6864,0,passwd,/var/run/ld-elf.so.hints
+1795373910061903,open-failed,6864,0,passwd,/lib/libpam.so.6
+1795373910061903,open,6864,0,passwd,/usr/lib/libpam.so.6
+1795373910061903,open,6864,0,passwd,/lib/libc.so.7
+1795373910061903,open,6864,0,passwd,/lib/libsys.so.7
+1795373910071268,open,6864,0,passwd,/etc/nsswitch.conf
+1795373910071268,open,6864,0,passwd,/etc/spwd.db
+1795373910071268,tty-out,6864,0,passwd,pts/0 Changing local password for foo\n\0
+1795373910071268,open,6864,0,passwd,/etc/pam.d/passwd
+1795373910071268,open,6864,0,passwd,/usr/lib/pam_unix.so.6
+1795373910071268,open,6864,0,passwd,/lib/libutil.so.10
+1795373910071268,open,6864,0,passwd,/lib/libcrypt.so.5
+1795373910071268,open-failed,6864,0,passwd,/lib/libypclnt.so.4
+1795373910071268,open,6864,0,passwd,/usr/lib/libypclnt.so.4
+1795373910071268,open,6864,0,passwd,/lib/libmd.so.7
+1795373910071268,open,6864,0,passwd,/etc/pam.d/other
+1795373910071268,open,6864,0,passwd,/usr/lib/pam_unix.so.6
+1795373910071268,open,6864,0,passwd,/etc/pam.d/other
+1795373910071268,open,6864,0,passwd,/usr/lib/pam_nologin.so.6
+1795373910071268,open,6864,0,passwd,/usr/lib/pam_login_access.so.6
+1795373910071268,open,6864,0,passwd,/usr/lib/pam_unix.so.6
+1795373910071268,open,6864,0,passwd,/etc/pam.d/other
+1795373910071268,open,6864,0,passwd,/usr/lib/pam_permit.so.6
+1795373910071268,open,6864,0,passwd,/etc/spwd.db
+1795373910071268,open,6864,0,passwd,/etc/spwd.db
+1795373910071268,tty-out,6864,0,passwd,pts/0 New Password:\0
+1795373911091907,tty-in,6855,0,sshd-session,102
+1795373911091907,tty-in,6855,0,sshd-session,102
+1795373911091907,tty-in,6855,0,sshd-session,111
+1795373911091907,tty-in,6855,0,sshd-session,111
+1795373911091907,tty-in,6855,0,sshd-session,111
+1795373911091907,tty-in,6855,0,sshd-session,111
+1795373911091907,tty-in,6855,0,sshd-session,98
+1795373911091907,tty-in,6855,0,sshd-session,98
+1795373911091907,tty-in,6855,0,sshd-session,97
+1795373911091907,tty-in,6855,0,sshd-session,97
+1795373911091907,tty-in,6855,0,sshd-session,114
+1795373911091907,tty-in,6855,0,sshd-session,114
+1795373911091907,tty-in,6855,0,sshd-session,33
+1795373911091907,tty-in,6855,0,sshd-session,33
+1795373911091907,tty-in,6855,0,sshd-session,10
+1795373911091907,tty-in,6855,0,sshd-session,10
+1795373911091907,tty-out,6864,0,passwd,pts/0 \n\0
+1795373911091907,tty-out,6864,0,passwd,pts/0 Retype New Password:\0
+1795373912091907,tty-in,6855,0,sshd-session,102
+1795373912091907,tty-in,6855,0,sshd-session,102
+1795373912091907,tty-in,6855,0,sshd-session,111
+1795373912091907,tty-in,6855,0,sshd-session,111
+1795373912091907,tty-in,6855,0,sshd-session,111
+1795373912091907,tty-in,6855,0,sshd-session,111
+1795373912091907,tty-in,6855,0,sshd-session,98
+1795373912091907,tty-in,6855,0,sshd-session,98
+1795373912091907,tty-in,6855,0,sshd-session,97
+1795373912091907,tty-in,6855,0,sshd-session,97
+1795373912091907,tty-in,6855,0,sshd-session,114
+1795373912091907,tty-in,6855,0,sshd-session,114
+1795373912091907,tty-in,6855,0,sshd-session,33
+1795373912091907,tty-in,6855,0,sshd-session,33
+1795373912091907,tty-in,6855,0,sshd-session,10
+1795373912091907,tty-in,6855,0,sshd-session,10
+1795373912091907,tty-out,6864,0,passwd,pts/0 \n\0
+1795373912101262,open,6864,0,passwd,/etc/login.conf.db
+1795373912101262,open,6864,0,passwd,/etc/master.passwd
+1795373912101262,open,6864,0,passwd,/etc/pw.rbIaYu
+1795373912101262,open,6864,0,passwd,/etc/shells
+1795373912101262,exec,6865,0,pwd_mkdb,pwd_mkdb -p -d /etc -u foo /etc/pw.rbIaYu
+1795373912101262,open,6865,0,pwd_mkdb,/etc/libmap.conf
+1795373912101262,open-failed,6865,0,pwd_mkdb,/usr/local/etc/libmap.d
+1795373912101262,open,6865,0,pwd_mkdb,/var/run/ld-elf.so.hints
+1795373912101262,open,6865,0,pwd_mkdb,/lib/libc.so.7
+1795373912101262,open,6865,0,pwd_mkdb,/lib/libsys.so.7
+1795373912111267,open,6865,0,pwd_mkdb,/etc/pw.rbIaYu
+1795373912111267,open,6865,0,pwd_mkdb,/etc/pwd.db
+1795373912111267,open,6865,0,pwd_mkdb,/etc/pwd.db.tmp
+1795373912111267,open,6865,0,pwd_mkdb,/etc/pwd.db.tmp
+1795373912111267,open,6865,0,pwd_mkdb,/etc/spwd.db
+1795373912111267,open,6865,0,pwd_mkdb,/etc/spwd.db.tmp
+1795373912111267,open,6865,0,pwd_mkdb,/etc/spwd.db.tmp
+1795373912111267,open,6865,0,pwd_mkdb,/etc/pwd.db
+1795373912111267,open,6865,0,pwd_mkdb,/etc/pw.rbIaYu.orig
+1795373912111267,open,6865,0,pwd_mkdb,/etc/nsswitch.conf
+1795373912111267,open,6865,0,pwd_mkdb,/etc/shells
+1795373912111267,open,6865,0,pwd_mkdb,/etc
+1795373912111267,open,6865,0,pwd_mkdb,/etc
+1795373912111267,open,6865,0,pwd_mkdb,/etc
+1795373912111267,open,6865,0,pwd_mkdb,/etc
+1795373912121264,signal,6865,0,pwd_mkdb,20 to 6864 passwd
+1795373912121264,signal,6864,0,passwd,20 to 6856 sh
+1795373912121264,tty-out,6856,0,sh,pts/0 root@j1:~ # \0
+1795373913131815,tty-in,6855,0,sshd-session,101
+1795373913131815,tty-in,6855,0,sshd-session,101
+1795373913131815,tty-in,6855,0,sshd-session,120
+1795373913131815,tty-in,6855,0,sshd-session,120
+1795373913131815,tty-in,6855,0,sshd-session,105
+1795373913131815,tty-in,6855,0,sshd-session,105
+1795373913131815,tty-in,6855,0,sshd-session,116
+1795373913131815,tty-in,6855,0,sshd-session,116
+1795373913131815,tty-in,6855,0,sshd-session,10
+1795373913131815,tty-in,6855,0,sshd-session,10
+1795373913131815,tty-out,6856,0,sh,pts/0 e\0
+1795373913131815,tty-out,6856,0,sh,pts/0 x\0
+1795373913131815,tty-out,6856,0,sh,pts/0 i\0
+1795373913131815,tty-out,6856,0,sh,pts/0 t\0
+1795373913131815,tty-out,6856,0,sh,pts/0 \n\0
+1795373913131815,open,6856,0,sh,/root/.sh_history.4m2MsDdome
+1795373913131815,signal,6856,0,sh,1 to 6856 sh
+1795373913131815,signal,6856,0,sh,20 to 6855 sshd-session
+1795373913131815,open,6853,0,sshd-session,/etc/spwd.db
+1795373913131815,open,6853,0,sshd-session,/var/run/utx.active
+1795373913131815,open,6853,0,sshd-session,/var/run/utx.active
+1795373913131815,open,6853,0,sshd-session,/var/log/utx.log
+1795373913131815,signal,6855,0,sshd-session,20 to 6853 sshd-session
+1795373913131815,signal,6853,0,sshd-session,20 to 6834 sshd

@@ -1,0 +1,39 @@
+Last login: Sun Nov 22 18:51:08 2026 from 10.99.0.13
+FreeBSD 15.1-RELEASE-p7 (GENERIC) releng/15.1-n283696-bb03631fe3b7
+
+Welcome to FreeBSD!
+
+Release Notes, Errata: https://www.FreeBSD.org/releases/
+Security Advisories:   https://www.FreeBSD.org/security/
+FreeBSD Handbook:      https://www.FreeBSD.org/handbook/
+FreeBSD FAQ:           https://www.FreeBSD.org/faq/
+Questions List:        https://www.FreeBSD.org/lists/questions/
+FreeBSD Forums:        https://forums.FreeBSD.org/
+
+Documents installed with the system are in the /usr/local/share/doc/freebsd/
+directory, or can be installed later with:  pkg install en-freebsd-doc
+For other languages, replace "en" with a language code like de or fr.
+
+Show the version of FreeBSD installed:  freebsd-version ; uname -a
+Please include that output and any error messages when posting questions.
+Introduction to manual pages:  man man
+FreeBSD directory layout:      man hier
+
+To change this login announcement, see motd(5).
+7[r[999;999H[6n8resizewin: timeout reading from terminal
+root@j1:~ # id
+uid=0(root) gid=0(wheel) groups=0(wheel),5(operator)
+root@j1:~ # uname -sr
+FreeBSD 15.1-RELEASE-p7
+root@j1:~ # cat /etc/hosts > /tmp/jail-mark
+root@j1:~ # cat /nonexistent-file
+cat: /nonexistent-file: No such file or directory
+root@j1:~ # sleep 30 & kill $!
+root@j1:~ # env SECRET=xyz /bin/echo hello
+hello
+[1]   Terminated              sleep 30
+root@j1:~ # passwd foo
+Changing local password for foo
+New Password:
+Retype New Password:
+root@j1:~ # exit

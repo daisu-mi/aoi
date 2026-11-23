@@ -1,0 +1,1381 @@
+1795374041721282,open,7098,0,sshd,/etc/hosts.allow
+1795374041721282,read,7098,0,sshd,hosts.allow
+1795374041721282,read,7098,0,sshd,hosts.allow
+1795374041721282,read,7098,0,sshd,hosts.allow
+1795374041721282,exec,7301,0,sshd-session,/usr/libexec/sshd-session -o ListenAddress=10.99.0.14 -o PidFile=/var/run/sshd-j1.pid -R
+1795374041721282,open,7301,0,sshd-session,/etc/libmap.conf
+1795374041721282,read,7301,0,sshd-session,libmap.conf
+1795374041721282,open-failed,7301,0,sshd-session,/usr/local/etc/libmap.d
+1795374041721282,open,7301,0,sshd-session,/var/run/ld-elf.so.hints
+1795374041721282,read,7301,0,sshd-session,ld-elf.so.hints
+1795374041721282,read,7301,0,sshd-session,ld-elf.so.hints
+1795374041721282,open-failed,7301,0,sshd-session,/lib/libpam.so.6
+1795374041721282,open,7301,0,sshd-session,/usr/lib/libpam.so.6
+1795374041721282,open-failed,7301,0,sshd-session,/lib/libprivatessh.so.5
+1795374041721282,open,7301,0,sshd-session,/usr/lib/libprivatessh.so.5
+1795374041721282,open,7301,0,sshd-session,/lib/libutil.so.10
+1795374041721282,open-failed,7301,0,sshd-session,/lib/libbsm.so.3
+1795374041721282,open,7301,0,sshd-session,/usr/lib/libbsm.so.3
+1795374041721282,open-failed,7301,0,sshd-session,/lib/libblocklist.so.0
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libblocklist.so.0
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libgssapi_krb5.so.122
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libgssapi_krb5.so.122
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libkrb5.so.122
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libkrb5.so.122
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libwrap.so.6
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libwrap.so.6
+1795374041731263,open,7301,0,sshd-session,/lib/libcrypto.so.35
+1795374041731263,open,7301,0,sshd-session,/lib/libc.so.7
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libprivateldns.so.5
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libprivateldns.so.5
+1795374041731263,open,7301,0,sshd-session,/lib/libcrypt.so.5
+1795374041731263,open,7301,0,sshd-session,/lib/libz.so.6
+1795374041731263,open,7301,0,sshd-session,/lib/libthr.so.3
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libk5crypto.so.122
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libk5crypto.so.122
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libcom_err.so.122
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libcom_err.so.122
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libkrb5support.so.122
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libkrb5support.so.122
+1795374041731263,open,7301,0,sshd-session,/lib/libsys.so.7
+1795374041731263,open-failed,7301,0,sshd-session,/lib/libssl.so.35
+1795374041731263,open,7301,0,sshd-session,/usr/lib/libssl.so.35
+1795374041731263,open,7301,0,sshd-session,/lib/libmd.so.7
+1795374041731263,open,7301,0,sshd-session,/dev/null
+1795374041731263,open,7301,0,sshd-session,/dev/null
+1795374041731263,open,7301,0,sshd-session,/lib/libcrypto.so.35
+1795374041741265,open,7301,0,sshd-session,/etc/ssl/openssl.cnf
+1795374041741265,read,7301,0,sshd-session,openssl.cnf
+1795374041741265,read,7301,0,sshd-session,openssl.cnf
+1795374041741265,read,7301,0,sshd-session,openssl.cnf
+1795374041741265,read,7301,0,sshd-session,openssl.cnf
+1795374041741265,open,7301,0,sshd-session,/dev/pvclock
+1795374041741265,open,7301,0,sshd-session,/etc/nsswitch.conf
+1795374041741265,read,7301,0,sshd-session,nsswitch.conf
+1795374041741265,read,7301,0,sshd-session,nsswitch.conf
+1795374041741265,open,7301,0,sshd-session,/etc/spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,read,7301,0,sshd-session,spwd.db
+1795374041741265,open,7301,0,sshd-session,/dev/null
+1795374041741265,open,7301,0,sshd-session,/etc/resolv.conf
+1795374041741265,read,7301,0,sshd-session,resolv.conf
+1795374041741265,read,7301,0,sshd-session,resolv.conf
+1795374041741265,open,7301,0,sshd-session,/etc/hosts
+1795374041741265,read,7301,0,sshd-session,hosts
+1795374041741265,read,7301,0,sshd-session,hosts
+1795374041741265,exec,7302,0,sshd-auth,/usr/libexec/sshd-auth -o ListenAddress=10.99.0.14 -o PidFile=/var/run/sshd-j1.pid -R
+1795374041741265,open,7302,0,sshd-auth,/etc/libmap.conf
+1795374041741265,read,7302,0,sshd-auth,libmap.conf
+1795374041741265,open-failed,7302,0,sshd-auth,/usr/local/etc/libmap.d
+1795374041741265,open,7302,0,sshd-auth,/var/run/ld-elf.so.hints
+1795374041741265,read,7302,0,sshd-auth,ld-elf.so.hints
+1795374041741265,read,7302,0,sshd-auth,ld-elf.so.hints
+1795374041741265,open-failed,7302,0,sshd-auth,/lib/libpam.so.6
+1795374041741265,open,7302,0,sshd-auth,/usr/lib/libpam.so.6
+1795374041741265,open-failed,7302,0,sshd-auth,/lib/libprivatessh.so.5
+1795374041741265,open,7302,0,sshd-auth,/usr/lib/libprivatessh.so.5
+1795374041741265,open,7302,0,sshd-auth,/lib/libutil.so.10
+1795374041741265,open-failed,7302,0,sshd-auth,/lib/libbsm.so.3
+1795374041741265,open,7302,0,sshd-auth,/usr/lib/libbsm.so.3
+1795374041741265,open-failed,7302,0,sshd-auth,/lib/libblocklist.so.0
+1795374041741265,open,7302,0,sshd-auth,/usr/lib/libblocklist.so.0
+1795374041741265,open-failed,7302,0,sshd-auth,/lib/libgssapi_krb5.so.122
+1795374041741265,open,7302,0,sshd-auth,/usr/lib/libgssapi_krb5.so.122
+1795374041741265,open-failed,7302,0,sshd-auth,/lib/libkrb5.so.122
+1795374041741265,open,7302,0,sshd-auth,/usr/lib/libkrb5.so.122
+1795374041741265,open,7302,0,sshd-auth,/lib/libcrypto.so.35
+1795374041741265,open,7302,0,sshd-auth,/lib/libc.so.7
+1795374041741265,open-failed,7302,0,sshd-auth,/lib/libprivateldns.so.5
+1795374041741265,open,7302,0,sshd-auth,/usr/lib/libprivateldns.so.5
+1795374041741265,open,7302,0,sshd-auth,/lib/libcrypt.so.5
+1795374041741265,open,7302,0,sshd-auth,/lib/libz.so.6
+1795374041741265,open,7302,0,sshd-auth,/lib/libthr.so.3
+1795374041751264,open-failed,7302,0,sshd-auth,/lib/libk5crypto.so.122
+1795374041751264,open,7302,0,sshd-auth,/usr/lib/libk5crypto.so.122
+1795374041751264,open-failed,7302,0,sshd-auth,/lib/libcom_err.so.122
+1795374041751264,open,7302,0,sshd-auth,/usr/lib/libcom_err.so.122
+1795374041751264,open-failed,7302,0,sshd-auth,/lib/libkrb5support.so.122
+1795374041751264,open,7302,0,sshd-auth,/usr/lib/libkrb5support.so.122
+1795374041751264,open,7302,0,sshd-auth,/lib/libsys.so.7
+1795374041751264,open-failed,7302,0,sshd-auth,/lib/libssl.so.35
+1795374041751264,open,7302,0,sshd-auth,/usr/lib/libssl.so.35
+1795374041751264,open,7302,0,sshd-auth,/lib/libmd.so.7
+1795374041751264,open,7302,0,sshd-auth,/lib/libcrypto.so.35
+1795374041751264,open,7302,0,sshd-auth,/etc/ssl/openssl.cnf
+1795374041751264,read,7302,0,sshd-auth,openssl.cnf
+1795374041751264,read,7302,0,sshd-auth,openssl.cnf
+1795374041751264,read,7302,0,sshd-auth,openssl.cnf
+1795374041751264,read,7302,0,sshd-auth,openssl.cnf
+1795374041761266,open,7302,0,sshd-auth,/dev/pvclock
+1795374041761266,open,7302,0,sshd-auth,/dev/null
+1795374041761266,open,7302,0,sshd-auth,/dev/null
+1795374041761266,open,7302,0,sshd-auth,/etc/nsswitch.conf
+1795374041761266,read,7302,0,sshd-auth,nsswitch.conf
+1795374041761266,read,7302,0,sshd-auth,nsswitch.conf
+1795374041761266,open,7302,0,sshd-auth,/etc/spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,read,7302,0,sshd-auth,spwd.db
+1795374041761266,open-failed,7302,0,sshd-auth,/usr/etc/gss/mech.d/
+1795374041761266,open-failed,7302,22,sshd-auth,/etc/localtime
+1795374041761266,open-failed,7302,22,sshd-auth,/usr/share/zoneinfo/
+1795374041821908,open,7301,0,sshd-session,/etc/hosts
+1795374041821908,read,7301,0,sshd-session,hosts
+1795374041821908,read,7301,0,sshd-session,hosts
+1795374041821908,read,7301,0,sshd-session,hosts
+1795374041821908,read,7301,0,sshd-session,hosts
+1795374041821908,open,7301,0,sshd-session,/etc/spwd.db
+1795374041821908,read,7301,0,sshd-session,spwd.db
+1795374041821908,read,7301,0,sshd-session,spwd.db
+1795374041821908,read,7301,0,sshd-session,spwd.db
+1795374041821908,open,7301,0,sshd-session,/etc/spwd.db
+1795374041821908,read,7301,0,sshd-session,spwd.db
+1795374041821908,read,7301,0,sshd-session,spwd.db
+1795374041821908,read,7301,0,sshd-session,spwd.db
+1795374041821908,open,7301,0,sshd-session,/etc/login.conf.db
+1795374041821908,read,7301,0,sshd-session,login.conf.db
+1795374041821908,read,7301,0,sshd-session,login.conf.db
+1795374041821908,open-failed,7301,0,sshd-session,/etc/localtime
+1795374041821908,open,7301,0,sshd-session,/etc/group
+1795374041821908,read,7301,0,sshd-session,group
+1795374041821908,read,7301,0,sshd-session,group
+1795374041821908,open,7301,0,sshd-session,/root/.ssh/authorized_keys
+1795374041821908,read,7301,0,sshd-session,authorized_keys
+1795374041821908,read,7301,0,sshd-session,authorized_keys
+1795374041831306,open,7301,0,sshd-session,/root/.ssh/authorized_keys
+1795374041831306,read,7301,0,sshd-session,authorized_keys
+1795374041831306,read,7301,0,sshd-session,authorized_keys
+1795374041841908,signal,7302,22,sshd-auth,20 to 7301 sshd-session
+1795374041841908,open,7303,0,sshd-session,/etc/group
+1795374041841908,read,7303,0,sshd-session,group
+1795374041841908,read,7303,0,sshd-session,group
+1795374041841908,read,7303,0,sshd-session,group
+1795374041841908,read,7303,0,sshd-session,group
+1795374041841908,open-failed,7303,0,sshd-session,/root/.login_conf.db
+1795374041841908,open-failed,7303,0,sshd-session,/root/.login_conf
+1795374041841908,open,7303,0,sshd-session,/etc/login.conf.db
+1795374041841908,read,7303,0,sshd-session,login.conf.db
+1795374041841908,read,7303,0,sshd-session,login.conf.db
+1795374041841908,open-failed,7303,0,sshd-session,/root/.login_conf.db
+1795374041841908,open-failed,7303,0,sshd-session,/root/.login_conf
+1795374041841908,open,7303,0,sshd-session,/etc/login.conf.db
+1795374041841908,read,7303,0,sshd-session,login.conf.db
+1795374041841908,read,7303,0,sshd-session,login.conf.db
+1795374041841908,open-failed,7303,0,sshd-session,/root/.login_conf.db
+1795374041841908,open-failed,7303,0,sshd-session,/root/.login_conf
+1795374041841908,open,7303,0,sshd-session,/etc/login.conf.db
+1795374041841908,read,7303,0,sshd-session,login.conf.db
+1795374041841908,read,7303,0,sshd-session,login.conf.db
+1795374041881906,open,7301,0,sshd-session,/dev/pts/0
+1795374041881906,open,7301,0,sshd-session,/etc/group
+1795374041881906,read,7301,0,sshd-session,group
+1795374041881906,read,7301,0,sshd-session,group
+1795374041881906,read,7301,0,sshd-session,group
+1795374041881906,open,7301,0,sshd-session,/etc/spwd.db
+1795374041881906,read,7301,0,sshd-session,spwd.db
+1795374041881906,read,7301,0,sshd-session,spwd.db
+1795374041881906,read,7301,0,sshd-session,spwd.db
+1795374041881906,open,7301,0,sshd-session,/var/log/utx.lastlogin
+1795374041881906,read,7301,0,sshd-session,utx.lastlogin
+1795374041881906,open,7301,0,sshd-session,/etc/spwd.db
+1795374041881906,read,7301,0,sshd-session,spwd.db
+1795374041881906,read,7301,0,sshd-session,spwd.db
+1795374041881906,read,7301,0,sshd-session,spwd.db
+1795374041881906,open,7301,0,sshd-session,/var/run/utx.active
+1795374041881906,open,7301,0,sshd-session,/var/run/utx.active
+1795374041881906,read,7301,0,sshd-session,utx.active
+1795374041881906,write,7301,0,sshd-session,utx.active
+1795374041881906,open,7301,0,sshd-session,/var/log/utx.lastlogin
+1795374041881906,read,7301,0,sshd-session,utx.lastlogin
+1795374041881906,write,7301,0,sshd-session,utx.lastlogin
+1795374041881906,open,7301,0,sshd-session,/var/log/utx.log
+1795374041881906,write,7301,0,sshd-session,utx.log
+1795374041881906,open,7301,0,sshd-session,/dev/null
+1795374041891263,open-failed,7304,0,sshd-session,/dev/tty
+1795374041891263,open-failed,7304,0,sshd-session,/dev/tty
+1795374041891263,open,7304,0,sshd-session,/dev/pts/0
+1795374041891263,open,7304,0,sshd-session,/dev/tty
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Last login: Sun Nov 22 18:58:20 2026 from 10.99.0.13\r\n\0
+1795374041891263,open,7304,0,sshd-session,/var/run/motd
+1795374041891263,read,7304,0,sshd-session,motd
+1795374041891263,read,7304,0,sshd-session,motd
+1795374041891263,read,7304,0,sshd-session,motd
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 FreeBSD 15.1-RELEASE-p7 (GENERIC) releng/15.1-n283696-bb03631fe3b7\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 \n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Welcome to FreeBSD!\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 \n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Release Notes, Errata: https://www.FreeBSD.org/releases/\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Security Advisories:   https://www.FreeBSD.org/security/\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 FreeBSD Handbook:      https://www.FreeBSD.org/handbook/\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 FreeBSD FAQ:           https://www.FreeBSD.org/faq/\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Questions List:        https://www.FreeBSD.org/lists/questions/\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 FreeBSD Forums:        https://forums.FreeBSD.org/\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 \n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Documents installed with the system are in the /usr/local/share/doc/freebsd/\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 directory, or can be installed later with:  pkg install en-freebsd-doc\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 For other languages, replace \"en\" with a language code like de or fr.\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 \n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Show the version of FreeBSD installed:  freebsd-version ; uname -a\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Please include that output and any error messages when posting questions.\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 Introduction to manual pages:  man man\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 FreeBSD directory layout:      man hier\n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 \n\0
+1795374041891263,tty-out,7304,0,sshd-session,pts/0 To change this login announcement, see motd(5).\n\0
+1795374041891263,read,7304,0,sshd-session,motd
+1795374041891263,open,7304,0,sshd-session,/etc/group
+1795374041891263,read,7304,0,sshd-session,group
+1795374041891263,read,7304,0,sshd-session,group
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf.db
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf
+1795374041891263,open,7304,0,sshd-session,/etc/login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf.db
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf
+1795374041891263,open,7304,0,sshd-session,/etc/login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf.db
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf
+1795374041891263,open,7304,0,sshd-session,/etc/login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf.db
+1795374041891263,open-failed,7304,0,sshd-session,/root/.login_conf
+1795374041891263,open,7304,0,sshd-session,/etc/login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,read,7304,0,sshd-session,login.conf.db
+1795374041891263,exec,7304,0,sh,-sh
+1795374041891263,open,7304,0,sh,/etc/libmap.conf
+1795374041891263,read,7304,0,sh,libmap.conf
+1795374041891263,open-failed,7304,0,sh,/usr/local/etc/libmap.d
+1795374041891263,open,7304,0,sh,/var/run/ld-elf.so.hints
+1795374041891263,read,7304,0,sh,ld-elf.so.hints
+1795374041891263,read,7304,0,sh,ld-elf.so.hints
+1795374041891263,open,7304,0,sh,/lib/libedit.so.8
+1795374041891263,open,7304,0,sh,/lib/libc.so.7
+1795374041891263,open,7304,0,sh,/lib/libtinfow.so.9
+1795374041891263,open,7304,0,sh,/lib/libsys.so.7
+1795374041891263,open,7304,0,sh,/usr/share/locale/C.UTF-8/LC_CTYPE
+1795374041891263,open,7304,0,sh,/dev/pvclock
+1795374041891263,open-failed,7304,0,sh,/etc/termcap.db
+1795374041891263,open,7304,0,sh,/etc/termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041891263,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,read,7304,0,sh,termcap
+1795374041901267,open-failed,7304,0,sh,/root/.editrc
+1795374041901267,open,7304,0,sh,/dev/tty
+1795374041901267,open,7304,0,sh,/etc/profile
+1795374041901267,read,7304,0,sh,profile
+1795374041901267,open,7304,0,sh,/etc/profile.d
+1795374041901267,open-failed,7304,0,sh,/usr/local/etc/profile.d
+1795374041901267,read,7304,0,sh,profile
+1795374041901267,open,7304,0,sh,/root/.profile
+1795374041901267,read,7304,0,sh,.profile
+1795374041911276,exec,7305,0,resizewin,/usr/bin/resizewin -z
+1795374041911276,open,7305,0,resizewin,/etc/libmap.conf
+1795374041911276,read,7305,0,resizewin,libmap.conf
+1795374041911276,open-failed,7305,0,resizewin,/usr/local/etc/libmap.d
+1795374041911276,open,7305,0,resizewin,/var/run/ld-elf.so.hints
+1795374041911276,read,7305,0,resizewin,ld-elf.so.hints
+1795374041911276,read,7305,0,resizewin,ld-elf.so.hints
+1795374041911276,open,7305,0,resizewin,/lib/libc.so.7
+1795374041911276,open,7305,0,resizewin,/lib/libsys.so.7
+1795374041911276,open,7305,0,resizewin,/dev/tty
+1795374041911276,tty-out,7305,0,resizewin,pts/0 \0337\033[r\033[999;999H\033[6n\0338\0
+1795374041911276,open,7305,0,resizewin,/dev/pvclock
+1795374043911901,tty-out,7305,0,resizewin,pts/0 resizewin: \0
+1795374043911901,tty-out,7305,0,resizewin,pts/0 timeout reading from terminal\0
+1795374043911901,tty-out,7305,0,resizewin,pts/0 \n\0
+1795374043911901,signal,7305,0,resizewin,20 to 7304 sh
+1795374043911901,read,7304,0,sh,.profile
+1795374043911901,open,7304,0,sh,/root/.shrc
+1795374043911901,read,7304,0,sh,.shrc
+1795374043911901,read,7304,0,sh,.shrc
+1795374043911901,read,7304,0,sh,.shrc
+1795374043911901,open,7304,0,sh,/root/.sh_history
+1795374043911901,read,7304,0,sh,.sh_history
+1795374043911901,read,7304,0,sh,.sh_history
+1795374043911901,read,7304,0,sh,.sh_history
+1795374043911901,read,7304,0,sh,.sh_history
+1795374043911901,open,7304,0,sh,/etc/nsswitch.conf
+1795374043911901,read,7304,0,sh,nsswitch.conf
+1795374043911901,read,7304,0,sh,nsswitch.conf
+1795374043911901,open,7304,0,sh,/etc/spwd.db
+1795374043911901,read,7304,0,sh,spwd.db
+1795374043911901,read,7304,0,sh,spwd.db
+1795374043911901,read,7304,0,sh,spwd.db
+1795374043911901,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374045741268,tty-in,7303,0,sshd-session,105
+1795374045741268,tty-in,7303,0,sshd-session,100
+1795374045741268,tty-in,7303,0,sshd-session,10
+1795374045741268,tty-out,7304,0,sh,pts/0 i\0
+1795374045741268,tty-out,7304,0,sh,pts/0 d\0
+1795374045741268,tty-out,7304,0,sh,pts/0 \n\0
+1795374045741268,exec,7306,0,id,id
+1795374045741268,open,7306,0,id,/etc/libmap.conf
+1795374045741268,read,7306,0,id,libmap.conf
+1795374045741268,open-failed,7306,0,id,/usr/local/etc/libmap.d
+1795374045741268,open,7306,0,id,/var/run/ld-elf.so.hints
+1795374045741268,read,7306,0,id,ld-elf.so.hints
+1795374045741268,read,7306,0,id,ld-elf.so.hints
+1795374045741268,open,7306,0,id,/lib/libc.so.7
+1795374045741268,open,7306,0,id,/lib/libsys.so.7
+1795374045741268,open,7306,0,id,/etc/nsswitch.conf
+1795374045741268,read,7306,0,id,nsswitch.conf
+1795374045741268,read,7306,0,id,nsswitch.conf
+1795374045741268,read,7306,0,id,nsswitch.conf
+1795374045741268,read,7306,0,id,nsswitch.conf
+1795374045741268,open,7306,0,id,/etc/spwd.db
+1795374045741268,read,7306,0,id,spwd.db
+1795374045741268,read,7306,0,id,spwd.db
+1795374045741268,read,7306,0,id,spwd.db
+1795374045741268,open,7306,0,id,/etc/group
+1795374045741268,read,7306,0,id,group
+1795374045741268,open,7306,0,id,/etc/group
+1795374045741268,read,7306,0,id,group
+1795374045741268,open,7306,0,id,/etc/group
+1795374045741268,read,7306,0,id,group
+1795374045741268,tty-out,7306,0,id,pts/0 uid=0(root) gid=0(wheel) groups=0(wheel),5(operator)\n\0
+1795374045741268,signal,7306,0,id,20 to 7304 sh
+1795374045741268,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374046761498,tty-in,7303,0,sshd-session,117
+1795374046761498,tty-in,7303,0,sshd-session,110
+1795374046761498,tty-in,7303,0,sshd-session,97
+1795374046761498,tty-in,7303,0,sshd-session,109
+1795374046761498,tty-in,7303,0,sshd-session,101
+1795374046761498,tty-in,7303,0,sshd-session,32
+1795374046761498,tty-in,7303,0,sshd-session,45
+1795374046761498,tty-in,7303,0,sshd-session,115
+1795374046761498,tty-in,7303,0,sshd-session,114
+1795374046761498,tty-in,7303,0,sshd-session,10
+1795374046761498,tty-out,7304,0,sh,pts/0 u\0
+1795374046761498,tty-out,7304,0,sh,pts/0 n\0
+1795374046761498,tty-out,7304,0,sh,pts/0 a\0
+1795374046761498,tty-out,7304,0,sh,pts/0 m\0
+1795374046761498,tty-out,7304,0,sh,pts/0 e\0
+1795374046761498,tty-out,7304,0,sh,pts/0  \0
+1795374046761498,tty-out,7304,0,sh,pts/0 -\0
+1795374046761498,tty-out,7304,0,sh,pts/0 s\0
+1795374046761498,tty-out,7304,0,sh,pts/0 r\0
+1795374046761498,tty-out,7304,0,sh,pts/0 \n\0
+1795374046761498,exec,7307,0,uname,uname -sr
+1795374046761498,open,7307,0,uname,/etc/libmap.conf
+1795374046761498,read,7307,0,uname,libmap.conf
+1795374046761498,open-failed,7307,0,uname,/usr/local/etc/libmap.d
+1795374046761498,open,7307,0,uname,/var/run/ld-elf.so.hints
+1795374046761498,read,7307,0,uname,ld-elf.so.hints
+1795374046761498,read,7307,0,uname,ld-elf.so.hints
+1795374046761498,open,7307,0,uname,/lib/libc.so.7
+1795374046761498,open,7307,0,uname,/lib/libsys.so.7
+1795374046761498,tty-out,7307,0,uname,pts/0 FreeBSD 15.1-RELEASE-p7\n\0
+1795374046761498,signal,7307,0,uname,20 to 7304 sh
+1795374046761498,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374047781901,tty-in,7303,0,sshd-session,99
+1795374047781901,tty-in,7303,0,sshd-session,97
+1795374047781901,tty-in,7303,0,sshd-session,116
+1795374047781901,tty-in,7303,0,sshd-session,32
+1795374047781901,tty-in,7303,0,sshd-session,47
+1795374047781901,tty-in,7303,0,sshd-session,101
+1795374047781901,tty-in,7303,0,sshd-session,116
+1795374047781901,tty-in,7303,0,sshd-session,99
+1795374047781901,tty-in,7303,0,sshd-session,47
+1795374047781901,tty-in,7303,0,sshd-session,104
+1795374047781901,tty-in,7303,0,sshd-session,111
+1795374047781901,tty-in,7303,0,sshd-session,115
+1795374047781901,tty-in,7303,0,sshd-session,116
+1795374047781901,tty-in,7303,0,sshd-session,115
+1795374047781901,tty-in,7303,0,sshd-session,32
+1795374047781901,tty-in,7303,0,sshd-session,62
+1795374047781901,tty-in,7303,0,sshd-session,32
+1795374047781901,tty-in,7303,0,sshd-session,47
+1795374047781901,tty-in,7303,0,sshd-session,116
+1795374047781901,tty-in,7303,0,sshd-session,109
+1795374047781901,tty-in,7303,0,sshd-session,112
+1795374047781901,tty-in,7303,0,sshd-session,47
+1795374047781901,tty-in,7303,0,sshd-session,106
+1795374047781901,tty-in,7303,0,sshd-session,97
+1795374047781901,tty-in,7303,0,sshd-session,105
+1795374047781901,tty-in,7303,0,sshd-session,108
+1795374047781901,tty-in,7303,0,sshd-session,45
+1795374047781901,tty-in,7303,0,sshd-session,109
+1795374047781901,tty-in,7303,0,sshd-session,97
+1795374047781901,tty-in,7303,0,sshd-session,114
+1795374047781901,tty-in,7303,0,sshd-session,107
+1795374047781901,tty-in,7303,0,sshd-session,10
+1795374047781901,tty-out,7304,0,sh,pts/0 c\0
+1795374047781901,tty-out,7304,0,sh,pts/0 a\0
+1795374047781901,tty-out,7304,0,sh,pts/0 t\0
+1795374047781901,tty-out,7304,0,sh,pts/0  \0
+1795374047781901,tty-out,7304,0,sh,pts/0 /\0
+1795374047781901,tty-out,7304,0,sh,pts/0 e\0
+1795374047781901,tty-out,7304,0,sh,pts/0 t\0
+1795374047781901,tty-out,7304,0,sh,pts/0 c\0
+1795374047781901,tty-out,7304,0,sh,pts/0 /\0
+1795374047781901,tty-out,7304,0,sh,pts/0 h\0
+1795374047781901,tty-out,7304,0,sh,pts/0 o\0
+1795374047781901,tty-out,7304,0,sh,pts/0 s\0
+1795374047781901,tty-out,7304,0,sh,pts/0 t\0
+1795374047781901,tty-out,7304,0,sh,pts/0 s\0
+1795374047781901,tty-out,7304,0,sh,pts/0  \0
+1795374047781901,tty-out,7304,0,sh,pts/0 >\0
+1795374047781901,tty-out,7304,0,sh,pts/0  \0
+1795374047781901,tty-out,7304,0,sh,pts/0 /\0
+1795374047781901,tty-out,7304,0,sh,pts/0 t\0
+1795374047781901,tty-out,7304,0,sh,pts/0 m\0
+1795374047781901,tty-out,7304,0,sh,pts/0 p\0
+1795374047781901,tty-out,7304,0,sh,pts/0 /\0
+1795374047781901,tty-out,7304,0,sh,pts/0 j\0
+1795374047781901,tty-out,7304,0,sh,pts/0 a\0
+1795374047781901,tty-out,7304,0,sh,pts/0 i\0
+1795374047781901,tty-out,7304,0,sh,pts/0 l\0
+1795374047781901,tty-out,7304,0,sh,pts/0 -\0
+1795374047781901,tty-out,7304,0,sh,pts/0 m\0
+1795374047781901,tty-out,7304,0,sh,pts/0 a\0
+1795374047781901,tty-out,7304,0,sh,pts/0 r\0
+1795374047781901,tty-out,7304,0,sh,pts/0 k\0
+1795374047781901,tty-out,7304,0,sh,pts/0 \n\0
+1795374047781901,open,7308,0,sh,/tmp/jail-mark
+1795374047781901,exec,7308,0,cat,cat /etc/hosts
+1795374047781901,open,7308,0,cat,/etc/libmap.conf
+1795374047781901,read,7308,0,cat,libmap.conf
+1795374047781901,open-failed,7308,0,cat,/usr/local/etc/libmap.d
+1795374047781901,open,7308,0,cat,/var/run/ld-elf.so.hints
+1795374047781901,read,7308,0,cat,ld-elf.so.hints
+1795374047781901,read,7308,0,cat,ld-elf.so.hints
+1795374047781901,open,7308,0,cat,/lib/libc.so.7
+1795374047781901,open,7308,0,cat,/lib/libsys.so.7
+1795374047781901,open,7308,0,cat,/usr/share/locale/C.UTF-8/LC_CTYPE
+1795374047781901,open,7308,0,cat,/etc/hosts
+1795374047781901,signal,7308,0,cat,20 to 7304 sh
+1795374047781901,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374048801904,tty-in,7303,0,sshd-session,99
+1795374048801904,tty-in,7303,0,sshd-session,97
+1795374048801904,tty-in,7303,0,sshd-session,116
+1795374048801904,tty-in,7303,0,sshd-session,32
+1795374048801904,tty-in,7303,0,sshd-session,47
+1795374048801904,tty-in,7303,0,sshd-session,110
+1795374048801904,tty-in,7303,0,sshd-session,111
+1795374048801904,tty-in,7303,0,sshd-session,110
+1795374048801904,tty-in,7303,0,sshd-session,101
+1795374048801904,tty-in,7303,0,sshd-session,120
+1795374048801904,tty-in,7303,0,sshd-session,105
+1795374048801904,tty-in,7303,0,sshd-session,115
+1795374048801904,tty-in,7303,0,sshd-session,116
+1795374048801904,tty-in,7303,0,sshd-session,101
+1795374048801904,tty-in,7303,0,sshd-session,110
+1795374048801904,tty-in,7303,0,sshd-session,116
+1795374048801904,tty-in,7303,0,sshd-session,45
+1795374048801904,tty-in,7303,0,sshd-session,102
+1795374048801904,tty-in,7303,0,sshd-session,105
+1795374048801904,tty-in,7303,0,sshd-session,108
+1795374048801904,tty-in,7303,0,sshd-session,101
+1795374048801904,tty-in,7303,0,sshd-session,10
+1795374048801904,tty-out,7304,0,sh,pts/0 c\0
+1795374048801904,tty-out,7304,0,sh,pts/0 a\0
+1795374048801904,tty-out,7304,0,sh,pts/0 t\0
+1795374048801904,tty-out,7304,0,sh,pts/0  \0
+1795374048801904,tty-out,7304,0,sh,pts/0 /\0
+1795374048801904,tty-out,7304,0,sh,pts/0 n\0
+1795374048801904,tty-out,7304,0,sh,pts/0 o\0
+1795374048801904,tty-out,7304,0,sh,pts/0 n\0
+1795374048801904,tty-out,7304,0,sh,pts/0 e\0
+1795374048801904,tty-out,7304,0,sh,pts/0 x\0
+1795374048801904,tty-out,7304,0,sh,pts/0 i\0
+1795374048801904,tty-out,7304,0,sh,pts/0 s\0
+1795374048801904,tty-out,7304,0,sh,pts/0 t\0
+1795374048801904,tty-out,7304,0,sh,pts/0 e\0
+1795374048801904,tty-out,7304,0,sh,pts/0 n\0
+1795374048801904,tty-out,7304,0,sh,pts/0 t\0
+1795374048801904,tty-out,7304,0,sh,pts/0 -\0
+1795374048801904,tty-out,7304,0,sh,pts/0 f\0
+1795374048801904,tty-out,7304,0,sh,pts/0 i\0
+1795374048801904,tty-out,7304,0,sh,pts/0 l\0
+1795374048801904,tty-out,7304,0,sh,pts/0 e\0
+1795374048801904,tty-out,7304,0,sh,pts/0 \n\0
+1795374048801904,exec,7309,0,cat,cat /nonexistent-file
+1795374048801904,open,7309,0,cat,/etc/libmap.conf
+1795374048801904,read,7309,0,cat,libmap.conf
+1795374048801904,open-failed,7309,0,cat,/usr/local/etc/libmap.d
+1795374048801904,open,7309,0,cat,/var/run/ld-elf.so.hints
+1795374048801904,read,7309,0,cat,ld-elf.so.hints
+1795374048801904,read,7309,0,cat,ld-elf.so.hints
+1795374048801904,open,7309,0,cat,/lib/libc.so.7
+1795374048801904,open,7309,0,cat,/lib/libsys.so.7
+1795374048811263,open,7309,0,cat,/usr/share/locale/C.UTF-8/LC_CTYPE
+1795374048811263,open-failed,7309,0,cat,/nonexistent-file
+1795374048811263,tty-out,7309,0,cat,pts/0 cat: \0
+1795374048811263,tty-out,7309,0,cat,pts/0 /nonexistent-file\0
+1795374048811263,tty-out,7309,0,cat,pts/0 : \0
+1795374048811263,tty-out,7309,0,cat,pts/0 No such file or directory\0
+1795374048811263,tty-out,7309,0,cat,pts/0 \n\0
+1795374048811263,signal,7309,0,cat,20 to 7304 sh
+1795374048811263,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374049831903,tty-in,7303,0,sshd-session,115
+1795374049831903,tty-in,7303,0,sshd-session,108
+1795374049831903,tty-in,7303,0,sshd-session,101
+1795374049831903,tty-in,7303,0,sshd-session,101
+1795374049831903,tty-in,7303,0,sshd-session,112
+1795374049831903,tty-in,7303,0,sshd-session,32
+1795374049831903,tty-in,7303,0,sshd-session,51
+1795374049831903,tty-in,7303,0,sshd-session,48
+1795374049831903,tty-in,7303,0,sshd-session,32
+1795374049831903,tty-in,7303,0,sshd-session,38
+1795374049831903,tty-in,7303,0,sshd-session,32
+1795374049831903,tty-in,7303,0,sshd-session,107
+1795374049831903,tty-in,7303,0,sshd-session,105
+1795374049831903,tty-in,7303,0,sshd-session,108
+1795374049831903,tty-in,7303,0,sshd-session,108
+1795374049831903,tty-in,7303,0,sshd-session,32
+1795374049831903,tty-in,7303,0,sshd-session,36
+1795374049831903,tty-in,7303,0,sshd-session,33
+1795374049831903,tty-in,7303,0,sshd-session,10
+1795374049831903,tty-out,7304,0,sh,pts/0 s\0
+1795374049831903,tty-out,7304,0,sh,pts/0 l\0
+1795374049831903,tty-out,7304,0,sh,pts/0 e\0
+1795374049831903,tty-out,7304,0,sh,pts/0 e\0
+1795374049831903,tty-out,7304,0,sh,pts/0 p\0
+1795374049831903,tty-out,7304,0,sh,pts/0  \0
+1795374049831903,tty-out,7304,0,sh,pts/0 3\0
+1795374049831903,tty-out,7304,0,sh,pts/0 0\0
+1795374049831903,tty-out,7304,0,sh,pts/0  \0
+1795374049831903,tty-out,7304,0,sh,pts/0 &\0
+1795374049831903,tty-out,7304,0,sh,pts/0  \0
+1795374049831903,tty-out,7304,0,sh,pts/0 k\0
+1795374049831903,tty-out,7304,0,sh,pts/0 i\0
+1795374049831903,tty-out,7304,0,sh,pts/0 l\0
+1795374049831903,tty-out,7304,0,sh,pts/0 l\0
+1795374049831903,tty-out,7304,0,sh,pts/0  \0
+1795374049831903,tty-out,7304,0,sh,pts/0 $\0
+1795374049831903,tty-out,7304,0,sh,pts/0 !\0
+1795374049831903,tty-out,7304,0,sh,pts/0 \n\0
+1795374049831903,signal,7304,0,sh,15 to 7310 sh
+1795374049831903,signal,7310,0,sh,20 to 7304 sh
+1795374049831903,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374050831908,tty-in,7303,0,sshd-session,101
+1795374050831908,tty-in,7303,0,sshd-session,110
+1795374050831908,tty-in,7303,0,sshd-session,118
+1795374050831908,tty-in,7303,0,sshd-session,32
+1795374050831908,tty-in,7303,0,sshd-session,83
+1795374050831908,tty-in,7303,0,sshd-session,69
+1795374050831908,tty-in,7303,0,sshd-session,67
+1795374050831908,tty-in,7303,0,sshd-session,82
+1795374050831908,tty-in,7303,0,sshd-session,69
+1795374050831908,tty-in,7303,0,sshd-session,84
+1795374050831908,tty-in,7303,0,sshd-session,61
+1795374050831908,tty-in,7303,0,sshd-session,120
+1795374050831908,tty-in,7303,0,sshd-session,121
+1795374050831908,tty-in,7303,0,sshd-session,122
+1795374050831908,tty-in,7303,0,sshd-session,32
+1795374050831908,tty-in,7303,0,sshd-session,47
+1795374050831908,tty-in,7303,0,sshd-session,98
+1795374050831908,tty-in,7303,0,sshd-session,105
+1795374050831908,tty-in,7303,0,sshd-session,110
+1795374050831908,tty-in,7303,0,sshd-session,47
+1795374050831908,tty-in,7303,0,sshd-session,101
+1795374050831908,tty-in,7303,0,sshd-session,99
+1795374050831908,tty-in,7303,0,sshd-session,104
+1795374050831908,tty-in,7303,0,sshd-session,111
+1795374050831908,tty-in,7303,0,sshd-session,32
+1795374050831908,tty-in,7303,0,sshd-session,104
+1795374050831908,tty-in,7303,0,sshd-session,101
+1795374050831908,tty-in,7303,0,sshd-session,108
+1795374050831908,tty-in,7303,0,sshd-session,108
+1795374050831908,tty-in,7303,0,sshd-session,111
+1795374050831908,tty-in,7303,0,sshd-session,10
+1795374050831908,tty-out,7304,0,sh,pts/0 e\0
+1795374050831908,tty-out,7304,0,sh,pts/0 n\0
+1795374050831908,tty-out,7304,0,sh,pts/0 v\0
+1795374050831908,tty-out,7304,0,sh,pts/0  \0
+1795374050831908,tty-out,7304,0,sh,pts/0 S\0
+1795374050831908,tty-out,7304,0,sh,pts/0 E\0
+1795374050831908,tty-out,7304,0,sh,pts/0 C\0
+1795374050831908,tty-out,7304,0,sh,pts/0 R\0
+1795374050831908,tty-out,7304,0,sh,pts/0 E\0
+1795374050831908,tty-out,7304,0,sh,pts/0 T\0
+1795374050831908,tty-out,7304,0,sh,pts/0 =\0
+1795374050831908,tty-out,7304,0,sh,pts/0 x\0
+1795374050831908,tty-out,7304,0,sh,pts/0 y\0
+1795374050841257,tty-out,7304,0,sh,pts/0 z\0
+1795374050841257,tty-out,7304,0,sh,pts/0  \0
+1795374050841257,tty-out,7304,0,sh,pts/0 /\0
+1795374050841257,tty-out,7304,0,sh,pts/0 b\0
+1795374050841257,tty-out,7304,0,sh,pts/0 i\0
+1795374050841257,tty-out,7304,0,sh,pts/0 n\0
+1795374050841257,tty-out,7304,0,sh,pts/0 /\0
+1795374050841257,tty-out,7304,0,sh,pts/0 e\0
+1795374050841257,tty-out,7304,0,sh,pts/0 c\0
+1795374050841257,tty-out,7304,0,sh,pts/0 h\0
+1795374050841257,tty-out,7304,0,sh,pts/0 o\0
+1795374050841257,tty-out,7304,0,sh,pts/0  \0
+1795374050841257,tty-out,7304,0,sh,pts/0 h\0
+1795374050841257,tty-out,7304,0,sh,pts/0 e\0
+1795374050841257,tty-out,7304,0,sh,pts/0 l\0
+1795374050841257,tty-out,7304,0,sh,pts/0 l\0
+1795374050841257,tty-out,7304,0,sh,pts/0 o\0
+1795374050841257,tty-out,7304,0,sh,pts/0 \n\0
+1795374050841257,exec,7311,0,env,env SECRET=xyz /bin/echo hello
+1795374050841257,open,7311,0,env,/etc/libmap.conf
+1795374050841257,read,7311,0,env,libmap.conf
+1795374050841257,open-failed,7311,0,env,/usr/local/etc/libmap.d
+1795374050841257,open,7311,0,env,/var/run/ld-elf.so.hints
+1795374050841257,read,7311,0,env,ld-elf.so.hints
+1795374050841257,read,7311,0,env,ld-elf.so.hints
+1795374050841257,open,7311,0,env,/lib/libutil.so.10
+1795374050841257,open,7311,0,env,/lib/libc.so.7
+1795374050841257,open,7311,0,env,/lib/libsys.so.7
+1795374050841257,exec,7311,0,echo,/bin/echo hello
+1795374050841257,open,7311,0,echo,/etc/libmap.conf
+1795374050841257,read,7311,0,echo,libmap.conf
+1795374050841257,open-failed,7311,0,echo,/usr/local/etc/libmap.d
+1795374050841257,open,7311,0,echo,/var/run/ld-elf.so.hints
+1795374050841257,read,7311,0,echo,ld-elf.so.hints
+1795374050841257,read,7311,0,echo,ld-elf.so.hints
+1795374050841257,open,7311,0,echo,/lib/libc.so.7
+1795374050841257,open,7311,0,echo,/lib/libsys.so.7
+1795374050841257,signal,7311,0,echo,20 to 7304 sh
+1795374050841257,tty-out,7304,0,sh,pts/0 [1]   Terminated              sleep 30\n\0
+1795374050841257,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374051861905,tty-in,7303,0,sshd-session,112
+1795374051861905,tty-in,7303,0,sshd-session,97
+1795374051861905,tty-in,7303,0,sshd-session,115
+1795374051861905,tty-in,7303,0,sshd-session,115
+1795374051861905,tty-in,7303,0,sshd-session,119
+1795374051861905,tty-in,7303,0,sshd-session,100
+1795374051861905,tty-in,7303,0,sshd-session,32
+1795374051861905,tty-in,7303,0,sshd-session,102
+1795374051861905,tty-in,7303,0,sshd-session,111
+1795374051861905,tty-in,7303,0,sshd-session,111
+1795374051861905,tty-in,7303,0,sshd-session,10
+1795374051861905,tty-out,7304,0,sh,pts/0 p\0
+1795374051861905,tty-out,7304,0,sh,pts/0 a\0
+1795374051861905,tty-out,7304,0,sh,pts/0 s\0
+1795374051861905,tty-out,7304,0,sh,pts/0 s\0
+1795374051861905,tty-out,7304,0,sh,pts/0 w\0
+1795374051861905,tty-out,7304,0,sh,pts/0 d\0
+1795374051861905,tty-out,7304,0,sh,pts/0  \0
+1795374051861905,tty-out,7304,0,sh,pts/0 f\0
+1795374051861905,tty-out,7304,0,sh,pts/0 o\0
+1795374051861905,tty-out,7304,0,sh,pts/0 o\0
+1795374051861905,tty-out,7304,0,sh,pts/0 \n\0
+1795374051861905,exec,7312,0,passwd,passwd foo
+1795374051861905,open,7312,0,passwd,/etc/libmap.conf
+1795374051861905,read,7312,0,passwd,libmap.conf
+1795374051861905,open-failed,7312,0,passwd,/usr/local/etc/libmap.d
+1795374051861905,open,7312,0,passwd,/var/run/ld-elf.so.hints
+1795374051861905,read,7312,0,passwd,ld-elf.so.hints
+1795374051861905,read,7312,0,passwd,ld-elf.so.hints
+1795374051861905,open-failed,7312,0,passwd,/lib/libpam.so.6
+1795374051861905,open,7312,0,passwd,/usr/lib/libpam.so.6
+1795374051861905,open,7312,0,passwd,/lib/libc.so.7
+1795374051861905,open,7312,0,passwd,/lib/libsys.so.7
+1795374051861905,open,7312,0,passwd,/etc/nsswitch.conf
+1795374051861905,read,7312,0,passwd,nsswitch.conf
+1795374051861905,read,7312,0,passwd,nsswitch.conf
+1795374051861905,read,7312,0,passwd,nsswitch.conf
+1795374051861905,read,7312,0,passwd,nsswitch.conf
+1795374051861905,open,7312,0,passwd,/etc/spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,read,7312,0,passwd,spwd.db
+1795374051861905,tty-out,7312,0,passwd,pts/0 Changing local password for foo\n\0
+1795374051861905,open,7312,0,passwd,/etc/pam.d/passwd
+1795374051861905,read,7312,0,passwd,passwd
+1795374051861905,open,7312,0,passwd,/usr/lib/pam_unix.so.6
+1795374051871264,open,7312,0,passwd,/lib/libutil.so.10
+1795374051871264,open,7312,0,passwd,/lib/libcrypt.so.5
+1795374051871264,open-failed,7312,0,passwd,/lib/libypclnt.so.4
+1795374051871264,open,7312,0,passwd,/usr/lib/libypclnt.so.4
+1795374051871264,open,7312,0,passwd,/lib/libmd.so.7
+1795374051871264,read,7312,0,passwd,passwd
+1795374051871264,open,7312,0,passwd,/etc/pam.d/other
+1795374051871264,read,7312,0,passwd,other
+1795374051871264,open,7312,0,passwd,/usr/lib/pam_unix.so.6
+1795374051871264,read,7312,0,passwd,other
+1795374051871264,open,7312,0,passwd,/etc/pam.d/other
+1795374051871264,read,7312,0,passwd,other
+1795374051871264,open,7312,0,passwd,/usr/lib/pam_nologin.so.6
+1795374051871264,open,7312,0,passwd,/usr/lib/pam_login_access.so.6
+1795374051871264,open,7312,0,passwd,/usr/lib/pam_unix.so.6
+1795374051871264,read,7312,0,passwd,other
+1795374051871264,open,7312,0,passwd,/etc/pam.d/other
+1795374051871264,read,7312,0,passwd,other
+1795374051871264,open,7312,0,passwd,/usr/lib/pam_permit.so.6
+1795374051871264,read,7312,0,passwd,other
+1795374051871264,open,7312,0,passwd,/etc/spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,open,7312,0,passwd,/etc/spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,read,7312,0,passwd,spwd.db
+1795374051871264,tty-out,7312,0,passwd,pts/0 New Password:\0
+1795374052891903,tty-in,7303,0,sshd-session,102
+1795374052891903,tty-in,7303,0,sshd-session,111
+1795374052891903,tty-in,7303,0,sshd-session,111
+1795374052891903,tty-in,7303,0,sshd-session,98
+1795374052891903,tty-in,7303,0,sshd-session,97
+1795374052891903,tty-in,7303,0,sshd-session,114
+1795374052891903,tty-in,7303,0,sshd-session,33
+1795374052891903,tty-in,7303,0,sshd-session,10
+1795374052891903,tty-out,7312,0,passwd,pts/0 \n\0
+1795374052891903,tty-out,7312,0,passwd,pts/0 Retype New Password:\0
+1795374053921905,tty-in,7303,0,sshd-session,102
+1795374053921905,tty-in,7303,0,sshd-session,111
+1795374053921905,tty-in,7303,0,sshd-session,111
+1795374053921905,tty-in,7303,0,sshd-session,98
+1795374053921905,tty-in,7303,0,sshd-session,97
+1795374053921905,tty-in,7303,0,sshd-session,114
+1795374053921905,tty-in,7303,0,sshd-session,33
+1795374053921905,tty-in,7303,0,sshd-session,10
+1795374053921905,tty-out,7312,0,passwd,pts/0 \n\0
+1795374053921905,open,7312,0,passwd,/etc/login.conf.db
+1795374053921905,read,7312,0,passwd,login.conf.db
+1795374053921905,read,7312,0,passwd,login.conf.db
+1795374053921905,open,7312,0,passwd,/etc/master.passwd
+1795374053921905,open,7312,0,passwd,/etc/pw.B9MiDU
+1795374053931262,read,7312,0,passwd,master.passwd
+1795374053931262,open,7312,0,passwd,/etc/shells
+1795374053931262,read,7312,0,passwd,shells
+1795374053931262,read,7312,0,passwd,shells
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,read,7312,0,passwd,master.passwd
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,read,7312,0,passwd,master.passwd
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,write,7312,0,passwd,?
+1795374053931262,read,7312,0,passwd,master.passwd
+1795374053931262,exec,7313,0,pwd_mkdb,pwd_mkdb -p -d /etc -u foo /etc/pw.B9MiDU
+1795374053931262,open,7313,0,pwd_mkdb,/etc/libmap.conf
+1795374053931262,read,7313,0,pwd_mkdb,libmap.conf
+1795374053931262,open-failed,7313,0,pwd_mkdb,/usr/local/etc/libmap.d
+1795374053931262,open,7313,0,pwd_mkdb,/var/run/ld-elf.so.hints
+1795374053931262,read,7313,0,pwd_mkdb,ld-elf.so.hints
+1795374053931262,read,7313,0,pwd_mkdb,ld-elf.so.hints
+1795374053931262,open,7313,0,pwd_mkdb,/lib/libc.so.7
+1795374053931262,open,7313,0,pwd_mkdb,/lib/libsys.so.7
+1795374053931262,open,7313,0,pwd_mkdb,/etc/pw.B9MiDU
+1795374053931262,open,7313,0,pwd_mkdb,/etc/pwd.db
+1795374053931262,open,7313,0,pwd_mkdb,/etc/pwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db
+1795374053931262,write,7313,0,pwd_mkdb,?
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db
+1795374053931262,open,7313,0,pwd_mkdb,/etc/pwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,open,7313,0,pwd_mkdb,/etc/spwd.db
+1795374053931262,open,7313,0,pwd_mkdb,/etc/spwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,spwd.db
+1795374053931262,write,7313,0,pwd_mkdb,?
+1795374053931262,read,7313,0,pwd_mkdb,spwd.db
+1795374053931262,open,7313,0,pwd_mkdb,/etc/spwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,open,7313,0,pwd_mkdb,/etc/pwd.db
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db
+1795374053931262,open,7313,0,pwd_mkdb,/etc/pw.B9MiDU.orig
+1795374053931262,read,7313,0,pwd_mkdb,pw.B9MiDU
+1795374053931262,read,7313,0,pwd_mkdb,pw.B9MiDU
+1795374053931262,read,7313,0,pwd_mkdb,pw.B9MiDU
+1795374053931262,open,7313,0,pwd_mkdb,/etc/nsswitch.conf
+1795374053931262,read,7313,0,pwd_mkdb,nsswitch.conf
+1795374053931262,read,7313,0,pwd_mkdb,nsswitch.conf
+1795374053931262,read,7313,0,pwd_mkdb,nsswitch.conf
+1795374053931262,read,7313,0,pwd_mkdb,nsswitch.conf
+1795374053931262,open,7313,0,pwd_mkdb,/etc/shells
+1795374053931262,read,7313,0,pwd_mkdb,shells
+1795374053931262,read,7313,0,pwd_mkdb,shells
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,read,7313,0,pwd_mkdb,pw.B9MiDU
+1795374053931262,write,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,pwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,spwd.db.tmp
+1795374053931262,write,7313,0,pwd_mkdb,?
+1795374053931262,open,7313,0,pwd_mkdb,/etc
+1795374053931262,open,7313,0,pwd_mkdb,/etc
+1795374053931262,open,7313,0,pwd_mkdb,/etc
+1795374053931262,open,7313,0,pwd_mkdb,/etc
+1795374053931262,signal,7313,0,pwd_mkdb,20 to 7312 passwd
+1795374053941261,signal,7312,0,passwd,20 to 7304 sh
+1795374053941261,tty-out,7304,0,sh,pts/0 root@j1:~ # \0
+1795374054941903,tty-in,7303,0,sshd-session,101
+1795374054941903,tty-in,7303,0,sshd-session,120
+1795374054941903,tty-in,7303,0,sshd-session,105
+1795374054941903,tty-in,7303,0,sshd-session,116
+1795374054941903,tty-in,7303,0,sshd-session,10
+1795374054941903,tty-out,7304,0,sh,pts/0 e\0
+1795374054941903,tty-out,7304,0,sh,pts/0 x\0
+1795374054941903,tty-out,7304,0,sh,pts/0 i\0
+1795374054941903,tty-out,7304,0,sh,pts/0 t\0
+1795374054941903,tty-out,7304,0,sh,pts/0 \n\0
+1795374054941903,open,7304,0,sh,/root/.sh_history.lfHHN7Yfd9
+1795374054941903,write,7304,0,sh,.sh_history
+1795374054941903,signal,7304,0,sh,1 to 7304 sh
+1795374054941903,signal,7304,0,sh,20 to 7303 sshd-session
+1795374054941903,open,7301,0,sshd-session,/etc/spwd.db
+1795374054941903,read,7301,0,sshd-session,spwd.db
+1795374054941903,read,7301,0,sshd-session,spwd.db
+1795374054941903,read,7301,0,sshd-session,spwd.db
+1795374054941903,open,7301,0,sshd-session,/var/run/utx.active
+1795374054941903,open,7301,0,sshd-session,/var/run/utx.active
+1795374054941903,read,7301,0,sshd-session,utx.active
+1795374054941903,write,7301,0,sshd-session,utx.active
+1795374054941903,read,7301,0,sshd-session,utx.active
+1795374054941903,open,7301,0,sshd-session,/var/log/utx.log
+1795374054941903,write,7301,0,sshd-session,utx.log
+1795374054941903,signal,7303,0,sshd-session,20 to 7301 sshd-session
+1795374054941903,signal,7301,0,sshd-session,20 to 7098 sshd

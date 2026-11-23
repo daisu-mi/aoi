@@ -1,0 +1,7 @@
+name? Hello, x
+sh: can't access tty; job control turned off
+# uid=0(root) gid=0(wheel) groups=0(wheel),5(operator)
+# FreeBSD 15.1-RELEASE-p7
+# # cat: /nonexistent-file: No such file or directory
+# # hello
+# 

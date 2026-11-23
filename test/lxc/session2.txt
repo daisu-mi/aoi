@@ -1,0 +1,4 @@
+name? Hello, x
+uid=0(root) gid=0(root) groups=0(root)
+Linux 7.0.0-43-generic
+hello

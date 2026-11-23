@@ -1,0 +1,993 @@
+139397150948037,0.0.0.0:0,open,9765,100000,systemd,/proc/182/cgroup
+139397151073594,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139397151228200,0.0.0.0:0,open,9765,100000,systemd,/proc/173/cgroup
+139397151283578,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139397151361191,0.0.0.0:0,open,9765,100000,systemd,/proc/184/cgroup
+139397151411578,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139398051769697,10.0.3.1:36164,exec,14771,100000,sh,sh\x00/root/vuln.sh\x00
+139398052212666,10.0.3.1:36164,open,14771,100000,sh,/etc/ld.so.cache
+139398052305615,10.0.3.1:36164,open,14771,100000,sh,/lib/x86_64-linux-gnu/libc.so.6
+139398052351984,10.0.3.1:36164,vfs_read,14771,100000,sh,libc.so.6
+139398052918382,10.0.3.1:36164,open,14771,100000,sh,/root/vuln.sh
+139398052994824,10.0.3.1:36164,vfs_read,14771,100000,sh,vuln.sh
+139399050714302,10.0.3.1:36164,exec,14772,100000,sh,sh\x00-i\x00
+139399051228776,10.0.3.1:36164,open,14772,100000,sh,/etc/ld.so.cache
+139399051338192,10.0.3.1:36164,open,14772,100000,sh,/lib/x86_64-linux-gnu/libc.so.6
+139399051376514,10.0.3.1:36164,vfs_read,14772,100000,sh,libc.so.6
+139399052188778,10.0.3.1:36164,open-failed,14772,100000,sh,/dev/tty
+139400050760687,10.0.3.1:36164,exec,14773,100000,id,id\x00
+139400051270966,10.0.3.1:36164,open,14773,100000,id,/etc/ld.so.cache
+139400051380898,10.0.3.1:36164,open,14773,100000,id,/lib/x86_64-linux-gnu/libselinux.so.1
+139400051425261,10.0.3.1:36164,vfs_read,14773,100000,id,libselinux.so.1
+139400051559747,10.0.3.1:36164,open,14773,100000,id,/lib/x86_64-linux-gnu/libc.so.6
+139400051621522,10.0.3.1:36164,vfs_read,14773,100000,id,libc.so.6
+139400051781114,10.0.3.1:36164,open,14773,100000,id,/lib/x86_64-linux-gnu/libpcre2-8.so.0
+139400051852311,10.0.3.1:36164,vfs_read,14773,100000,id,libpcre2-8.so.0.11.2
+139400053253018,10.0.3.1:36164,open,14773,100000,id,/proc/filesystems
+139400053340154,10.0.3.1:36164,vfs_read,14773,100000,id,filesystems
+139400053443100,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/locale-archive
+139400053543491,10.0.3.1:36164,open,14773,100000,id,/usr/share/locale/locale.alias
+139400053604435,10.0.3.1:36164,vfs_read,14773,100000,id,locale.alias
+139400053668701,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+139400053818244,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_IDENTIFICATION
+139400054153234,10.0.3.1:36164,open,14773,100000,id,/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+139400054256277,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+139400054312925,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_MEASUREMENT
+139400054380003,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_TELEPHONE
+139400054423013,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_TELEPHONE
+139400054485526,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_ADDRESS
+139400054529200,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_ADDRESS
+139400054591347,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_NAME
+139400054633520,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_NAME
+139400054698200,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_PAPER
+139400054913016,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_PAPER
+139400055108277,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_MESSAGES
+139400055189148,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_MESSAGES
+139400055241536,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+139400055311921,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_MONETARY
+139400055355362,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_MONETARY
+139400055426601,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_COLLATE
+139400055469303,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_COLLATE
+139400055532136,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_TIME
+139400055582831,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_TIME
+139400055645848,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_NUMERIC
+139400055686300,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_NUMERIC
+139400055760325,10.0.3.1:36164,open-failed,14773,100000,id,/usr/lib/locale/C.UTF-8/LC_CTYPE
+139400055798087,10.0.3.1:36164,open,14773,100000,id,/usr/lib/locale/C.utf8/LC_CTYPE
+139400056263193,10.0.3.1:36164,open,14773,100000,id,/etc/nsswitch.conf
+139400056335302,10.0.3.1:36164,vfs_read,14773,100000,id,nsswitch.conf
+139400056415981,10.0.3.1:36164,open,14773,100000,id,/etc/passwd
+139400056479004,10.0.3.1:36164,vfs_read,14773,100000,id,passwd
+139400056565156,10.0.3.1:36164,open,14773,100000,id,/etc/group
+139400056617670,10.0.3.1:36164,vfs_read,14773,100000,id,group
+139400056650701,10.0.3.1:36164,open,14773,100000,id,/proc/sys/kernel/ngroups_max
+139400056683120,10.0.3.1:36164,vfs_read,14773,100000,id,ngroups_max
+139400056707894,10.0.3.1:36164,open,14773,100000,id,/proc/sys/kernel/ngroups_max
+139400056762302,10.0.3.1:36164,open,14773,100000,id,/etc/group
+139401050918031,10.0.3.1:36164,exec,14774,100000,uname,uname\x00-sr\x00
+139401051419478,10.0.3.1:36164,open,14774,100000,uname,/etc/ld.so.cache
+139401051526042,10.0.3.1:36164,open,14774,100000,uname,/lib/x86_64-linux-gnu/libc.so.6
+139401051578260,10.0.3.1:36164,vfs_read,14774,100000,uname,libc.so.6
+139401052514246,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/locale-archive
+139401052653785,10.0.3.1:36164,open,14774,100000,uname,/usr/share/locale/locale.alias
+139401052729921,10.0.3.1:36164,vfs_read,14774,100000,uname,locale.alias
+139401052794038,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+139401052840965,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_IDENTIFICATION
+139401052918999,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+139401052996481,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+139401053211088,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_MEASUREMENT
+139401053297794,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_TELEPHONE
+139401053340769,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_TELEPHONE
+139401053405061,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_ADDRESS
+139401053446629,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_ADDRESS
+139401053505688,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_NAME
+139401053557946,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_NAME
+139401053622076,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_PAPER
+139401053658964,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_PAPER
+139401053723949,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_MESSAGES
+139401053762898,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_MESSAGES
+139401053809620,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+139401053869967,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_MONETARY
+139401053907618,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_MONETARY
+139401053965409,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_COLLATE
+139401054035440,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_COLLATE
+139401054111459,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_TIME
+139401054169889,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_TIME
+139401054229170,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_NUMERIC
+139401054267041,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_NUMERIC
+139401054324353,10.0.3.1:36164,open-failed,14774,100000,uname,/usr/lib/locale/C.UTF-8/LC_CTYPE
+139401054361964,10.0.3.1:36164,open,14774,100000,uname,/usr/lib/locale/C.utf8/LC_CTYPE
+139402050782034,10.0.3.1:36164,open,14772,100000,sh,/tmp/jail-mark
+139402051683086,10.0.3.1:36164,exec,14775,100000,cat,cat\x00/etc/hosts\x00
+139402052196392,10.0.3.1:36164,open,14775,100000,cat,/etc/ld.so.cache
+139402052291218,10.0.3.1:36164,open,14775,100000,cat,/lib/x86_64-linux-gnu/libc.so.6
+139402052334106,10.0.3.1:36164,vfs_read,14775,100000,cat,libc.so.6
+139402052884724,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/locale-archive
+139402053028573,10.0.3.1:36164,open,14775,100000,cat,/usr/share/locale/locale.alias
+139402053306938,10.0.3.1:36164,vfs_read,14775,100000,cat,locale.alias
+139402053435229,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+139402053547030,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_IDENTIFICATION
+139402053683639,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+139402053820831,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+139402053922374,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_MEASUREMENT
+139402054070833,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_TELEPHONE
+139402054198759,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_TELEPHONE
+139402054327893,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_ADDRESS
+139402054425548,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_ADDRESS
+139402054542517,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_NAME
+139402054639539,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_NAME
+139402054766227,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_PAPER
+139402054865421,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_PAPER
+139402054994495,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_MESSAGES
+139402055149091,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_MESSAGES
+139402055258619,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+139402055383742,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_MONETARY
+139402055482787,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_MONETARY
+139402055601242,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_COLLATE
+139402055698283,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_COLLATE
+139402055842730,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_TIME
+139402055944877,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_TIME
+139402056096089,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_NUMERIC
+139402056222526,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_NUMERIC
+139402056347148,10.0.3.1:36164,open-failed,14775,100000,cat,/usr/lib/locale/C.UTF-8/LC_CTYPE
+139402056445407,10.0.3.1:36164,open,14775,100000,cat,/usr/lib/locale/C.utf8/LC_CTYPE
+139402056602359,10.0.3.1:36164,open,14775,100000,cat,/etc/hosts
+139402902147641,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.events
+139402902539142,0.0.0.0:0,open,9994,100000,systemd-logind,/run/systemd/users/.#0395a42e7ca00caf7
+139402902570208,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.events
+139402902634049,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.freeze
+139402902720533,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.freeze
+139402902759187,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139402902831171,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.events
+139402902877478,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.freeze
+139402903108023,0.0.0.0:0,vfs_write,9994,100000,systemd-logind,.#0395a42e7ca00caf7
+139402903507009,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.freeze
+139402903571649,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.events
+139402903635023,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.events
+139402903683408,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.freeze
+139402903733196,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.freeze
+139402903778898,0.0.0.0:0,signal,9765,100000,systemd,15 to 14688 systemd
+139402903785077,0.0.0.0:0,signal,9765,100000,systemd,18 to 14688 systemd
+139402903988354,0.0.0.0:0,open,14688,100000,systemd,/proc/1/comm
+139402904174938,0.0.0.0:0,vfs_read,14688,100000,systemd,comm
+139402904724468,0.0.0.0:0,open,14688,100000,systemd,/usr/lib/systemd/user/exit.target
+139402904793865,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1/comm
+139402904811393,0.0.0.0:0,vfs_read,14688,100000,systemd,exit.target
+139402904854173,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,comm
+139402904920741,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1/cmdline
+139402904930655,0.0.0.0:0,open,14688,100000,systemd,/proc/self/status
+139402904962260,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,cmdline
+139402904976239,0.0.0.0:0,vfs_read,14688,100000,systemd,status
+139402905046463,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1/status
+139402905088562,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,status
+139402905184675,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1/attr/current
+139402905221979,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,current
+139402905249483,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1/sessionid
+139402905287765,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,sessionid
+139402905316591,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1/loginuid
+139402905352817,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,loginuid
+139402905379498,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1/cgroup
+139402905416368,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,cgroup
+139402905494081,0.0.0.0:0,open-failed,9900,100000,systemd-journal,/run/systemd/units/log-extra-fields:init.scope
+139402906175303,0.0.0.0:0,open,14688,100000,systemd,/usr/lib/systemd/user/systemd-exit.service
+139402906278611,0.0.0.0:0,vfs_read,14688,100000,systemd,systemd-exit.service
+139402906752552,0.0.0.0:0,vfs_write,10007,100102,rs:main Q:Reg,syslog
+139402908076931,0.0.0.0:0,open,9765,100000,systemd,/proc/1438/cgroup
+139402908614861,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/cgroup.events
+139402908700998,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139402909137747,0.0.0.0:0,vfs_read,14688,100000,systemd,cgroup.events
+139402909295014,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/cgroup.freeze
+139402909434824,0.0.0.0:0,vfs_write,14688,100000,systemd,cgroup.freeze
+139402909614590,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1438/comm
+139402909694915,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,comm
+139402909756710,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1438/cmdline
+139402909795093,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cgroup.events
+139402909816494,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,cmdline
+139402909859539,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1438/status
+139402909903725,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,status
+139402909968628,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1438/attr/current
+139402910089890,0.0.0.0:0,vfs_read,14688,100000,systemd,cgroup.events
+139402910236273,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cgroup.freeze
+139402910438296,0.0.0.0:0,vfs_write,14688,100000,systemd,cgroup.freeze
+139402910498606,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cgroup.procs
+139402910638173,0.0.0.0:0,vfs_read,14688,100000,systemd,cgroup.procs
+139402910728258,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket
+139402911191819,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cgroup.procs
+139402911467594,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cgroup.threads
+139402911596842,0.0.0.0:0,vfs_read,14688,100000,systemd,cgroup.threads
+139402911683700,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket
+139402911830366,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,current
+139402911881173,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1438/sessionid
+139402911949322,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,sessionid
+139402911979726,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1438/loginuid
+139402912063320,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,loginuid
+139402912096038,0.0.0.0:0,open,9900,100000,systemd-journal,/proc/1438/cgroup
+139402912162426,0.0.0.0:0,vfs_read,9900,100000,systemd-journal,cgroup
+139402912269454,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cgroup.procs
+139402912290678,0.0.0.0:0,open-failed,9900,100000,systemd-journal,/run/systemd/units/log-extra-fields:user@0.service
+139402912470788,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket
+139402912674102,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cpu.stat
+139402912801370,0.0.0.0:0,vfs_read,14688,100000,systemd,cpu.stat
+139402912911351,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket
+139402913399830,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/dbus.socket/cgroup.events
+139402914039282,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/credentials/dbus.socket
+139402914537351,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/credentials/dbus.socket
+139402914841741,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/cgroup.events
+139402915192951,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/cgroup.freeze
+139402915334102,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/cpu.stat
+139402915383840,0.0.0.0:0,vfs_read,14688,100000,systemd,cpu.stat
+139402915430544,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice
+139402915706770,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/app.slice/cgroup.events
+139402915927059,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.procs
+139402915973453,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service
+139402916577144,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.events
+139402916804470,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.procs
+139402916914543,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service
+139402917081212,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.procs
+139402917417544,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.threads
+139402917529660,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service
+139402917630275,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.procs
+139402917797141,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service
+139402917901542,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.procs
+139402918428499,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.threads
+139402918561949,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service
+139402918665093,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.procs
+139402918759466,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service
+139402918984167,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cpu.stat
+139402919165849,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service
+139402919287649,0.0.0.0:0,open-failed,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/systemd-exit.service/cgroup.events
+139402919672162,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/credentials/systemd-exit.service
+139402919854243,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/credentials/systemd-exit.service
+139402921985979,0.0.0.0:0,open,14688,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service
+139402922445656,0.0.0.0:0,open,14688,100000,systemd,init.scope
+139402922930142,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/systemd/generator
+139402923111679,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/systemd/generator
+139402923262419,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/systemd/generator.early
+139402923529449,0.0.0.0:0,open-failed,14688,100000,systemd,/run/user/0/systemd/generator.early
+139402923644590,0.0.0.0:0,open,14688,100000,systemd,/run/user/0/systemd/generator.late
+139402923764469,0.0.0.0:0,open,14688,100000,systemd,/run/user/0/systemd/generator.late
+139402923912102,0.0.0.0:0,open,14688,100000,systemd,xdg-desktop-autostart.target.wants
+139402927779504,0.0.0.0:0,open,9765,100000,systemd,/proc/1438/cgroup
+139402929844018,0.0.0.0:0,open,9765,100000,systemd,/proc/1438/comm
+139402929925741,0.0.0.0:0,vfs_read,9765,100000,systemd,comm
+139402929983528,0.0.0.0:0,open,9765,100000,systemd,/proc/1438/comm
+139402930112800,0.0.0.0:0,open,9765,100000,systemd,/proc/1438/cgroup
+139402930237463,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/memory.events
+139402930305658,0.0.0.0:0,vfs_read,9765,100000,systemd,memory.events
+139402930349629,0.0.0.0:0,open,14689,100000,(sd-pam),/etc/login.defs
+139402930400865,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.procs
+139402930445009,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.procs
+139402930476700,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.threads
+139402930518816,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.threads
+139402930556577,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service
+139402930603513,0.0.0.0:0,vfs_read,14689,100000,(sd-pam),login.defs
+139402930671530,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/init.scope/cgroup.procs
+139402930726282,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.procs
+139402930789088,0.0.0.0:0,open,9765,100000,systemd,/proc/1439/comm
+139402930840888,0.0.0.0:0,vfs_read,9765,100000,systemd,comm
+139402930883293,0.0.0.0:0,open,9765,100000,systemd,/proc/self/fdinfo/84
+139402930931407,0.0.0.0:0,vfs_read,9765,100000,systemd,84
+139402930975136,0.0.0.0:0,signal,9765,100000,systemd,9 to 14689 (sd-pam)
+139402931047125,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/init.scope/cgroup.procs
+139402931139061,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/init.scope/cgroup.threads
+139402931179115,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.threads
+139402931207209,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/init.scope
+139402933629089,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.events
+139402934153118,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.events
+139402934381550,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139402934546257,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139402934717051,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.events
+139402934868728,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.events
+139402935137709,0.0.0.0:0,open,9765,100000,systemd,/proc/1439/comm
+139402935344648,0.0.0.0:0,open,9765,100000,systemd,/proc/1439/comm
+139402935499279,0.0.0.0:0,open,9765,100000,systemd,/proc/1439/cgroup
+139402935741761,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139402935878855,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/memory.events
+139402936243320,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/memory.events
+139402936863219,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.procs
+139402937073375,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service
+139402937287595,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/init.scope/cgroup.procs
+139402937422573,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/init.scope
+139402937633033,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cpu.stat
+139402937741391,0.0.0.0:0,vfs_read,9765,100000,systemd,cpu.stat
+139402937847939,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service
+139402937998304,0.0.0.0:0,open,9765,100000,systemd,init.scope
+139402938582769,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user@0.service/cgroup.events
+139402939919269,0.0.0.0:0,open-failed,9765,100000,systemd,/run/credentials/user@0.service
+139402940486772,0.0.0.0:0,open-failed,9765,100000,systemd,/run/credentials/user@0.service
+139402942320761,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.subtree_control
+139402942621018,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.subtree_control
+139402942797130,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.min
+139402942910536,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.min
+139402942997905,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.low
+139402943418915,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.low
+139402943521368,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.high
+139402943619488,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.high
+139402943695496,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.max
+139402943788207,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.max
+139402943862231,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.swap.max
+139402943950959,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.swap.max
+139402944050699,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.zswap.max
+139402944176921,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.zswap.max
+139402944255836,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.oom.group
+139402944343845,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.oom.group
+139402944425455,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/threads-max
+139402944524059,0.0.0.0:0,vfs_read,9765,100000,systemd,threads-max
+139402944615352,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/pid_max
+139402944708015,0.0.0.0:0,vfs_read,9765,100000,systemd,pid_max
+139402944792686,0.0.0.0:0,open,9765,100000,systemd,/proc/1/cgroup
+139402944906112,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139402945027063,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/pids.max
+139402945145232,0.0.0.0:0,vfs_read,9765,100000,systemd,pids.max
+139402945243350,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/pids.max
+139402945334258,0.0.0.0:0,vfs_write,9765,100000,systemd,pids.max
+139402945558877,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.subtree_control
+139402945667405,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.subtree_control
+139402950189322,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.min
+139402950515891,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.min
+139402950695273,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.low
+139402950814827,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.low
+139402951178650,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.high
+139402951296937,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.high
+139402951378676,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.max
+139402951477942,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.max
+139402951552231,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.swap.max
+139402951802064,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.swap.max
+139402951957405,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.zswap.max
+139402952328897,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.zswap.max
+139402952494254,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.oom.group
+139402952597596,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.oom.group
+139402952674532,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/pids.max
+139402952916626,0.0.0.0:0,vfs_write,9765,100000,systemd,pids.max
+139402953580656,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/cgroup.subtree_control
+139402953717840,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.subtree_control
+139402954109687,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/memory.min
+139402954252630,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.min
+139402954340561,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/memory.low
+139402954599346,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.low
+139402954647061,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/memory.high
+139402954690260,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.high
+139402954713941,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/memory.max
+139402954746830,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.max
+139402954769532,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/memory.swap.max
+139402954806853,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.swap.max
+139402954830176,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/memory.zswap.max
+139402954863906,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.zswap.max
+139402954886162,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/memory.oom.group
+139402954921461,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.oom.group
+139402954945877,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/system.slice/pids.max
+139402954983563,0.0.0.0:0,vfs_write,9765,100000,systemd,pids.max
+139402955178234,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/cgroup.subtree_control
+139402955221753,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.subtree_control
+139402955275557,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.min
+139402955313775,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.min
+139402955338821,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.low
+139402955371533,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.low
+139402955394900,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.high
+139402955429314,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.high
+139402955466535,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.max
+139402955507505,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.max
+139402955548473,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.swap.max
+139402955581695,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.swap.max
+139402955604506,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.zswap.max
+139402955638755,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.zswap.max
+139402955660722,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.oom.group
+139402955694263,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.oom.group
+139402955718787,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/threads-max
+139402955796155,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/pid_max
+139402955861058,0.0.0.0:0,open,9765,100000,systemd,/proc/1/cgroup
+139402955940715,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/pids.max
+139402956036930,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/pids.max
+139402956375107,0.0.0.0:0,vfs_write,9765,100000,systemd,pids.max
+139402960195085,0.0.0.0:0,open,9765,100000,systemd,/proc/self/cgroup
+139402960624958,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.pressure
+139402960781776,0.0.0.0:0,open,9765,100000,systemd,/proc/self/fd/42
+139402961232624,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/cgroup.subtree_control
+139402961368309,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.subtree_control
+139402961655988,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/memory.min
+139402961835858,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.min
+139402961936173,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/memory.low
+139402962243156,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.low
+139402962406274,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/memory.high
+139402962507484,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.high
+139402962584947,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/memory.max
+139402962674005,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.max
+139402962969286,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/memory.swap.max
+139402963142151,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.swap.max
+139402963233390,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/memory.zswap.max
+139402963482963,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.zswap.max
+139402963634506,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/memory.oom.group
+139402963743656,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.oom.group
+139402963822733,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/threads-max
+139402964188741,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/pid_max
+139402964283896,0.0.0.0:0,open,9765,100000,systemd,/proc/1/cgroup
+139402964362261,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/pids.max
+139402964434674,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/dev-mqueue.mount/pids.max
+139402964483340,0.0.0.0:0,vfs_write,9765,100000,systemd,pids.max
+139402964742315,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/cgroup.subtree_control
+139402964789500,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.subtree_control
+139402971261797,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.pressure
+139402971829049,0.0.0.0:0,open,9765,100000,systemd,/proc/1477/comm
+139402971907003,0.0.0.0:0,vfs_read,9765,100000,systemd,comm
+139402971961228,0.0.0.0:0,open,9765,100000,systemd,/proc/1477/comm
+139402972080359,0.0.0.0:0,open,9765,100000,systemd,/proc/1477/cgroup
+139402972146516,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139402972205596,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.events
+139402972258318,0.0.0.0:0,vfs_read,9765,100000,systemd,memory.events
+139402972367551,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.events
+139402972429765,0.0.0.0:0,vfs_read,9765,100000,systemd,memory.events
+139402972483470,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.events
+139402972526210,0.0.0.0:0,vfs_read,9765,100000,systemd,memory.events
+139402973858115,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.subtree_control
+139402973950678,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.subtree_control
+139402974209922,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.min
+139402974311162,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.min
+139402974401423,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.low
+139402974489214,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.low
+139402974567164,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.high
+139402974649776,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.high
+139402974725153,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.max
+139402974815164,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.max
+139402974890531,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.swap.max
+139402974982152,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.swap.max
+139402975094276,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.zswap.max
+139402975198672,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.zswap.max
+139402975275824,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.oom.group
+139402975368014,0.0.0.0:0,vfs_write,9765,100000,systemd,memory.oom.group
+139402975437362,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/threads-max
+139402975557592,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/pid_max
+139402975687792,0.0.0.0:0,open,9765,100000,systemd,/proc/1/cgroup
+139402975807147,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/pids.max
+139402975937702,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/pids.max
+139402976049962,0.0.0.0:0,vfs_write,9765,100000,systemd,pids.max
+139402976335366,0.0.0.0:0,vfs_write,9765,100000,systemd,memfd:sd-executor-state
+139402976815802,0.0.0.0:0,exec,14778,100000,9,/usr/lib/systemd/systemd-executor\x00--deserialize\x0042\x00--log-level\x00info\x00--log-target\x00journal\x00
+139402977095047,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.procs
+139402977247920,0.0.0.0:0,vfs_write,9765,100000,systemd,cgroup.procs
+139402977613330,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/glibc-hwcaps/x86-64-v4/libsystemd-core-255.so
+139402977724440,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/glibc-hwcaps/x86-64-v3/libsystemd-core-255.so
+139402977812472,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/glibc-hwcaps/x86-64-v2/libsystemd-core-255.so
+139402977898573,0.0.0.0:0,open,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/libsystemd-core-255.so
+139402977986881,0.0.0.0:0,vfs_read,14778,100000,9,libsystemd-core-255.so
+139402978211306,0.0.0.0:0,open,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/libsystemd-shared-255.so
+139402978308700,0.0.0.0:0,vfs_read,14778,100000,9,libsystemd-shared-255.so
+139402978487505,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/libapparmor.so.1
+139402978595918,0.0.0.0:0,open,14778,100000,9,/etc/ld.so.cache
+139402978708582,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libapparmor.so.1
+139402978787598,0.0.0.0:0,vfs_read,14778,100000,9,libapparmor.so.1.17.2
+139402978933393,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/libpam.so.0
+139402979079022,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libpam.so.0
+139402979180522,0.0.0.0:0,vfs_read,14778,100000,9,libpam.so.0.85.1
+139402979324191,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/libseccomp.so.2
+139402979429427,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libseccomp.so.2
+139402979531773,0.0.0.0:0,vfs_read,14778,100000,9,libseccomp.so.2.5.5
+139402979672537,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/libselinux.so.1
+139402979778199,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libselinux.so.1
+139402979856168,0.0.0.0:0,vfs_read,14778,100000,9,libselinux.so.1
+139402980006758,0.0.0.0:0,open-failed,14778,100000,9,/usr/lib/x86_64-linux-gnu/systemd/libc.so.6
+139402980507093,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libc.so.6
+139402981050386,0.0.0.0:0,vfs_read,14778,100000,9,libc.so.6
+139402981328312,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libaudit.so.1
+139402981922727,0.0.0.0:0,vfs_read,14778,100000,9,libaudit.so.1.0.0
+139402982189834,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libkmod.so.2
+139402982463629,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.events
+139402982707826,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139402982793264,0.0.0.0:0,vfs_read,14778,100000,9,libkmod.so.2.4.1
+139402982968402,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libm.so.6
+139402983157355,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.events
+139402983257602,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.events
+139402983319569,0.0.0.0:0,vfs_read,14778,100000,9,libm.so.6
+139402983494890,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libmount.so.1
+139402983587208,0.0.0.0:0,vfs_read,14778,100000,9,libmount.so.1.1.0
+139402983740440,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libacl.so.1
+139402983821766,0.0.0.0:0,vfs_read,14778,100000,9,libacl.so.1.1.2302
+139402983955023,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libblkid.so.1
+139402984059564,0.0.0.0:0,vfs_read,14778,100000,9,libblkid.so.1.1.0
+139402984215493,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libcap.so.2
+139402984301198,0.0.0.0:0,vfs_read,14778,100000,9,libcap.so.2.66
+139402984432241,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libcrypt.so.1
+139402984510529,0.0.0.0:0,vfs_read,14778,100000,9,libcrypt.so.1.1.0
+139402984661741,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libgcrypt.so.20
+139402984750982,0.0.0.0:0,vfs_read,14778,100000,9,libgcrypt.so.20.4.3
+139402984886587,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/liblz4.so.1
+139402984967397,0.0.0.0:0,vfs_read,14778,100000,9,liblz4.so.1.9.4
+139402985181937,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libcrypto.so.3
+139402985269298,0.0.0.0:0,vfs_read,14778,100000,9,libcrypto.so.3
+139402985425873,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/liblzma.so.5
+139402985516410,0.0.0.0:0,vfs_read,14778,100000,9,liblzma.so.5.4.5
+139402985658393,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libzstd.so.1
+139402985736661,0.0.0.0:0,vfs_read,14778,100000,9,libzstd.so.1.5.5
+139402985883620,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libpcre2-8.so.0
+139402985972242,0.0.0.0:0,vfs_read,14778,100000,9,libpcre2-8.so.0.11.2
+139402986146051,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libcap-ng.so.0
+139402986233252,0.0.0.0:0,vfs_read,14778,100000,9,libcap-ng.so.0.0.0
+139402986400277,0.0.0.0:0,open,14778,100000,9,/lib/x86_64-linux-gnu/libgpg-error.so.0
+139402986481513,0.0.0.0:0,vfs_read,14778,100000,9,libgpg-error.so.0.34.0
+139402990771664,0.0.0.0:0,open,14778,100000,9,/proc/sys/kernel/cap_last_cap
+139402990896043,0.0.0.0:0,vfs_read,14778,100000,9,cap_last_cap
+139402991157625,0.0.0.0:0,open,14778,100000,9,/proc/filesystems
+139402991251961,0.0.0.0:0,vfs_read,14778,100000,9,filesystems
+139402991460238,0.0.0.0:0,open,14778,100000,9,/dev/console
+139402991640319,0.0.0.0:0,open,14778,100000,9,/proc/self/fd
+139402991826259,0.0.0.0:0,vfs_read,14778,100000,9,memfd:sd-executor-state
+139402992106661,0.0.0.0:0,open,14778,100000,9,/proc/sys/fs/nr_open
+139402992234966,0.0.0.0:0,vfs_read,14778,100000,9,nr_open
+139402992622370,0.0.0.0:0,open,14778,100000,(time-dir),/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.procs
+139402992707613,0.0.0.0:0,vfs_write,14778,100000,(time-dir),cgroup.procs
+139402997089846,0.0.0.0:0,open,14778,100000,(time-dir),/dev/null
+139402997390122,0.0.0.0:0,open,9900,100000,systemd-journal,/run/systemd/journal/streams/.#10:2620736d6722df07da5963
+139402997506061,0.0.0.0:0,open,14778,100000,(time-dir),/proc/pressure/cpu
+139402997585221,0.0.0.0:0,vfs_write,9900,100000,systemd-journal,.#10:2620736d6722df07da5963
+139402997714239,0.0.0.0:0,vfs_read,14778,100000,(time-dir),cpu
+139402997780247,0.0.0.0:0,open,14778,100000,(time-dir),/proc/pressure/io
+139402997892808,0.0.0.0:0,open,9765,100000,systemd,/proc/111/cgroup
+139402997963256,0.0.0.0:0,vfs_read,14778,100000,(time-dir),io
+139402998039334,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139402998097790,0.0.0.0:0,open,14778,100000,(time-dir),/proc/pressure/memory
+139402998251192,0.0.0.0:0,vfs_read,14778,100000,(time-dir),memory
+139402998335882,0.0.0.0:0,open,14778,100000,(time-dir),/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.pressure
+139402998416652,0.0.0.0:0,open,14778,100000,(time-dir),/
+139402998491884,0.0.0.0:0,open,14778,100000,(time-dir),/
+139402998562398,0.0.0.0:0,open,14778,100000,(time-dir),/
+139402998625070,0.0.0.0:0,open,14778,100000,(time-dir),usr
+139402998695037,0.0.0.0:0,open,14778,100000,(time-dir),bin
+139402998757328,0.0.0.0:0,open,14778,100000,(time-dir),bash
+139402998910071,0.0.0.0:0,open,14778,100000,(time-dir),/sys/module/apparmor/parameters/enabled
+139402999018485,0.0.0.0:0,vfs_read,14778,100000,(time-dir),enabled
+139402999087746,0.0.0.0:0,open,14778,100000,(time-dir),/usr/lib/systemd/systemd-user-runtime-dir
+139402999210503,0.0.0.0:0,open,14778,100000,(time-dir),/proc/sys/kernel/cap_last_cap
+139403000032745,0.0.0.0:0,exec,14778,100000,systemd-user-ru,/usr/lib/systemd/systemd-user-runtime-dir\x00stop\x000\x00
+139403000418190,0.0.0.0:0,open-failed,14778,100000,systemd-user-ru,/usr/lib/x86_64-linux-gnu/systemd/glibc-hwcaps/x86-64-v4/libsystemd-shared-255.so
+139403000517329,0.0.0.0:0,open-failed,14778,100000,systemd-user-ru,/usr/lib/x86_64-linux-gnu/systemd/glibc-hwcaps/x86-64-v3/libsystemd-shared-255.so
+139403000578427,0.0.0.0:0,open-failed,14778,100000,systemd-user-ru,/usr/lib/x86_64-linux-gnu/systemd/glibc-hwcaps/x86-64-v2/libsystemd-shared-255.so
+139403000654458,0.0.0.0:0,open,14778,100000,systemd-user-ru,/usr/lib/x86_64-linux-gnu/systemd/libsystemd-shared-255.so
+139403000813395,0.0.0.0:0,open-failed,14778,100000,systemd-user-ru,/usr/lib/x86_64-linux-gnu/systemd/libc.so.6
+139403000892164,0.0.0.0:0,open,14778,100000,systemd-user-ru,/etc/ld.so.cache
+139403000986518,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libc.so.6
+139403001265977,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libacl.so.1
+139403001502920,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libblkid.so.1
+139403001658954,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libcap.so.2
+139403001844661,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libcrypt.so.1
+139403002080826,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libgcrypt.so.20
+139403002311076,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libkmod.so.2
+139403002473268,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/liblz4.so.1
+139403002626198,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libmount.so.1
+139403002805774,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libcrypto.so.3
+139403002971869,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libpam.so.0
+139403003242949,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libseccomp.so.2
+139403003403196,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libselinux.so.1
+139403003567713,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/liblzma.so.5
+139403003735807,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libzstd.so.1
+139403003879715,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libm.so.6
+139403004083491,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libgpg-error.so.0
+139403004297069,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libaudit.so.1
+139403004459375,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libpcre2-8.so.0
+139403004633821,0.0.0.0:0,open,14778,100000,systemd-user-ru,/lib/x86_64-linux-gnu/libcap-ng.so.0
+139403007109306,0.0.0.0:0,open,14778,100000,systemd-user-ru,/proc/sys/kernel/cap_last_cap
+139403007374756,0.0.0.0:0,open,14778,100000,systemd-user-ru,/proc/filesystems
+139403007687079,0.0.0.0:0,open-failed,14778,100000,systemd-user-ru,/run/systemd/efivars/SystemdOptions-8cf2644b-4b0b-428f-9387-6d876050dc67
+139403007787219,0.0.0.0:0,open,14778,100000,systemd-user-ru,/proc/sys/kernel/osrelease
+139403007856640,0.0.0.0:0,vfs_read,14778,100000,systemd-user-ru,osrelease
+139403007925840,0.0.0.0:0,open,14778,100000,systemd-user-ru,/proc/self/status
+139403007995585,0.0.0.0:0,vfs_read,14778,100000,systemd-user-ru,status
+139403008094523,0.0.0.0:0,open-failed,14778,100000,systemd-user-ru,/run/host/container-manager
+139403008196721,0.0.0.0:0,open,14778,100000,systemd-user-ru,/run/systemd/container
+139403008258506,0.0.0.0:0,vfs_read,14778,100000,systemd-user-ru,container
+139403008323908,0.0.0.0:0,open,14778,100000,systemd-user-ru,/proc/1/cmdline
+139403008386762,0.0.0.0:0,vfs_read,14778,100000,systemd-user-ru,cmdline
+139403008473103,0.0.0.0:0,open,14778,100000,systemd-user-ru,/run/user/0
+139403008559755,0.0.0.0:0,open,14778,100000,systemd-user-ru,/run/user/0
+139403008673427,0.0.0.0:0,open,14778,100000,systemd-user-ru,systemd
+139403008796127,0.0.0.0:0,open,14778,100000,systemd-user-ru,units
+139403008894578,0.0.0.0:0,open,14778,100000,systemd-user-ru,propagate
+139403008975720,0.0.0.0:0,open,14778,100000,systemd-user-ru,.os-release-stage
+139403009200529,0.0.0.0:0,open,14778,100000,systemd-user-ru,inaccessible
+139403009315029,0.0.0.0:0,open,14778,100000,systemd-user-ru,dir
+139403009554402,0.0.0.0:0,open,9765,100000,systemd,/proc/self/mountinfo
+139403009670693,0.0.0.0:0,open,14778,100000,systemd-user-ru,/run/user/0
+139403009748706,0.0.0.0:0,vfs_read,9765,100000,systemd,mountinfo
+139403009862621,0.0.0.0:0,open,14778,100000,systemd-user-ru,/run/user/0
+139403011134984,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/system.slice/run-user-0.mount/cgroup.procs
+139403011567158,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/system.slice/run-user-0.mount
+139403011689977,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/system.slice/run-user-0.mount/cpu.stat
+139403011765100,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/system.slice/run-user-0.mount
+139403011835463,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/system.slice/run-user-0.mount/cgroup.events
+139403011916770,0.0.0.0:0,open-failed,9765,100000,systemd,/run/credentials/run-user-0.mount
+139403011976062,0.0.0.0:0,open-failed,9765,100000,systemd,/run/credentials/run-user-0.mount
+139403012660749,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.events
+139403013200698,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.events
+139403013345491,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139403013443358,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139403013543218,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.events
+139403013636295,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.events
+139403013749235,0.0.0.0:0,open,9765,100000,systemd,/proc/1478/comm
+139403013818712,0.0.0.0:0,vfs_read,9765,100000,systemd,comm
+139403013896082,0.0.0.0:0,open,9765,100000,systemd,/proc/1478/comm
+139403013992211,0.0.0.0:0,open,9765,100000,systemd,/proc/1478/cgroup
+139403014078721,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139403014175163,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/memory.events
+139403014246067,0.0.0.0:0,vfs_read,9765,100000,systemd,memory.events
+139403014339080,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.procs
+139403014417721,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.procs
+139403014474976,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service
+139403014593614,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.procs
+139403014690128,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.threads
+139403014764985,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup.threads
+139403014818947,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service
+139403014913719,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.procs
+139403015038030,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service
+139403015155401,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.procs
+139403015242963,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.threads
+139403015328856,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service
+139403015639253,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.procs
+139403015761483,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service
+139403015879450,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cpu.stat
+139403015950870,0.0.0.0:0,vfs_read,9765,100000,systemd,cpu.stat
+139403016043673,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service
+139403016286515,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/user-runtime-dir@0.service/cgroup.events
+139403016919434,0.0.0.0:0,open-failed,9765,100000,systemd,/run/credentials/user-runtime-dir@0.service
+139403017337664,0.0.0.0:0,open-failed,9765,100000,systemd,/run/credentials/user-runtime-dir@0.service
+139403018044024,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.subtree_control
+139403018495553,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.min
+139403018609460,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.low
+139403018692689,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.high
+139403018778204,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.max
+139403018850430,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.swap.max
+139403018932812,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.zswap.max
+139403019024014,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.oom.group
+139403019099442,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/threads-max
+139403019212747,0.0.0.0:0,open,9765,100000,systemd,/proc/sys/kernel/pid_max
+139403019292764,0.0.0.0:0,open,9765,100000,systemd,/proc/1/cgroup
+139403019377008,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/pids.max
+139403019461014,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/pids.max
+139403019626433,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/memory.events
+139403019742054,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.events
+139403020419907,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.events
+139403020942492,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.freeze
+139403021197300,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139403021317725,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.freeze
+139403021525921,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cpu.stat
+139403021734607,0.0.0.0:0,vfs_read,9765,100000,systemd,cpu.stat
+139403021814651,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice
+139403022051749,0.0.0.0:0,open-failed,9765,100000,systemd,/sys/fs/cgroup/user.slice/user-0.slice/cgroup.events
+139403022543437,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/cgroup.subtree_control
+139403023225518,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.min
+139403023284210,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.low
+139403023325963,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.high
+139403023359140,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.max
+139403023392073,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.swap.max
+139403023432289,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.zswap.max
+139403023464057,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/memory.oom.group
+139403023505204,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/user.slice/pids.max
+139403023635148,0.0.0.0:0,open,9765,100000,systemd,/proc/1479/comm
+139403023662871,0.0.0.0:0,vfs_read,9765,100000,systemd,comm
+139403023694646,0.0.0.0:0,open,9765,100000,systemd,/proc/1479/comm
+139403023735314,0.0.0.0:0,open,9765,100000,systemd,/proc/1479/cgroup
+139403023756891,0.0.0.0:0,vfs_read,9765,100000,systemd,cgroup
+139403023783895,0.0.0.0:0,open,9765,100000,systemd,/sys/fs/cgroup/init.scope/memory.events
+139403051270566,10.0.3.1:36164,exec,14780,100000,cat,cat\x00/nonexistent-file\x00
+139403051843889,10.0.3.1:36164,open,14780,100000,cat,/etc/ld.so.cache
+139403051944540,10.0.3.1:36164,open,14780,100000,cat,/lib/x86_64-linux-gnu/libc.so.6
+139403051983231,10.0.3.1:36164,vfs_read,14780,100000,cat,libc.so.6
+139403052586696,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/locale-archive
+139403052694123,10.0.3.1:36164,open,14780,100000,cat,/usr/share/locale/locale.alias
+139403052749022,10.0.3.1:36164,vfs_read,14780,100000,cat,locale.alias
+139403052811633,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+139403052851804,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_IDENTIFICATION
+139403052926177,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+139403052994952,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+139403053328929,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_MEASUREMENT
+139403053463719,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_TELEPHONE
+139403053579697,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_TELEPHONE
+139403053698953,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_ADDRESS
+139403053791726,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_ADDRESS
+139403053913588,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_NAME
+139403054028703,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_NAME
+139403054178145,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_PAPER
+139403054277852,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_PAPER
+139403054407983,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_MESSAGES
+139403054515111,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_MESSAGES
+139403054614811,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+139403054743338,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_MONETARY
+139403054836409,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_MONETARY
+139403055137259,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_COLLATE
+139403055251262,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_COLLATE
+139403055388619,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_TIME
+139403055486723,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_TIME
+139403055615706,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_NUMERIC
+139403055720445,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_NUMERIC
+139403055839556,10.0.3.1:36164,open-failed,14780,100000,cat,/usr/lib/locale/C.UTF-8/LC_CTYPE
+139403055932119,10.0.3.1:36164,open,14780,100000,cat,/usr/lib/locale/C.utf8/LC_CTYPE
+139403056136320,10.0.3.1:36164,open-failed,14780,100000,cat,/nonexistent-file
+139404051426166,10.0.3.1:36164,signal,14772,100000,sh,15 to 14781 sh
+139404051562484,10.0.3.1:36164,open,14781,100000,sh,/dev/null
+139404052138847,10.0.3.1:36164,exec,14781,100000,sleep,sleep\x0030\x00
+139404052570038,10.0.3.1:36164,open,14781,100000,sleep,/etc/ld.so.cache
+139404052668448,10.0.3.1:36164,open,14781,100000,sleep,/lib/x86_64-linux-gnu/libc.so.6
+139404052707027,10.0.3.1:36164,vfs_read,14781,100000,sleep,libc.so.6
+139404053321751,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/locale-archive
+139404053452358,10.0.3.1:36164,open,14781,100000,sleep,/usr/share/locale/locale.alias
+139404053524747,10.0.3.1:36164,vfs_read,14781,100000,sleep,locale.alias
+139404053600747,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+139404053655170,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_IDENTIFICATION
+139404053738180,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+139404053818698,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+139404053861629,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_MEASUREMENT
+139404053925128,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_TELEPHONE
+139404053976990,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_TELEPHONE
+139404054065555,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_ADDRESS
+139404054150333,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_ADDRESS
+139404054215157,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_NAME
+139404054257651,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_NAME
+139404054326338,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_PAPER
+139404054363187,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_PAPER
+139404054427820,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_MESSAGES
+139404054466338,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_MESSAGES
+139404054513356,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+139404054571222,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_MONETARY
+139404054608973,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_MONETARY
+139404054666123,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_COLLATE
+139404054716288,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_COLLATE
+139404054790053,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_TIME
+139404054833088,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_TIME
+139404054892855,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_NUMERIC
+139404054928405,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_NUMERIC
+139404054986486,10.0.3.1:36164,open-failed,14781,100000,sleep,/usr/lib/locale/C.UTF-8/LC_CTYPE
+139404055056587,10.0.3.1:36164,open,14781,100000,sleep,/usr/lib/locale/C.utf8/LC_CTYPE
+139405054318568,10.0.3.1:36164,exec,14782,100000,env,env\x00SECRET=xyz\x00/bin/echo\x00hello\x00
+139405055032975,10.0.3.1:36164,open,14782,100000,env,/etc/ld.so.cache
+139405055188237,10.0.3.1:36164,open,14782,100000,env,/lib/x86_64-linux-gnu/libc.so.6
+139405055233924,10.0.3.1:36164,vfs_read,14782,100000,env,libc.so.6
+139405056746226,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/locale-archive
+139405056922539,10.0.3.1:36164,open,14782,100000,env,/usr/share/locale/locale.alias
+139405057059874,10.0.3.1:36164,vfs_read,14782,100000,env,locale.alias
+139405057193395,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+139405057253953,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_IDENTIFICATION
+139405057361677,10.0.3.1:36164,open,14782,100000,env,/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+139405057452815,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+139405057502105,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_MEASUREMENT
+139405057575530,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_TELEPHONE
+139405057630316,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_TELEPHONE
+139405057691768,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_ADDRESS
+139405057755848,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_ADDRESS
+139405057818479,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_NAME
+139405057864181,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_NAME
+139405057937663,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_PAPER
+139405057988959,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_PAPER
+139405058374456,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_MESSAGES
+139405058524411,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_MESSAGES
+139405058600899,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+139405058682435,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_MONETARY
+139405058726578,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_MONETARY
+139405058789146,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_COLLATE
+139405058839178,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_COLLATE
+139405058921346,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_TIME
+139405058972485,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_TIME
+139405059084302,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_NUMERIC
+139405059146309,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_NUMERIC
+139405059207827,10.0.3.1:36164,open-failed,14782,100000,env,/usr/lib/locale/C.UTF-8/LC_CTYPE
+139405059254480,10.0.3.1:36164,open,14782,100000,env,/usr/lib/locale/C.utf8/LC_CTYPE
+139405059858626,10.0.3.1:36164,exec,14782,100000,echo,/bin/echo\x00hello\x00
+139405060641116,10.0.3.1:36164,open,14782,100000,echo,/etc/ld.so.cache
+139405060939868,10.0.3.1:36164,open,14782,100000,echo,/lib/x86_64-linux-gnu/libc.so.6
+139405061951939,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/locale-archive
+139405062366852,10.0.3.1:36164,open,14782,100000,echo,/usr/share/locale/locale.alias
+139405062586770,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+139405062645938,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_IDENTIFICATION
+139405062736914,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+139405062812863,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+139405062864039,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_MEASUREMENT
+139405062934650,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_TELEPHONE
+139405062976068,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_TELEPHONE
+139405063085212,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_ADDRESS
+139405063155082,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_ADDRESS
+139405063216067,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_NAME
+139405063460342,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_NAME
+139405063609683,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_PAPER
+139405063662984,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_PAPER
+139405063739701,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_MESSAGES
+139405063788904,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_MESSAGES
+139405063845446,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_MESSAGES/SYS_LC_MESSAGES
+139405063905001,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_MONETARY
+139405063942995,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_MONETARY
+139405064033459,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_COLLATE
+139405064073349,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_COLLATE
+139405064353804,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_TIME
+139405064475933,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_TIME
+139405064553074,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_NUMERIC
+139405064600595,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_NUMERIC
+139405064667542,10.0.3.1:36164,open-failed,14782,100000,echo,/usr/lib/locale/C.UTF-8/LC_CTYPE
+139405064714686,10.0.3.1:36164,open,14782,100000,echo,/usr/lib/locale/C.utf8/LC_CTYPE
+
+
+@addr[11665]: 16973834
+@addr[14781]: 16973834
+@port[14781]: 36164
+@port[11665]: 36164
+@seen[9765, 0xffff8ace78c47810, vfs_write]: 1
+@seen[9765, 0xffff8ace7d308c08, vfs_write]: 1
+@seen[14771, 0xffff8ace882075f0, vfs_read]: 1
+@seen[9765, 0xffff8ace4c0aee70, vfs_write]: 1
+@seen[14688, 0xffff8ace4b7d89a0, vfs_write]: 1
+@seen[14778, 0xffff8ace882089e0, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd25340, vfs_write]: 1
+@seen[14778, 0xffff8ace8817b5f0, vfs_read]: 1
+@seen[9765, 0xffff8ace48925318, vfs_read]: 1
+@seen[9765, 0xffff8ace78c46c08, vfs_write]: 1
+@seen[9765, 0xffff8ace4891cdb8, vfs_read]: 1
+@seen[14778, 0xffff8ace4b6345a8, vfs_read]: 1
+@seen[9765, 0xffff8ace78c469a0, vfs_write]: 1
+@seen[9765, 0xffff8ace6eef55a8, vfs_read]: 1
+@seen[14778, 0xffff8ace44fdd598, vfs_read]: 1
+@seen[9765, 0xffff8ace47ed8000, vfs_read]: 1
+@seen[9765, 0xffff8ace7fa35318, vfs_read]: 1
+@seen[14778, 0xffff8ace88219718, vfs_read]: 1
+@seen[9765, 0xffff8ace6f45a9a0, vfs_write]: 1
+@seen[14772, 0xffff8ace882075f0, vfs_read]: 1
+@seen[9900, 0xffff8ace48e96088, vfs_read]: 1
+@seen[14778, 0xffff8ace881835f0, vfs_read]: 1
+@seen[10007, 0xffff8ace406709e0, vfs_write]: 1
+@seen[9765, 0xffff8acebcc76e70, vfs_write]: 1
+@seen[14778, 0xffff8ace88221718, vfs_read]: 1
+@seen[14778, 0xffff8ace88176d20, vfs_read]: 1
+@seen[9765, 0xffff8acebceee738, vfs_write]: 1
+@seen[14778, 0xffff8ace882075f0, vfs_read]: 1
+@seen[9900, 0xffff8ace48922088, vfs_read]: 1
+@seen[9765, 0xffff8ace48e8f358, vfs_read]: 1
+@seen[9765, 0xffff8ace4734c000, vfs_read]: 1
+@seen[14689, 0xffff8ace4bec6450, vfs_read]: 1
+@seen[9765, 0xffff8ace4c257810, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd24268, vfs_read]: 1
+@seen[9765, 0xffff8acebd176b48, vfs_read]: 1
+@seen[9765, 0xffff8acebcc74e70, vfs_write]: 1
+@seen[14688, 0xffff8ace4b7b0e70, vfs_read]: 1
+@seen[14688, 0xffff8ace4894b0a8, vfs_read]: 1
+@seen[9765, 0xffff8ace78c475a8, vfs_write]: 1
+@seen[9765, 0xffff8ace4bd24738, vfs_write]: 1
+@seen[9900, 0xffff8ace7d16e5e8, vfs_read]: 1
+@seen[14778, 0xffff8ace459da798, vfs_read]: 1
+@seen[9765, 0xffff8ace4c03f340, vfs_write]: 1
+@seen[14778, 0xffff8ace7fa34db8, vfs_read]: 1
+@seen[9765, 0xffff8ace459da798, vfs_write]: 1
+@seen[9765, 0xffff8ace6eef4268, vfs_write]: 1
+@seen[9765, 0xffff8ace4c090738, vfs_write]: 1
+@seen[9765, 0xffff8ace78c47340, vfs_write]: 1
+@seen[14778, 0xffff8acebb8c3810, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd25ce0, vfs_write]: 1
+@seen[9765, 0xffff8ace48e965e8, vfs_read]: 1
+@seen[9765, 0xffff8ace48ee5068, vfs_read]: 1
+@seen[14778, 0xffff8ace88218578, vfs_read]: 1
+@seen[14778, 0xffff8ace88204578, vfs_read]: 1
+@seen[9765, 0xffff8ace8277fce0, vfs_read]: 1
+@seen[9765, 0xffff8ace48e0b340, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd24e70, vfs_write]: 1
+@seen[9765, 0xffff8ace7fa36898, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd27ce0, vfs_write]: 1
+@seen[9765, 0xffff8ace6eef7340, vfs_write]: 1
+@seen[9765, 0xffff8acebcc77ce0, vfs_write]: 1
+@seen[14778, 0xffff8ace4c22a4d0, vfs_write]: 1
+@seen[9765, 0xffff8ace4bd249a0, vfs_write]: 1
+@seen[9765, 0xffff8ace4c037340, vfs_read]: 1
+@seen[9900, 0xffff8ace4894b0a8, vfs_read]: 1
+@seen[14775, 0xffff8ace4becb5f0, vfs_read]: 1
+@seen[9765, 0xffff8ace4c0969a0, vfs_read]: 1
+@seen[9765, 0xffff8acebcc76268, vfs_write]: 1
+@seen[9765, 0xffff8ace4b7e09a0, vfs_write]: 1
+@seen[14688, 0xffff8ace4734dce0, vfs_write]: 1
+@seen[9765, 0xffff8acebd1705a8, vfs_read]: 1
+@seen[9765, 0xffff8ace47cb3a78, vfs_read]: 1
+@seen[9900, 0xffff8ace4c851898, vfs_write]: 1
+@seen[9765, 0xffff8acebcc76738, vfs_write]: 1
+@seen[9900, 0xffff8ace4c0d95c8, vfs_read]: 1
+@seen[14778, 0xffff8ace88187188, vfs_read]: 1
+@seen[14778, 0xffff8ace8820c578, vfs_read]: 1
+@seen[9765, 0xffff8ace48edc2f8, vfs_read]: 1
+@seen[9765, 0xffff8acebcc775a8, vfs_write]: 1
+@seen[9900, 0xffff8ace4c152df8, vfs_read]: 1
+@seen[9765, 0xffff8ace4c036738, vfs_read]: 1
+@seen[9765, 0xffff8ace4734ce70, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd26e70, vfs_write]: 1
+@seen[9765, 0xffff8ace78c464d0, vfs_write]: 1
+@seen[9765, 0xffff8ace4c034000, vfs_write]: 1
+@seen[14778, 0xffff8ace7fa36b48, vfs_read]: 1
+@seen[9765, 0xffff8ace4890ec08, vfs_read]: 1
+@seen[14778, 0xffff8ace88184578, vfs_read]: 1
+@seen[9765, 0xffff8ace78c409a0, vfs_write]: 1
+@seen[9765, 0xffff8acebcc76000, vfs_write]: 1
+@seen[14780, 0xffff8ace4becb5f0, vfs_read]: 1
+@seen[14778, 0xffff8ace7fa3f608, vfs_read]: 1
+@seen[14688, 0xffff8ace8277ce70, vfs_read]: 1
+@seen[14778, 0xffff8ace88175718, vfs_read]: 1
+@seen[9900, 0xffff8ace7d16c048, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd24c08, vfs_write]: 1
+@seen[9765, 0xffff8ace48964c08, vfs_write]: 1
+@seen[14782, 0xffff8ace882075f0, vfs_read]: 1
+@seen[14773, 0xffff8ace48ee9dd8, vfs_read]: 1
+@seen[14778, 0xffff8ace48a10db8, vfs_read]: 1
+@seen[9900, 0xffff8ace7d16f608, vfs_read]: 1
+@seen[14781, 0xffff8ace4becb5f0, vfs_read]: 1
+@seen[9765, 0xffff8ace7d16cdb8, vfs_read]: 1
+@seen[9765, 0xffff8ace4c2e3b68, vfs_read]: 1
+@seen[14782, 0xffff8ace4becb5f0, vfs_read]: 1
+@seen[14774, 0xffff8ace4becb5f0, vfs_read]: 1
+@seen[9765, 0xffff8acebcc770d8, vfs_write]: 1
+@seen[9765, 0xffff8ace4890ce70, vfs_write]: 1
+@seen[9765, 0xffff8acebd16c048, vfs_read]: 1
+@seen[9900, 0xffff8ace4b634048, vfs_read]: 1
+@seen[14778, 0xffff8ace7fa355c8, vfs_read]: 1
+@seen[9765, 0xffff8ace47ed9340, vfs_write]: 1
+@seen[14780, 0xffff8ace882075f0, vfs_read]: 1
+@seen[14778, 0xffff8ace882052b0, vfs_read]: 1
+@seen[14778, 0xffff8aceb8c412b0, vfs_read]: 1
+@seen[9765, 0xffff8ace78c46738, vfs_write]: 1
+@seen[14688, 0xffff8ace8277cc08, vfs_read]: 1
+@seen[14688, 0xffff8ace489ae268, vfs_read]: 1
+@seen[9765, 0xffff8acebcc79ce0, vfs_write]: 1
+@seen[14688, 0xffff8ace4c08e9a0, vfs_read]: 1
+@seen[9900, 0xffff8ace46a29b28, vfs_read]: 1
+@seen[9765, 0xffff8ace48992268, vfs_write]: 1
+@seen[14778, 0xffff8aceb8c41b80, vfs_read]: 1
+@seen[9765, 0xffff8ace440d44d0, vfs_read]: 1
+@seen[9765, 0xffff8acebcc75a78, vfs_write]: 1
+@seen[14774, 0xffff8ace882075f0, vfs_read]: 1
+@seen[14688, 0xffff8ace489ca9a0, vfs_read]: 1
+@seen[9765, 0xffff8ace47cb6000, vfs_write]: 1
+@seen[9765, 0xffff8acebcf7b810, vfs_read]: 1
+@seen[14773, 0xffff8ace6ee6ce48, vfs_read]: 1
+@seen[9900, 0xffff8ace46a24db8, vfs_read]: 1
+@seen[9765, 0xffff8acebcc795a8, vfs_write]: 1
+@seen[14771, 0xffff8ace6ee7ce48, vfs_read]: 1
+@seen[14775, 0xffff8ace882075f0, vfs_read]: 1
+@seen[9765, 0xffff8ace488fda78, vfs_write]: 1
+@seen[14688, 0xffff8ace7d16c048, vfs_read]: 1
+@seen[9765, 0xffff8ace4c086000, vfs_write]: 1
+@seen[9765, 0xffff8ace4c22a4d0, vfs_write]: 1
+@seen[9765, 0xffff8acebd174b08, vfs_read]: 1
+@seen[9765, 0xffff8ace4c22b810, vfs_write]: 1
+@seen[9765, 0xffff8acebcc78000, vfs_write]: 1
+@seen[14778, 0xffff8ace8819ba58, vfs_read]: 1
+@seen[9765, 0xffff8ace7fa34048, vfs_read]: 1
+@seen[14781, 0xffff8ace882075f0, vfs_read]: 1
+@seen[9765, 0xffff8ace48e0b0d8, vfs_write]: 1
+@seen[14688, 0xffff8ace880db188, vfs_read]: 1
+@seen[9765, 0xffff8ace4c22a4d0, vfs_read]: 1
+@seen[9765, 0xffff8ace78c470d8, vfs_write]: 1
+@seen[14773, 0xffff8ace4bed5718, vfs_read]: 1
+@seen[9765, 0xffff8acebcc77340, vfs_write]: 1
+@seen[9765, 0xffff8ace489c4e70, vfs_write]: 1
+@seen[14778, 0xffff8ace46a2a5e8, vfs_read]: 1
+@seen[9765, 0xffff8ace7fb1f608, vfs_read]: 1
+@seen[14778, 0xffff8ace88203a58, vfs_read]: 1
+@seen[14778, 0xffff8ace8818d718, vfs_read]: 1
+@seen[9900, 0xffff8ace48edc2f8, vfs_read]: 1
+@seen[9765, 0xffff8acebd110738, vfs_read]: 1
+@seen[9994, 0xffff8ace4c851898, vfs_write]: 1
+@seen[9765, 0xffff8ace4bd270d8, vfs_read]: 1
+@seen[9900, 0xffff8acebd170858, vfs_read]: 1
+@seen[14773, 0xffff8ace882075f0, vfs_read]: 1
+@seen[9900, 0xffff8ace7fa34048, vfs_read]: 1
+@seen[9765, 0xffff8ace7fa3c5a8, vfs_read]: 1
+@seen[9765, 0xffff8acebcc78738, vfs_write]: 1
+@seen[14778, 0xffff8ace46a29b28, vfs_read]: 1
+@seen[9765, 0xffff8acebd1110d8, vfs_write]: 1
+@seen[9765, 0xffff8acebcf6c4d0, vfs_write]: 1
+@seen[9765, 0xffff8acebcc78268, vfs_write]: 1
+@seen[9765, 0xffff8ace4bd275a8, vfs_write]: 1
+@seen[9765, 0xffff8acebd168b08, vfs_read]: 1
+@seen[14778, 0xffff8ace88177188, vfs_read]: 1
+@seen[9765, 0xffff8ace7d16e5e8, vfs_read]: 1
+@seen[14778, 0xffff8ace8820d2b0, vfs_read]: 1
+@seen[9765, 0xffff8acebcc784d0, vfs_write]: 1
+@seen[9765, 0xffff8acebcc769a0, vfs_write]: 1
+@seen[14778, 0xffff8ace88208578, vfs_read]: 1
+@seen[14773, 0xffff8ace8818d718, vfs_read]: 1
+@seen[9765, 0xffff8acebcc78e70, vfs_write]: 1
+@seen[14773, 0xffff8ace6eea4578, vfs_read]: 1
+@seen[9765, 0xffff8ace78c42e70, vfs_read]: 1
+@seen[14773, 0xffff8ace4becb5f0, vfs_read]: 1
+@seen[14773, 0xffff8ace46a2c048, vfs_read]: 1
+@seen[14773, 0xffff8ace88184578, vfs_read]: 1
+@seen[14778, 0xffff8ace88201fe8, vfs_read]: 1
+@seen[9765, 0xffff8ace4bd24000, vfs_write]: 1
+@seen[14688, 0xffff8ace880da8b8, vfs_read]: 1
+@seen[14778, 0xffff8ace46a2c048, vfs_read]: 1

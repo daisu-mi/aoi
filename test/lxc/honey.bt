@@ -1,0 +1,90 @@
+#!/usr/bin/env bpftrace
+/*
+ * What honey.ko records, for processes inside containers, with bpftrace only.
+ * A process is "inside" when its PID namespace is not the host's (4026531836).
+ * An exiting process has no namespaces left and is skipped.
+ * Line: time,peer,event,pid,uid,command,detail
+ */
+
+/* peer: the connection a server accepted, handed down to its children */
+kretprobe:inet_csk_accept
+{
+	$sk = (struct sock *)retval;
+	if ($sk != 0) {
+		@addr[pid] = $sk->__sk_common.skc_daddr;
+		@port[pid] = bswap($sk->__sk_common.skc_dport);
+	}
+}
+
+/* The maps are keyed by process id.  args.child_pid is the id of the new
+ * task: the new process, or a new thread whose entry is dropped again when
+ * that thread exits. */
+tracepoint:sched:sched_process_fork
+/@addr[pid] != 0/
+{
+	@addr[args.child_pid] = @addr[pid];
+	@port[args.child_pid] = @port[pid];
+}
+
+tracepoint:sched:sched_process_exit
+{
+	delete(@addr, tid);
+	delete(@port, tid);
+}
+
+/* exec: the whole argument area, strings separated by \x00.  (The syscall
+ * entry tracepoints with join() lost most events here, so they are not used.) */
+tracepoint:sched:sched_process_exec
+/curtask->nsproxy != 0 && curtask->nsproxy->pid_ns_for_children->ns.inum != 4026531836/
+{
+	printf("%llu,%s:%d,exec,%d,%d,%s,%r\n", nsecs, ntop(@addr[pid]), @port[pid], pid, uid, comm,
+	    buf(uptr(curtask->mm->arg_start), curtask->mm->arg_end - curtask->mm->arg_start));
+}
+
+kprobe:do_sys_openat2
+/curtask->nsproxy != 0 && curtask->nsproxy->pid_ns_for_children->ns.inum != 4026531836/
+{
+	@name[tid] = arg1;
+}
+
+kretprobe:do_sys_openat2
+/@name[tid] != 0/
+{
+	printf("%llu,%s:%d,%s,%d,%d,%s,%s\n", nsecs, ntop(@addr[pid]), @port[pid],
+	    (int32)retval < 0 ? "open-failed" : "open", pid, uid, comm, str(uptr(@name[tid])));
+	delete(@name, tid);
+}
+
+tracepoint:signal:signal_generate
+/curtask->nsproxy != 0 && curtask->nsproxy->pid_ns_for_children->ns.inum != 4026531836/
+{
+	printf("%llu,%s:%d,signal,%d,%d,%s,%d to %d %s\n", nsecs, ntop(@addr[pid]), @port[pid],
+	    pid, uid, comm, args.sig, args.pid, args.comm);
+}
+
+/* terminals: writing to the master side is what the user typed */
+kprobe:pty_write
+/curtask->nsproxy != 0 && curtask->nsproxy->pid_ns_for_children->ns.inum != 4026531836/
+{
+	$tty = (struct tty_struct *)arg0;
+	printf("%llu,%s:%d,%s,%d,%d,%s,%s %r\n", nsecs, ntop(@addr[pid]), @port[pid],
+	    $tty->driver->subtype == 1 ? "tty-in" : "tty-out", pid, uid, comm,
+	    $tty->name, buf(arg1, arg2));
+}
+
+/* regular files; only the last part of the name.  The event is printed as
+ * vfs_read or vfs_write. */
+kprobe:vfs_read, kprobe:vfs_write
+/curtask->nsproxy != 0 && curtask->nsproxy->pid_ns_for_children->ns.inum != 4026531836/
+{
+	$f = (struct file *)arg0;
+	/* once per process and file, as honey.ko does; printing every call
+	 * overflowed the event buffer and other events were lost */
+	if (($f->f_inode->i_mode & 0170000) == 0100000 &&
+	    @seen[pid, $f->f_inode, func] == 0) {
+		@seen[pid, $f->f_inode, func] = 1;
+		printf("%llu,%s:%d,%s,%d,%d,%s,%s\n", nsecs, ntop(@addr[pid]), @port[pid],
+		    func, pid, uid, comm,
+		    str($f->f_path.dentry->d_name.name));
+	}
+}

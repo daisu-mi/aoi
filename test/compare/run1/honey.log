@@ -1,0 +1,564 @@
+1795373888.525542,-,exec,6742,0,jexec,/sbin/ifconfig | ifconfig lo0 inet 127.0.0.1/8 up | SSH_CLIENT=10.0.2.2 52714 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 52714 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373888.525847,-,open,6742,0,ifconfig,r /etc/libmap.conf
+1795373888.525866,-,read,6742,0,ifconfig,/etc/libmap.conf
+1795373888.525895,-,open-failed,6742,0,ifconfig,r /usr/local/etc/libmap.d errno=2
+1795373888.525914,-,open,6742,0,ifconfig,r /var/run/ld-elf.so.hints
+1795373888.525923,-,read,6742,0,ifconfig,/var/run/ld-elf.so.hints
+1795373888.525937,-,open,6742,0,ifconfig,r /lib/libm.so.5
+1795373888.526000,-,open,6742,0,ifconfig,r /lib/libutil.so.10
+1795373888.526079,-,open,6742,0,ifconfig,r /lib/lib80211.so.1
+1795373888.526153,-,open,6742,0,ifconfig,r /lib/libjail.so.1
+1795373888.526208,-,open,6742,0,ifconfig,r /lib/libnv.so.1
+1795373888.526259,-,open,6742,0,ifconfig,r /lib/libc.so.7
+1795373888.526412,-,open,6742,0,ifconfig,r /lib/libsbuf.so.6
+1795373888.526466,-,open,6742,0,ifconfig,r /lib/libbsdxml.so.4
+1795373888.526535,-,open,6742,0,ifconfig,r /lib/libsys.so.7
+1795373888.531970,-,exec,6618,0,jexec,/sbin/ifconfig | ifconfig epair1b inet 10.99.0.14/30 up | SSH_CLIENT=10.0.2.2 52714 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 52714 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373888.532388,-,open,6618,0,ifconfig,r /etc/libmap.conf
+1795373888.532409,-,read,6618,0,ifconfig,/etc/libmap.conf
+1795373888.532425,-,open-failed,6618,0,ifconfig,r /usr/local/etc/libmap.d errno=2
+1795373888.532442,-,open,6618,0,ifconfig,r /var/run/ld-elf.so.hints
+1795373888.532445,-,read,6618,0,ifconfig,/var/run/ld-elf.so.hints
+1795373888.532475,-,open,6618,0,ifconfig,r /lib/libm.so.5
+1795373888.532536,-,open,6618,0,ifconfig,r /lib/libutil.so.10
+1795373888.532599,-,open,6618,0,ifconfig,r /lib/lib80211.so.1
+1795373888.532652,-,open,6618,0,ifconfig,r /lib/libjail.so.1
+1795373888.532703,-,open,6618,0,ifconfig,r /lib/libnv.so.1
+1795373888.532759,-,open,6618,0,ifconfig,r /lib/libc.so.7
+1795373888.532910,-,open,6618,0,ifconfig,r /lib/libsbuf.so.6
+1795373888.532962,-,open,6618,0,ifconfig,r /lib/libbsdxml.so.4
+1795373888.533018,-,open,6618,0,ifconfig,r /lib/libsys.so.7
+1795373888.707611,10.0.2.2>10.0.2.15,exec,6833,0,jexec,/usr/sbin/sshd | /usr/sbin/sshd -o ListenAddress=10.99.0.14 -o PidFile=/var/run/sshd-j1.pid | SSH_CLIENT=10.0.2.2 51968 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 51968 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373888.707906,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/libmap.conf
+1795373888.707929,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/libmap.conf
+1795373888.707947,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /usr/local/etc/libmap.d errno=2
+1795373888.707974,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /var/run/ld-elf.so.hints
+1795373888.707985,10.0.2.2>10.0.2.15,read,6833,0,sshd,/var/run/ld-elf.so.hints
+1795373888.708001,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libprivatessh.so.5 errno=2
+1795373888.708015,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libprivatessh.so.5
+1795373888.708135,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libutil.so.10
+1795373888.708211,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libgssapi_krb5.so.122 errno=2
+1795373888.708230,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libgssapi_krb5.so.122
+1795373888.708308,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libkrb5.so.122 errno=2
+1795373888.708327,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libkrb5.so.122
+1795373888.708397,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libwrap.so.6 errno=2
+1795373888.708415,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libwrap.so.6
+1795373888.708477,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libcrypto.so.35
+1795373888.708696,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libc.so.7
+1795373888.708837,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libprivateldns.so.5 errno=2
+1795373888.708855,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libprivateldns.so.5
+1795373888.708915,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libcrypt.so.5
+1795373888.708979,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libz.so.6
+1795373888.709041,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libk5crypto.so.122 errno=2
+1795373888.709058,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libk5crypto.so.122
+1795373888.709139,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libcom_err.so.122 errno=2
+1795373888.709158,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libcom_err.so.122
+1795373888.709210,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libkrb5support.so.122 errno=2
+1795373888.709227,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libkrb5support.so.122
+1795373888.709285,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libthr.so.3
+1795373888.709353,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libsys.so.7
+1795373888.709427,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /lib/libssl.so.35 errno=2
+1795373888.709445,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /usr/lib/libssl.so.35
+1795373888.709543,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libmd.so.7
+1795373888.715425,10.0.2.2>10.0.2.15,open,6833,0,sshd,rw /dev/null
+1795373888.715628,10.0.2.2>10.0.2.15,open,6833,0,sshd,rw /dev/null
+1795373888.715843,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /lib/libcrypto.so.35
+1795373888.717455,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssl/openssl.cnf
+1795373888.717514,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/ssl/openssl.cnf
+1795373888.720180,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /dev/pvclock
+1795373888.720309,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssh/sshd_config
+1795373888.720345,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/ssh/sshd_config
+1795373888.720805,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssh/ssh_host_ecdsa_key
+1795373888.720840,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/ssh/ssh_host_ecdsa_key
+1795373888.722334,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssh/ssh_host_ecdsa_key
+1795373888.722397,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssh/ssh_host_ecdsa_key.pub
+1795373888.722416,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/ssh/ssh_host_ecdsa_key.pub
+1795373888.723400,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssh/ssh_host_ed25519_key
+1795373888.723420,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/ssh/ssh_host_ed25519_key
+1795373888.723746,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssh/ssh_host_ed25519_key
+1795373888.723778,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/ssh/ssh_host_ed25519_key.pub
+1795373888.723783,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/ssh/ssh_host_ed25519_key.pub
+1795373888.724251,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/nsswitch.conf
+1795373888.724305,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/nsswitch.conf
+1795373888.724427,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /etc/spwd.db
+1795373888.724442,10.0.2.2>10.0.2.15,read,6833,0,sshd,/etc/spwd.db
+1795373888.724625,10.0.2.2>10.0.2.15,open-failed,6833,0,sshd,r /dev/tty errno=6
+1795373888.724653,10.0.2.2>10.0.2.15,open,6833,0,sshd,rw /dev/null
+1795373888.724659,10.0.2.2>10.0.2.15,open,6833,0,sshd,r /
+1795373888.725455,10.0.2.2>10.0.2.15,open-failed,6834,0,sshd,rw /dev/tty errno=6
+1795373888.725963,10.0.2.2>10.0.2.15,open-failed,6834,0,sshd,r /etc/localtime errno=2
+1795373888.726174,10.0.2.2>10.0.2.15,open,6834,0,sshd,wct /var/run/sshd-j1.pid
+1795373888.726208,10.0.2.2>10.0.2.15,write,6834,0,sshd,/var/run/sshd-j1.pid
+1795373899.923848,-,open,6834,0,sshd,r /etc/hosts.allow
+1795373899.923903,-,read,6834,0,sshd,/etc/hosts.allow
+1795373899.925044,-,exec,6853,0,sshd,/usr/libexec/sshd-session | /usr/libexec/sshd-session -o ListenAddress=10.99.0.14 -o PidFile=/var/run/sshd-j1.pid -R | SSH_CLIENT=10.0.2.2 51968 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 51968 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373899.925666,-,open,6853,0,sshd-session,r /etc/libmap.conf
+1795373899.925713,-,read,6853,0,sshd-session,/etc/libmap.conf
+1795373899.925735,-,open-failed,6853,0,sshd-session,r /usr/local/etc/libmap.d errno=2
+1795373899.925781,-,open,6853,0,sshd-session,r /var/run/ld-elf.so.hints
+1795373899.925806,-,read,6853,0,sshd-session,/var/run/ld-elf.so.hints
+1795373899.925827,-,open-failed,6853,0,sshd-session,r /lib/libpam.so.6 errno=2
+1795373899.925854,-,open,6853,0,sshd-session,r /usr/lib/libpam.so.6
+1795373899.925938,-,open-failed,6853,0,sshd-session,r /lib/libprivatessh.so.5 errno=2
+1795373899.925977,-,open,6853,0,sshd-session,r /usr/lib/libprivatessh.so.5
+1795373899.926090,-,open,6853,0,sshd-session,r /lib/libutil.so.10
+1795373899.926190,-,open-failed,6853,0,sshd-session,r /lib/libbsm.so.3 errno=2
+1795373899.926224,-,open,6853,0,sshd-session,r /usr/lib/libbsm.so.3
+1795373899.926321,-,open-failed,6853,0,sshd-session,r /lib/libblocklist.so.0 errno=2
+1795373899.926352,-,open,6853,0,sshd-session,r /usr/lib/libblocklist.so.0
+1795373899.926425,-,open-failed,6853,0,sshd-session,r /lib/libgssapi_krb5.so.122 errno=2
+1795373899.926459,-,open,6853,0,sshd-session,r /usr/lib/libgssapi_krb5.so.122
+1795373899.926549,-,open-failed,6853,0,sshd-session,r /lib/libkrb5.so.122 errno=2
+1795373899.926579,-,open,6853,0,sshd-session,r /usr/lib/libkrb5.so.122
+1795373899.926668,-,open-failed,6853,0,sshd-session,r /lib/libwrap.so.6 errno=2
+1795373899.926703,-,open,6853,0,sshd-session,r /usr/lib/libwrap.so.6
+1795373899.926782,-,open,6853,0,sshd-session,r /lib/libcrypto.so.35
+1795373899.927018,-,open,6853,0,sshd-session,r /lib/libc.so.7
+1795373899.927178,-,open-failed,6853,0,sshd-session,r /lib/libprivateldns.so.5 errno=2
+1795373899.927214,-,open,6853,0,sshd-session,r /usr/lib/libprivateldns.so.5
+1795373899.927326,-,open,6853,0,sshd-session,r /lib/libcrypt.so.5
+1795373899.927407,-,open,6853,0,sshd-session,r /lib/libz.so.6
+1795373899.927485,-,open,6853,0,sshd-session,r /lib/libthr.so.3
+1795373899.927568,-,open-failed,6853,0,sshd-session,r /lib/libk5crypto.so.122 errno=2
+1795373899.927604,-,open,6853,0,sshd-session,r /usr/lib/libk5crypto.so.122
+1795373899.927693,-,open-failed,6853,0,sshd-session,r /lib/libcom_err.so.122 errno=2
+1795373899.927725,-,open,6853,0,sshd-session,r /usr/lib/libcom_err.so.122
+1795373899.927803,-,open-failed,6853,0,sshd-session,r /lib/libkrb5support.so.122 errno=2
+1795373899.927838,-,open,6853,0,sshd-session,r /usr/lib/libkrb5support.so.122
+1795373899.927923,-,open,6853,0,sshd-session,r /lib/libsys.so.7
+1795373899.928010,-,open-failed,6853,0,sshd-session,r /lib/libssl.so.35 errno=2
+1795373899.928040,-,open,6853,0,sshd-session,r /usr/lib/libssl.so.35
+1795373899.928146,-,open,6853,0,sshd-session,r /lib/libmd.so.7
+1795373899.934615,-,open,6853,0,sshd-session,rw /dev/null
+1795373899.934790,-,open,6853,0,sshd-session,rw /dev/null
+1795373899.935043,-,open,6853,0,sshd-session,r /lib/libcrypto.so.35
+1795373899.936717,-,open,6853,0,sshd-session,r /etc/ssl/openssl.cnf
+1795373899.936801,-,read,6853,0,sshd-session,/etc/ssl/openssl.cnf
+1795373899.939505,-,open,6853,0,sshd-session,r /dev/pvclock
+1795373899.940879,-,open,6853,0,sshd-session,r /etc/nsswitch.conf
+1795373899.940952,-,read,6853,0,sshd-session,/etc/nsswitch.conf
+1795373899.941093,-,open,6853,0,sshd-session,r /etc/spwd.db
+1795373899.941124,-,read,6853,0,sshd-session,/etc/spwd.db
+1795373899.941396,-,open,6853,0,sshd-session,rw /dev/null
+1795373899.941624,-,open,6853,0,sshd-session,r /etc/resolv.conf
+1795373899.941663,-,read,6853,0,sshd-session,/etc/resolv.conf
+1795373899.941738,-,open,6853,0,sshd-session,r /etc/hosts
+1795373899.941766,-,read,6853,0,sshd-session,/etc/hosts
+1795373899.942900,10.99.0.13>10.99.0.14,exec,6854,0,sshd-session,/usr/libexec/sshd-auth | /usr/libexec/sshd-auth -o ListenAddress=10.99.0.14 -o PidFile=/var/run/sshd-j1.pid -R | SSH_CLIENT=10.0.2.2 51968 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin PWD=/root TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 51968 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373899.943483,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /etc/libmap.conf
+1795373899.943525,10.99.0.13>10.99.0.14,read,6854,0,sshd-auth,/etc/libmap.conf
+1795373899.943549,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /usr/local/etc/libmap.d errno=2
+1795373899.943592,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /var/run/ld-elf.so.hints
+1795373899.943618,10.99.0.13>10.99.0.14,read,6854,0,sshd-auth,/var/run/ld-elf.so.hints
+1795373899.943640,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libpam.so.6 errno=2
+1795373899.943670,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libpam.so.6
+1795373899.943756,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libprivatessh.so.5 errno=2
+1795373899.943791,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libprivatessh.so.5
+1795373899.943898,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libutil.so.10
+1795373899.943989,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libbsm.so.3 errno=2
+1795373899.944023,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libbsm.so.3
+1795373899.944106,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libblocklist.so.0 errno=2
+1795373899.944138,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libblocklist.so.0
+1795373899.944210,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libgssapi_krb5.so.122 errno=2
+1795373899.944245,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libgssapi_krb5.so.122
+1795373899.944360,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libkrb5.so.122 errno=2
+1795373899.944392,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libkrb5.so.122
+1795373899.944488,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libcrypto.so.35
+1795373899.944724,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libc.so.7
+1795373899.944883,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libprivateldns.so.5 errno=2
+1795373899.944918,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libprivateldns.so.5
+1795373899.945000,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libcrypt.so.5
+1795373899.945084,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libz.so.6
+1795373899.945163,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libthr.so.3
+1795373899.945246,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libk5crypto.so.122 errno=2
+1795373899.945296,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libk5crypto.so.122
+1795373899.945381,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libcom_err.so.122 errno=2
+1795373899.945414,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libcom_err.so.122
+1795373899.945497,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libkrb5support.so.122 errno=2
+1795373899.945529,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libkrb5support.so.122
+1795373899.945617,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libsys.so.7
+1795373899.945705,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /lib/libssl.so.35 errno=2
+1795373899.945759,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /usr/lib/libssl.so.35
+1795373899.945854,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libmd.so.7
+1795373899.952350,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /lib/libcrypto.so.35
+1795373899.954052,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /etc/ssl/openssl.cnf
+1795373899.954137,10.99.0.13>10.99.0.14,read,6854,0,sshd-auth,/etc/ssl/openssl.cnf
+1795373899.956973,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /dev/pvclock
+1795373899.957098,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,rw /dev/null
+1795373899.957324,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,rw /dev/null
+1795373899.958813,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /etc/nsswitch.conf
+1795373899.958912,10.99.0.13>10.99.0.14,read,6854,0,sshd-auth,/etc/nsswitch.conf
+1795373899.959069,10.99.0.13>10.99.0.14,open,6854,0,sshd-auth,r /etc/spwd.db
+1795373899.959102,10.99.0.13>10.99.0.14,read,6854,0,sshd-auth,/etc/spwd.db
+1795373899.959541,10.99.0.13>10.99.0.14,open-failed,6854,0,sshd-auth,r /usr/etc/gss/mech.d/ errno=2
+1795373899.959814,10.99.0.13>10.99.0.14,open-failed,6854,22,sshd-auth,r /etc/localtime errno=2
+1795373899.959915,10.99.0.13>10.99.0.14,open-failed,6854,22,sshd-auth,r /usr/share/zoneinfo/ errno=2
+1795373900.022746,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/hosts
+1795373900.022802,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/hosts
+1795373900.022948,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/spwd.db
+1795373900.022982,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/spwd.db
+1795373900.023846,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/spwd.db
+1795373900.023944,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/login.conf.db
+1795373900.023972,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/login.conf.db
+1795373900.024039,10.99.0.13>10.99.0.14,open-failed,6853,0,sshd-session,r /etc/localtime errno=2
+1795373900.025634,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/group
+1795373900.025682,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/group
+1795373900.025870,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /root/.ssh/authorized_keys
+1795373900.025960,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/root/.ssh/authorized_keys
+1795373900.031422,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /root/.ssh/authorized_keys
+1795373900.040096,10.99.0.13>10.99.0.14,open,6855,0,sshd-session,r /etc/group
+1795373900.040152,10.99.0.13>10.99.0.14,read,6855,0,sshd-session,/etc/group
+1795373900.040816,10.99.0.13>10.99.0.14,open-failed,6855,0,sshd-session,r /root/.login_conf.db errno=2
+1795373900.040852,10.99.0.13>10.99.0.14,open-failed,6855,0,sshd-session,r /root/.login_conf errno=2
+1795373900.040874,10.99.0.13>10.99.0.14,open,6855,0,sshd-session,r /etc/login.conf.db
+1795373900.040904,10.99.0.13>10.99.0.14,read,6855,0,sshd-session,/etc/login.conf.db
+1795373900.040988,10.99.0.13>10.99.0.14,open-failed,6855,0,sshd-session,r /root/.login_conf.db errno=2
+1795373900.041018,10.99.0.13>10.99.0.14,open-failed,6855,0,sshd-session,r /root/.login_conf errno=2
+1795373900.041038,10.99.0.13>10.99.0.14,open,6855,0,sshd-session,r /etc/login.conf.db
+1795373900.041097,10.99.0.13>10.99.0.14,open-failed,6855,0,sshd-session,r /root/.login_conf.db errno=2
+1795373900.041121,10.99.0.13>10.99.0.14,open-failed,6855,0,sshd-session,r /root/.login_conf errno=2
+1795373900.041141,10.99.0.13>10.99.0.14,open,6855,0,sshd-session,r /etc/login.conf.db
+1795373900.083043,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,rw /dev/pts/0
+1795373900.083151,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/group
+1795373900.083192,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/group
+1795373900.083361,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/spwd.db
+1795373900.083392,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/spwd.db
+1795373900.083502,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /var/log/utx.lastlogin
+1795373900.083545,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/var/log/utx.lastlogin
+1795373900.083669,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/spwd.db
+1795373900.083701,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/spwd.db
+1795373900.083754,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /var/run/utx.active
+1795373900.083796,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,rwc /var/run/utx.active
+1795373900.083825,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/var/run/utx.active
+1795373900.083870,10.99.0.13>10.99.0.14,write,6853,0,sshd-session,/var/run/utx.active
+1795373900.083900,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,rwc /var/log/utx.lastlogin
+1795373900.083931,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/var/log/utx.lastlogin
+1795373900.083941,10.99.0.13>10.99.0.14,write,6853,0,sshd-session,/var/log/utx.lastlogin
+1795373900.083957,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,wac /var/log/utx.log
+1795373900.083985,10.99.0.13>10.99.0.14,write,6853,0,sshd-session,/var/log/utx.log
+1795373900.084133,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /dev/null
+1795373900.084888,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,rw /dev/tty errno=6
+1795373900.085044,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,rw /dev/tty errno=6
+1795373900.085094,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,rw /dev/pts/0
+1795373900.085133,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,w /dev/pts/0
+1795373900.085530,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,r /var/run/motd
+1795373900.085575,10.99.0.13>10.99.0.14,read,6856,0,sshd-session,/var/run/motd
+1795373900.085576,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 Last login: Sun Nov 22 18:51:08 2026 from 10.99.0.13\r\r\n
+1795373900.085792,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 FreeBSD 15.1-RELEASE-p7 (GENERIC) releng/15.1-n283696-bb03631fe3b7\r\n\r\nWelcome to FreeBSD!\r\n\r\nRelease Notes, Errata: https://www.FreeBSD.org/releases/\r\nSecurity Advisories:   https:
+1795373900.085798,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 //www.FreeBSD.org/security/\r\nFreeBSD Handbook:      https://www.FreeBSD.org/
+1795373900.085800,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 handbook/\r\nFreeBSD FAQ:           https://www.FreeBSD.org/faq/\r\nQuestions List:        https://www.FreeBSD.org/lists/questions/\r\n
+1795373900.085819,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 FreeBSD Forums:        https://forums.FreeBSD.org/\r\n
+1795373900.086019,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\nDocuments installed with the system are in the /usr/local/share/doc/freebsd/\r\ndirectory, or can be installed later with:  pkg install en-freebsd-doc\r\nFor other languages, replace
+1795373900.086026,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  "en" with a language code like de or fr.\r\n\r\nShow the version of FreeBSD ins
+1795373900.086027,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 talled:  freebsd-version ; uname -a\r\nPlease include that output and any error messages when posting questions.\r\nIntroduction to manual pages:  man man\r\nFreeBSD directory layout:   
+1795373900.086027,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0    man hier\r\n\r\nTo change this login announcement, see motd(5).\r\n
+1795373900.086642,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,r /etc/group
+1795373900.086686,10.99.0.13>10.99.0.14,read,6856,0,sshd-session,/etc/group
+1795373900.087102,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf.db errno=2
+1795373900.087137,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf errno=2
+1795373900.087168,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,r /etc/login.conf.db
+1795373900.087199,10.99.0.13>10.99.0.14,read,6856,0,sshd-session,/etc/login.conf.db
+1795373900.087309,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf.db errno=2
+1795373900.087336,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf errno=2
+1795373900.087354,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,r /etc/login.conf.db
+1795373900.087433,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf.db errno=2
+1795373900.087461,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf errno=2
+1795373900.087512,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,r /etc/login.conf.db
+1795373900.087734,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf.db errno=2
+1795373900.087758,10.99.0.13>10.99.0.14,open-failed,6856,0,sshd-session,r /root/.login_conf errno=2
+1795373900.087782,10.99.0.13>10.99.0.14,open,6856,0,sshd-session,r /etc/login.conf.db
+1795373900.087963,10.99.0.13>10.99.0.14,exec,6856,0,sshd-session,/bin/sh | -sh | USER=root LOGNAME=root HOME=/root MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin TERM=tmux-256color BLOCKSIZE=K MM_CHARSET=UTF-8 LANG=C.UTF-8 SHELL=/bin/sh SSH_CLIENT=10.99.0.13 43246 22 SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SSH_TTY=/dev/pts/0
+1795373900.088550,10.99.0.13>10.99.0.14,open,6856,0,sh,r /etc/libmap.conf
+1795373900.088593,10.99.0.13>10.99.0.14,read,6856,0,sh,/etc/libmap.conf
+1795373900.088615,10.99.0.13>10.99.0.14,open-failed,6856,0,sh,r /usr/local/etc/libmap.d errno=2
+1795373900.088660,10.99.0.13>10.99.0.14,open,6856,0,sh,r /var/run/ld-elf.so.hints
+1795373900.088685,10.99.0.13>10.99.0.14,read,6856,0,sh,/var/run/ld-elf.so.hints
+1795373900.088709,10.99.0.13>10.99.0.14,open,6856,0,sh,r /lib/libedit.so.8
+1795373900.088808,10.99.0.13>10.99.0.14,open,6856,0,sh,r /lib/libc.so.7
+1795373900.088972,10.99.0.13>10.99.0.14,open,6856,0,sh,r /lib/libtinfow.so.9
+1795373900.089078,10.99.0.13>10.99.0.14,open,6856,0,sh,r /lib/libsys.so.7
+1795373900.090534,10.99.0.13>10.99.0.14,open,6856,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795373900.091136,10.99.0.13>10.99.0.14,open,6856,0,sh,r /dev/pvclock
+1795373900.091295,10.99.0.13>10.99.0.14,open-failed,6856,0,sh,r /etc/termcap.db errno=2
+1795373900.091329,10.99.0.13>10.99.0.14,open,6856,0,sh,r /usr/share/misc/termcap
+1795373900.091365,10.99.0.13>10.99.0.14,read,6856,0,sh,/usr/share/misc/termcap
+1795373900.096147,10.99.0.13>10.99.0.14,open-failed,6856,0,sh,r /root/.editrc errno=2
+1795373900.096204,10.99.0.13>10.99.0.14,open,6856,0,sh,rw /dev/pts/0
+1795373900.096337,10.99.0.13>10.99.0.14,open,6856,0,sh,r /etc/profile
+1795373900.096370,10.99.0.13>10.99.0.14,read,6856,0,sh,/etc/profile
+1795373900.096445,10.99.0.13>10.99.0.14,open,6856,0,sh,r /etc/profile.d
+1795373900.096537,10.99.0.13>10.99.0.14,open-failed,6856,0,sh,r /usr/local/etc/profile.d errno=2
+1795373900.096601,10.99.0.13>10.99.0.14,open,6856,0,sh,r /root/.profile
+1795373900.096626,10.99.0.13>10.99.0.14,read,6856,0,sh,/root/.profile
+1795373900.097167,10.99.0.13>10.99.0.14,exec,6857,0,sh,/usr/bin/resizewin | /usr/bin/resizewin -z | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373900.097580,10.99.0.13>10.99.0.14,open,6857,0,resizewin,r /etc/libmap.conf
+1795373900.097636,10.99.0.13>10.99.0.14,read,6857,0,resizewin,/etc/libmap.conf
+1795373900.097668,10.99.0.13>10.99.0.14,open-failed,6857,0,resizewin,r /usr/local/etc/libmap.d errno=2
+1795373900.097731,10.99.0.13>10.99.0.14,open,6857,0,resizewin,r /var/run/ld-elf.so.hints
+1795373900.097767,10.99.0.13>10.99.0.14,read,6857,0,resizewin,/var/run/ld-elf.so.hints
+1795373900.097798,10.99.0.13>10.99.0.14,open,6857,0,resizewin,r /lib/libc.so.7
+1795373900.097982,10.99.0.13>10.99.0.14,open,6857,0,resizewin,r /lib/libsys.so.7
+1795373900.099117,10.99.0.13>10.99.0.14,open,6857,0,resizewin,rw /dev/pts/0
+1795373900.099234,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \x1b7\x1b[r\x1b[999;999H\x1b[6n\x1b8
+1795373900.099278,10.99.0.13>10.99.0.14,open,6857,0,resizewin,r /dev/pvclock
+1795373902.104853,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 resizewin: timeout reading from terminal\r\n
+1795373902.105206,10.99.0.13>10.99.0.14,read,6856,0,sh,/root/.profile
+1795373902.105259,10.99.0.13>10.99.0.14,open,6856,0,sh,r /root/.shrc
+1795373902.105292,10.99.0.13>10.99.0.14,read,6856,0,sh,/root/.shrc
+1795373902.105476,10.99.0.13>10.99.0.14,open,6856,0,sh,r /root/.sh_history
+1795373902.105555,10.99.0.13>10.99.0.14,read,6856,0,sh,/root/.sh_history
+1795373902.105767,10.99.0.13>10.99.0.14,open,6856,0,sh,r /etc/nsswitch.conf
+1795373902.105819,10.99.0.13>10.99.0.14,read,6856,0,sh,/etc/nsswitch.conf
+1795373902.105942,10.99.0.13>10.99.0.14,open,6856,0,sh,r /etc/spwd.db
+1795373902.105975,10.99.0.13>10.99.0.14,read,6856,0,sh,/etc/spwd.db
+1795373902.106153,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373903.937630,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 id\n
+1795373903.937812,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 id\r\n
+1795373903.938427,10.99.0.13>10.99.0.14,exec,6858,0,sh,/usr/bin/id | id | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373903.938880,10.99.0.13>10.99.0.14,open,6858,0,id,r /etc/libmap.conf
+1795373903.938927,10.99.0.13>10.99.0.14,read,6858,0,id,/etc/libmap.conf
+1795373903.938955,10.99.0.13>10.99.0.14,open-failed,6858,0,id,r /usr/local/etc/libmap.d errno=2
+1795373903.940100,10.99.0.13>10.99.0.14,open,6858,0,id,r /var/run/ld-elf.so.hints
+1795373903.940132,10.99.0.13>10.99.0.14,read,6858,0,id,/var/run/ld-elf.so.hints
+1795373903.940159,10.99.0.13>10.99.0.14,open,6858,0,id,r /lib/libc.so.7
+1795373903.940343,10.99.0.13>10.99.0.14,open,6858,0,id,r /lib/libsys.so.7
+1795373903.941807,10.99.0.13>10.99.0.14,open,6858,0,id,r /etc/nsswitch.conf
+1795373903.941955,10.99.0.13>10.99.0.14,read,6858,0,id,/etc/nsswitch.conf
+1795373903.942251,10.99.0.13>10.99.0.14,open,6858,0,id,r /etc/spwd.db
+1795373903.942284,10.99.0.13>10.99.0.14,read,6858,0,id,/etc/spwd.db
+1795373903.942443,10.99.0.13>10.99.0.14,open,6858,0,id,r /etc/group
+1795373903.942481,10.99.0.13>10.99.0.14,read,6858,0,id,/etc/group
+1795373903.942518,10.99.0.13>10.99.0.14,open,6858,0,id,r /etc/group
+1795373903.942558,10.99.0.13>10.99.0.14,open,6858,0,id,r /etc/group
+1795373903.942658,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 uid=0(root) gid=0(wheel) groups=0(wheel),5(operator)\r\n
+1795373903.943075,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373904.963364,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 uname -sr\n
+1795373904.963616,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 uname
+1795373904.963654,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  
+1795373904.963704,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 -s
+1795373904.963739,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 r
+1795373904.963774,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373904.964425,10.99.0.13>10.99.0.14,exec,6859,0,sh,/usr/bin/uname | uname -sr | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373904.964852,10.99.0.13>10.99.0.14,open,6859,0,uname,r /etc/libmap.conf
+1795373904.964924,10.99.0.13>10.99.0.14,read,6859,0,uname,/etc/libmap.conf
+1795373904.964951,10.99.0.13>10.99.0.14,open-failed,6859,0,uname,r /usr/local/etc/libmap.d errno=2
+1795373904.964992,10.99.0.13>10.99.0.14,open,6859,0,uname,r /var/run/ld-elf.so.hints
+1795373904.965019,10.99.0.13>10.99.0.14,read,6859,0,uname,/var/run/ld-elf.so.hints
+1795373904.965044,10.99.0.13>10.99.0.14,open,6859,0,uname,r /lib/libc.so.7
+1795373904.965210,10.99.0.13>10.99.0.14,open,6859,0,uname,r /lib/libsys.so.7
+1795373904.966549,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 FreeBSD 15.1-RELEASE-p7\r\n
+1795373904.966971,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373905.988043,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 cat /etc/hosts > /tmp/jail-mark\n
+1795373905.988228,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 cat 
+1795373905.988273,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 /e
+1795373905.988313,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 tc
+1795373905.988339,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 /
+1795373905.988367,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 h
+1795373905.988581,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 osts > /tm
+1795373905.988612,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 p
+1795373905.988640,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 /
+1795373905.989047,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 jail-mark\r\n
+1795373905.989604,10.99.0.13>10.99.0.14,open,6860,0,sh,wct /tmp/jail-mark
+1795373905.989774,10.99.0.13>10.99.0.14,exec,6860,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373905.990235,10.99.0.13>10.99.0.14,open,6860,0,cat,r /etc/libmap.conf
+1795373905.990280,10.99.0.13>10.99.0.14,read,6860,0,cat,/etc/libmap.conf
+1795373905.990305,10.99.0.13>10.99.0.14,open-failed,6860,0,cat,r /usr/local/etc/libmap.d errno=2
+1795373905.990349,10.99.0.13>10.99.0.14,open,6860,0,cat,r /var/run/ld-elf.so.hints
+1795373905.990375,10.99.0.13>10.99.0.14,read,6860,0,cat,/var/run/ld-elf.so.hints
+1795373905.990397,10.99.0.13>10.99.0.14,open,6860,0,cat,r /lib/libc.so.7
+1795373905.990568,10.99.0.13>10.99.0.14,open,6860,0,cat,r /lib/libsys.so.7
+1795373905.991799,10.99.0.13>10.99.0.14,open,6860,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795373905.992134,10.99.0.13>10.99.0.14,open,6860,0,cat,r /etc/hosts
+1795373905.992174,10.99.0.13>10.99.0.14,read,6860,0,cat,/etc/hosts
+1795373905.992181,10.99.0.13>10.99.0.14,write,6860,0,cat,/tmp/jail-mark
+1795373905.992662,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373907.016516,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 cat /nonexistent-file\n
+1795373907.016804,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 cat /no
+1795373907.016844,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 ne
+1795373907.016890,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 xi
+1795373907.016917,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 s
+1795373907.016967,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 te
+1795373907.017018,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 nt
+1795373907.017052,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 -
+1795373907.017081,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 f
+1795373907.017105,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 i
+1795373907.017129,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 l
+1795373907.017153,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 e
+1795373907.017181,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373907.017786,10.99.0.13>10.99.0.14,exec,6861,0,sh,/bin/cat | cat /nonexistent-file | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373907.018190,10.99.0.13>10.99.0.14,open,6861,0,cat,r /etc/libmap.conf
+1795373907.018241,10.99.0.13>10.99.0.14,read,6861,0,cat,/etc/libmap.conf
+1795373907.018274,10.99.0.13>10.99.0.14,open-failed,6861,0,cat,r /usr/local/etc/libmap.d errno=2
+1795373907.018320,10.99.0.13>10.99.0.14,open,6861,0,cat,r /var/run/ld-elf.so.hints
+1795373907.018346,10.99.0.13>10.99.0.14,read,6861,0,cat,/var/run/ld-elf.so.hints
+1795373907.018369,10.99.0.13>10.99.0.14,open,6861,0,cat,r /lib/libc.so.7
+1795373907.018533,10.99.0.13>10.99.0.14,open,6861,0,cat,r /lib/libsys.so.7
+1795373907.019726,10.99.0.13>10.99.0.14,open,6861,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795373907.020062,10.99.0.13>10.99.0.14,open-failed,6861,0,cat,r /nonexistent-file errno=2
+1795373907.020198,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 cat: /nonexistent-file: 
+1795373907.020224,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 No such file or directory
+1795373907.020254,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373907.020670,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373908.031587,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 sleep 30 & kill $!\n
+1795373908.031811,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 slee
+1795373908.031840,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 p
+1795373908.031882,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  3
+1795373908.031931,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 0 
+1795373908.031967,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 &
+1795373908.031988,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  
+1795373908.032021,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 k
+1795373908.032051,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 i
+1795373908.032081,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 l
+1795373908.032212,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 l $!\r\n
+1795373908.032741,10.99.0.13>10.99.0.14,signal,6856,0,sh,15 to 6862 sh
+1795373908.032992,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373909.045173,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 env SECRET=xyz /bin/echo hello\n
+1795373909.045342,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 env
+1795373909.045369,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  
+1795373909.045518,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 SECRET=
+1795373909.045563,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 xy
+1795373909.045619,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 z
+1795373909.045654,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  
+1795373909.045687,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 /
+1795373909.045715,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 b
+1795373909.045742,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 i
+1795373909.045795,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 n/
+1795373909.045821,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 e
+1795373909.045852,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 c
+1795373909.045883,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 h
+1795373909.045913,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 o
+1795373909.045942,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  
+1795373909.045975,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 h
+1795373909.046005,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 e
+1795373909.046037,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 l
+1795373909.046064,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 l
+1795373909.046090,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 o
+1795373909.046129,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373909.046791,10.99.0.13>10.99.0.14,exec,6863,0,sh,/usr/bin/env | env SECRET=xyz /bin/echo hello | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373909.047169,10.99.0.13>10.99.0.14,open,6863,0,env,r /etc/libmap.conf
+1795373909.047213,10.99.0.13>10.99.0.14,read,6863,0,env,/etc/libmap.conf
+1795373909.047246,10.99.0.13>10.99.0.14,open-failed,6863,0,env,r /usr/local/etc/libmap.d errno=2
+1795373909.047294,10.99.0.13>10.99.0.14,open,6863,0,env,r /var/run/ld-elf.so.hints
+1795373909.047322,10.99.0.13>10.99.0.14,read,6863,0,env,/var/run/ld-elf.so.hints
+1795373909.047349,10.99.0.13>10.99.0.14,open,6863,0,env,r /lib/libutil.so.10
+1795373909.047449,10.99.0.13>10.99.0.14,open,6863,0,env,r /lib/libc.so.7
+1795373909.047651,10.99.0.13>10.99.0.14,open,6863,0,env,r /lib/libsys.so.7
+1795373909.048992,10.99.0.13>10.99.0.14,exec,6863,0,env,/bin/echo | /bin/echo hello | SECRET=xyz SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373909.049608,10.99.0.13>10.99.0.14,open,6863,0,echo,r /etc/libmap.conf
+1795373909.049667,10.99.0.13>10.99.0.14,read,6863,0,echo,/etc/libmap.conf
+1795373909.049694,10.99.0.13>10.99.0.14,open-failed,6863,0,echo,r /usr/local/etc/libmap.d errno=2
+1795373909.049731,10.99.0.13>10.99.0.14,open,6863,0,echo,r /var/run/ld-elf.so.hints
+1795373909.049753,10.99.0.13>10.99.0.14,read,6863,0,echo,/var/run/ld-elf.so.hints
+1795373909.049778,10.99.0.13>10.99.0.14,open,6863,0,echo,r /lib/libc.so.7
+1795373909.049917,10.99.0.13>10.99.0.14,open,6863,0,echo,r /lib/libsys.so.7
+1795373909.050919,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 hello\r\n
+1795373909.051329,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 [1]   Terminated              sleep 30\r\n
+1795373909.051372,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373910.068982,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 passwd foo\n
+1795373910.069123,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 passwd
+1795373910.069157,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0  foo
+1795373910.069190,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373910.069714,10.99.0.13>10.99.0.14,exec,6864,0,sh,/usr/bin/passwd | passwd foo | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373910.070139,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/libmap.conf
+1795373910.070188,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/libmap.conf
+1795373910.070210,10.99.0.13>10.99.0.14,open-failed,6864,0,passwd,r /usr/local/etc/libmap.d errno=2
+1795373910.070262,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /var/run/ld-elf.so.hints
+1795373910.070289,10.99.0.13>10.99.0.14,read,6864,0,passwd,/var/run/ld-elf.so.hints
+1795373910.070312,10.99.0.13>10.99.0.14,open-failed,6864,0,passwd,r /lib/libpam.so.6 errno=2
+1795373910.070338,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/libpam.so.6
+1795373910.070422,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /lib/libc.so.7
+1795373910.070611,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /lib/libsys.so.7
+1795373910.071878,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/nsswitch.conf
+1795373910.071987,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/nsswitch.conf
+1795373910.072197,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/spwd.db
+1795373910.072227,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/spwd.db
+1795373910.072463,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 Changing local password for foo\r\n
+1795373910.072541,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/pam.d/passwd
+1795373910.072599,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/pam.d/passwd
+1795373910.072680,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/pam_unix.so.6
+1795373910.072801,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /lib/libutil.so.10
+1795373910.072903,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /lib/libcrypt.so.5
+1795373910.072983,10.99.0.13>10.99.0.14,open-failed,6864,0,passwd,r /lib/libypclnt.so.4 errno=2
+1795373910.073021,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/libypclnt.so.4
+1795373910.073123,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /lib/libmd.so.7
+1795373910.074151,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/pam.d/other
+1795373910.074189,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/pam.d/other
+1795373910.074216,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/pam_unix.so.6
+1795373910.074285,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/pam.d/other
+1795373910.074332,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/pam_nologin.so.6
+1795373910.074492,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/pam_login_access.so.6
+1795373910.074696,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/pam_unix.so.6
+1795373910.074767,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/pam.d/other
+1795373910.074826,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /usr/lib/pam_permit.so.6
+1795373910.075527,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/spwd.db
+1795373910.075563,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/spwd.db
+1795373910.075645,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/spwd.db
+1795373910.075794,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 New Password:
+1795373911.095620,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 foobar!\n
+1795373911.095774,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373911.095816,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 Retype New Password:
+1795373912.101062,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 foobar!\n
+1795373912.101215,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373912.101330,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/login.conf.db
+1795373912.101392,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/login.conf.db
+1795373912.108698,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/master.passwd
+1795373912.108845,10.99.0.13>10.99.0.14,open,6864,0,passwd,rwc /etc/pw.rbIaYu
+1795373912.108896,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/master.passwd
+1795373912.108956,10.99.0.13>10.99.0.14,open,6864,0,passwd,r /etc/shells
+1795373912.108995,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/shells
+1795373912.109036,10.99.0.13>10.99.0.14,write,6864,0,passwd,/etc/pw.rbIaYu
+1795373912.109201,10.99.0.13>10.99.0.14,read,6864,0,passwd,/etc/master.passwd
+1795373912.110278,10.99.0.13>10.99.0.14,exec,6865,0,passwd,/usr/sbin/pwd_mkdb | pwd_mkdb -p -d /etc -u foo /etc/pw.rbIaYu | SSH_CLIENT=10.99.0.13 43246 22 LOGNAME=root PAGER=less LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin ENV=/root/.shrc PWD=/root TERM=tmux-256color SSH_TTY=/dev/pts/0 HOME=/root USER=root SSH_CONNECTION=10.99.0.13 43246 10.99.0.14 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795373912.110655,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc/libmap.conf
+1795373912.110701,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/libmap.conf
+1795373912.110727,10.99.0.13>10.99.0.14,open-failed,6865,0,pwd_mkdb,r /usr/local/etc/libmap.d errno=2
+1795373912.110775,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /var/run/ld-elf.so.hints
+1795373912.110800,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/var/run/ld-elf.so.hints
+1795373912.110822,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /lib/libc.so.7
+1795373912.110990,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /lib/libsys.so.7
+1795373912.114272,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc/pw.rbIaYu
+1795373912.114386,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc/pwd.db
+1795373912.114471,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,wc /etc/pwd.db.tmp
+1795373912.114507,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/pwd.db
+1795373912.114736,10.99.0.13>10.99.0.14,write,6865,0,pwd_mkdb,/etc/pwd.db.tmp
+1795373912.115117,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,rw /etc/pwd.db.tmp
+1795373912.115159,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/pwd.db.tmp
+1795373912.115273,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc/spwd.db
+1795373912.115329,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,wc /etc/spwd.db.tmp
+1795373912.115381,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/spwd.db
+1795373912.115406,10.99.0.13>10.99.0.14,write,6865,0,pwd_mkdb,/etc/spwd.db.tmp
+1795373912.115758,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,rw /etc/spwd.db.tmp
+1795373912.115792,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/spwd.db.tmp
+1795373912.115845,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc/pwd.db
+1795373912.115868,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/pwd.db
+1795373912.116085,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,wc /etc/pw.rbIaYu.orig
+1795373912.116141,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/pw.rbIaYu
+1795373912.116594,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc/nsswitch.conf
+1795373912.116794,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/nsswitch.conf
+1795373912.117321,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc/shells
+1795373912.117378,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/shells
+1795373912.117535,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/pwd.db.tmp
+1795373912.117629,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/spwd.db.tmp
+1795373912.117712,10.99.0.13>10.99.0.14,read,6865,0,pwd_mkdb,/etc/pw.rbIaYu
+1795373912.117813,10.99.0.13>10.99.0.14,write,6865,0,pwd_mkdb,/etc/pwd.db.tmp
+1795373912.118729,10.99.0.13>10.99.0.14,write,6865,0,pwd_mkdb,/etc/spwd.db.tmp
+1795373912.119078,10.99.0.13>10.99.0.14,write,6865,0,pwd_mkdb,/etc/pw.rbIaYu.orig
+1795373912.119286,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc
+1795373912.119804,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc
+1795373912.120249,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc
+1795373912.120692,10.99.0.13>10.99.0.14,open,6865,0,pwd_mkdb,r /etc
+1795373912.122394,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 root@j1:~ # 
+1795373913.132044,10.99.0.13>10.99.0.14,tty-in,6855,0,sshd-session,pts/0 exit\n
+1795373913.132224,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 exi
+1795373913.132262,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 t
+1795373913.132354,10.99.0.13>10.99.0.14,tty-out,6855,0,sshd-session,pts/0 \r\n
+1795373913.132721,10.99.0.13>10.99.0.14,open,6856,0,sh,rwc /root/.sh_history.4m2MsDdome
+1795373913.133112,10.99.0.13>10.99.0.14,write,6856,0,sh,/root/.sh_history
+1795373913.133667,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /etc/spwd.db
+1795373913.133698,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/etc/spwd.db
+1795373913.133733,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,r /var/run/utx.active
+1795373913.133765,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,rwc /var/run/utx.active
+1795373913.133780,10.99.0.13>10.99.0.14,read,6853,0,sshd-session,/var/run/utx.active
+1795373913.133791,10.99.0.13>10.99.0.14,write,6853,0,sshd-session,/var/run/utx.active
+1795373913.133808,10.99.0.13>10.99.0.14,open,6853,0,sshd-session,wac /var/log/utx.log
+1795373913.133826,10.99.0.13>10.99.0.14,write,6853,0,sshd-session,/var/log/utx.log

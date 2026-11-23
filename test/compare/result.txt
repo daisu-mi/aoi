@@ -1,0 +1,55 @@
+
+== exec の件数
+  honey 12、監査 12、DTrace 12
+  引数の並びが全件一致: honey と監査 False、honey と DTrace False
+  honey: ['/bin/echo hello', 'env SECRET=xyz /bin/echo hello', 'passwd foo']
+  監査: ['/bin/echo hello', 'env SECRET=xyz /bin/echo hello', 'passwd foo']
+  DTrace: ['/bin/echo hello', 'env SECRET=xyz /bin/echo hello', 'passwd foo']
+  環境変数 SECRET=xyz が残った件数: honey 2、監査 2、DTrace 1
+
+== open の件数(成功 / 失敗)
+  honey 198 / 61
+  監査 198 / 61
+  DTrace 198 / 61
+  honey にあって DTrace にない: 4、DTrace にあって honey にない: 4
+  honey にあって監査にない: 27、監査にあって honey にない: 27
+  honey にあって監査にない例: [('sshd-session', 'login.conf.db', True), ('sshd-session', 'group', True), ('sshd-session', '.login_conf.db', False), ('sshd-session', '.login_conf', False), ('sshd-session', '0', True), ('sshd-session', 'tty', False)]
+  監査にあって honey にない例: [('sh', 'tty', False), ('sh', 'tty', True), ('sh', 'motd', True), ('sh', 'group', True), ('sh', '.login_conf.db', False), ('sh', '.login_conf', False)]
+  DTrace と honey の差の例: [('sshd-session', '0', True), ('sh', '0', True), ('resizewin', '0', True), ('pwd_mkdb', 'pw.rbIaYu.orig', True)] [('sshd-session', 'tty', True), ('sh', 'tty', True), ('resizewin', 'tty', True), ('pwd_mkdb', 'pw.B9MiDU.orig', True)]
+
+== signal
+  honey 1 件: ['15 to 6862 sh']
+  監査 kill(2) 1 件
+  DTrace 15 件(うちカーネルが出した子プロセス終了の通知 20 番が 13 件)
+  DTrace の 20 番以外: ['1 to 7304 sh', '15 to 7310 sh']
+
+== 端末
+  入力: honey 10 行、DTrace 149 文字、監査 0
+  パスワード foobar! が入力の記録にある回数: honey 2、DTrace 2、監査 0
+  DTrace の入力をつなげたもの: 'id\nuname -sr\ncat /etc/hosts > /tmp/jail-mark\ncat /nonexistent-file\nsleep 30 & kill $!\nenv SECRET=xyz /bin/echo hello\npasswd foo\nfoobar!\nfoobar!\nexit\n'
+  出力: honey 95 件 約 1539 バイト、DTrace 180 件
+  出力に「New Password」がある: honey True、DTrace True
+  出力に入力の写し(root@j1 のあとの id など)がある: honey True、DTrace True
+
+== read
+  行数: honey 83、DTrace 719、監査 0
+  プロセスとファイルの組: honey 61、DTrace 60、共通 60
+  honey だけ: [('cat', 'hosts')]
+  DTrace だけ: []
+  名前が ? の行: honey 0、DTrace 0
+
+== write
+  行数: honey 13、DTrace 47、監査 0
+  プロセスとファイルの組: honey 8、DTrace 7、共通 5
+  honey だけ: [('cat', 'jail-mark'), ('passwd', 'tmp*'), ('pwd_mkdb', 'pw.rbIaYu.orig')]
+  DTrace だけ: [('passwd', '?'), ('pwd_mkdb', '?')]
+  名前が ? の行: honey 0、DTrace 33
+
+== 接続元
+  honey: {'-': 55, '10.99.0.13>10.99.0.14': 418}
+  監査の subject: {'10.0.2.2': 500}
+  DTrace: 記録なし
+
+== 全体の行数
+  honey 473、監査 500、DTrace 1381
+  監査の内訳の上位: [('open(2) - read', 210), ('setrlimit(2)', 34), ('openat(2) - read', 24), ('wait4(2)', 24), ('setegid(2)', 19), ('seteuid(2)', 19), ('setpgrp(2)', 18), ('fork(2)', 13)]

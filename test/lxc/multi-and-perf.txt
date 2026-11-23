@@ -1,0 +1,100 @@
+== 速度
+off 1 1.731153562
+off 2 1.649644286
+off 3 1.666465682
+off 4 1.681277357
+off 5 1.660001156
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+off 1 1.201421888
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+off 2 .340448077
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+off 3 .355845274
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+off 4 .298796316
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+off 5 .377053605
+bpftrace 1 1.774101614
+bpftrace 2 1.698247216
+bpftrace 3 1.735358444
+bpftrace 4 1.745662767
+bpftrace 5 1.757550836
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+bpftrace 1 .451999311
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+bpftrace 2 .362811994
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+bpftrace 3 .413469213
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+bpftrace 4 .423400460
+cat: /usr/lib/systemd/system/system-systemdx2dveritysetup.slice: No such file or directory
+cat: /usr/lib/systemd/system/system-systemdx2dcryptsetup.slice: No such file or directory
+bpftrace 5 .363836049
+72099
+121571
+== 3 人同時
+Exception in thread Thread-2 (attacker):
+Exception in thread Thread-3 (attacker):
+Exception in thread Thread-1 (attacker):
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+  File "/tmp/multi.py", line 6, in attacker
+    s = socket.create_connection((target, port), timeout=10, source_address=(src, 0))
+  File "/usr/lib/python3.14/threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+  File "/usr/lib/python3.14/threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+Traceback (most recent call last):
+  File "/tmp/multi.py", line 6, in attacker
+    s = socket.create_connection((target, port), timeout=10, source_address=(src, 0))
+  File "/usr/lib/python3.14/threading.py", line 1082, in _bootstrap_inner
+    self._context.run(self.run)
+  File "/usr/lib/python3.14/threading.py", line 1024, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+  File "/tmp/multi.py", line 6, in attacker
+    s = socket.create_connection((target, port), timeout=10, source_address=(src, 0))
+ConnectionRefusedError: [Errno 111] Connection refused
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 870, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+  File "/usr/lib/python3.14/socket.py", line 855, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+exit=0
+== コンテナの中から
+1
+0
+console core fd full initctl log mqueue null ptmx pts random shm stderr stdin stdout tty tty1 tty2 tty3 tty4 urandom zero 
+ls: cannot access '/dev/vda': No such file or directory
+mknod: /tmp/x: Operation not permitted
+dmesg: read kernel buffer failed: Operation not permitted
+rmmod: ERROR: ../libkmod/libkmod-module.c:856 kmod_module_remove_module() could not remove 'aod_linux': Operation not permitted
+rmmod: ERROR: could not remove module aod_linux: Operation not permitted
+sh: 1: bpftool: not found
+cat: /sys/kernel/debug/tracing/kprobe_events: No such file or directory
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+fd0       2:0    1    4K  0 disk 
+sr0      11:0    1  368K  1 rom  
+0::/init.scope
+lxc

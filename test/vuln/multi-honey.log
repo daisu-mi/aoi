@@ -1,0 +1,971 @@
+1795374657.735879,-,exec,8293,0,jexec,/sbin/ifconfig | ifconfig lo0 inet 127.0.0.1/8 up | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374657.736185,-,open,8293,0,ifconfig,r /etc/libmap.conf
+1795374657.736210,-,read,8293,0,ifconfig,/etc/libmap.conf
+1795374657.736227,-,open-failed,8293,0,ifconfig,r /usr/local/etc/libmap.d errno=2
+1795374657.736244,-,open,8293,0,ifconfig,r /var/run/ld-elf.so.hints
+1795374657.736248,-,read,8293,0,ifconfig,/var/run/ld-elf.so.hints
+1795374657.736273,-,open,8293,0,ifconfig,r /lib/libm.so.5
+1795374657.736337,-,open,8293,0,ifconfig,r /lib/libutil.so.10
+1795374657.736407,-,open,8293,0,ifconfig,r /lib/lib80211.so.1
+1795374657.736460,-,open,8293,0,ifconfig,r /lib/libjail.so.1
+1795374657.736520,-,open,8293,0,ifconfig,r /lib/libnv.so.1
+1795374657.736583,-,open,8293,0,ifconfig,r /lib/libc.so.7
+1795374657.736736,-,open,8293,0,ifconfig,r /lib/libsbuf.so.6
+1795374657.736787,-,open,8293,0,ifconfig,r /lib/libbsdxml.so.4
+1795374657.736861,-,open,8293,0,ifconfig,r /lib/libsys.so.7
+1795374657.741410,-,exec,8299,0,jexec,/sbin/ifconfig | ifconfig epair1b inet 10.99.0.20/29 up | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374657.741719,-,open,8299,0,ifconfig,r /etc/libmap.conf
+1795374657.741737,-,read,8299,0,ifconfig,/etc/libmap.conf
+1795374657.741753,-,open-failed,8299,0,ifconfig,r /usr/local/etc/libmap.d errno=2
+1795374657.741769,-,open,8299,0,ifconfig,r /var/run/ld-elf.so.hints
+1795374657.741773,-,read,8299,0,ifconfig,/var/run/ld-elf.so.hints
+1795374657.741786,-,open,8299,0,ifconfig,r /lib/libm.so.5
+1795374657.741876,-,open,8299,0,ifconfig,r /lib/libutil.so.10
+1795374657.741940,-,open,8299,0,ifconfig,r /lib/lib80211.so.1
+1795374657.741993,-,open,8299,0,ifconfig,r /lib/libjail.so.1
+1795374657.742043,-,open,8299,0,ifconfig,r /lib/libnv.so.1
+1795374657.742098,-,open,8299,0,ifconfig,r /lib/libc.so.7
+1795374657.742226,-,open,8299,0,ifconfig,r /lib/libsbuf.so.6
+1795374657.742275,-,open,8299,0,ifconfig,r /lib/libbsdxml.so.4
+1795374657.742332,-,open,8299,0,ifconfig,r /lib/libsys.so.7
+1795374657.750076,-,exec,8305,0,jexec,/usr/sbin/inetd | /usr/sbin/inetd -a 10.99.0.20 -p /var/run/inetd-j1.pid /tmp/inetd-test.conf | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374657.750371,-,open,8305,0,inetd,r /etc/libmap.conf
+1795374657.750388,-,read,8305,0,inetd,/etc/libmap.conf
+1795374657.750398,-,open-failed,8305,0,inetd,r /usr/local/etc/libmap.d errno=2
+1795374657.750414,-,open,8305,0,inetd,r /var/run/ld-elf.so.hints
+1795374657.750416,-,read,8305,0,inetd,/var/run/ld-elf.so.hints
+1795374657.750432,-,open,8305,0,inetd,r /lib/libutil.so.10
+1795374657.750494,-,open-failed,8305,0,inetd,r /lib/libwrap.so.6 errno=2
+1795374657.750505,-,open,8305,0,inetd,r /usr/lib/libwrap.so.6
+1795374657.750574,-,open,8305,0,inetd,r /lib/libipsec.so.4
+1795374657.750663,-,open,8305,0,inetd,r /lib/libc.so.7
+1795374657.750845,-,open,8305,0,inetd,r /lib/libsys.so.7
+1795374657.752193,-,open,8305,0,inetd,r /var/run
+1795374657.752261,-,open,8305,0,inetd,wc /var/run/inetd-j1.pid
+1795374657.752301,-,write,8305,0,inetd,/var/run/inetd-j1.pid
+1795374657.752337,-,open,8305,0,inetd,rw /dev/null
+1795374657.752361,-,open,8305,0,inetd,r /
+1795374657.752775,-,write,8308,0,inetd,/var/run/inetd-j1.pid
+1795374657.753166,-,open,8308,0,inetd,r /dev/pvclock
+1795374657.753233,-,open-failed,8308,0,inetd,r /etc/localtime errno=2
+1795374657.753400,-,open,8308,0,inetd,r /etc/netconfig
+1795374657.753425,-,read,8308,0,inetd,/etc/netconfig
+1795374657.753492,-,open,8308,0,inetd,r /etc/netconfig
+1795374657.753523,-,open,8308,0,inetd,r /tmp/inetd-test.conf
+1795374657.753540,-,read,8308,0,inetd,/tmp/inetd-test.conf
+1795374657.753605,-,open,8308,0,inetd,r /etc/nsswitch.conf
+1795374657.753653,-,read,8308,0,inetd,/etc/nsswitch.conf
+1795374657.753877,-,open,8308,0,inetd,r /etc/spwd.db
+1795374657.753892,-,read,8308,0,inetd,/etc/spwd.db
+1795374657.754023,-,open,8308,0,inetd,r /etc/login.conf.db
+1795374657.754032,-,read,8308,0,inetd,/etc/login.conf.db
+1795374657.754082,-,open,8308,0,inetd,r /etc/services
+1795374657.754100,-,read,8308,0,inetd,/etc/services
+1795374658.757092,-,exec,8385,0,jexec,/usr/bin/netstat | netstat -an -p tcp | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374658.757396,-,open,8385,0,netstat,r /etc/libmap.conf
+1795374658.757413,-,read,8385,0,netstat,/etc/libmap.conf
+1795374658.757427,-,open-failed,8385,0,netstat,r /usr/local/etc/libmap.d errno=2
+1795374658.757451,-,open,8385,0,netstat,r /var/run/ld-elf.so.hints
+1795374658.757458,-,read,8385,0,netstat,/var/run/ld-elf.so.hints
+1795374658.757472,-,open,8385,0,netstat,r /lib/libkvm.so.7
+1795374658.757528,-,open-failed,8385,0,netstat,r /lib/libmemstat.so.3 errno=2
+1795374658.757539,-,open,8385,0,netstat,r /usr/lib/libmemstat.so.3
+1795374658.757605,-,open,8385,0,netstat,r /lib/libxo.so.0
+1795374658.757671,-,open,8385,0,netstat,r /lib/libutil.so.10
+1795374658.757746,-,open-failed,8385,0,netstat,r /lib/libnetgraph.so.4 errno=2
+1795374658.757768,-,open,8385,0,netstat,r /usr/lib/libnetgraph.so.4
+1795374658.757822,-,open,8385,0,netstat,r /lib/libjail.so.1
+1795374658.757864,-,open,8385,0,netstat,r /lib/libc.so.7
+1795374658.757994,-,open,8385,0,netstat,r /lib/libelf.so.2
+1795374658.758058,-,open,8385,0,netstat,r /lib/libsys.so.7
+1795374658.759517,-,open,8385,0,netstat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374658.950784,-,open,8391,0,inetd,r /etc/spwd.db
+1795374658.950802,-,read,8391,0,inetd,/etc/spwd.db
+1795374658.950983,-,open,8391,0,inetd,r /etc/login.conf.db
+1795374658.950997,-,read,8391,0,inetd,/etc/login.conf.db
+1795374658.951044,-,open,8392,0,inetd,r /etc/spwd.db
+1795374658.951060,-,read,8392,0,inetd,/etc/spwd.db
+1795374658.951238,-,open,8392,0,inetd,r /etc/login.conf.db
+1795374658.951269,-,read,8392,0,inetd,/etc/login.conf.db
+1795374658.951289,-,open,8393,0,inetd,r /etc/spwd.db
+1795374658.951300,-,read,8393,0,inetd,/etc/spwd.db
+1795374658.951366,-,open,8391,0,inetd,r /etc/group
+1795374658.951402,-,read,8391,0,inetd,/etc/group
+1795374658.951406,-,read,8393,0,inetd,/etc/spwd.db
+1795374658.951441,-,read,8391,0,inetd,/etc/group
+1795374658.951491,-,open,8393,0,inetd,r /etc/login.conf.db
+1795374658.951508,-,read,8393,0,inetd,/etc/login.conf.db
+1795374658.951604,-,open,8392,0,inetd,r /etc/group
+1795374658.951639,-,read,8392,0,inetd,/etc/group
+1795374658.951867,-,open,8393,0,inetd,r /etc/group
+1795374658.951901,-,read,8393,0,inetd,/etc/group
+1795374658.951941,-,open-failed,8391,0,inetd,r /root/.login_conf.db errno=2
+1795374658.951952,-,open-failed,8391,0,inetd,r /root/.login_conf errno=2
+1795374658.951956,-,open,8391,0,inetd,r /etc/login.conf.db
+1795374658.951962,-,read,8391,0,inetd,/etc/login.conf.db
+1795374658.951994,-,exec,8391,0,inetd,/bin/sh | sh /root/honey/vuln.sh | inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374658.952009,-,read,8393,0,inetd,/etc/group
+1795374658.952166,-,open-failed,8392,0,inetd,r /root/.login_conf.db errno=2
+1795374658.952178,-,open-failed,8392,0,inetd,r /root/.login_conf errno=2
+1795374658.952183,-,open,8392,0,inetd,r /etc/login.conf.db
+1795374658.952187,-,read,8392,0,inetd,/etc/login.conf.db
+1795374658.952219,-,exec,8392,0,inetd,/bin/sh | sh /root/honey/vuln.sh | inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374658.952310,-,open,8391,0,sh,r /etc/libmap.conf
+1795374658.952328,-,read,8391,0,sh,/etc/libmap.conf
+1795374658.952337,-,open-failed,8391,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374658.952355,-,open,8391,0,sh,r /var/run/ld-elf.so.hints
+1795374658.952362,-,read,8391,0,sh,/var/run/ld-elf.so.hints
+1795374658.952375,-,open,8391,0,sh,r /lib/libedit.so.8
+1795374658.952430,-,open-failed,8393,0,inetd,r /root/.login_conf.db errno=2
+1795374658.952439,-,open-failed,8393,0,inetd,r /root/.login_conf errno=2
+1795374658.952439,-,open,8391,0,sh,r /lib/libc.so.7
+1795374658.952444,-,open,8393,0,inetd,r /etc/login.conf.db
+1795374658.952449,-,read,8393,0,inetd,/etc/login.conf.db
+1795374658.952482,-,exec,8393,0,inetd,/bin/sh | sh /root/honey/vuln.sh | inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/root/honey TERM=su HOME=/root USER=root SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374658.952552,-,open,8392,0,sh,r /etc/libmap.conf
+1795374658.952568,-,read,8392,0,sh,/etc/libmap.conf
+1795374658.952581,-,open-failed,8392,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374658.952593,-,open,8391,0,sh,r /lib/libtinfow.so.9
+1795374658.952598,-,open,8392,0,sh,r /var/run/ld-elf.so.hints
+1795374658.952600,-,read,8392,0,sh,/var/run/ld-elf.so.hints
+1795374658.952613,-,open,8392,0,sh,r /lib/libedit.so.8
+1795374658.952664,-,open,8391,0,sh,r /lib/libsys.so.7
+1795374658.952678,-,open,8392,0,sh,r /lib/libc.so.7
+1795374658.952870,-,open,8392,0,sh,r /lib/libtinfow.so.9
+1795374658.952894,-,open,8393,0,sh,r /etc/libmap.conf
+1795374658.952903,-,read,8393,0,sh,/etc/libmap.conf
+1795374658.952918,-,open-failed,8393,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374658.952938,-,open,8393,0,sh,r /var/run/ld-elf.so.hints
+1795374658.952940,-,read,8393,0,sh,/var/run/ld-elf.so.hints
+1795374658.952947,-,open,8392,0,sh,r /lib/libsys.so.7
+1795374658.952954,-,open,8393,0,sh,r /lib/libedit.so.8
+1795374658.953024,-,open,8393,0,sh,r /lib/libc.so.7
+1795374658.953189,-,open,8393,0,sh,r /lib/libtinfow.so.9
+1795374658.953266,-,open,8393,0,sh,r /lib/libsys.so.7
+1795374658.954074,-,open,8391,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374658.954314,-,open,8392,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374658.954434,-,open,8391,0,sh,r /root/honey/vuln.sh
+1795374658.954489,-,read,8391,0,sh,/root/honey/vuln.sh
+1795374658.954658,-,open,8392,0,sh,r /root/honey/vuln.sh
+1795374658.954713,-,read,8392,0,sh,/root/honey/vuln.sh
+1795374658.954714,-,open,8393,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374658.955088,-,open,8393,0,sh,r /root/honey/vuln.sh
+1795374658.955149,-,read,8393,0,sh,/root/honey/vuln.sh
+1795374659.450672,10.99.0.19>10.99.0.20,exec,8394,0,sh,/bin/sh | sh -i | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su USER=root HOME=/root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374659.450771,10.99.0.17>10.99.0.20,exec,8395,0,sh,/bin/sh | sh -i | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su USER=root HOME=/root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374659.450827,10.99.0.18>10.99.0.20,exec,8396,0,sh,/bin/sh | sh -i | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su USER=root HOME=/root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374659.450903,10.99.0.19>10.99.0.20,open,8394,0,sh,r /etc/libmap.conf
+1795374659.450920,10.99.0.19>10.99.0.20,read,8394,0,sh,/etc/libmap.conf
+1795374659.450926,10.99.0.17>10.99.0.20,open,8395,0,sh,r /etc/libmap.conf
+1795374659.450936,10.99.0.17>10.99.0.20,read,8395,0,sh,/etc/libmap.conf
+1795374659.450938,10.99.0.19>10.99.0.20,open-failed,8394,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374659.450955,10.99.0.17>10.99.0.20,open-failed,8395,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374659.450957,10.99.0.19>10.99.0.20,open,8394,0,sh,r /var/run/ld-elf.so.hints
+1795374659.450959,10.99.0.19>10.99.0.20,read,8394,0,sh,/var/run/ld-elf.so.hints
+1795374659.450969,10.99.0.17>10.99.0.20,open,8395,0,sh,r /var/run/ld-elf.so.hints
+1795374659.450970,10.99.0.17>10.99.0.20,read,8395,0,sh,/var/run/ld-elf.so.hints
+1795374659.450973,10.99.0.19>10.99.0.20,open,8394,0,sh,r /lib/libedit.so.8
+1795374659.450982,10.99.0.17>10.99.0.20,open,8395,0,sh,r /lib/libedit.so.8
+1795374659.451044,10.99.0.18>10.99.0.20,open,8396,0,sh,r /etc/libmap.conf
+1795374659.451048,10.99.0.17>10.99.0.20,open,8395,0,sh,r /lib/libc.so.7
+1795374659.451060,10.99.0.18>10.99.0.20,read,8396,0,sh,/etc/libmap.conf
+1795374659.451061,10.99.0.19>10.99.0.20,open,8394,0,sh,r /lib/libc.so.7
+1795374659.451077,10.99.0.18>10.99.0.20,open-failed,8396,0,sh,r /usr/local/etc/libmap.d errno=2
+1795374659.451096,10.99.0.18>10.99.0.20,open,8396,0,sh,r /var/run/ld-elf.so.hints
+1795374659.451100,10.99.0.18>10.99.0.20,read,8396,0,sh,/var/run/ld-elf.so.hints
+1795374659.451113,10.99.0.18>10.99.0.20,open,8396,0,sh,r /lib/libedit.so.8
+1795374659.451169,10.99.0.17>10.99.0.20,open,8395,0,sh,r /lib/libtinfow.so.9
+1795374659.451192,10.99.0.18>10.99.0.20,open,8396,0,sh,r /lib/libc.so.7
+1795374659.451228,10.99.0.17>10.99.0.20,open,8395,0,sh,r /lib/libsys.so.7
+1795374659.451232,10.99.0.19>10.99.0.20,open,8394,0,sh,r /lib/libtinfow.so.9
+1795374659.451331,10.99.0.19>10.99.0.20,open,8394,0,sh,r /lib/libsys.so.7
+1795374659.451366,10.99.0.18>10.99.0.20,open,8396,0,sh,r /lib/libtinfow.so.9
+1795374659.451440,10.99.0.18>10.99.0.20,open,8396,0,sh,r /lib/libsys.so.7
+1795374659.452115,10.99.0.17>10.99.0.20,open,8395,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374659.452391,10.99.0.17>10.99.0.20,open-failed,8395,0,sh,rw /dev/tty errno=6
+1795374659.452469,10.99.0.17>10.99.0.20,open,8395,0,sh,r /root/.sh_history
+1795374659.452485,10.99.0.17>10.99.0.20,read,8395,0,sh,/root/.sh_history
+1795374659.452801,10.99.0.19>10.99.0.20,open,8394,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374659.453010,10.99.0.18>10.99.0.20,open,8396,0,sh,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374659.453235,10.99.0.19>10.99.0.20,open-failed,8394,0,sh,rw /dev/tty errno=6
+1795374659.453366,10.99.0.19>10.99.0.20,open,8394,0,sh,r /root/.sh_history
+1795374659.453390,10.99.0.19>10.99.0.20,read,8394,0,sh,/root/.sh_history
+1795374659.453438,10.99.0.18>10.99.0.20,open-failed,8396,0,sh,rw /dev/tty errno=6
+1795374659.453554,10.99.0.18>10.99.0.20,open,8396,0,sh,r /root/.sh_history
+1795374659.453574,10.99.0.18>10.99.0.20,read,8396,0,sh,/root/.sh_history
+1795374659.751115,10.99.0.19>10.99.0.20,exec,8397,0,sh,/bin/echo | /bin/echo attacker3 round0 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374659.751475,10.99.0.19>10.99.0.20,open,8397,0,echo,r /etc/libmap.conf
+1795374659.751492,10.99.0.19>10.99.0.20,read,8397,0,echo,/etc/libmap.conf
+1795374659.751505,10.99.0.19>10.99.0.20,open-failed,8397,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374659.751528,10.99.0.19>10.99.0.20,open,8397,0,echo,r /var/run/ld-elf.so.hints
+1795374659.751531,10.99.0.19>10.99.0.20,read,8397,0,echo,/var/run/ld-elf.so.hints
+1795374659.751547,10.99.0.19>10.99.0.20,open,8397,0,echo,r /lib/libc.so.7
+1795374659.751707,10.99.0.19>10.99.0.20,open,8397,0,echo,r /lib/libsys.so.7
+1795374659.751720,10.99.0.17>10.99.0.20,exec,8398,0,sh,/bin/echo | /bin/echo attacker1 round0 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374659.751812,10.99.0.18>10.99.0.20,exec,8399,0,sh,/bin/echo | /bin/echo attacker2 round0 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374659.752054,10.99.0.17>10.99.0.20,open,8398,0,echo,r /etc/libmap.conf
+1795374659.752073,10.99.0.17>10.99.0.20,read,8398,0,echo,/etc/libmap.conf
+1795374659.752088,10.99.0.17>10.99.0.20,open-failed,8398,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374659.752106,10.99.0.17>10.99.0.20,open,8398,0,echo,r /var/run/ld-elf.so.hints
+1795374659.752110,10.99.0.17>10.99.0.20,read,8398,0,echo,/var/run/ld-elf.so.hints
+1795374659.752125,10.99.0.17>10.99.0.20,open,8398,0,echo,r /lib/libc.so.7
+1795374659.752213,10.99.0.18>10.99.0.20,open,8399,0,echo,r /etc/libmap.conf
+1795374659.752233,10.99.0.18>10.99.0.20,read,8399,0,echo,/etc/libmap.conf
+1795374659.752251,10.99.0.18>10.99.0.20,open-failed,8399,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374659.752270,10.99.0.18>10.99.0.20,open,8399,0,echo,r /var/run/ld-elf.so.hints
+1795374659.752273,10.99.0.18>10.99.0.20,read,8399,0,echo,/var/run/ld-elf.so.hints
+1795374659.752286,10.99.0.17>10.99.0.20,open,8398,0,echo,r /lib/libsys.so.7
+1795374659.752288,10.99.0.18>10.99.0.20,open,8399,0,echo,r /lib/libc.so.7
+1795374659.752471,10.99.0.18>10.99.0.20,open,8399,0,echo,r /lib/libsys.so.7
+1795374660.050992,10.99.0.19>10.99.0.20,open,8408,0,sh,wct /tmp/mark-3-0
+1795374660.051151,10.99.0.19>10.99.0.20,exec,8408,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.051199,10.99.0.17>10.99.0.20,open,8409,0,sh,wct /tmp/mark-1-0
+1795374660.051286,10.99.0.18>10.99.0.20,open,8410,0,sh,wct /tmp/mark-2-0
+1795374660.051395,10.99.0.17>10.99.0.20,exec,8409,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.051427,10.99.0.18>10.99.0.20,exec,8410,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.051449,10.99.0.19>10.99.0.20,open,8408,0,cat,r /etc/libmap.conf
+1795374660.051459,10.99.0.19>10.99.0.20,read,8408,0,cat,/etc/libmap.conf
+1795374660.051472,10.99.0.19>10.99.0.20,open-failed,8408,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374660.051487,10.99.0.19>10.99.0.20,open,8408,0,cat,r /var/run/ld-elf.so.hints
+1795374660.051489,10.99.0.19>10.99.0.20,read,8408,0,cat,/var/run/ld-elf.so.hints
+1795374660.051500,10.99.0.19>10.99.0.20,open,8408,0,cat,r /lib/libc.so.7
+1795374660.051646,10.99.0.19>10.99.0.20,open,8408,0,cat,r /lib/libsys.so.7
+1795374660.051742,10.99.0.17>10.99.0.20,open,8409,0,cat,r /etc/libmap.conf
+1795374660.051757,10.99.0.18>10.99.0.20,open,8410,0,cat,r /etc/libmap.conf
+1795374660.051759,10.99.0.17>10.99.0.20,read,8409,0,cat,/etc/libmap.conf
+1795374660.051768,10.99.0.18>10.99.0.20,read,8410,0,cat,/etc/libmap.conf
+1795374660.051775,10.99.0.17>10.99.0.20,open-failed,8409,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374660.051782,10.99.0.18>10.99.0.20,open-failed,8410,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374660.051793,10.99.0.17>10.99.0.20,open,8409,0,cat,r /var/run/ld-elf.so.hints
+1795374660.051795,10.99.0.17>10.99.0.20,read,8409,0,cat,/var/run/ld-elf.so.hints
+1795374660.051800,10.99.0.18>10.99.0.20,open,8410,0,cat,r /var/run/ld-elf.so.hints
+1795374660.051803,10.99.0.18>10.99.0.20,read,8410,0,cat,/var/run/ld-elf.so.hints
+1795374660.051808,10.99.0.17>10.99.0.20,open,8409,0,cat,r /lib/libc.so.7
+1795374660.051817,10.99.0.18>10.99.0.20,open,8410,0,cat,r /lib/libc.so.7
+1795374660.051965,10.99.0.17>10.99.0.20,open,8409,0,cat,r /lib/libsys.so.7
+1795374660.051979,10.99.0.18>10.99.0.20,open,8410,0,cat,r /lib/libsys.so.7
+1795374660.053287,10.99.0.19>10.99.0.20,open,8408,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374660.053310,10.99.0.18>10.99.0.20,open,8410,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374660.053320,10.99.0.17>10.99.0.20,open,8409,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374660.053606,10.99.0.19>10.99.0.20,open,8408,0,cat,r /etc/hosts
+1795374660.053623,10.99.0.18>10.99.0.20,open,8410,0,cat,r /etc/hosts
+1795374660.053660,10.99.0.19>10.99.0.20,read,8408,0,cat,/etc/hosts
+1795374660.053664,10.99.0.18>10.99.0.20,read,8410,0,cat,/etc/hosts
+1795374660.053665,10.99.0.19>10.99.0.20,write,8408,0,cat,/tmp/mark-3-0
+1795374660.053677,10.99.0.18>10.99.0.20,write,8410,0,cat,/tmp/mark-2-0
+1795374660.053737,10.99.0.19>10.99.0.20,read,8408,0,cat,/etc/hosts
+1795374660.053749,10.99.0.19>10.99.0.20,write,8408,0,cat,/tmp/mark-3-0
+1795374660.053781,10.99.0.18>10.99.0.20,read,8410,0,cat,/etc/hosts
+1795374660.053783,10.99.0.18>10.99.0.20,write,8410,0,cat,/tmp/mark-2-0
+1795374660.054249,10.99.0.17>10.99.0.20,open,8409,0,cat,r /etc/hosts
+1795374660.054272,10.99.0.17>10.99.0.20,read,8409,0,cat,/etc/hosts
+1795374660.054283,10.99.0.17>10.99.0.20,write,8409,0,cat,/tmp/mark-1-0
+1795374660.351227,10.99.0.19>10.99.0.20,open,8411,0,sh,r /dev/null
+1795374660.351228,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8411 sh
+1795374660.351400,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8412 sh
+1795374660.351409,10.99.0.19>10.99.0.20,exec,8411,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.351463,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8413 sh
+1795374660.351476,10.99.0.18>10.99.0.20,open,8413,0,sh,r /dev/null
+1795374660.351757,10.99.0.19>10.99.0.20,open,8411,0,sleep,r /etc/libmap.conf
+1795374660.351775,10.99.0.19>10.99.0.20,read,8411,0,sleep,/etc/libmap.conf
+1795374660.351790,10.99.0.19>10.99.0.20,open-failed,8411,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374660.351808,10.99.0.19>10.99.0.20,open,8411,0,sleep,r /var/run/ld-elf.so.hints
+1795374660.351810,10.99.0.19>10.99.0.20,read,8411,0,sleep,/var/run/ld-elf.so.hints
+1795374660.351823,10.99.0.19>10.99.0.20,open,8411,0,sleep,r /lib/libc.so.7
+1795374660.351956,10.99.0.19>10.99.0.20,open,8411,0,sleep,r /lib/libsys.so.7
+1795374660.351965,10.99.0.17>10.99.0.20,open,8412,0,sh,r /dev/null
+1795374660.352106,10.99.0.18>10.99.0.20,exec,8413,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.352116,10.99.0.17>10.99.0.20,exec,8412,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.352478,10.99.0.18>10.99.0.20,open,8413,0,sleep,r /etc/libmap.conf
+1795374660.352495,10.99.0.18>10.99.0.20,read,8413,0,sleep,/etc/libmap.conf
+1795374660.352511,10.99.0.18>10.99.0.20,open-failed,8413,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374660.352517,10.99.0.17>10.99.0.20,open,8412,0,sleep,r /etc/libmap.conf
+1795374660.352529,10.99.0.17>10.99.0.20,read,8412,0,sleep,/etc/libmap.conf
+1795374660.352529,10.99.0.18>10.99.0.20,open,8413,0,sleep,r /var/run/ld-elf.so.hints
+1795374660.352534,10.99.0.18>10.99.0.20,read,8413,0,sleep,/var/run/ld-elf.so.hints
+1795374660.352547,10.99.0.18>10.99.0.20,open,8413,0,sleep,r /lib/libc.so.7
+1795374660.352549,10.99.0.17>10.99.0.20,open-failed,8412,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374660.352569,10.99.0.17>10.99.0.20,open,8412,0,sleep,r /var/run/ld-elf.so.hints
+1795374660.352574,10.99.0.17>10.99.0.20,read,8412,0,sleep,/var/run/ld-elf.so.hints
+1795374660.352588,10.99.0.17>10.99.0.20,open,8412,0,sleep,r /lib/libc.so.7
+1795374660.352731,10.99.0.18>10.99.0.20,open,8413,0,sleep,r /lib/libsys.so.7
+1795374660.352807,10.99.0.17>10.99.0.20,open,8412,0,sleep,r /lib/libsys.so.7
+1795374660.651538,10.99.0.18>10.99.0.20,exec,8415,0,sh,/bin/echo | /bin/echo attacker2 round1 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.651563,10.99.0.17>10.99.0.20,exec,8416,0,sh,/bin/echo | /bin/echo attacker1 round1 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.652226,10.99.0.19>10.99.0.20,exec,8414,0,sh,/bin/echo | /bin/echo attacker3 round1 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.652507,10.99.0.18>10.99.0.20,open,8415,0,echo,r /etc/libmap.conf
+1795374660.652522,10.99.0.17>10.99.0.20,open,8416,0,echo,r /etc/libmap.conf
+1795374660.652526,10.99.0.18>10.99.0.20,read,8415,0,echo,/etc/libmap.conf
+1795374660.652532,10.99.0.17>10.99.0.20,read,8416,0,echo,/etc/libmap.conf
+1795374660.652540,10.99.0.18>10.99.0.20,open-failed,8415,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374660.652541,10.99.0.19>10.99.0.20,open,8414,0,echo,r /etc/libmap.conf
+1795374660.652547,10.99.0.17>10.99.0.20,open-failed,8416,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374660.652551,10.99.0.19>10.99.0.20,read,8414,0,echo,/etc/libmap.conf
+1795374660.652557,10.99.0.18>10.99.0.20,open,8415,0,echo,r /var/run/ld-elf.so.hints
+1795374660.652560,10.99.0.18>10.99.0.20,read,8415,0,echo,/var/run/ld-elf.so.hints
+1795374660.652563,10.99.0.17>10.99.0.20,open,8416,0,echo,r /var/run/ld-elf.so.hints
+1795374660.652566,10.99.0.17>10.99.0.20,read,8416,0,echo,/var/run/ld-elf.so.hints
+1795374660.652568,10.99.0.19>10.99.0.20,open-failed,8414,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374660.652573,10.99.0.18>10.99.0.20,open,8415,0,echo,r /lib/libc.so.7
+1795374660.652597,10.99.0.17>10.99.0.20,open,8416,0,echo,r /lib/libc.so.7
+1795374660.652600,10.99.0.19>10.99.0.20,open,8414,0,echo,r /var/run/ld-elf.so.hints
+1795374660.652602,10.99.0.19>10.99.0.20,read,8414,0,echo,/var/run/ld-elf.so.hints
+1795374660.652616,10.99.0.19>10.99.0.20,open,8414,0,echo,r /lib/libc.so.7
+1795374660.652764,10.99.0.18>10.99.0.20,open,8415,0,echo,r /lib/libsys.so.7
+1795374660.652796,10.99.0.17>10.99.0.20,open,8416,0,echo,r /lib/libsys.so.7
+1795374660.652798,10.99.0.19>10.99.0.20,open,8414,0,echo,r /lib/libsys.so.7
+1795374660.951279,10.99.0.19>10.99.0.20,open,8417,0,sh,wct /tmp/mark-3-1
+1795374660.951424,10.99.0.19>10.99.0.20,exec,8417,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.951853,10.99.0.19>10.99.0.20,open,8417,0,cat,r /etc/libmap.conf
+1795374660.951875,10.99.0.19>10.99.0.20,read,8417,0,cat,/etc/libmap.conf
+1795374660.951893,10.99.0.19>10.99.0.20,open-failed,8417,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374660.951911,10.99.0.19>10.99.0.20,open,8417,0,cat,r /var/run/ld-elf.so.hints
+1795374660.951913,10.99.0.19>10.99.0.20,read,8417,0,cat,/var/run/ld-elf.so.hints
+1795374660.951928,10.99.0.19>10.99.0.20,open,8417,0,cat,r /lib/libc.so.7
+1795374660.952067,10.99.0.17>10.99.0.20,open,8418,0,sh,wct /tmp/mark-1-1
+1795374660.952077,10.99.0.19>10.99.0.20,open,8417,0,cat,r /lib/libsys.so.7
+1795374660.952117,10.99.0.18>10.99.0.20,open,8419,0,sh,wct /tmp/mark-2-1
+1795374660.952204,10.99.0.17>10.99.0.20,exec,8418,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.952240,10.99.0.18>10.99.0.20,exec,8419,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374660.952580,10.99.0.17>10.99.0.20,open,8418,0,cat,r /etc/libmap.conf
+1795374660.952599,10.99.0.17>10.99.0.20,read,8418,0,cat,/etc/libmap.conf
+1795374660.952614,10.99.0.18>10.99.0.20,open,8419,0,cat,r /etc/libmap.conf
+1795374660.952616,10.99.0.17>10.99.0.20,open-failed,8418,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374660.952624,10.99.0.18>10.99.0.20,read,8419,0,cat,/etc/libmap.conf
+1795374660.952635,10.99.0.17>10.99.0.20,open,8418,0,cat,r /var/run/ld-elf.so.hints
+1795374660.952636,10.99.0.18>10.99.0.20,open-failed,8419,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374660.952639,10.99.0.17>10.99.0.20,read,8418,0,cat,/var/run/ld-elf.so.hints
+1795374660.952652,10.99.0.17>10.99.0.20,open,8418,0,cat,r /lib/libc.so.7
+1795374660.952655,10.99.0.18>10.99.0.20,open,8419,0,cat,r /var/run/ld-elf.so.hints
+1795374660.952657,10.99.0.18>10.99.0.20,read,8419,0,cat,/var/run/ld-elf.so.hints
+1795374660.952676,10.99.0.18>10.99.0.20,open,8419,0,cat,r /lib/libc.so.7
+1795374660.952875,10.99.0.17>10.99.0.20,open,8418,0,cat,r /lib/libsys.so.7
+1795374660.952880,10.99.0.18>10.99.0.20,open,8419,0,cat,r /lib/libsys.so.7
+1795374660.953249,10.99.0.19>10.99.0.20,open,8417,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374660.953528,10.99.0.19>10.99.0.20,open,8417,0,cat,r /etc/hosts
+1795374660.953550,10.99.0.19>10.99.0.20,read,8417,0,cat,/etc/hosts
+1795374660.953576,10.99.0.19>10.99.0.20,write,8417,0,cat,/tmp/mark-3-1
+1795374660.954060,10.99.0.18>10.99.0.20,open,8419,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374660.954072,10.99.0.17>10.99.0.20,open,8418,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374660.954322,10.99.0.17>10.99.0.20,open,8418,0,cat,r /etc/hosts
+1795374660.954346,10.99.0.17>10.99.0.20,read,8418,0,cat,/etc/hosts
+1795374660.954348,10.99.0.18>10.99.0.20,open,8419,0,cat,r /etc/hosts
+1795374660.954361,10.99.0.18>10.99.0.20,read,8419,0,cat,/etc/hosts
+1795374660.954364,10.99.0.17>10.99.0.20,write,8418,0,cat,/tmp/mark-1-1
+1795374660.954366,10.99.0.18>10.99.0.20,write,8419,0,cat,/tmp/mark-2-1
+1795374660.954403,10.99.0.17>10.99.0.20,read,8418,0,cat,/etc/hosts
+1795374660.954411,10.99.0.17>10.99.0.20,write,8418,0,cat,/tmp/mark-1-1
+1795374660.954449,10.99.0.18>10.99.0.20,read,8419,0,cat,/etc/hosts
+1795374660.954455,10.99.0.18>10.99.0.20,write,8419,0,cat,/tmp/mark-2-1
+1795374661.251298,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8420 sh
+1795374661.251424,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8421 sh
+1795374661.251437,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8422 sh
+1795374661.251447,10.99.0.19>10.99.0.20,open,8420,0,sh,r /dev/null
+1795374661.251559,10.99.0.18>10.99.0.20,open,8421,0,sh,r /dev/null
+1795374661.251608,10.99.0.19>10.99.0.20,exec,8420,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.251613,10.99.0.17>10.99.0.20,open,8422,0,sh,r /dev/null
+1795374661.251693,10.99.0.18>10.99.0.20,exec,8421,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.251745,10.99.0.17>10.99.0.20,exec,8422,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.251962,10.99.0.19>10.99.0.20,open,8420,0,sleep,r /etc/libmap.conf
+1795374661.251988,10.99.0.19>10.99.0.20,read,8420,0,sleep,/etc/libmap.conf
+1795374661.252004,10.99.0.19>10.99.0.20,open-failed,8420,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374661.252022,10.99.0.19>10.99.0.20,open,8420,0,sleep,r /var/run/ld-elf.so.hints
+1795374661.252024,10.99.0.19>10.99.0.20,read,8420,0,sleep,/var/run/ld-elf.so.hints
+1795374661.252045,10.99.0.19>10.99.0.20,open,8420,0,sleep,r /lib/libc.so.7
+1795374661.252105,10.99.0.18>10.99.0.20,open,8421,0,sleep,r /etc/libmap.conf
+1795374661.252121,10.99.0.18>10.99.0.20,read,8421,0,sleep,/etc/libmap.conf
+1795374661.252129,10.99.0.17>10.99.0.20,open,8422,0,sleep,r /etc/libmap.conf
+1795374661.252140,10.99.0.17>10.99.0.20,read,8422,0,sleep,/etc/libmap.conf
+1795374661.252165,10.99.0.17>10.99.0.20,open-failed,8422,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374661.252166,10.99.0.18>10.99.0.20,open-failed,8421,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374661.252190,10.99.0.17>10.99.0.20,open,8422,0,sleep,r /var/run/ld-elf.so.hints
+1795374661.252192,10.99.0.18>10.99.0.20,open,8421,0,sleep,r /var/run/ld-elf.so.hints
+1795374661.252195,10.99.0.18>10.99.0.20,read,8421,0,sleep,/var/run/ld-elf.so.hints
+1795374661.252195,10.99.0.17>10.99.0.20,read,8422,0,sleep,/var/run/ld-elf.so.hints
+1795374661.252204,10.99.0.17>10.99.0.20,read,8422,0,sleep,/var/run/ld-elf.so.hints
+1795374661.252206,10.99.0.19>10.99.0.20,open,8420,0,sleep,r /lib/libsys.so.7
+1795374661.252212,10.99.0.18>10.99.0.20,open,8421,0,sleep,r /lib/libc.so.7
+1795374661.252217,10.99.0.17>10.99.0.20,open,8422,0,sleep,r /lib/libc.so.7
+1795374661.252432,10.99.0.18>10.99.0.20,open,8421,0,sleep,r /lib/libsys.so.7
+1795374661.252448,10.99.0.17>10.99.0.20,open,8422,0,sleep,r /lib/libsys.so.7
+1795374661.551819,10.99.0.19>10.99.0.20,exec,8423,0,sh,/bin/echo | /bin/echo attacker3 round2 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.551887,10.99.0.17>10.99.0.20,exec,8424,0,sh,/bin/echo | /bin/echo attacker1 round2 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.552008,10.99.0.18>10.99.0.20,exec,8425,0,sh,/bin/echo | /bin/echo attacker2 round2 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.552246,10.99.0.17>10.99.0.20,open,8424,0,echo,r /etc/libmap.conf
+1795374661.552262,10.99.0.19>10.99.0.20,open,8423,0,echo,r /etc/libmap.conf
+1795374661.552265,10.99.0.17>10.99.0.20,read,8424,0,echo,/etc/libmap.conf
+1795374661.552286,10.99.0.17>10.99.0.20,open-failed,8424,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374661.552298,10.99.0.19>10.99.0.20,read,8423,0,echo,/etc/libmap.conf
+1795374661.552303,10.99.0.17>10.99.0.20,open,8424,0,echo,r /var/run/ld-elf.so.hints
+1795374661.552306,10.99.0.17>10.99.0.20,read,8424,0,echo,/var/run/ld-elf.so.hints
+1795374661.552315,10.99.0.19>10.99.0.20,open-failed,8423,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374661.552319,10.99.0.17>10.99.0.20,open,8424,0,echo,r /lib/libc.so.7
+1795374661.552360,10.99.0.19>10.99.0.20,open,8423,0,echo,r /var/run/ld-elf.so.hints
+1795374661.552368,10.99.0.19>10.99.0.20,read,8423,0,echo,/var/run/ld-elf.so.hints
+1795374661.552405,10.99.0.19>10.99.0.20,open,8423,0,echo,r /lib/libc.so.7
+1795374661.552443,10.99.0.18>10.99.0.20,open,8425,0,echo,r /etc/libmap.conf
+1795374661.552457,10.99.0.18>10.99.0.20,read,8425,0,echo,/etc/libmap.conf
+1795374661.552477,10.99.0.18>10.99.0.20,open-failed,8425,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374661.552498,10.99.0.18>10.99.0.20,open,8425,0,echo,r /var/run/ld-elf.so.hints
+1795374661.552534,10.99.0.18>10.99.0.20,read,8425,0,echo,/var/run/ld-elf.so.hints
+1795374661.552499,10.99.0.17>10.99.0.20,open,8424,0,echo,r /lib/libsys.so.7
+1795374661.552550,10.99.0.18>10.99.0.20,open,8425,0,echo,r /lib/libc.so.7
+1795374661.552588,10.99.0.19>10.99.0.20,open,8423,0,echo,r /lib/libsys.so.7
+1795374661.552766,10.99.0.18>10.99.0.20,open,8425,0,echo,r /lib/libsys.so.7
+1795374661.852400,10.99.0.19>10.99.0.20,open,8426,0,sh,wct /tmp/mark-3-2
+1795374661.852470,10.99.0.18>10.99.0.20,open,8427,0,sh,wct /tmp/mark-2-2
+1795374661.852642,10.99.0.18>10.99.0.20,exec,8427,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.852883,10.99.0.19>10.99.0.20,exec,8426,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.852886,10.99.0.17>10.99.0.20,open,8428,0,sh,wct /tmp/mark-1-2
+1795374661.853027,10.99.0.17>10.99.0.20,exec,8428,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374661.853204,10.99.0.19>10.99.0.20,open,8426,0,cat,r /etc/libmap.conf
+1795374661.853220,10.99.0.19>10.99.0.20,read,8426,0,cat,/etc/libmap.conf
+1795374661.853234,10.99.0.19>10.99.0.20,open-failed,8426,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374661.853250,10.99.0.19>10.99.0.20,open,8426,0,cat,r /var/run/ld-elf.so.hints
+1795374661.853253,10.99.0.19>10.99.0.20,read,8426,0,cat,/var/run/ld-elf.so.hints
+1795374661.853267,10.99.0.19>10.99.0.20,open,8426,0,cat,r /lib/libc.so.7
+1795374661.853441,10.99.0.19>10.99.0.20,open,8426,0,cat,r /lib/libsys.so.7
+1795374661.853470,10.99.0.18>10.99.0.20,open,8427,0,cat,r /etc/libmap.conf
+1795374661.853499,10.99.0.18>10.99.0.20,read,8427,0,cat,/etc/libmap.conf
+1795374661.853529,10.99.0.18>10.99.0.20,open-failed,8427,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374661.853538,10.99.0.17>10.99.0.20,open,8428,0,cat,r /etc/libmap.conf
+1795374661.853550,10.99.0.18>10.99.0.20,open,8427,0,cat,r /var/run/ld-elf.so.hints
+1795374661.853553,10.99.0.18>10.99.0.20,read,8427,0,cat,/var/run/ld-elf.so.hints
+1795374661.853575,10.99.0.17>10.99.0.20,read,8428,0,cat,/etc/libmap.conf
+1795374661.853578,10.99.0.18>10.99.0.20,open,8427,0,cat,r /lib/libc.so.7
+1795374661.853592,10.99.0.17>10.99.0.20,open-failed,8428,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374661.853641,10.99.0.17>10.99.0.20,open,8428,0,cat,r /var/run/ld-elf.so.hints
+1795374661.853651,10.99.0.17>10.99.0.20,read,8428,0,cat,/var/run/ld-elf.so.hints
+1795374661.853694,10.99.0.17>10.99.0.20,open,8428,0,cat,r /lib/libc.so.7
+1795374661.853762,10.99.0.18>10.99.0.20,open,8427,0,cat,r /lib/libsys.so.7
+1795374661.853893,10.99.0.17>10.99.0.20,open,8428,0,cat,r /lib/libsys.so.7
+1795374661.854715,10.99.0.19>10.99.0.20,open,8426,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374661.855011,10.99.0.19>10.99.0.20,open,8426,0,cat,r /etc/hosts
+1795374661.855029,10.99.0.19>10.99.0.20,read,8426,0,cat,/etc/hosts
+1795374661.855034,10.99.0.19>10.99.0.20,write,8426,0,cat,/tmp/mark-3-2
+1795374661.855033,10.99.0.18>10.99.0.20,open,8427,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374661.855300,10.99.0.18>10.99.0.20,open,8427,0,cat,r /etc/hosts
+1795374661.855322,10.99.0.18>10.99.0.20,read,8427,0,cat,/etc/hosts
+1795374661.855347,10.99.0.18>10.99.0.20,write,8427,0,cat,/tmp/mark-2-2
+1795374661.855612,10.99.0.17>10.99.0.20,open,8428,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374661.855886,10.99.0.17>10.99.0.20,open,8428,0,cat,r /etc/hosts
+1795374661.855906,10.99.0.17>10.99.0.20,read,8428,0,cat,/etc/hosts
+1795374661.855912,10.99.0.17>10.99.0.20,write,8428,0,cat,/tmp/mark-1-2
+1795374662.151536,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8429 sh
+1795374662.151719,10.99.0.19>10.99.0.20,open,8429,0,sh,r /dev/null
+1795374662.151754,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8431 sh
+1795374662.151776,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8430 sh
+1795374662.151915,10.99.0.18>10.99.0.20,open,8431,0,sh,r /dev/null
+1795374662.151918,10.99.0.17>10.99.0.20,open,8430,0,sh,r /dev/null
+1795374662.151952,10.99.0.19>10.99.0.20,exec,8429,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.152046,10.99.0.18>10.99.0.20,exec,8431,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.152051,10.99.0.17>10.99.0.20,exec,8430,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.152318,10.99.0.19>10.99.0.20,open,8429,0,sleep,r /etc/libmap.conf
+1795374662.152339,10.99.0.19>10.99.0.20,read,8429,0,sleep,/etc/libmap.conf
+1795374662.152355,10.99.0.19>10.99.0.20,open-failed,8429,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374662.152373,10.99.0.19>10.99.0.20,open,8429,0,sleep,r /var/run/ld-elf.so.hints
+1795374662.152376,10.99.0.19>10.99.0.20,read,8429,0,sleep,/var/run/ld-elf.so.hints
+1795374662.152390,10.99.0.19>10.99.0.20,open,8429,0,sleep,r /lib/libc.so.7
+1795374662.152409,10.99.0.18>10.99.0.20,open,8431,0,sleep,r /etc/libmap.conf
+1795374662.152414,10.99.0.17>10.99.0.20,open,8430,0,sleep,r /etc/libmap.conf
+1795374662.152426,10.99.0.18>10.99.0.20,read,8431,0,sleep,/etc/libmap.conf
+1795374662.152427,10.99.0.17>10.99.0.20,read,8430,0,sleep,/etc/libmap.conf
+1795374662.152446,10.99.0.18>10.99.0.20,open-failed,8431,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374662.152453,10.99.0.17>10.99.0.20,open-failed,8430,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374662.152484,10.99.0.18>10.99.0.20,open,8431,0,sleep,r /var/run/ld-elf.so.hints
+1795374662.152488,10.99.0.17>10.99.0.20,open,8430,0,sleep,r /var/run/ld-elf.so.hints
+1795374662.152492,10.99.0.18>10.99.0.20,read,8431,0,sleep,/var/run/ld-elf.so.hints
+1795374662.152494,10.99.0.17>10.99.0.20,read,8430,0,sleep,/var/run/ld-elf.so.hints
+1795374662.152498,10.99.0.18>10.99.0.20,read,8431,0,sleep,/var/run/ld-elf.so.hints
+1795374662.152501,10.99.0.17>10.99.0.20,read,8430,0,sleep,/var/run/ld-elf.so.hints
+1795374662.152511,10.99.0.17>10.99.0.20,open,8430,0,sleep,r /lib/libc.so.7
+1795374662.152512,10.99.0.18>10.99.0.20,open,8431,0,sleep,r /lib/libc.so.7
+1795374662.152603,10.99.0.19>10.99.0.20,open,8429,0,sleep,r /lib/libsys.so.7
+1795374662.152714,10.99.0.17>10.99.0.20,open,8430,0,sleep,r /lib/libsys.so.7
+1795374662.152723,10.99.0.18>10.99.0.20,open,8431,0,sleep,r /lib/libsys.so.7
+1795374662.452017,10.99.0.18>10.99.0.20,exec,8433,0,sh,/bin/echo | /bin/echo attacker2 round3 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.452017,10.99.0.19>10.99.0.20,exec,8432,0,sh,/bin/echo | /bin/echo attacker3 round3 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.452106,10.99.0.17>10.99.0.20,exec,8434,0,sh,/bin/echo | /bin/echo attacker1 round3 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.452352,10.99.0.18>10.99.0.20,open,8433,0,echo,r /etc/libmap.conf
+1795374662.452370,10.99.0.18>10.99.0.20,read,8433,0,echo,/etc/libmap.conf
+1795374662.452386,10.99.0.18>10.99.0.20,open-failed,8433,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374662.452403,10.99.0.18>10.99.0.20,open,8433,0,echo,r /var/run/ld-elf.so.hints
+1795374662.452405,10.99.0.18>10.99.0.20,read,8433,0,echo,/var/run/ld-elf.so.hints
+1795374662.452419,10.99.0.18>10.99.0.20,open,8433,0,echo,r /lib/libc.so.7
+1795374662.452459,10.99.0.19>10.99.0.20,open,8432,0,echo,r /etc/libmap.conf
+1795374662.452474,10.99.0.19>10.99.0.20,read,8432,0,echo,/etc/libmap.conf
+1795374662.452489,10.99.0.19>10.99.0.20,open-failed,8432,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374662.452513,10.99.0.19>10.99.0.20,open,8432,0,echo,r /var/run/ld-elf.so.hints
+1795374662.452516,10.99.0.19>10.99.0.20,read,8432,0,echo,/var/run/ld-elf.so.hints
+1795374662.452531,10.99.0.19>10.99.0.20,open,8432,0,echo,r /lib/libc.so.7
+1795374662.452580,10.99.0.17>10.99.0.20,open,8434,0,echo,r /etc/libmap.conf
+1795374662.452601,10.99.0.17>10.99.0.20,read,8434,0,echo,/etc/libmap.conf
+1795374662.452610,10.99.0.18>10.99.0.20,open,8433,0,echo,r /lib/libsys.so.7
+1795374662.452615,10.99.0.17>10.99.0.20,open-failed,8434,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374662.452638,10.99.0.17>10.99.0.20,open,8434,0,echo,r /var/run/ld-elf.so.hints
+1795374662.452641,10.99.0.17>10.99.0.20,read,8434,0,echo,/var/run/ld-elf.so.hints
+1795374662.452656,10.99.0.17>10.99.0.20,open,8434,0,echo,r /lib/libc.so.7
+1795374662.452724,10.99.0.19>10.99.0.20,open,8432,0,echo,r /lib/libsys.so.7
+1795374662.452825,10.99.0.17>10.99.0.20,open,8434,0,echo,r /lib/libsys.so.7
+1795374662.751795,10.99.0.19>10.99.0.20,open,8435,0,sh,wct /tmp/mark-3-3
+1795374662.751943,10.99.0.19>10.99.0.20,exec,8435,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.752175,10.99.0.17>10.99.0.20,open,8437,0,sh,wct /tmp/mark-1-3
+1795374662.752230,10.99.0.18>10.99.0.20,open,8436,0,sh,wct /tmp/mark-2-3
+1795374662.752334,10.99.0.17>10.99.0.20,exec,8437,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.752363,10.99.0.19>10.99.0.20,open,8435,0,cat,r /etc/libmap.conf
+1795374662.752365,10.99.0.18>10.99.0.20,exec,8436,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374662.752375,10.99.0.19>10.99.0.20,read,8435,0,cat,/etc/libmap.conf
+1795374662.752388,10.99.0.19>10.99.0.20,open-failed,8435,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374662.752405,10.99.0.19>10.99.0.20,open,8435,0,cat,r /var/run/ld-elf.so.hints
+1795374662.752434,10.99.0.19>10.99.0.20,read,8435,0,cat,/var/run/ld-elf.so.hints
+1795374662.752453,10.99.0.19>10.99.0.20,open,8435,0,cat,r /lib/libc.so.7
+1795374662.752639,10.99.0.19>10.99.0.20,open,8435,0,cat,r /lib/libsys.so.7
+1795374662.752705,10.99.0.17>10.99.0.20,open,8437,0,cat,r /etc/libmap.conf
+1795374662.752723,10.99.0.17>10.99.0.20,read,8437,0,cat,/etc/libmap.conf
+1795374662.752736,10.99.0.17>10.99.0.20,open-failed,8437,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374662.752754,10.99.0.17>10.99.0.20,open,8437,0,cat,r /var/run/ld-elf.so.hints
+1795374662.752762,10.99.0.17>10.99.0.20,read,8437,0,cat,/var/run/ld-elf.so.hints
+1795374662.752774,10.99.0.18>10.99.0.20,open,8436,0,cat,r /etc/libmap.conf
+1795374662.752777,10.99.0.17>10.99.0.20,open,8437,0,cat,r /lib/libc.so.7
+1795374662.752784,10.99.0.18>10.99.0.20,read,8436,0,cat,/etc/libmap.conf
+1795374662.752796,10.99.0.18>10.99.0.20,open-failed,8436,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374662.752818,10.99.0.18>10.99.0.20,open,8436,0,cat,r /var/run/ld-elf.so.hints
+1795374662.752828,10.99.0.18>10.99.0.20,read,8436,0,cat,/var/run/ld-elf.so.hints
+1795374662.752842,10.99.0.18>10.99.0.20,open,8436,0,cat,r /lib/libc.so.7
+1795374662.752938,10.99.0.17>10.99.0.20,open,8437,0,cat,r /lib/libsys.so.7
+1795374662.753022,10.99.0.18>10.99.0.20,open,8436,0,cat,r /lib/libsys.so.7
+1795374662.753812,10.99.0.19>10.99.0.20,open,8435,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374662.754100,10.99.0.19>10.99.0.20,open,8435,0,cat,r /etc/hosts
+1795374662.754120,10.99.0.17>10.99.0.20,open,8437,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374662.754123,10.99.0.19>10.99.0.20,read,8435,0,cat,/etc/hosts
+1795374662.754129,10.99.0.19>10.99.0.20,write,8435,0,cat,/tmp/mark-3-3
+1795374662.754396,10.99.0.17>10.99.0.20,open,8437,0,cat,r /etc/hosts
+1795374662.754440,10.99.0.17>10.99.0.20,read,8437,0,cat,/etc/hosts
+1795374662.754445,10.99.0.17>10.99.0.20,write,8437,0,cat,/tmp/mark-1-3
+1795374662.754550,10.99.0.18>10.99.0.20,open,8436,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374662.754828,10.99.0.18>10.99.0.20,open,8436,0,cat,r /etc/hosts
+1795374662.754847,10.99.0.18>10.99.0.20,read,8436,0,cat,/etc/hosts
+1795374662.754851,10.99.0.18>10.99.0.20,write,8436,0,cat,/tmp/mark-2-3
+1795374663.051820,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8438 sh
+1795374663.051993,10.99.0.19>10.99.0.20,open,8438,0,sh,r /dev/null
+1795374663.052125,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8439 sh
+1795374663.052163,10.99.0.19>10.99.0.20,exec,8438,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.052186,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8440 sh
+1795374663.052247,10.99.0.18>10.99.0.20,open,8439,0,sh,r /dev/null
+1795374663.052333,10.99.0.17>10.99.0.20,open,8440,0,sh,r /dev/null
+1795374663.052428,10.99.0.18>10.99.0.20,exec,8439,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.052503,10.99.0.17>10.99.0.20,exec,8440,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.052578,10.99.0.19>10.99.0.20,open,8438,0,sleep,r /etc/libmap.conf
+1795374663.052597,10.99.0.19>10.99.0.20,read,8438,0,sleep,/etc/libmap.conf
+1795374663.052610,10.99.0.19>10.99.0.20,open-failed,8438,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374663.052632,10.99.0.19>10.99.0.20,open,8438,0,sleep,r /var/run/ld-elf.so.hints
+1795374663.052641,10.99.0.19>10.99.0.20,read,8438,0,sleep,/var/run/ld-elf.so.hints
+1795374663.052655,10.99.0.19>10.99.0.20,open,8438,0,sleep,r /lib/libc.so.7
+1795374663.052773,10.99.0.18>10.99.0.20,open,8439,0,sleep,r /etc/libmap.conf
+1795374663.052791,10.99.0.18>10.99.0.20,read,8439,0,sleep,/etc/libmap.conf
+1795374663.052807,10.99.0.18>10.99.0.20,open-failed,8439,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374663.052810,10.99.0.19>10.99.0.20,open,8438,0,sleep,r /lib/libsys.so.7
+1795374663.052825,10.99.0.18>10.99.0.20,open,8439,0,sleep,r /var/run/ld-elf.so.hints
+1795374663.052827,10.99.0.18>10.99.0.20,read,8439,0,sleep,/var/run/ld-elf.so.hints
+1795374663.052840,10.99.0.18>10.99.0.20,open,8439,0,sleep,r /lib/libc.so.7
+1795374663.052878,10.99.0.17>10.99.0.20,open,8440,0,sleep,r /etc/libmap.conf
+1795374663.052897,10.99.0.17>10.99.0.20,read,8440,0,sleep,/etc/libmap.conf
+1795374663.052912,10.99.0.17>10.99.0.20,open-failed,8440,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374663.052932,10.99.0.17>10.99.0.20,open,8440,0,sleep,r /var/run/ld-elf.so.hints
+1795374663.052935,10.99.0.17>10.99.0.20,read,8440,0,sleep,/var/run/ld-elf.so.hints
+1795374663.052949,10.99.0.17>10.99.0.20,open,8440,0,sleep,r /lib/libc.so.7
+1795374663.053001,10.99.0.18>10.99.0.20,open,8439,0,sleep,r /lib/libsys.so.7
+1795374663.053133,10.99.0.17>10.99.0.20,open,8440,0,sleep,r /lib/libsys.so.7
+1795374663.352306,10.99.0.19>10.99.0.20,exec,8441,0,sh,/bin/echo | /bin/echo attacker3 round4 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.352444,10.99.0.18>10.99.0.20,exec,8442,0,sh,/bin/echo | /bin/echo attacker2 round4 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.352506,10.99.0.17>10.99.0.20,exec,8443,0,sh,/bin/echo | /bin/echo attacker1 round4 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.352695,10.99.0.19>10.99.0.20,open,8441,0,echo,r /etc/libmap.conf
+1795374663.352716,10.99.0.19>10.99.0.20,read,8441,0,echo,/etc/libmap.conf
+1795374663.352730,10.99.0.19>10.99.0.20,open-failed,8441,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374663.352753,10.99.0.19>10.99.0.20,open,8441,0,echo,r /var/run/ld-elf.so.hints
+1795374663.352755,10.99.0.19>10.99.0.20,read,8441,0,echo,/var/run/ld-elf.so.hints
+1795374663.352771,10.99.0.19>10.99.0.20,open,8441,0,echo,r /lib/libc.so.7
+1795374663.352805,10.99.0.18>10.99.0.20,open,8442,0,echo,r /etc/libmap.conf
+1795374663.352835,10.99.0.18>10.99.0.20,read,8442,0,echo,/etc/libmap.conf
+1795374663.352862,10.99.0.18>10.99.0.20,open-failed,8442,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374663.352887,10.99.0.18>10.99.0.20,open,8442,0,echo,r /var/run/ld-elf.so.hints
+1795374663.352895,10.99.0.18>10.99.0.20,read,8442,0,echo,/var/run/ld-elf.so.hints
+1795374663.352895,10.99.0.17>10.99.0.20,open,8443,0,echo,r /etc/libmap.conf
+1795374663.352936,10.99.0.17>10.99.0.20,read,8443,0,echo,/etc/libmap.conf
+1795374663.352942,10.99.0.18>10.99.0.20,open,8442,0,echo,r /lib/libc.so.7
+1795374663.352956,10.99.0.17>10.99.0.20,open-failed,8443,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374663.352974,10.99.0.19>10.99.0.20,open,8441,0,echo,r /lib/libsys.so.7
+1795374663.352984,10.99.0.17>10.99.0.20,open,8443,0,echo,r /var/run/ld-elf.so.hints
+1795374663.352987,10.99.0.17>10.99.0.20,read,8443,0,echo,/var/run/ld-elf.so.hints
+1795374663.353009,10.99.0.17>10.99.0.20,open,8443,0,echo,r /lib/libc.so.7
+1795374663.353114,10.99.0.18>10.99.0.20,open,8442,0,echo,r /lib/libsys.so.7
+1795374663.353168,10.99.0.17>10.99.0.20,open,8443,0,echo,r /lib/libsys.so.7
+1795374663.652104,10.99.0.19>10.99.0.20,open,8444,0,sh,wct /tmp/mark-3-4
+1795374663.652230,10.99.0.19>10.99.0.20,exec,8444,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.652396,10.99.0.18>10.99.0.20,open,8445,0,sh,wct /tmp/mark-2-4
+1795374663.652453,10.99.0.17>10.99.0.20,open,8446,0,sh,wct /tmp/mark-1-4
+1795374663.652536,10.99.0.18>10.99.0.20,exec,8445,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.652573,10.99.0.17>10.99.0.20,exec,8446,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.652613,10.99.0.19>10.99.0.20,open,8444,0,cat,r /etc/libmap.conf
+1795374663.652629,10.99.0.19>10.99.0.20,read,8444,0,cat,/etc/libmap.conf
+1795374663.652645,10.99.0.19>10.99.0.20,open-failed,8444,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374663.652663,10.99.0.19>10.99.0.20,open,8444,0,cat,r /var/run/ld-elf.so.hints
+1795374663.652671,10.99.0.19>10.99.0.20,read,8444,0,cat,/var/run/ld-elf.so.hints
+1795374663.652683,10.99.0.19>10.99.0.20,open,8444,0,cat,r /lib/libc.so.7
+1795374663.652829,10.99.0.19>10.99.0.20,open,8444,0,cat,r /lib/libsys.so.7
+1795374663.652925,10.99.0.17>10.99.0.20,open,8446,0,cat,r /etc/libmap.conf
+1795374663.652944,10.99.0.18>10.99.0.20,open,8445,0,cat,r /etc/libmap.conf
+1795374663.652945,10.99.0.17>10.99.0.20,read,8446,0,cat,/etc/libmap.conf
+1795374663.652956,10.99.0.18>10.99.0.20,read,8445,0,cat,/etc/libmap.conf
+1795374663.652961,10.99.0.17>10.99.0.20,open-failed,8446,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374663.652974,10.99.0.18>10.99.0.20,open-failed,8445,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374663.652977,10.99.0.17>10.99.0.20,open,8446,0,cat,r /var/run/ld-elf.so.hints
+1795374663.652980,10.99.0.17>10.99.0.20,read,8446,0,cat,/var/run/ld-elf.so.hints
+1795374663.652994,10.99.0.17>10.99.0.20,open,8446,0,cat,r /lib/libc.so.7
+1795374663.652993,10.99.0.18>10.99.0.20,open,8445,0,cat,r /var/run/ld-elf.so.hints
+1795374663.652998,10.99.0.18>10.99.0.20,read,8445,0,cat,/var/run/ld-elf.so.hints
+1795374663.653013,10.99.0.18>10.99.0.20,open,8445,0,cat,r /lib/libc.so.7
+1795374663.653156,10.99.0.17>10.99.0.20,open,8446,0,cat,r /lib/libsys.so.7
+1795374663.653214,10.99.0.18>10.99.0.20,open,8445,0,cat,r /lib/libsys.so.7
+1795374663.654062,10.99.0.19>10.99.0.20,open,8444,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374663.654355,10.99.0.17>10.99.0.20,open,8446,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374663.654621,10.99.0.19>10.99.0.20,open,8444,0,cat,r /etc/hosts
+1795374663.654641,10.99.0.19>10.99.0.20,read,8444,0,cat,/etc/hosts
+1795374663.654647,10.99.0.19>10.99.0.20,write,8444,0,cat,/tmp/mark-3-4
+1795374663.654699,10.99.0.17>10.99.0.20,open,8446,0,cat,r /etc/hosts
+1795374663.654717,10.99.0.17>10.99.0.20,read,8446,0,cat,/etc/hosts
+1795374663.654722,10.99.0.17>10.99.0.20,write,8446,0,cat,/tmp/mark-1-4
+1795374663.654930,10.99.0.18>10.99.0.20,open,8445,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374663.655204,10.99.0.18>10.99.0.20,open,8445,0,cat,r /etc/hosts
+1795374663.655225,10.99.0.18>10.99.0.20,read,8445,0,cat,/etc/hosts
+1795374663.655231,10.99.0.18>10.99.0.20,write,8445,0,cat,/tmp/mark-2-4
+1795374663.952033,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8447 sh
+1795374663.952205,10.99.0.19>10.99.0.20,open,8447,0,sh,r /dev/null
+1795374663.952280,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8449 sh
+1795374663.952362,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8448 sh
+1795374663.952379,10.99.0.19>10.99.0.20,exec,8447,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.952513,10.99.0.17>10.99.0.20,open,8448,0,sh,r /dev/null
+1795374663.952559,10.99.0.18>10.99.0.20,open,8449,0,sh,r /dev/null
+1795374663.952721,10.99.0.18>10.99.0.20,exec,8449,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.952727,10.99.0.17>10.99.0.20,exec,8448,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374663.952726,10.99.0.19>10.99.0.20,open,8447,0,sleep,r /etc/libmap.conf
+1795374663.952748,10.99.0.19>10.99.0.20,read,8447,0,sleep,/etc/libmap.conf
+1795374663.952764,10.99.0.19>10.99.0.20,open-failed,8447,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374663.952780,10.99.0.19>10.99.0.20,open,8447,0,sleep,r /var/run/ld-elf.so.hints
+1795374663.952782,10.99.0.19>10.99.0.20,read,8447,0,sleep,/var/run/ld-elf.so.hints
+1795374663.952794,10.99.0.19>10.99.0.20,open,8447,0,sleep,r /lib/libc.so.7
+1795374663.952962,10.99.0.19>10.99.0.20,open,8447,0,sleep,r /lib/libsys.so.7
+1795374663.953129,10.99.0.17>10.99.0.20,open,8448,0,sleep,r /etc/libmap.conf
+1795374663.953136,10.99.0.18>10.99.0.20,open,8449,0,sleep,r /etc/libmap.conf
+1795374663.953150,10.99.0.17>10.99.0.20,read,8448,0,sleep,/etc/libmap.conf
+1795374663.953153,10.99.0.18>10.99.0.20,read,8449,0,sleep,/etc/libmap.conf
+1795374663.953169,10.99.0.17>10.99.0.20,open-failed,8448,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374663.953173,10.99.0.18>10.99.0.20,open-failed,8449,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374663.953188,10.99.0.17>10.99.0.20,open,8448,0,sleep,r /var/run/ld-elf.so.hints
+1795374663.953192,10.99.0.17>10.99.0.20,read,8448,0,sleep,/var/run/ld-elf.so.hints
+1795374663.953192,10.99.0.18>10.99.0.20,open,8449,0,sleep,r /var/run/ld-elf.so.hints
+1795374663.953195,10.99.0.18>10.99.0.20,read,8449,0,sleep,/var/run/ld-elf.so.hints
+1795374663.953198,10.99.0.17>10.99.0.20,read,8448,0,sleep,/var/run/ld-elf.so.hints
+1795374663.953200,10.99.0.18>10.99.0.20,read,8449,0,sleep,/var/run/ld-elf.so.hints
+1795374663.953210,10.99.0.17>10.99.0.20,open,8448,0,sleep,r /lib/libc.so.7
+1795374663.953212,10.99.0.18>10.99.0.20,open,8449,0,sleep,r /lib/libc.so.7
+1795374663.953440,10.99.0.18>10.99.0.20,open,8449,0,sleep,r /lib/libsys.so.7
+1795374663.953451,10.99.0.17>10.99.0.20,open,8448,0,sleep,r /lib/libsys.so.7
+1795374664.252381,10.99.0.19>10.99.0.20,exec,8450,0,sh,/bin/echo | /bin/echo attacker3 round5 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.252674,10.99.0.17>10.99.0.20,exec,8452,0,sh,/bin/echo | /bin/echo attacker1 round5 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.252713,10.99.0.18>10.99.0.20,exec,8451,0,sh,/bin/echo | /bin/echo attacker2 round5 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.252741,10.99.0.19>10.99.0.20,open,8450,0,echo,r /etc/libmap.conf
+1795374664.252755,10.99.0.19>10.99.0.20,read,8450,0,echo,/etc/libmap.conf
+1795374664.252768,10.99.0.19>10.99.0.20,open-failed,8450,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374664.252790,10.99.0.19>10.99.0.20,open,8450,0,echo,r /var/run/ld-elf.so.hints
+1795374664.252793,10.99.0.19>10.99.0.20,read,8450,0,echo,/var/run/ld-elf.so.hints
+1795374664.252807,10.99.0.19>10.99.0.20,open,8450,0,echo,r /lib/libc.so.7
+1795374664.253000,10.99.0.19>10.99.0.20,open,8450,0,echo,r /lib/libsys.so.7
+1795374664.253087,10.99.0.17>10.99.0.20,open,8452,0,echo,r /etc/libmap.conf
+1795374664.253102,10.99.0.18>10.99.0.20,open,8451,0,echo,r /etc/libmap.conf
+1795374664.253108,10.99.0.17>10.99.0.20,read,8452,0,echo,/etc/libmap.conf
+1795374664.253114,10.99.0.18>10.99.0.20,read,8451,0,echo,/etc/libmap.conf
+1795374664.253123,10.99.0.17>10.99.0.20,open-failed,8452,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374664.253132,10.99.0.18>10.99.0.20,open-failed,8451,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374664.253142,10.99.0.17>10.99.0.20,open,8452,0,echo,r /var/run/ld-elf.so.hints
+1795374664.253145,10.99.0.17>10.99.0.20,read,8452,0,echo,/var/run/ld-elf.so.hints
+1795374664.253150,10.99.0.18>10.99.0.20,open,8451,0,echo,r /var/run/ld-elf.so.hints
+1795374664.253152,10.99.0.18>10.99.0.20,read,8451,0,echo,/var/run/ld-elf.so.hints
+1795374664.253154,10.99.0.17>10.99.0.20,read,8452,0,echo,/var/run/ld-elf.so.hints
+1795374664.253158,10.99.0.18>10.99.0.20,read,8451,0,echo,/var/run/ld-elf.so.hints
+1795374664.253166,10.99.0.17>10.99.0.20,open,8452,0,echo,r /lib/libc.so.7
+1795374664.253170,10.99.0.18>10.99.0.20,open,8451,0,echo,r /lib/libc.so.7
+1795374664.253406,10.99.0.17>10.99.0.20,open,8452,0,echo,r /lib/libsys.so.7
+1795374664.253424,10.99.0.18>10.99.0.20,open,8451,0,echo,r /lib/libsys.so.7
+1795374664.552415,10.99.0.19>10.99.0.20,open,8453,0,sh,wct /tmp/mark-3-5
+1795374664.552576,10.99.0.19>10.99.0.20,exec,8453,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.552707,10.99.0.17>10.99.0.20,open,8455,0,sh,wct /tmp/mark-1-5
+1795374664.552761,10.99.0.18>10.99.0.20,open,8454,0,sh,wct /tmp/mark-2-5
+1795374664.552839,10.99.0.17>10.99.0.20,exec,8455,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.552939,10.99.0.19>10.99.0.20,open,8453,0,cat,r /etc/libmap.conf
+1795374664.552939,10.99.0.18>10.99.0.20,exec,8454,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.552965,10.99.0.19>10.99.0.20,read,8453,0,cat,/etc/libmap.conf
+1795374664.552977,10.99.0.19>10.99.0.20,open-failed,8453,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374664.553014,10.99.0.19>10.99.0.20,open,8453,0,cat,r /var/run/ld-elf.so.hints
+1795374664.553022,10.99.0.19>10.99.0.20,read,8453,0,cat,/var/run/ld-elf.so.hints
+1795374664.553066,10.99.0.19>10.99.0.20,open,8453,0,cat,r /lib/libc.so.7
+1795374664.553161,10.99.0.17>10.99.0.20,open,8455,0,cat,r /etc/libmap.conf
+1795374664.553177,10.99.0.17>10.99.0.20,read,8455,0,cat,/etc/libmap.conf
+1795374664.553189,10.99.0.17>10.99.0.20,open-failed,8455,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374664.553210,10.99.0.17>10.99.0.20,open,8455,0,cat,r /var/run/ld-elf.so.hints
+1795374664.553217,10.99.0.17>10.99.0.20,read,8455,0,cat,/var/run/ld-elf.so.hints
+1795374664.553230,10.99.0.17>10.99.0.20,open,8455,0,cat,r /lib/libc.so.7
+1795374664.553239,10.99.0.19>10.99.0.20,open,8453,0,cat,r /lib/libsys.so.7
+1795374664.553366,10.99.0.18>10.99.0.20,open,8454,0,cat,r /etc/libmap.conf
+1795374664.553394,10.99.0.18>10.99.0.20,read,8454,0,cat,/etc/libmap.conf
+1795374664.553409,10.99.0.18>10.99.0.20,open-failed,8454,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374664.553419,10.99.0.17>10.99.0.20,open,8455,0,cat,r /lib/libsys.so.7
+1795374664.553439,10.99.0.18>10.99.0.20,open,8454,0,cat,r /var/run/ld-elf.so.hints
+1795374664.553443,10.99.0.18>10.99.0.20,read,8454,0,cat,/var/run/ld-elf.so.hints
+1795374664.553464,10.99.0.18>10.99.0.20,open,8454,0,cat,r /lib/libc.so.7
+1795374664.553700,10.99.0.18>10.99.0.20,open,8454,0,cat,r /lib/libsys.so.7
+1795374664.554661,10.99.0.17>10.99.0.20,open,8455,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374664.554963,10.99.0.17>10.99.0.20,open,8455,0,cat,r /etc/hosts
+1795374664.554986,10.99.0.17>10.99.0.20,read,8455,0,cat,/etc/hosts
+1795374664.554991,10.99.0.17>10.99.0.20,write,8455,0,cat,/tmp/mark-1-5
+1795374664.555111,10.99.0.19>10.99.0.20,open,8453,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374664.555121,10.99.0.18>10.99.0.20,open,8454,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374664.555866,10.99.0.18>10.99.0.20,open,8454,0,cat,r /etc/hosts
+1795374664.555890,10.99.0.18>10.99.0.20,read,8454,0,cat,/etc/hosts
+1795374664.555894,10.99.0.19>10.99.0.20,open,8453,0,cat,r /etc/hosts
+1795374664.555896,10.99.0.18>10.99.0.20,write,8454,0,cat,/tmp/mark-2-5
+1795374664.555906,10.99.0.19>10.99.0.20,read,8453,0,cat,/etc/hosts
+1795374664.555911,10.99.0.19>10.99.0.20,write,8453,0,cat,/tmp/mark-3-5
+1795374664.555939,10.99.0.18>10.99.0.20,read,8454,0,cat,/etc/hosts
+1795374664.555940,10.99.0.18>10.99.0.20,write,8454,0,cat,/tmp/mark-2-5
+1795374664.555958,10.99.0.19>10.99.0.20,read,8453,0,cat,/etc/hosts
+1795374664.555960,10.99.0.19>10.99.0.20,write,8453,0,cat,/tmp/mark-3-5
+1795374664.852328,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8456 sh
+1795374664.852464,10.99.0.19>10.99.0.20,open,8456,0,sh,r /dev/null
+1795374664.852600,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8457 sh
+1795374664.852599,10.99.0.19>10.99.0.20,exec,8456,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.852611,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8458 sh
+1795374664.852745,10.99.0.17>10.99.0.20,open,8458,0,sh,r /dev/null
+1795374664.852819,10.99.0.18>10.99.0.20,open,8457,0,sh,r /dev/null
+1795374664.852885,10.99.0.17>10.99.0.20,exec,8458,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.852940,10.99.0.19>10.99.0.20,open,8456,0,sleep,r /etc/libmap.conf
+1795374664.852958,10.99.0.19>10.99.0.20,read,8456,0,sleep,/etc/libmap.conf
+1795374664.852970,10.99.0.19>10.99.0.20,open-failed,8456,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374664.852989,10.99.0.19>10.99.0.20,open,8456,0,sleep,r /var/run/ld-elf.so.hints
+1795374664.852992,10.99.0.19>10.99.0.20,read,8456,0,sleep,/var/run/ld-elf.so.hints
+1795374664.853005,10.99.0.19>10.99.0.20,open,8456,0,sleep,r /lib/libc.so.7
+1795374664.853003,10.99.0.18>10.99.0.20,exec,8457,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374664.853186,10.99.0.19>10.99.0.20,open,8456,0,sleep,r /lib/libsys.so.7
+1795374664.853203,10.99.0.17>10.99.0.20,open,8458,0,sleep,r /etc/libmap.conf
+1795374664.853212,10.99.0.17>10.99.0.20,read,8458,0,sleep,/etc/libmap.conf
+1795374664.853224,10.99.0.17>10.99.0.20,open-failed,8458,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374664.853267,10.99.0.17>10.99.0.20,open,8458,0,sleep,r /var/run/ld-elf.so.hints
+1795374664.853275,10.99.0.17>10.99.0.20,read,8458,0,sleep,/var/run/ld-elf.so.hints
+1795374664.853289,10.99.0.17>10.99.0.20,open,8458,0,sleep,r /lib/libc.so.7
+1795374664.853402,10.99.0.18>10.99.0.20,open,8457,0,sleep,r /etc/libmap.conf
+1795374664.853419,10.99.0.18>10.99.0.20,read,8457,0,sleep,/etc/libmap.conf
+1795374664.853436,10.99.0.18>10.99.0.20,open-failed,8457,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374664.853461,10.99.0.18>10.99.0.20,open,8457,0,sleep,r /var/run/ld-elf.so.hints
+1795374664.853469,10.99.0.18>10.99.0.20,read,8457,0,sleep,/var/run/ld-elf.so.hints
+1795374664.853474,10.99.0.17>10.99.0.20,open,8458,0,sleep,r /lib/libsys.so.7
+1795374664.853485,10.99.0.18>10.99.0.20,open,8457,0,sleep,r /lib/libc.so.7
+1795374664.853674,10.99.0.18>10.99.0.20,open,8457,0,sleep,r /lib/libsys.so.7
+1795374665.152649,10.99.0.19>10.99.0.20,exec,8459,0,sh,/bin/echo | /bin/echo attacker3 round6 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.153037,10.99.0.19>10.99.0.20,open,8459,0,echo,r /etc/libmap.conf
+1795374665.153044,10.99.0.17>10.99.0.20,exec,8460,0,sh,/bin/echo | /bin/echo attacker1 round6 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.153057,10.99.0.19>10.99.0.20,read,8459,0,echo,/etc/libmap.conf
+1795374665.153070,10.99.0.18>10.99.0.20,exec,8461,0,sh,/bin/echo | /bin/echo attacker2 round6 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.153075,10.99.0.19>10.99.0.20,open-failed,8459,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374665.153093,10.99.0.19>10.99.0.20,open,8459,0,echo,r /var/run/ld-elf.so.hints
+1795374665.153095,10.99.0.19>10.99.0.20,read,8459,0,echo,/var/run/ld-elf.so.hints
+1795374665.153109,10.99.0.19>10.99.0.20,open,8459,0,echo,r /lib/libc.so.7
+1795374665.153319,10.99.0.19>10.99.0.20,open,8459,0,echo,r /lib/libsys.so.7
+1795374665.153434,10.99.0.17>10.99.0.20,open,8460,0,echo,r /etc/libmap.conf
+1795374665.153458,10.99.0.17>10.99.0.20,read,8460,0,echo,/etc/libmap.conf
+1795374665.153470,10.99.0.17>10.99.0.20,open-failed,8460,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374665.153489,10.99.0.17>10.99.0.20,open,8460,0,echo,r /var/run/ld-elf.so.hints
+1795374665.153488,10.99.0.18>10.99.0.20,open,8461,0,echo,r /etc/libmap.conf
+1795374665.153492,10.99.0.17>10.99.0.20,read,8460,0,echo,/var/run/ld-elf.so.hints
+1795374665.153506,10.99.0.17>10.99.0.20,open,8460,0,echo,r /lib/libc.so.7
+1795374665.153537,10.99.0.18>10.99.0.20,read,8461,0,echo,/etc/libmap.conf
+1795374665.153562,10.99.0.18>10.99.0.20,open-failed,8461,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374665.153607,10.99.0.18>10.99.0.20,open,8461,0,echo,r /var/run/ld-elf.so.hints
+1795374665.153617,10.99.0.18>10.99.0.20,read,8461,0,echo,/var/run/ld-elf.so.hints
+1795374665.153663,10.99.0.18>10.99.0.20,open,8461,0,echo,r /lib/libc.so.7
+1795374665.153682,10.99.0.17>10.99.0.20,open,8460,0,echo,r /lib/libsys.so.7
+1795374665.153849,10.99.0.18>10.99.0.20,open,8461,0,echo,r /lib/libsys.so.7
+1795374665.453067,10.99.0.17>10.99.0.20,open,8462,0,sh,wct /tmp/mark-1-6
+1795374665.453112,10.99.0.18>10.99.0.20,open,8463,0,sh,wct /tmp/mark-2-6
+1795374665.453230,10.99.0.17>10.99.0.20,exec,8462,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.453257,10.99.0.18>10.99.0.20,exec,8463,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.453324,10.99.0.19>10.99.0.20,open,8464,0,sh,wct /tmp/mark-3-6
+1795374665.453447,10.99.0.19>10.99.0.20,exec,8464,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.453623,10.99.0.18>10.99.0.20,open,8463,0,cat,r /etc/libmap.conf
+1795374665.453642,10.99.0.18>10.99.0.20,read,8463,0,cat,/etc/libmap.conf
+1795374665.453643,10.99.0.17>10.99.0.20,open,8462,0,cat,r /etc/libmap.conf
+1795374665.453656,10.99.0.17>10.99.0.20,read,8462,0,cat,/etc/libmap.conf
+1795374665.453658,10.99.0.18>10.99.0.20,open-failed,8463,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374665.453672,10.99.0.17>10.99.0.20,open-failed,8462,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374665.453675,10.99.0.18>10.99.0.20,open,8463,0,cat,r /var/run/ld-elf.so.hints
+1795374665.453677,10.99.0.18>10.99.0.20,read,8463,0,cat,/var/run/ld-elf.so.hints
+1795374665.453690,10.99.0.18>10.99.0.20,open,8463,0,cat,r /lib/libc.so.7
+1795374665.453692,10.99.0.17>10.99.0.20,open,8462,0,cat,r /var/run/ld-elf.so.hints
+1795374665.453695,10.99.0.17>10.99.0.20,read,8462,0,cat,/var/run/ld-elf.so.hints
+1795374665.453711,10.99.0.17>10.99.0.20,open,8462,0,cat,r /lib/libc.so.7
+1795374665.453780,10.99.0.19>10.99.0.20,open,8464,0,cat,r /etc/libmap.conf
+1795374665.453797,10.99.0.19>10.99.0.20,read,8464,0,cat,/etc/libmap.conf
+1795374665.453812,10.99.0.19>10.99.0.20,open-failed,8464,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374665.453831,10.99.0.19>10.99.0.20,open,8464,0,cat,r /var/run/ld-elf.so.hints
+1795374665.453833,10.99.0.19>10.99.0.20,read,8464,0,cat,/var/run/ld-elf.so.hints
+1795374665.453846,10.99.0.18>10.99.0.20,open,8463,0,cat,r /lib/libsys.so.7
+1795374665.453846,10.99.0.19>10.99.0.20,open,8464,0,cat,r /lib/libc.so.7
+1795374665.453926,10.99.0.17>10.99.0.20,open,8462,0,cat,r /lib/libsys.so.7
+1795374665.454027,10.99.0.19>10.99.0.20,open,8464,0,cat,r /lib/libsys.so.7
+1795374665.455007,10.99.0.18>10.99.0.20,open,8463,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374665.455134,10.99.0.17>10.99.0.20,open,8462,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374665.455244,10.99.0.19>10.99.0.20,open,8464,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374665.455346,10.99.0.18>10.99.0.20,open,8463,0,cat,r /etc/hosts
+1795374665.455365,10.99.0.18>10.99.0.20,read,8463,0,cat,/etc/hosts
+1795374665.455370,10.99.0.18>10.99.0.20,write,8463,0,cat,/tmp/mark-2-6
+1795374665.455425,10.99.0.17>10.99.0.20,open,8462,0,cat,r /etc/hosts
+1795374665.455447,10.99.0.17>10.99.0.20,read,8462,0,cat,/etc/hosts
+1795374665.455453,10.99.0.17>10.99.0.20,write,8462,0,cat,/tmp/mark-1-6
+1795374665.455522,10.99.0.19>10.99.0.20,open,8464,0,cat,r /etc/hosts
+1795374665.455539,10.99.0.19>10.99.0.20,read,8464,0,cat,/etc/hosts
+1795374665.455544,10.99.0.19>10.99.0.20,write,8464,0,cat,/tmp/mark-3-6
+1795374665.752727,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8465 sh
+1795374665.752905,10.99.0.19>10.99.0.20,open,8465,0,sh,r /dev/null
+1795374665.753098,10.99.0.19>10.99.0.20,exec,8465,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.753441,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8466 sh
+1795374665.753585,10.99.0.17>10.99.0.20,open,8466,0,sh,r /dev/null
+1795374665.753598,10.99.0.19>10.99.0.20,open,8465,0,sleep,r /etc/libmap.conf
+1795374665.753610,10.99.0.19>10.99.0.20,read,8465,0,sleep,/etc/libmap.conf
+1795374665.753623,10.99.0.19>10.99.0.20,open-failed,8465,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374665.753643,10.99.0.19>10.99.0.20,open,8465,0,sleep,r /var/run/ld-elf.so.hints
+1795374665.753646,10.99.0.19>10.99.0.20,read,8465,0,sleep,/var/run/ld-elf.so.hints
+1795374665.753659,10.99.0.19>10.99.0.20,open,8465,0,sleep,r /lib/libc.so.7
+1795374665.753660,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8467 sh
+1795374665.753724,10.99.0.17>10.99.0.20,exec,8466,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.753802,10.99.0.19>10.99.0.20,open,8465,0,sleep,r /lib/libsys.so.7
+1795374665.753810,10.99.0.18>10.99.0.20,open,8467,0,sh,r /dev/null
+1795374665.753940,10.99.0.18>10.99.0.20,exec,8467,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374665.754073,10.99.0.17>10.99.0.20,open,8466,0,sleep,r /etc/libmap.conf
+1795374665.754090,10.99.0.17>10.99.0.20,read,8466,0,sleep,/etc/libmap.conf
+1795374665.754106,10.99.0.17>10.99.0.20,open-failed,8466,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374665.754125,10.99.0.17>10.99.0.20,open,8466,0,sleep,r /var/run/ld-elf.so.hints
+1795374665.754132,10.99.0.17>10.99.0.20,read,8466,0,sleep,/var/run/ld-elf.so.hints
+1795374665.754147,10.99.0.17>10.99.0.20,open,8466,0,sleep,r /lib/libc.so.7
+1795374665.754311,10.99.0.18>10.99.0.20,open,8467,0,sleep,r /etc/libmap.conf
+1795374665.754314,10.99.0.17>10.99.0.20,open,8466,0,sleep,r /lib/libsys.so.7
+1795374665.754331,10.99.0.18>10.99.0.20,read,8467,0,sleep,/etc/libmap.conf
+1795374665.754347,10.99.0.18>10.99.0.20,open-failed,8467,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374665.754365,10.99.0.18>10.99.0.20,open,8467,0,sleep,r /var/run/ld-elf.so.hints
+1795374665.754367,10.99.0.18>10.99.0.20,read,8467,0,sleep,/var/run/ld-elf.so.hints
+1795374665.754382,10.99.0.18>10.99.0.20,open,8467,0,sleep,r /lib/libc.so.7
+1795374665.754533,10.99.0.18>10.99.0.20,open,8467,0,sleep,r /lib/libsys.so.7
+1795374666.053051,10.99.0.19>10.99.0.20,exec,8468,0,sh,/bin/echo | /bin/echo attacker3 round7 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.053787,10.99.0.19>10.99.0.20,open,8468,0,echo,r /etc/libmap.conf
+1795374666.053810,10.99.0.19>10.99.0.20,read,8468,0,echo,/etc/libmap.conf
+1795374666.053828,10.99.0.19>10.99.0.20,open-failed,8468,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374666.053844,10.99.0.19>10.99.0.20,open,8468,0,echo,r /var/run/ld-elf.so.hints
+1795374666.053847,10.99.0.19>10.99.0.20,read,8468,0,echo,/var/run/ld-elf.so.hints
+1795374666.053860,10.99.0.19>10.99.0.20,open,8468,0,echo,r /lib/libc.so.7
+1795374666.054001,10.99.0.19>10.99.0.20,open,8468,0,echo,r /lib/libsys.so.7
+1795374666.054058,10.99.0.17>10.99.0.20,exec,8469,0,sh,/bin/echo | /bin/echo attacker1 round7 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.054106,10.99.0.18>10.99.0.20,exec,8470,0,sh,/bin/echo | /bin/echo attacker2 round7 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.054452,10.99.0.17>10.99.0.20,open,8469,0,echo,r /etc/libmap.conf
+1795374666.054473,10.99.0.17>10.99.0.20,read,8469,0,echo,/etc/libmap.conf
+1795374666.054483,10.99.0.18>10.99.0.20,open,8470,0,echo,r /etc/libmap.conf
+1795374666.054487,10.99.0.17>10.99.0.20,open-failed,8469,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374666.054494,10.99.0.18>10.99.0.20,read,8470,0,echo,/etc/libmap.conf
+1795374666.054505,10.99.0.17>10.99.0.20,open,8469,0,echo,r /var/run/ld-elf.so.hints
+1795374666.054508,10.99.0.17>10.99.0.20,read,8469,0,echo,/var/run/ld-elf.so.hints
+1795374666.054513,10.99.0.18>10.99.0.20,open-failed,8470,0,echo,r /usr/local/etc/libmap.d errno=2
+1795374666.054522,10.99.0.17>10.99.0.20,open,8469,0,echo,r /lib/libc.so.7
+1795374666.054533,10.99.0.18>10.99.0.20,open,8470,0,echo,r /var/run/ld-elf.so.hints
+1795374666.054536,10.99.0.18>10.99.0.20,read,8470,0,echo,/var/run/ld-elf.so.hints
+1795374666.054550,10.99.0.18>10.99.0.20,open,8470,0,echo,r /lib/libc.so.7
+1795374666.054684,10.99.0.17>10.99.0.20,open,8469,0,echo,r /lib/libsys.so.7
+1795374666.054713,10.99.0.18>10.99.0.20,open,8470,0,echo,r /lib/libsys.so.7
+1795374666.353195,10.99.0.17>10.99.0.20,open,8472,0,sh,wct /tmp/mark-1-7
+1795374666.353334,10.99.0.19>10.99.0.20,open,8471,0,sh,wct /tmp/mark-3-7
+1795374666.353391,10.99.0.18>10.99.0.20,open,8473,0,sh,wct /tmp/mark-2-7
+1795374666.353390,10.99.0.17>10.99.0.20,exec,8472,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.353464,10.99.0.19>10.99.0.20,exec,8471,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.353520,10.99.0.18>10.99.0.20,exec,8473,0,sh,/bin/cat | cat /etc/hosts | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.353706,10.99.0.17>10.99.0.20,open,8472,0,cat,r /etc/libmap.conf
+1795374666.353726,10.99.0.17>10.99.0.20,read,8472,0,cat,/etc/libmap.conf
+1795374666.353741,10.99.0.17>10.99.0.20,open-failed,8472,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374666.353761,10.99.0.17>10.99.0.20,open,8472,0,cat,r /var/run/ld-elf.so.hints
+1795374666.353764,10.99.0.17>10.99.0.20,read,8472,0,cat,/var/run/ld-elf.so.hints
+1795374666.353778,10.99.0.17>10.99.0.20,open,8472,0,cat,r /lib/libc.so.7
+1795374666.353856,10.99.0.19>10.99.0.20,open,8471,0,cat,r /etc/libmap.conf
+1795374666.353874,10.99.0.18>10.99.0.20,open,8473,0,cat,r /etc/libmap.conf
+1795374666.353876,10.99.0.19>10.99.0.20,read,8471,0,cat,/etc/libmap.conf
+1795374666.353885,10.99.0.18>10.99.0.20,read,8473,0,cat,/etc/libmap.conf
+1795374666.353890,10.99.0.19>10.99.0.20,open-failed,8471,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374666.353901,10.99.0.18>10.99.0.20,open-failed,8473,0,cat,r /usr/local/etc/libmap.d errno=2
+1795374666.353911,10.99.0.19>10.99.0.20,open,8471,0,cat,r /var/run/ld-elf.so.hints
+1795374666.353914,10.99.0.19>10.99.0.20,read,8471,0,cat,/var/run/ld-elf.so.hints
+1795374666.353918,10.99.0.18>10.99.0.20,open,8473,0,cat,r /var/run/ld-elf.so.hints
+1795374666.353921,10.99.0.18>10.99.0.20,read,8473,0,cat,/var/run/ld-elf.so.hints
+1795374666.353930,10.99.0.19>10.99.0.20,open,8471,0,cat,r /lib/libc.so.7
+1795374666.353935,10.99.0.18>10.99.0.20,open,8473,0,cat,r /lib/libc.so.7
+1795374666.353944,10.99.0.17>10.99.0.20,open,8472,0,cat,r /lib/libsys.so.7
+1795374666.354173,10.99.0.18>10.99.0.20,open,8473,0,cat,r /lib/libsys.so.7
+1795374666.354186,10.99.0.19>10.99.0.20,open,8471,0,cat,r /lib/libsys.so.7
+1795374666.355162,10.99.0.17>10.99.0.20,open,8472,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374666.355443,10.99.0.19>10.99.0.20,open,8471,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374666.355475,10.99.0.18>10.99.0.20,open,8473,0,cat,r /usr/share/locale/C.UTF-8/LC_CTYPE
+1795374666.355500,10.99.0.17>10.99.0.20,open,8472,0,cat,r /etc/hosts
+1795374666.355515,10.99.0.17>10.99.0.20,read,8472,0,cat,/etc/hosts
+1795374666.355520,10.99.0.17>10.99.0.20,write,8472,0,cat,/tmp/mark-1-7
+1795374666.355722,10.99.0.19>10.99.0.20,open,8471,0,cat,r /etc/hosts
+1795374666.355733,10.99.0.18>10.99.0.20,open,8473,0,cat,r /etc/hosts
+1795374666.355744,10.99.0.19>10.99.0.20,read,8471,0,cat,/etc/hosts
+1795374666.355747,10.99.0.18>10.99.0.20,read,8473,0,cat,/etc/hosts
+1795374666.355750,10.99.0.19>10.99.0.20,write,8471,0,cat,/tmp/mark-3-7
+1795374666.355754,10.99.0.18>10.99.0.20,write,8473,0,cat,/tmp/mark-2-7
+1795374666.355791,10.99.0.19>10.99.0.20,read,8471,0,cat,/etc/hosts
+1795374666.355794,10.99.0.19>10.99.0.20,write,8471,0,cat,/tmp/mark-3-7
+1795374666.355814,10.99.0.18>10.99.0.20,read,8473,0,cat,/etc/hosts
+1795374666.355815,10.99.0.18>10.99.0.20,write,8473,0,cat,/tmp/mark-2-7
+1795374666.652821,10.99.0.19>10.99.0.20,signal,8394,0,sh,15 to 8474 sh
+1795374666.652943,10.99.0.19>10.99.0.20,open,8474,0,sh,r /dev/null
+1795374666.653032,10.99.0.17>10.99.0.20,signal,8395,0,sh,15 to 8475 sh
+1795374666.653137,10.99.0.19>10.99.0.20,exec,8474,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.653158,10.99.0.18>10.99.0.20,signal,8396,0,sh,15 to 8476 sh
+1795374666.653183,10.99.0.17>10.99.0.20,open,8475,0,sh,r /dev/null
+1795374666.653321,10.99.0.18>10.99.0.20,open,8476,0,sh,r /dev/null
+1795374666.653483,10.99.0.19>10.99.0.20,open,8474,0,sleep,r /etc/libmap.conf
+1795374666.653488,10.99.0.18>10.99.0.20,exec,8476,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.653501,10.99.0.19>10.99.0.20,read,8474,0,sleep,/etc/libmap.conf
+1795374666.653517,10.99.0.19>10.99.0.20,open-failed,8474,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374666.653534,10.99.0.19>10.99.0.20,open,8474,0,sleep,r /var/run/ld-elf.so.hints
+1795374666.653536,10.99.0.19>10.99.0.20,read,8474,0,sleep,/var/run/ld-elf.so.hints
+1795374666.653549,10.99.0.19>10.99.0.20,open,8474,0,sleep,r /lib/libc.so.7
+1795374666.653717,10.99.0.19>10.99.0.20,open,8474,0,sleep,r /lib/libsys.so.7
+1795374666.653809,10.99.0.17>10.99.0.20,exec,8475,0,sh,/bin/sleep | sleep 20 | SSH_CLIENT=10.0.2.2 48598 22 LOGNAME=root LANG=C.UTF-8 MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin OLDPWD=/root PWD=/ TERM=su HOME=/root USER=root inetd_dummy=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx SSH_CONNECTION=10.0.2.2 48598 10.0.2.15 22 SHELL=/bin/sh MM_CHARSET=UTF-8 BLOCKSIZE=K
+1795374666.653869,10.99.0.18>10.99.0.20,open,8476,0,sleep,r /etc/libmap.conf
+1795374666.653888,10.99.0.18>10.99.0.20,read,8476,0,sleep,/etc/libmap.conf
+1795374666.653903,10.99.0.18>10.99.0.20,open-failed,8476,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374666.653925,10.99.0.18>10.99.0.20,open,8476,0,sleep,r /var/run/ld-elf.so.hints
+1795374666.653929,10.99.0.18>10.99.0.20,read,8476,0,sleep,/var/run/ld-elf.so.hints
+1795374666.653944,10.99.0.18>10.99.0.20,open,8476,0,sleep,r /lib/libc.so.7
+1795374666.654156,10.99.0.18>10.99.0.20,open,8476,0,sleep,r /lib/libsys.so.7
+1795374666.654164,10.99.0.17>10.99.0.20,open,8475,0,sleep,r /etc/libmap.conf
+1795374666.654176,10.99.0.17>10.99.0.20,read,8475,0,sleep,/etc/libmap.conf
+1795374666.654192,10.99.0.17>10.99.0.20,open-failed,8475,0,sleep,r /usr/local/etc/libmap.d errno=2
+1795374666.654210,10.99.0.17>10.99.0.20,open,8475,0,sleep,r /var/run/ld-elf.so.hints
+1795374666.654212,10.99.0.17>10.99.0.20,read,8475,0,sleep,/var/run/ld-elf.so.hints
+1795374666.654225,10.99.0.17>10.99.0.20,open,8475,0,sleep,r /lib/libc.so.7
+1795374666.654386,10.99.0.17>10.99.0.20,open,8475,0,sleep,r /lib/libsys.so.7
+1795374666.952911,10.99.0.19>10.99.0.20,open,8394,0,sh,rwc /root/.sh_history.wQj1N4N15r
+1795374666.953042,10.99.0.17>10.99.0.20,open,8395,0,sh,rwc /root/.sh_history.mOmFRR0sjE
+1795374666.953113,10.99.0.18>10.99.0.20,open,8396,0,sh,rwc /root/.sh_history.zow1GaIP8S
+1795374666.953502,10.99.0.19>10.99.0.20,write,8394,0,sh,/root/.sh_history
+1795374666.953645,10.99.0.17>10.99.0.20,write,8395,0,sh,?
+1795374666.953774,10.99.0.18>10.99.0.20,write,8396,0,sh,/root/.sh_history
+1795374666.953882,10.99.0.19>10.99.0.20,read,8391,0,sh,/root/honey/vuln.sh
+1795374666.953983,10.99.0.17>10.99.0.20,read,8393,0,sh,/root/honey/vuln.sh
+1795374666.954111,10.99.0.18>10.99.0.20,read,8392,0,sh,/root/honey/vuln.sh

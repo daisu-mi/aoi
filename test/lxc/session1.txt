@@ -1,0 +1,24 @@
+Welcome to Ubuntu 24.04.5 LTS (GNU/Linux 7.0.0-43-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+Last login: Sun Nov 22 20:00:39 2026 from 10.0.3.1
+root@hp:~# id
+uid=0(root) gid=0(root) groups=0(root)
+root@hp:~# uname -sr
+Linux 7.0.0-43-generic
+root@hp:~# cat /etc/hosts > /tmp/jail-mark
+root@hp:~# cat /nonexistent-file
+cat: /nonexistent-file: No such file or directory
+root@hp:~# sleep 30 & kill $!
+[1] 1468
+root@hp:~# env SECRET=xyz /bin/echo hello
+hello
+[1]+  Terminated              sleep 30
+root@hp:~# passwd foo
+New password: 
+Retype new password: 
+passwd: password updated successfully
+root@hp:~# exit
+logout
