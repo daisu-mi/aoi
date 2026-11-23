@@ -89,6 +89,12 @@ Two short scripts record the same events with standard tools only:
 All addresses in the records belong to an isolated test network. The password
 that appears in them belongs to a throwaway test account.
 
+## The 2001 version
+
+`legacy/` holds the original as a patch to the Linux 2.2.16 kernel, with a
+link to the paper that described it.
+
 ## License
 
-BSD 2-Clause. See `LICENSE`.
+BSD 2-Clause; see `LICENSE`. The patch in `legacy/` modifies Linux kernel
+files and is under the GNU General Public License, version 2.

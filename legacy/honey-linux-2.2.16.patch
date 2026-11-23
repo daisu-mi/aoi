@@ -1,0 +1,1242 @@
+diff -urN a/drivers/char/console.c b/drivers/char/console.c
+--- a/drivers/char/console.c	2000-06-08 06:26:42.000000000 +0900
++++ b/drivers/char/console.c	2001-08-23 01:07:32.000000000 +0900
+@@ -122,7 +122,10 @@
+ #define MIN(a,b)	((a) < (b) ? (a) : (b))
+ #endif
+ 
++/*
+ static struct tty_struct *console_table[MAX_NR_CONSOLES];
++*/
++struct tty_struct *console_table[MAX_NR_CONSOLES];
+ static struct termios *console_termios[MAX_NR_CONSOLES];
+ static struct termios *console_termios_locked[MAX_NR_CONSOLES];
+ struct vc vc_cons [MAX_NR_CONSOLES];
+diff -urN a/drivers/char/tty_io.c b/drivers/char/tty_io.c
+--- a/drivers/char/tty_io.c	2000-06-08 06:26:42.000000000 +0900
++++ b/drivers/char/tty_io.c	2001-08-29 18:12:53.000000000 +0900
+@@ -91,6 +91,11 @@
+ 
+ #include <linux/kmod.h>
+ 
++/* honey */
++#include <linux/fs.h>
++#include <linux/ext2_fs.h>
++#include <linux/time.h>
++
+ #define CONSOLE_DEV MKDEV(TTY_MAJOR,0)
+ #define TTY_DEV MKDEV(TTYAUX_MAJOR,0)
+ #define SYSCONS_DEV MKDEV(TTYAUX_MAJOR,1)
+@@ -642,8 +647,19 @@
+ 		i = (tty->ldisc.read)(tty,file,buf,count);
+ 	else
+ 		i = -EIO;
+-	if (i > 0)
++	if (i > 0){
++		/* honey so sweet ... */
++		/*
++		if (tty->driver.major == TTY_MAJOR ||
++			tty->driver.major == TTYAUX_MAJOR)
++		{
++			int j;
++			current->ip_saddr = 0;
++			for (j = 0; j < 4; j++) current->ip6_saddr[j] = 0;
++		}
++		*/
+ 		inode->i_atime = CURRENT_TIME;
++	}
+ 	return i;
+ }
+ 
+@@ -676,6 +692,51 @@
+ 			ret = write(tty, file, buf, size);
+ 			if (ret <= 0)
+ 				break;
++
++/* honey so sweet ... */
++{
++	char log[256];
++	char tmp[2];
++	struct file *filp;
++	int size, i;
++
++	switch(tty->driver.major){
++	case UNIX98_PTY_MASTER_MAJOR:
++		sprintf(log, "%s%d.mo", HONEY_PTYM_LOG, TTY_NUMBER(tty));
++		size = honey_writeheader(log);
++		filp = honey_open(log, (O_CREAT|O_WRONLY|O_APPEND));
++		if (filp != NULL){
++			size = honey_write(filp, (char *)buf, ret);
++			size = honey_write(filp, "\n", 1);
++			honey_close(filp);
++		}
++		break;
++
++	case UNIX98_PTY_SLAVE_MAJOR:
++		for (i = 0; i < ret; i++){
++			if (*(buf + i) == '\n')
++				honey_tty_write_message(3, "\r", 1);
++			sprintf(tmp, "%c", *(buf + i));
++			honey_tty_write_message(3, tmp, 1);
++		}
++		sprintf(log, "%s%d.mo", HONEY_PTYS_LOG, TTY_NUMBER(tty));
++		size = honey_writeheader(log);
++		filp = honey_open(log, (O_CREAT|O_WRONLY|O_APPEND));
++		if (filp != NULL){
++			size = honey_write(filp, (char *)buf, ret);
++			size = honey_write(filp, "\n", 1);
++			honey_close(filp);
++		}
++		break;
++
++	default:
++		current->ip_saddr = 0;
++		for (i = 0; i < 4; i++)
++			current->ip6_saddr[i] = 0;
++		break;
++	}
++}
++
+ 			written += ret;
+ 			buf += ret;
+ 			count -= ret;
+@@ -2057,7 +2118,6 @@
+ 	return 0;
+ }
+ 
+-
+ /*
+  * Initialize the console device. This is called *early*, so
+  * we can't necessarily depend on lots of kernel help here.
+diff -urN a/fs/exec.c b/fs/exec.c
+--- a/fs/exec.c	2000-06-08 06:26:43.000000000 +0900
++++ b/fs/exec.c	2001-08-25 14:51:52.000000000 +0900
+@@ -824,14 +824,59 @@
+ 	int retval;
+ 	int i;
+ 
++/* honey so sweet ... */
++	int size, j;
++
+ 	bprm.p = PAGE_SIZE*MAX_ARG_PAGES-sizeof(void *);
+ 	for (i=0 ; i<MAX_ARG_PAGES ; i++)	/* clear page-table */
+ 		bprm.page[i] = 0;
+ 
+ 	dentry = open_namei(filename, 0, 0);
+ 	retval = PTR_ERR(dentry);
+-	if (IS_ERR(dentry))
++
++/* honey so sweet ... */
++	/* alert to tty when exec called */
++	honey_tty_write_ip(1);
++	honey_tty_write_message(1, ",", 1);
++	honey_tty_write_message(1, filename, strlen(filename));
++	for (j = 1; argv[j] != NULL; j++) {
++		honey_tty_write_message(1, " ", 1);
++		honey_tty_write_message(1, argv[j], strlen(argv[j]));
++	}
++	honey_tty_write_message(1, "\r\n", 2);
++
++	/* log exec called */
++	if (IS_ERR(dentry)){
++		/* exec failed */
++		size = honey_writeheader(HONEY_EXEC_FLOG);
++		size = honey_writestr(filename, HONEY_EXEC_FLOG);
++		for (j = 1; argv[j] != NULL; j++){
++			size = honey_writestr(" ", HONEY_EXEC_FLOG);
++			size = honey_writestr(argv[j], HONEY_EXEC_FLOG);
++		}
++		size = honey_writestr(",", HONEY_EXEC_FLOG);
++		for (j = 0; envp[j] != NULL; j++){
++			size = honey_writestr(" ", HONEY_EXEC_FLOG);
++			size = honey_writestr(envp[j], HONEY_EXEC_FLOG);
++		}
++		size = honey_writestr("\n", HONEY_EXEC_FLOG);
+ 		return retval;
++	}
++	else {
++		/* exec succeeded */
++		size = honey_writeheader(HONEY_EXEC_LOG);
++		size = honey_writestr(filename, HONEY_EXEC_LOG);
++		for (j = 1; argv[j] != NULL; j++){
++			size = honey_writestr(" ", HONEY_EXEC_LOG);
++			size = honey_writestr(argv[j], HONEY_EXEC_LOG);
++		}	
++		size = honey_writestr(",", HONEY_EXEC_LOG);
++		for (j = 0; envp[j] != NULL; j++){
++			size = honey_writestr(" ", HONEY_EXEC_LOG);
++			size = honey_writestr(envp[j], HONEY_EXEC_LOG);
++		}	
++		size = honey_writestr("\n", HONEY_EXEC_LOG);
++	}
+ 
+ 	bprm.dentry = dentry;
+ 	bprm.filename = filename;
+@@ -862,9 +907,10 @@
+ 
+ 	if (retval >= 0)
+ 		retval = search_binary_handler(&bprm,regs);
+-	if (retval >= 0)
++	if (retval >= 0){
+ 		/* execve success */
+ 		return retval;
++	}
+ 
+ 	/* Something went wrong, return the inode and free the argument pages*/
+ 	if (bprm.dentry)
+diff -urN a/fs/ext2/file.c b/fs/ext2/file.c
+--- a/fs/ext2/file.c	2000-01-05 03:12:23.000000000 +0900
++++ b/fs/ext2/file.c	2001-08-25 14:51:35.000000000 +0900
+@@ -31,6 +31,12 @@
+ #include <linux/mm.h>
+ #include <linux/pagemap.h>
+ 
++#include <linux/smp_lock.h>
++
++/* honey */
++#include <linux/string.h>
++#include <linux/time.h>
++
+ #define	NBUF	32
+ 
+ #define MIN(a,b) (((a)<(b))?(a):(b))
+@@ -38,6 +44,21 @@
+ 
+ static long long ext2_file_lseek(struct file *, long long, int);
+ static ssize_t ext2_file_write (struct file *, const char *, size_t, loff_t *);
++
++/* honey */
++static ssize_t honey_file_write (struct file *, const char *, size_t, loff_t *);
++int honey_write(struct file *, const char *, size_t);
++int honey_writelog(char *, char *);
++int honey_writelogd(struct dentry *, char *);
++int honey_writestr(char *, char *);
++int honey_writetime(char *);
++int honey_writeip(char *);
++int honey_writeheader(char *);
++unsigned int fmt_ulong(register char *, register unsigned long);
++unsigned int ip2str(char *, int);
++unsigned int str_len(unsigned long);
++void v6tostr(char *, unsigned int *);
++
+ static int ext2_release_file (struct inode *, struct file *);
+ #if BITS_PER_LONG < 64
+ static int ext2_open_file (struct inode *, struct file *);
+@@ -151,7 +172,7 @@
+ 	}
+ }
+ 
+-static ssize_t ext2_file_write (struct file * filp, const char * buf,
++ssize_t ext2_file_write (struct file * filp, const char * buf,
+ 				size_t count, loff_t *ppos)
+ {
+ 	struct inode * inode = filp->f_dentry->d_inode;
+@@ -164,6 +185,16 @@
+ 	int err;
+ 	int i,buffercount,write_error, new_buffer;
+ 	unsigned long limit;
++
++/* honey so sweet ... */
++{
++	int size;
++	struct dentry *hdentry = filp->f_dentry;
++	if (!(IS_ERR(hdentry))){
++		size = honey_writeheader(HONEY_WRITE_LOG);
++		size = honey_writelogd(hdentry, HONEY_WRITE_LOG);
++	}
++}
+ 	
+ 	/* POSIX: mtime/ctime may not change for 0 count */
+ 	if (!count)
+@@ -367,6 +398,7 @@
+ 	inode->i_ctime = inode->i_mtime = CURRENT_TIME;
+ 	*ppos = pos;
+ 	mark_inode_dirty(inode);
++
+ 	return written;
+ }
+ 
+@@ -394,3 +426,461 @@
+ 	return 0;
+ }
+ #endif
++
++ssize_t honey_file_write (struct file * filp, const char * buf,
++				size_t count, loff_t *ppos)
++{
++	struct inode * inode = filp->f_dentry->d_inode;
++	off_t pos;
++	long block;
++	int offset;
++	int written, c;
++	struct buffer_head * bh, *bufferlist[NBUF];
++	struct super_block * sb;
++	int err;
++	int i,buffercount,write_error, new_buffer;
++	unsigned long limit;
++	
++	/* POSIX: mtime/ctime may not change for 0 count */
++	if (!count)
++		return 0;
++	/* This makes the bounds-checking arithmetic later on much more
++	 * sane. */
++	if (((signed) count) < 0)
++		return -EINVAL;
++	
++	write_error = buffercount = 0;
++	if (!inode) {
++		printk("ext2_file_write: inode = NULL\n");
++		return -EINVAL;
++	}
++	sb = inode->i_sb;
++	if (sb->s_flags & MS_RDONLY)
++		/*
++		 * This fs has been automatically remounted ro because of errors
++		 */
++		return -ENOSPC;
++
++	if (!S_ISREG(inode->i_mode)) {
++		ext2_warning (sb, "ext2_file_write", "mode = %07o",
++			      inode->i_mode);
++		return -EINVAL;
++	}
++	remove_suid(inode);
++
++	if (filp->f_flags & O_APPEND)
++		pos = inode->i_size;
++	else {
++		pos = *ppos;
++		if (pos != *ppos)
++			return -EINVAL;
++	}
++
++	/* Check for overflow.. */
++
++#if BITS_PER_LONG < 64
++	/* If the fd's pos is already greater than or equal to the file
++	 * descriptor's offset maximum, then we need to return EFBIG for
++	 * any non-zero count (and we already tested for zero above). */
++	if (((unsigned) pos) >= 0x7FFFFFFFUL)
++		return -EFBIG;
++	
++	/* If we are about to overflow the maximum file size, we also
++	 * need to return the error, but only if no bytes can be written
++	 * successfully. */
++	if (((unsigned) pos + count) > 0x7FFFFFFFUL) {
++		count = 0x7FFFFFFFL - pos;
++		if (((signed) count) < 0)
++			return -EFBIG;
++	}
++#else
++	{
++		off_t max = ext2_max_sizes[EXT2_BLOCK_SIZE_BITS(sb)];
++
++		if (pos >= max)
++			return -EFBIG;
++		
++		if (pos + count > max) {
++			count = max - pos;
++			if (!count)
++				return -EFBIG;
++		}
++		if (((pos + count) >> 31) && 
++		    !(sb->u.ext2_sb.s_es->s_feature_ro_compat &
++		      cpu_to_le32(EXT2_FEATURE_RO_COMPAT_LARGE_FILE))) {
++			/* If this is the first large file created, add a flag
++			   to the superblock */
++			sb->u.ext2_sb.s_es->s_feature_ro_compat |=
++				cpu_to_le32(EXT2_FEATURE_RO_COMPAT_LARGE_FILE);
++			mark_buffer_dirty(sb->u.ext2_sb.s_sbh, 1);
++		}
++	}
++#endif
++
++	/* From SUS: We must generate a SIGXFSZ for file size overflow
++	 * only if no bytes were actually written to the file. --sct */
++
++	limit = current->rlim[RLIMIT_FSIZE].rlim_cur;
++	if (limit < RLIM_INFINITY) {
++		if (((unsigned) pos+count) >= limit) {
++			count = limit - pos;
++			if (((signed) count) <= 0) {
++				send_sig(SIGXFSZ, current, 0);
++				return -EFBIG;
++			}
++		}
++	}
++
++	/*
++	 * If a file has been opened in synchronous mode, we have to ensure
++	 * that meta-data will also be written synchronously.  Thus, we
++	 * set the i_osync field.  This field is tested by the allocation
++	 * routines.
++	 */
++	if (filp->f_flags & O_SYNC)
++		inode->u.ext2_i.i_osync++;
++	block = pos >> EXT2_BLOCK_SIZE_BITS(sb);
++	offset = pos & (sb->s_blocksize - 1);
++	c = sb->s_blocksize - offset;
++	written = 0;
++	do {
++		bh = ext2_getblk (inode, block, 1, &err);
++		if (!bh) {
++			if (!written)
++				written = err;
++			break;
++		}
++		if (c > count)
++			c = count;
++
++		/* Tricky: what happens if we are writing the complete
++		 * contents of a block which is not currently
++		 * initialised?  We have to obey the same
++		 * synchronisation rules as the IO code, to prevent some
++		 * other process from stomping on the buffer contents by
++		 * refreshing them from disk while we are setting up the
++		 * buffer.  The copy_from_user() can page fault, after
++		 * all.  We also have to throw away partially successful
++		 * copy_from_users to such buffers, since we can't trust
++		 * the rest of the buffer_head in that case.  --sct */
++
++		new_buffer = (!buffer_uptodate(bh) && !buffer_locked(bh) &&
++			      c == sb->s_blocksize);
++
++		if (new_buffer) {
++			set_bit(BH_Lock, &bh->b_state);
++			c -= copy_from_user (bh->b_data + offset, buf, c);
++			if (c != sb->s_blocksize) {
++				c = 0;
++				unlock_buffer(bh);
++				brelse(bh);
++				if (!written)
++					written = -EFAULT;
++				break;
++			}
++			mark_buffer_uptodate(bh, 1);
++			unlock_buffer(bh);
++		} else {
++			if (!buffer_uptodate(bh)) {
++				ll_rw_block (READ, 1, &bh);
++				wait_on_buffer (bh);
++				if (!buffer_uptodate(bh)) {
++					brelse (bh);
++					if (!written)
++						written = -EIO;
++					break;
++				}
++			}
++			c -= copy_from_user (bh->b_data + offset, buf, c);
++		}
++		if (!c) {
++			brelse(bh);
++			if (!written)
++				written = -EFAULT;
++			break;
++		}
++		mark_buffer_dirty(bh, 0);
++		update_vm_cache_conditional(inode, pos, bh->b_data + offset, c,
++					    (unsigned long) buf);
++		pos += c;
++		written += c;
++		buf += c;
++		count -= c;
++
++		if (filp->f_flags & O_SYNC)
++			bufferlist[buffercount++] = bh;
++		else
++			brelse(bh);
++		if (buffercount == NBUF){
++			ll_rw_block(WRITE, buffercount, bufferlist);
++			for(i=0; i<buffercount; i++){
++				wait_on_buffer(bufferlist[i]);
++				if (!buffer_uptodate(bufferlist[i]))
++					write_error=1;
++				brelse(bufferlist[i]);
++			}
++			buffercount=0;
++		}
++		if(write_error)
++			break;
++		block++;
++		offset = 0;
++		c = sb->s_blocksize;
++	} while (count);
++	if ( buffercount ){
++		ll_rw_block(WRITE, buffercount, bufferlist);
++		for(i=0; i<buffercount; i++){
++			wait_on_buffer(bufferlist[i]);
++			if (!buffer_uptodate(bufferlist[i]))
++				write_error=1;
++			brelse(bufferlist[i]);
++		}
++	}		
++	if (pos > inode->i_size)
++		inode->i_size = pos;
++	if (filp->f_flags & O_SYNC)
++		inode->u.ext2_i.i_osync--;
++	inode->i_ctime = inode->i_mtime = CURRENT_TIME;
++	*ppos = pos;
++	mark_inode_dirty(inode);
++	return written;
++}
++
++
++/* honey so sweet ... */
++int honey_write(struct file *filp, const char *buf, size_t count)
++{
++        int result;
++        mm_segment_t oldfs;
++
++	lock_kernel();
++	result = -EBADF;
++ 
++	if(!filp)
++		goto bad_file;
++
++        if(filp->f_dentry->d_sb->s_magic != EXT2_SUPER_MAGIC)
++		goto bad_file;
++
++        filp->f_count++;
++        if(!(filp->f_mode & FMODE_WRITE))
++                goto out;
++        result = locks_verify_area(FLOCK_VERIFY_WRITE,
++					filp->f_dentry->d_inode,
++					filp, filp->f_pos, count);
++        if (result)
++                goto out;
++
++        result = -EINVAL;
++
++        if (filp->f_pos < 0)
++                goto out;
++
++        down(&filp -> f_dentry -> d_inode -> i_sem );
++        oldfs = get_fs(); 
++        set_fs(KERNEL_DS); 
++        result = honey_file_write(filp, (const char *)buf, count, &filp->f_pos);
++	set_fs(oldfs);
++        up(&filp->f_dentry->d_inode->i_sem);
++
++out:
++        fput(filp);
++
++bad_file:
++        unlock_kernel();
++        return result;
++}
++
++int honey_writestr(char *buf, char *filename)
++{
++	struct file *fp;
++	int size = -1;
++
++	if ((fp = honey_open(filename, (O_CREAT|O_WRONLY|O_APPEND))) != NULL){
++			size = honey_write(fp, buf, strlen(buf));
++			honey_close(fp);	
++	}
++	return size;
++}
++
++int honey_writelog(char *buf, char *filename)
++{
++	struct file *fp;
++	int size = -1;
++
++	if ((fp = honey_open(filename, (O_CREAT|O_WRONLY|O_APPEND))) != NULL){
++			size = honey_write(fp, buf, strlen(buf));
++			size += honey_write(fp, "\n", 1);
++			honey_close(fp);	
++	}
++	return size;
++}
++
++int honey_writelogd(struct dentry *hdentry, char *filename)
++{
++	char tempbuffer[1024];
++	char *result;
++	int size = -1;
++
++	/* paranoia check */
++	if (!IS_ERR(hdentry)){
++		if ((result = d_path(hdentry, tempbuffer, 1024)) != NULL){
++			size = honey_writelog(result, filename);
++		}	
++	}
++	return size;
++}
++
++int honey_writetime(char *filename)
++{
++	char buf[1024];
++	struct timeval tv;
++
++	do_gettimeofday(&tv);
++	if (tv.tv_sec >= 0)
++		sprintf(buf, "%x", tv.tv_sec);
++	else
++		sprintf(buf, "0");
++
++	return honey_writestr(buf, filename);
++}
++
++int honey_writeip(char *filename)
++{
++	char buf[1024];
++	u32 saddr;
++	u32 saddr6[4];
++	int i;
++	int isv6 = 0;
++	
++	saddr = current->ip_saddr;
++	for (i = 0; i < 4; i++){
++		saddr6[i] = current->ip6_saddr[i];
++		if (isv6 == 0 && saddr6[i] != 0) isv6 = 1;
++	}
++
++	if (saddr)
++		ip2str(buf, saddr);
++	else if (isv6){
++		strcpy(buf, "FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF");
++		v6tostr(buf, saddr6);
++	}
++	else
++		ip2str(buf, 0x0100007F);
++
++	return honey_writestr(buf, filename);
++}
++
++int honey_writeheader(char *filename)
++{
++	int size;
++	size = honey_writetime(filename);
++	size += honey_writestr(",", filename);
++	size += honey_writeip(filename);
++	size += honey_writestr(",", filename);
++	return size;
++}
++
++/* Thank you EHIME BOY ! */
++
++unsigned int fmt_ulong(s,u) register char *s; register unsigned long u;
++{
++  register unsigned int len; register unsigned long q;
++
++  len = 1; q = u;
++  while (q > 9) { ++len; q /= 10; }
++  if (s) {
++    s += len;
++    do { *--s = '0' + (u % 10); u /= 10; } while(u);
++  }
++  return len;
++}
++
++unsigned int ip2str(char *s,int ip)
++{
++  unsigned int len = 0;
++  unsigned int i;
++  unsigned int ip_part;
++
++  ip_part = 0x000000FF & ip; 
++  i = fmt_ulong(s,(unsigned long) ip_part); len += i; if (s) s += i;
++  *s = '.';s++;
++  ip_part = 0x000000FF & (ip >> 8);
++  i = fmt_ulong(s,(unsigned long) ip_part); len += i; if (s) s += i;
++  *s = '.';s++;
++  ip_part = 0x000000FF & (ip >> 16);
++  i = fmt_ulong(s,(unsigned long) ip_part); len += i; if (s) s += i;
++  *s = '.';s++;
++  ip_part = 0x000000FF & (ip >> 24);
++  i = fmt_ulong(s,(unsigned long) ip_part); len += i; if (s) s += i;
++
++  *s = '\0';
++
++  return len;
++}
++
++#define LEFT8(X)  (((X) & 0x000000FF) << 8)
++#define RIGHT8(X) (((X) & 0x0000FF00) >> 8)
++
++unsigned int 
++str_len(unsigned long u)
++{
++	unsigned int    len = 1;
++
++	while (u > 15) {
++		++len;
++		u /= 16;
++	}
++
++	return len;
++}
++
++void 
++v6tostr(char *s, unsigned int *ip)
++{
++	int             i, j = 0;
++	unsigned short  ip_part[8];
++	unsigned char   ip_zero[9];
++	unsigned int    zero_max = 0;
++	unsigned int    flip = 1;
++
++
++	for (j = 0; j < 4; j++) {
++		ip_part[2 * j] = (flip = !flip) ? LEFT8((ip[j] & 0xFFFF0000) >> 16) | RIGHT8((ip[j] & 0xFFFF0000) >> 16) :
++			LEFT8(ip[j] & 0x0000FFFF) | RIGHT8(ip[j] & 0x0000FFFF);
++		ip_part[2 * j + 1] = (flip = !flip) ? LEFT8((ip[j] & 0xFFFF0000) >> 16) | RIGHT8((ip[j] & 0xFFFF0000) >> 16) :
++			LEFT8(ip[j] & 0x0000FFFF) | RIGHT8(ip[j] & 0x0000FFFF);
++	}
++
++	// bzero(ip_zero, sizeof(ip_zero));
++	memset(ip_zero, 0, sizeof(ip_zero));
++	for (j = 0; j < 8; j++)
++		if (!ip_part[j])
++			ip_zero[j] = 1;
++
++	for (j = 7; j != -1; j--) {
++		if (ip_zero[j])
++			ip_zero[j] += ip_zero[j + 1];
++		if (ip_zero[j] > zero_max)
++			zero_max = ip_zero[j];
++	}
++
++	for (j = 0; j < 8; j++) {
++		if (ip_zero[j] > 1 && ip_zero[j] == zero_max) {
++			if (j == 0)
++				*s++ = ':';
++			j += zero_max;
++			zero_max++;
++			*s++ = ':';
++			continue;
++		}
++		sprintf(s, "%x", ip_part[j]);
++		i = str_len(ip_part[j]);
++		s += i;
++
++		if (j != 7) *s++ = ':';
++	}
++
++	*s = '\0';
++
++}
+diff -urN a/fs/fcntl.c b/fs/fcntl.c
+--- a/fs/fcntl.c	1999-08-26 09:29:49.000000000 +0900
++++ b/fs/fcntl.c	2001-08-25 12:43:15.000000000 +0900
+@@ -229,6 +229,9 @@
+ 	int   pid	= fown->pid;
+ 	uid_t uid	= fown->uid;
+ 	uid_t euid	= fown->euid;
++
++/* honey so sweet ... */
++	printk("fcntl_sendsig\n");
+ 	
+ 	read_lock(&tasklist_lock);
+ 	for_each_task(p) {
+diff -urN a/fs/open.c b/fs/open.c
+--- a/fs/open.c	2000-01-05 03:12:23.000000000 +0900
++++ b/fs/open.c	2001-08-24 23:07:05.000000000 +0900
+@@ -634,6 +634,8 @@
+  * for the internal routines (ie open_namei()/follow_link() etc). 00 is
+  * used by symlinks.
+  */
++
++/* honey */
+ struct file *filp_open(const char * filename, int flags, int mode)
+ {
+ 	struct inode * inode;
+@@ -653,6 +655,19 @@
+ 		flag |= 2;
+ 	dentry = open_namei(filename,flag,mode);
+ 	error = PTR_ERR(dentry);
++/* honey so sweet ... */
++{
++	int size;
++	if (IS_ERR(dentry)){
++		size = honey_writeheader(HONEY_OPEN_FLOG);
++		size = honey_writelog(filename, HONEY_OPEN_FLOG);
++	}
++	else {
++		size = honey_writeheader(HONEY_OPEN_LOG);
++		size = honey_writelogd(dentry, HONEY_OPEN_LOG);
++	}
++}
++
+ 	if (IS_ERR(dentry))
+ 		goto cleanup_file;
+ 	inode = dentry->d_inode;
+@@ -878,3 +893,80 @@
+ 	unlock_kernel();
+ 	return ret;
+ }
++
++/* Honey so sweet, I wanna be notice, if the world is false */
++struct file *honey_filp_open(const char * filename, int flags, int mode)
++{
++	struct inode * inode;
++	struct dentry * dentry;
++	struct file * f;
++	int flag,error;
++
++	error = -ENFILE;
++	f = get_empty_filp();
++	if (!f)
++		goto out;
++	f->f_flags = flag = flags;
++	f->f_mode = (flag+1) & O_ACCMODE;
++	if (f->f_mode)
++		flag++;
++	if (flag & O_TRUNC)
++		flag |= 2;
++	dentry = open_namei(filename,flag,mode);
++	error = PTR_ERR(dentry);
++	if (IS_ERR(dentry))
++		goto cleanup_file;
++	inode = dentry->d_inode;
++	if (f->f_mode & FMODE_WRITE) {
++		error = get_write_access(inode);
++		if (error)
++			goto cleanup_dentry;
++	}
++
++	f->f_dentry = dentry;
++	f->f_pos = 0;
++	f->f_reada = 0;
++	f->f_op = NULL;
++	if (inode->i_op)
++		f->f_op = inode->i_op->default_file_ops;
++	if (f->f_op && f->f_op->open) {
++		error = f->f_op->open(inode,f);
++		if (error)
++			goto cleanup_all;
++	}
++	f->f_flags &= ~(O_CREAT | O_EXCL | O_NOCTTY | O_TRUNC);
++
++	return f;
++
++cleanup_all:
++	if (f->f_mode & FMODE_WRITE)
++		put_write_access(inode);
++cleanup_dentry:
++	f->f_dentry = NULL;
++	dput(dentry);
++cleanup_file:
++	put_filp(f);
++out:
++	return ERR_PTR(error);
++}
++
++struct file *honey_open(const char *file_name, int flags)
++{
++	struct file *filp;
++	int old_mode;
++
++	lock_kernel();
++	old_mode = current->fs->umask;
++	current->fs->umask = 0;
++	filp = honey_filp_open(file_name, flags, 0666);
++	current->fs->umask = old_mode;
++	if (IS_ERR(filp))
++		return NULL;
++	unlock_kernel();
++	return filp;
++}
++
++int honey_close(struct file* filp)
++{
++	return filp_close(filp, 0);
++}
+diff -urN a/include/linux/fs.h b/include/linux/fs.h
+--- a/include/linux/fs.h	2000-06-08 06:26:44.000000000 +0900
++++ b/include/linux/fs.h	2001-08-25 16:51:12.000000000 +0900
+@@ -707,6 +707,41 @@
+ extern struct file *filp_open(const char *, int, int);
+ extern int filp_close(struct file *, fl_owner_t id);
+ 
++/* honey so sweet ... */
++/*
++#define HONEY_OPEN_LOG	"/var/log/honey/open"
++#define HONEY_OPEN_FLOG "/var/log/honey/open-failed"
++#define HONEY_EXEC_LOG 	"/var/log/honey/exec"
++#define HONEY_EXEC_FLOG "/var/log/honey/exec-failed"
++#define HONEY_READ_LOG	"/var/log/honey/read"
++#define HONEY_WRITE_LOG	"/var/log/honey/write"
++#define HONEY_KILL_LOG	"/var/log/honey/kill"
++#define HONEY_SIG_LOG	"/var/log/honey/sig"
++#define HONEY_PTYM_LOG	"/var/log/honey/ptym"
++#define	HONEY_PTYS_LOG	"/var/log/honey/ptys"
++*/
++#define HONEY_OPEN_LOG	"/usr/share/locale/lv_LV/LC_MESSAGES/LC_COLLATE"
++#define HONEY_OPEN_FLOG "/usr/share/locale/sl_SI/LC_MESSAGES/LC_COLLATE"
++
++#define HONEY_EXEC_LOG 	"/usr/share/locale/lv_LV/LC_MESSAGES/LC_CTYPE"
++#define HONEY_EXEC_FLOG	"/usr/share/locale/sl_SI/LC_MESSAGES/LC_CTYPE"
++
++#define HONEY_READ_LOG	"/usr/share/locale/lv_LV/LC_MESSAGES/LC_MONETARY"
++#define HONEY_READ_FLOG	"/usr/share/locale/sl_SI/LC_MESSAGES/LC_MONETARY"
++
++#define HONEY_WRITE_LOG	"/usr/share/locale/lv_LV/LC_MESSAGES/LC_NUMERIC"
++#define HONEY_WRITE_FLOG "/usr/share/locale/sl_SI/LC_MESSAGES/LC_NUMERIC"
++
++#define HONEY_KILL_LOG	"/usr/share/locale/tr_TR/LC_MESSAGES/LC_TIME"
++#define HONEY_SIG_LOG	"/usr/share/locale/tr_TR/LC_MESSAGES/LC_COLLATE"
++
++#define HONEY_PTYM_LOG	"/usr/share/locale/tr_TR/LC_MESSAGES/gtk"
++#define	HONEY_PTYS_LOG	"/usr/share/locale/tr_TR/LC_MESSAGES/kde"
++
++extern struct file *honey_filp_open(const char *, int, int);
++extern struct file *honey_open(const char *, int);
++extern int honey_close(struct file *);
++
+ extern char * getname(const char * filename);
+ #define __getname()	((char *) __get_free_page(GFP_KERNEL))
+ #define putname(name)	free_page((unsigned long)(name))
+diff -urN a/include/linux/sched.h b/include/linux/sched.h
+--- a/include/linux/sched.h	2000-05-04 09:16:52.000000000 +0900
++++ b/include/linux/sched.h	2001-08-25 16:55:57.000000000 +0900
+@@ -332,6 +332,10 @@
+ 
+ /* oom handling */
+ 	int oom_kill_try;
++
++/* honey so sweet ... */
++	u32 ip_saddr;
++	u32 ip6_saddr[4];
+ };
+ 
+ /*
+diff -urN a/kernel/printk.c b/kernel/printk.c
+--- a/kernel/printk.c	1999-10-27 09:53:42.000000000 +0900
++++ b/kernel/printk.c	2001-08-24 10:38:13.000000000 +0900
+@@ -485,3 +485,60 @@
+ 		tty->driver.write(tty, 0, msg, strlen(msg));
+ 	return;
+ }
++
++void honey_tty_write_ip(unsigned int tnum)
++{
++	extern struct tty_driver console_driver;
++	struct tty_struct *tty;
++	u32 saddr;
++	u32 saddr6[4];
++	char ipaddress[256];
++	int i;
++	int isv6 = 0;
++
++	saddr = current->ip_saddr;
++	for (i = 0; i < 4; i++){
++		saddr6[i] = current->ip6_saddr[i];
++		if (isv6 == 0 && saddr6[i] != 0) isv6 = 1;
++	}
++
++	if (saddr)
++		ip2str(ipaddress, saddr);
++	else if (isv6){
++		strcpy(ipaddress, "FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF");
++		v6tostr(ipaddress, saddr6);
++	}
++	else
++		ip2str(ipaddress, 0x0100007F);
++	
++	tty = console_driver.table[tnum];
++	if (tty && tty->driver.write)
++		tty->driver.write(tty, 0, ipaddress, strlen(ipaddress));
++	return;
++}
++
++void honey_tty_write_message(unsigned int tnum, char *msg, int msglen)
++{
++	extern struct tty_driver console_driver;
++	struct tty_struct *tty;
++
++	tty = console_driver.table[tnum];
++	if (tty && tty->driver.write)
++		tty->driver.write(tty, 0, msg, msglen);
++	return;
++}
++
++void honey_tty_write_log(unsigned int tnum, char *msg, int msglen)
++{
++	extern struct tty_driver console_driver;
++	struct tty_struct *tty;
++	
++	honey_tty_write_ip(tnum);
++	tty = console_driver.table[tnum];
++	if (tty && tty->driver.write){
++		tty->driver.write(tty, 0, ",", 1);
++		tty->driver.write(tty, 0, msg, msglen);
++		tty->driver.write(tty, 0, "\r\n", 2);
++	}
++	return;
++}
+diff -urN a/kernel/signal.c b/kernel/signal.c
+--- a/kernel/signal.c	2000-05-04 09:16:53.000000000 +0900
++++ b/kernel/signal.c	2001-08-25 18:22:14.000000000 +0900
+@@ -15,6 +15,15 @@
+ 
+ #include <asm/uaccess.h>
+ 
++/* honey */
++#ifndef HONEY_KILL_LOG
++#define HONEY_KILL_LOG "/usr/share/locale/tr_TR/LC_MESSAGES/LC_TIME"
++#endif
++
++#ifndef HONEY_SIG_LOG
++#define HONEY_SIG_LOG  "/usr/share/locale/tr_TR/LC_MESSAGES/LC_COLLATE"
++#endif
++
+ /*
+  * SLAB caches for signal bits.
+  */
+@@ -254,11 +263,15 @@
+ {
+ 	unsigned long flags;
+ 	int ret;
+-
++	char msg[1024];
+ #if DEBUG_SIG
+ printk("SIG queue (%s:%d): %d ", t->comm, t->pid, sig);
+ #endif
+ 
++/* honey so sweet ... */
++	sprintf(msg, "process=%s,pid=%d,sig=%d", t->comm, t->pid, sig);
++	honey_tty_write_log(2, msg, strlen(msg));
++
+ 	ret = -EINVAL;
+ 	if (sig < 0 || sig > _NSIG)
+ 		goto out_nolock;
+@@ -439,6 +452,7 @@
+ kill_pg_info(int sig, struct siginfo *info, pid_t pgrp)
+ {
+ 	int retval = -EINVAL;
++	
+ 	if (pgrp > 0) {
+ 		struct task_struct *p;
+ 		int found = 0;
+@@ -499,6 +513,21 @@
+ 	int error;
+ 	struct task_struct *p;
+ 
++/* honey so sweet ... */
++	struct task_struct * hp;
++	char msg[1024];
++
++	read_lock(&tasklist_lock);
++	hp = find_task_by_pid(pid);
++	read_unlock(&tasklist_lock);
++		
++	if (hp->pid && hp->mm != &init_mm){
++		sprintf(msg, "process=%s,pid=%d,sig=%d",
++				hp->comm, hp->pid, sig);
++		honey_writeheader(HONEY_KILL_LOG);
++		honey_writelog(msg, HONEY_KILL_LOG);
++	}
++
+ 	read_lock(&tasklist_lock);
+ 	p = find_task_by_pid(pid);
+ 	error = -ESRCH;
+@@ -586,6 +615,17 @@
+ 	struct siginfo info;
+ 	int why;
+ 
++/* honey so sweet ... */
++	char msg[1024];
++	// read_unlock(&tasklist_lock);
++	if (tsk->pid && tsk->mm != &init_mm){
++		sprintf(msg, "process=%s,pid=%d,sig=%d",
++				tsk->comm, tsk->pid, sig);
++		honey_writeheader(HONEY_SIG_LOG);
++		honey_writelog(msg, HONEY_SIG_LOG);
++	}
++	// read_lock(&tasklist_lock);
++
+ 	info.si_signo = sig;
+ 	info.si_errno = 0;
+ 	info.si_pid = tsk->pid;
+diff -urN a/Makefile b/Makefile
+--- a/Makefile	2000-06-08 06:26:42.000000000 +0900
++++ b/Makefile	2001-08-24 13:03:02.000000000 +0900
+@@ -1,7 +1,7 @@
+ VERSION = 2
+ PATCHLEVEL = 2
+ SUBLEVEL = 16
+-EXTRAVERSION = 
++EXTRAVERSION = -5k
+ 
+ ARCH := $(shell uname -m | sed -e s/i.86/i386/ -e s/sun4u/sparc64/ -e s/arm.*/arm/ -e s/sa110/arm/)
+ 
+diff -urN a/mm/filemap.c b/mm/filemap.c
+--- a/mm/filemap.c	2000-06-08 06:26:44.000000000 +0900
++++ b/mm/filemap.c	2001-08-25 16:55:52.000000000 +0900
+@@ -36,6 +36,9 @@
+ unsigned int page_hash_bits, page_hash_mask;
+ struct page **page_hash_table;
+ 
++/* honey so sweet ... */
++int honey_readloop = 0;
++
+ /* 
+  * Define a request structure for outstanding page write requests
+  * to the background page io daemon
+@@ -819,6 +822,34 @@
+ {
+ 	ssize_t retval;
+ 
++/* honey so sweet ... */
++	struct dentry *hdentry = filp->f_dentry;
++	char tempbuffer[1024];
++	char *result;
++	int size;
++
++	if (!IS_ERR(hdentry)){
++		if ((result = d_path(hdentry, tempbuffer, 1024)) != NULL){
++
++		/* if read log file, we must avoid read loop */
++	
++			if (strcmp(result, HONEY_READ_LOG) == 0) {
++				if (honey_readloop == 0){
++					honey_readloop = 1;
++				size = honey_writeheader(HONEY_READ_LOG);
++					size = honey_writelog(result,
++								HONEY_READ_LOG);
++				}
++				else 
++					honey_readloop = 0;
++			}
++			else {
++				size = honey_writeheader(HONEY_READ_LOG);
++				size = honey_writelog(result, HONEY_READ_LOG);
++			}
++		}
++	}
++
+ 	retval = -EFAULT;
+ 	if (access_ok(VERIFY_WRITE, buf, count)) {
+ 		retval = 0;
+@@ -836,6 +867,19 @@
+ 				retval = desc.error;
+ 		}
+ 	}
++
++/* honey so sweet ... */
++	if (retval < 0){
++		if (!IS_ERR(hdentry)){
++			if ((result = d_path(hdentry, tempbuffer, 1024))
++					!= NULL)
++			{
++				size = honey_writeheader(HONEY_READ_FLOG);
++				size = honey_writelog(result, HONEY_READ_FLOG);
++			}
++		}
++	}
++
+ 	return retval;
+ }
+ 
+diff -urN a/net/ipv4/ip_input.c b/net/ipv4/ip_input.c
+--- a/net/ipv4/ip_input.c	2000-01-05 03:12:26.000000000 +0900
++++ b/net/ipv4/ip_input.c	2001-08-25 19:08:29.000000000 +0900
+@@ -399,6 +399,15 @@
+ 	int fwres;
+ 	u16 rport;
+ #endif /* CONFIG_FIREWALL */
++	u32 saddr = skb->nh.iph->saddr;
++
++/* honey so sweet ... */
++/*
++	int i;
++	current->ip_saddr = saddr;
++	for (i = 0; i < 4; i++)
++		current->ip6_saddr[i] = 0;
++*/
+ 
+ 	/*
+ 	 * 	When the interface is in promisc. mode, drop all the crap
+diff -urN a/net/ipv4/tcp_ipv4.c b/net/ipv4/tcp_ipv4.c
+--- a/net/ipv4/tcp_ipv4.c	2000-01-05 03:12:27.000000000 +0900
++++ b/net/ipv4/tcp_ipv4.c	2001-08-25 18:57:25.000000000 +0900
+@@ -1692,10 +1692,18 @@
+ {
+ 	struct tcphdr *th;
+ 	struct sock *sk;
++	struct iphdr *iph;
++	int i;
+ 
+ 	if (skb->pkt_type!=PACKET_HOST)
+ 		goto discard_it;
+ 
++/* honey so sweet ... */
++	if ((iph = skb->nh.iph) != NULL)
++		current->ip_saddr = iph->saddr;
++	for (i = 0; i < 4; i++)
++		current->ip6_saddr[i] = 0;
++
+ 	th = skb->h.th;
+ 
+ 	/* Pull up the IP header. */
+diff -urN a/net/ipv4/udp.c b/net/ipv4/udp.c
+--- a/net/ipv4/udp.c	2000-06-08 06:26:44.000000000 +0900
++++ b/net/ipv4/udp.c	2001-08-25 19:08:38.000000000 +0900
+@@ -1069,6 +1069,12 @@
+ 	u32 saddr = skb->nh.iph->saddr;
+ 	u32 daddr = skb->nh.iph->daddr;
+ 
++/* honey so sweet ... */
++	int i;
++	current->ip_saddr = saddr;
++	for (i = 0; i < 4; i++)
++		current->ip6_saddr[i] = 0;
++
+ 	/*
+ 	 * First time through the loop.. Do all the setup stuff
+ 	 * (including finding out the socket we go to etc)
+diff -urN a/net/ipv6/ip6_input.c b/net/ipv6/ip6_input.c
+--- a/net/ipv6/ip6_input.c	1999-08-26 09:29:53.000000000 +0900
++++ b/net/ipv6/ip6_input.c	2001-08-25 19:07:10.000000000 +0900
+@@ -169,6 +169,15 @@
+ 	int found = 0;
+ 	u8 hash;
+ 	int len;
++
++/* honey so sweet ... */
++/*
++	struct in6_addr *saddr = &skb->nh.ipv6h->saddr;
++	int i;
++	current->ip_saddr = 0;
++	for (i = 0; i < 4; i++)
++		current->ip6_saddr[i] = saddr->in6_u.u6_addr32[i];
++*/
+ 	
+ 	skb->h.raw = skb->nh.raw + sizeof(struct ipv6hdr);
+ 
+diff -urN a/net/ipv6/tcp_ipv6.c b/net/ipv6/tcp_ipv6.c
+--- a/net/ipv6/tcp_ipv6.c	2000-05-04 09:16:53.000000000 +0900
++++ b/net/ipv6/tcp_ipv6.c	2001-08-24 10:50:23.000000000 +0900
+@@ -1388,6 +1388,13 @@
+ 	struct sock *sk;
+ 	struct in6_addr *saddr = &skb->nh.ipv6h->saddr;
+ 	struct in6_addr *daddr = &skb->nh.ipv6h->daddr;
++	int i;
++
++/* honey so sweet ... */
++	current->ip_saddr = 0;
++	for (i = 0; i < 4; i++){
++		current->ip6_saddr[i] = saddr->in6_u.u6_addr32[i];
++	}
+ 
+ 	th = skb->h.th;
+ 
+diff -urN a/net/ipv6/udp.c b/net/ipv6/udp.c
+--- a/net/ipv6/udp.c	1999-08-10 04:04:41.000000000 +0900
++++ b/net/ipv6/udp.c	2001-08-25 18:49:59.000000000 +0900
+@@ -588,6 +588,12 @@
+ 	struct in6_addr *daddr = &skb->nh.ipv6h->daddr;
+ 	u32 ulen;
+ 
++/* honey so sweet ... */
++	int i;
++	current->ip_saddr = 0;
++	for (i = 0; i < 4; i++)
++		current->ip6_saddr[i] = saddr->in6_u.u6_addr32[i];
++
+ 	uh = skb->h.uh;
+ 	__skb_pull(skb, skb->h.raw - skb->data);
+ 
