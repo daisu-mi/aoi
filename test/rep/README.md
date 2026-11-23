@@ -9,12 +9,30 @@ and the raw records.
 | `linux-run.sh`, `linux-one.sh` | run the Linux scenes; results go to `linux/NN/` |
 | `freebsd-rep.py`, `linux-rep.py` | the numbers of one repetition, as one JSON line |
 | `agg.py freebsd` or `agg.py linux` | all repetitions side by side |
+| `marks.py freebsd` or `marks.py linux` | the three-client scene mark by mark: found, right, wrong, missing, duplicate |
 
 The raw records are packed: `linux.tar.xz`, `freebsd.tar.xz` and
 `freebsd-first-series.tar.xz`. Unpack them here (`tar xJf linux.tar.xz`, and
 so on) before running `agg.py`. `results-linux.txt` and `results-freebsd.txt`
 are the output of `agg.py` on the unpacked records: every number of every
 run.
+
+## From the records to the tables
+
+```
+tar xJf linux.tar.xz; tar xJf freebsd.tar.xz
+python3 agg.py freebsd      # results-freebsd.txt
+python3 agg.py linux        # results-linux.txt
+python3 marks.py freebsd; python3 marks.py linux    # results-marks.txt
+```
+
+The comparison table of the report takes its execution and open counts from
+`ssh.exec`, `ssh.open` and `ssh.open_ok`, and its address counts from
+`ssh.module_labelled`, `ssh.module_lines`, `ssh.audit_records` and
+`ssh.audit_intruder` (FreeBSD) and from `ssh.tracer_labelled` and
+`ssh.audit_records` (Linux). The service table takes the `service.*` fields,
+and the three-client paragraphs the `three.*` fields and `results-marks.txt`.
+The Nmap rounds are in the repository of the fingerprinting module.
 
 The scripts are a record of the method, not a portable test suite. They assume
 two virtual machines reached through helper scripts (`VMDIR`), a closed test

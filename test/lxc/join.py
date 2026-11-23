@@ -53,3 +53,8 @@ for p,args in execs:
     else: bad+=1
 print('marked executions: right address %d, wrong %d, none %d'%(ok,bad,none))
 print('executions given an address: %d of %d (correctness checked only for the marked ones)'%(got,len(execs)))
+import os
+if os.environ.get('MARKS'):      # one line per marked execution: client, round, address given
+    for p,args in execs:
+        m=re.search(r'attacker(\d) round(\d+)',args)
+        if m: print('mark',m.group(1),m.group(2),addr(p))

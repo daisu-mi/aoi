@@ -1,0 +1,25 @@
+freebsd: planted executions by run (expected 24: clients 1-3, rounds 0-7)
+run  found  right  wrong  none  missing  duplicate
+01      24     24      0     0        0          0
+02      24     24      0     0        0          0
+03      24     24      0     0        0          0
+04      24     24      0     0        0          0
+05      24     24      0     0        0          0
+06      24     24      0     0        0          0
+07      24     24      0     0        0          0
+08      24     24      0     0        0          0
+09      24     24      0     0        0          0
+10      24     24      0     0        0          0
+
+linux: planted executions by run (expected 24: clients 1-3, rounds 0-7)
+run  found  right  wrong  none  missing  duplicate
+01      24     24      0     0        0          0
+02      24     24      0     0        0          0
+03      24     24      0     0        0          0
+04      24     24      0     0        0          0
+05      24     24      0     0        0          0
+06      24     24      0     0        0          0
+07      24     24      0     0        0          0
+08      24     24      0     0        0          0
+09      24     24      0     0        0          0
+10      24     24      0     0        0          0
