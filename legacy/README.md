@@ -32,7 +32,7 @@ files (`include/linux/fs.h`).
 
 The patch was produced in 2026 from an archive of the kernel tree dated
 August 2001. That tree differs from the stock `linux-2.2.16.tar.gz` of
-kernel.org in 17 source files, and the patch is the difference in those files.
+kernel.org in 18 files, and the patch is the difference in those files.
 Applying it to the stock source gives the files of the archive byte for byte:
 
 ```
