@@ -1,0 +1,41 @@
+freebsd: 10 repetitions
+  ssh.exec.0                         12 (all runs)
+  ssh.exec.1                         12 (all runs)
+  ssh.exec.2                         12 (all runs)
+  ssh.exec_match_audit               12 (all runs)
+  ssh.exec_match_dtrace              12 (all runs)
+  ssh.open.0                         259 (all runs)
+  ssh.open.1                         259 (all runs)
+  ssh.open.2                         259 (all runs)
+  ssh.open_ok.0                      198 (all runs)
+  ssh.open_ok.1                      198 (all runs)
+  ssh.open_ok.2                      198 (all runs)
+  ssh.open_match_audit               259 (all runs)
+  ssh.open_match_dtrace              259 (all runs)
+  ssh.module_lines                   min 441, median 459.0, max 476   [472, 456, 464, 476, 462, 446, 441, 465, 443, 454]
+  ssh.module_labelled                min 386, median 404.0, max 421   [417, 401, 409, 421, 407, 391, 386, 410, 388, 399]
+  ssh.audit_records                  500 (all runs)
+  ssh.audit_intruder                 0 (all runs)
+  ssh.audit_subject.10.0.2.2         500 (all runs)
+  service.module_lines               114 (all runs)
+  service.module_labelled            91 (all runs)
+  service.audit_records              155 (all runs)
+  service.audit_intruder             0 (all runs)
+  setaudit.audit_records             min 500, median 500.0, max 507   [500, 500, 500, 507, 500, 500, 500, 500, 500, 500]
+  setaudit.audit_intruder            0 (all runs)
+  setaudit.audit_subject.10.0.2.2    min 500, median 500.0, max 507   [500, 500, 500, 507, 500, 500, 500, 500, 500, 500]
+  setaudit.exec.0                    min 12, median 12.0, max 13   [12, 12, 12, 13, 12, 12, 12, 12, 12, 12]
+  setaudit.exec.1                    min 12, median 12.0, max 13   [12, 12, 12, 13, 12, 12, 12, 12, 12, 12]
+  setaudit.exec_match                min 12, median 12.0, max 13   [12, 12, 12, 13, 12, 12, 12, 12, 12, 12]
+  setaudit.open.0                    min 259, median 259.0, max 264   [259, 259, 259, 264, 259, 259, 259, 259, 259, 259]
+  setaudit.open.1                    min 259, median 259.0, max 264   [259, 259, 259, 264, 259, 259, 259, 259, 259, 259]
+  setaudit.open_match                min 259, median 259.0, max 264   [259, 259, 259, 264, 259, 259, 259, 259, 259, 259]
+  three.module_lines                 min 859, median 891.5, max 908   [901, 908, 884, 885, 891, 892, 896, 892, 888, 859]
+  three.module_marks.0               min 72, median 76.5, max 85   [79, 85, 77, 74, 76, 74, 77, 74, 78, 72]
+  three.module_marks.1               0 (all runs)
+  three.module_marks.2               0 (all runs)
+  three.join_marks.0                 24 (all runs)
+  three.join_marks.1                 0 (all runs)
+  three.join_marks.2                 0 (all runs)
+  three.join_assigned.0              min 77, median 78.0, max 78   [78, 78, 78, 78, 78, 78, 78, 78, 78, 77]
+  three.join_assigned.1              min 80, median 81.0, max 81   [81, 81, 81, 81, 81, 81, 81, 81, 81, 80]

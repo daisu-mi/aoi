@@ -85,6 +85,9 @@ Two short scripts record the same events with standard tools only:
 | `test/vuln` | A deliberately vulnerable service on FreeBSD, with one and with three attackers |
 | `test/lxc` | The same scenes in a Linux container, recorded by bpftrace and by auditd |
 | `test/perf` | Cost of recording |
+| `test/rep` | The scenes above repeated ten times each, with the scripts that run and summarise them |
+
+`docs/interface-dates.md` lists the source read for each date in the report's table of interfaces.
 
 All addresses in the records belong to an isolated test network. The password
 that appears in them belongs to a throwaway test account.

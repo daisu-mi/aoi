@@ -1,0 +1,34 @@
+linux: 10 repetitions
+  ssh.open.0                         429 (all runs)
+  ssh.open.1                         429 (all runs)
+  ssh.open_match                     428 (all runs)
+  ssh.exec.0                         min 26, median 26.0, max 27   [26, 26, 27, 26, 26, 26, 26, 26, 26, 26]
+  ssh.exec.1                         min 26, median 26.0, max 27   [26, 26, 27, 26, 26, 26, 26, 26, 26, 26]
+  ssh.exec_match                     min 26, median 26.0, max 27   [26, 26, 27, 26, 26, 26, 26, 26, 26, 26]
+  ssh.tracer_lines                   min 2585, median 2605.5, max 3003   [3003, 2609, 2624, 2598, 2602, 2614, 2616, 2593, 2585, 2602]
+  ssh.tracer_labelled                min 708, median 708.0, max 709   [708, 708, 709, 708, 708, 708, 708, 708, 708, 708]
+  ssh.audit_records                  min 460, median 460.0, max 461   [460, 460, 461, 460, 460, 460, 460, 460, 460, 460]
+  ssh.audit_owner                    ["{'ubuntu': 460}", "{'ubuntu': 460}", "{'ubuntu': 461}", "{'ubuntu': 460}", "{'ubuntu': 460}", "{'ubuntu': 460}", "{'ubuntu': 460}", "{'ubuntu': 460}", "{'ubuntu': 460}", "{'ubuntu': 460}"]
+  ssh.audit_intruder                 0 (all runs)
+  service.open.0                     229 (all runs)
+  service.open.1                     229 (all runs)
+  service.open_match                 229 (all runs)
+  service.exec.0                     9 (all runs)
+  service.exec.1                     9 (all runs)
+  service.exec_match                 9 (all runs)
+  service.tracer_lines               min 805, median 809.0, max 812   [805, 809, 808, 808, 812, 811, 810, 808, 809, 812]
+  service.tracer_labelled            261 (all runs)
+  service.audit_records              242 (all runs)
+  service.audit_owner                {'ubuntu': 242} (all runs)
+  service.audit_intruder             0 (all runs)
+  three.tracer_marks.0               48 (all runs)
+  three.tracer_marks.1               0 (all runs)
+  three.tracer_marks.2               0 (all runs)
+  three.join_marks.0                 24 (all runs)
+  three.join_marks.1                 0 (all runs)
+  three.join_marks.2                 0 (all runs)
+  three.join_assigned.0              min 69, median 73.5, max 77   [74, 77, 73, 73, 72, 75, 72, 74, 69, 77]
+  three.join_assigned.1              min 112, median 116.5, max 120   [117, 120, 116, 116, 115, 118, 115, 117, 112, 120]
+  three.accepts.0                    3 (all runs)
+  three.accepts.1                    3 (all runs)
+  lost                               0 (all runs)

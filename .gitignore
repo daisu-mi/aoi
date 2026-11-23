@@ -1,0 +1,4 @@
+test/rep/freebsd/
+test/rep/freebsd-first-series/
+test/rep/linux/
+*.log.tmp
