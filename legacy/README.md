@@ -46,8 +46,11 @@ The one change outside the recorder is `EXTRAVERSION = -5k` in the top
 (Kondara MNU/Linux). A debugging `printk` left in `fs/fcntl.c` is kept as it
 was.
 
-The version described in the 2002 master's thesis, which wrote its log to a
-hidden disk device, came later. Its source has not been found.
+The version described in the 2002 master's thesis recorded the same events.
+Its main difference was the destination of the log: a hidden disk device in
+place of these files. Its source has not been found, and the hidden disk
+device was the work of a co-author. The FreeBSD module in this repository
+follows that later design: it can write its log to a raw disk.
 
 ## License
 
