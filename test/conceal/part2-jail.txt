@@ -1,0 +1,165 @@
+/root/aod/aod.ko
+== setup (host)
+
+# jls -j jt jid name path vnet devfs_ruleset
+115 jt /jroot new 4
+[exit 0]
+
+# kldstat | grep -e honey -e aod
+64    1 0xffffffff82c1f000     32c8 aod.ko
+65    1 0xffffffff82c3e000     9790 honey.ko
+[exit 0]
+
+# sysctl kern.securelevel
+kern.securelevel: -1
+[exit 0]
+
+# jexec jt sysctl net.inet.tcp.emu_kind=8; jexec jt sysctl net.inet.tcp.emu_lock=1
+net.inet.tcp.emu_kind: 0 -> 8
+net.inet.tcp.emu_lock: 0 -> 1
+[exit 0]
+
+== inside the jail, as root
+
+jail# id -u; sysctl -n security.jail.jailed
+0
+1
+[exit 0]
+
+jail# ls /dev | wc -l; ls /dev | tr '\n' ' '
+       8
+fd null random stderr stdin stdout urandom zero [exit 0]
+
+jail# ls -l /dev/vtbd1 /dev/mem /dev/kmem
+ls: /dev/kmem: No such file or directory
+ls: /dev/mem: No such file or directory
+ls: /dev/vtbd1: No such file or directory
+[exit 1]
+
+jail# mknod /tmp/fake c 0 0x42
+mknod: /tmp/fake: Operation not permitted
+[exit 1]
+
+jail# mount -t devfs devfs /mnt
+mount: devfs: Operation not permitted
+[exit 1]
+
+jail# devfs rule -s 4 add path 'vtbd*' unhide; devfs -m /dev rule apply path 'vtbd1' unhide
+devfs rule: ioctl DEVFSIO_RADD: Operation not permitted
+devfs rule: ioctl DEVFSIO_RAPPLY: Operation not permitted
+[exit 1]
+
+jail# ps ax | grep -c '\[honey\]'; ps ax | wc -l
+0
+       4
+[exit 0]
+
+jail# dmesg | tail -3
+dmesg: sysctl kern.msgbuf: Operation not permitted
+[exit 0]
+
+jail# kldstat | grep -e honey -e aod
+64    1 0xffffffff82c1f000     32c8 aod.ko
+65    1 0xffffffff82c3e000     9790 honey.ko
+[exit 0]
+
+jail# kldunload honey
+kldunload: can't unload file: Operation not permitted
+[exit 1]
+
+jail# kldunload aod
+kldunload: can't unload file: Operation not permitted
+[exit 1]
+
+jail# kldload nullfs
+kldload: can't load nullfs: Operation not permitted
+[exit 1]
+
+jail# sysctl security.mac.honey | cut -c1-70
+security.mac.honey.logerr: 0
+security.mac.honey.dropped: 0
+security.mac.honey.logged: 436
+security.mac.honey.queued: 0
+security.mac.honey.alertdev: 
+security.mac.honey.rawdirect: 1
+security.mac.honey.logdev: vtbd1
+security.mac.honey.logfile: /var/log/honey.log
+security.mac.honey.jailonly: 1
+security.mac.honey.enabled: 1
+[exit 0]
+
+jail# sysctl security.mac.honey.enabled=0
+security.mac.honey.enabled: 1
+sysctl: security.mac.honey.enabled=0: Operation not permitted
+[exit 1]
+
+jail# sysctl security.mac.honey.jailonly=0
+security.mac.honey.jailonly: 1
+sysctl: security.mac.honey.jailonly=0: Operation not permitted
+[exit 1]
+
+jail# sysctl net.inet.tcp.emu_kind net.inet.tcp.emu_lock
+net.inet.tcp.emu_kind: 8
+net.inet.tcp.emu_lock: 1
+[exit 0]
+
+jail# sysctl net.inet.tcp.emu_kind=0
+net.inet.tcp.emu_kind: 8
+sysctl: net.inet.tcp.emu_kind=0: Operation not permitted
+[exit 1]
+
+jail# sysctl net.inet.tcp.emu_lock=0
+net.inet.tcp.emu_lock: 1
+sysctl: net.inet.tcp.emu_lock=0: Operation not permitted
+[exit 1]
+
+jail# sysctl net.inet.ip.ttl; sysctl net.inet.ip.ttl=65; sysctl net.inet.ip.ttl=64
+net.inet.ip.ttl: 64
+net.inet.ip.ttl: 64 -> 65
+net.inet.ip.ttl: 65 -> 64
+[exit 0]
+
+jail# sysctl net.inet.tcp.rfc1323
+net.inet.tcp.rfc1323: 1
+[exit 0]
+
+jail# sysctl net.inet.tcp.rfc1323=0; sysctl net.inet.tcp.rfc1323=1
+net.inet.tcp.rfc1323: 1 -> 0
+net.inet.tcp.rfc1323: 0 -> 1
+[exit 0]
+
+jail# sysctl kern.disks
+kern.disks: cd0 vtbd1 vtbd0
+[exit 0]
+
+jail# sysctl kern.securelevel
+kern.securelevel: -1
+[exit 0]
+
+== after the attempts (host)
+
+# kldstat | grep -e honey -e aod
+64    1 0xffffffff82c1f000     32c8 aod.ko
+65    1 0xffffffff82c3e000     9790 honey.ko
+[exit 0]
+
+# sysctl security.mac.honey.enabled security.mac.honey.jailonly security.mac.honey.logged security.mac.honey.logerr
+security.mac.honey.enabled: 1
+security.mac.honey.jailonly: 1
+security.mac.honey.logged: 664
+security.mac.honey.logerr: 0
+[exit 0]
+
+# jexec jt sysctl -n net.inet.tcp.emu_kind
+8
+[exit 0]
+
+# sh /root/honey/honeydump.sh /dev/vtbd1 | grep -c kldunload
+45
+[exit 0]
+
+# jls | wc -l; mount | grep -c jroot; kldstat | grep -c honey
+       1
+0
+0
+[exit 1]

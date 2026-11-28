@@ -1,0 +1,119 @@
+
+== secure level -1
+
+# sysctl kern.securelevel
+kern.securelevel: -1
+[exit 0]
+
+lines on the log disk: 22060   logged=188 logerr=0
+
+# dd if=/dev/null of=/dev/mem
+0+0 records in
+0+0 records out
+0 bytes transferred in 0.000044 secs (0 bytes/sec)
+[exit 0]
+
+# dd if=/dev/vtbd1 of=/tmp/last.bin bs=512 skip=32767 count=1
+1+0 records in
+1+0 records out
+512 bytes transferred in 0.000126 secs (4064169 bytes/sec)
+[exit 0]
+
+# dd if=/tmp/last.bin of=/dev/vtbd1 bs=512 seek=32767 count=1
+1+0 records in
+1+0 records out
+512 bytes transferred in 0.000218 secs (2347160 bytes/sec)
+[exit 0]
+
+lines on the log disk: 23510   logged=1637 logerr=0
+
+== secure level 1
+
+# sysctl kern.securelevel=1
+kern.securelevel: -1 -> 1
+[exit 0]
+
+# sysctl kern.securelevel
+kern.securelevel: 1
+[exit 0]
+
+lines on the log disk: 23718   logged=1844 logerr=0
+
+# kldunload honey
+kldunload: can't unload file: Operation not permitted
+[exit 1]
+
+# kldload nullfs
+kldload: can't load nullfs: Operation not permitted
+[exit 1]
+
+# dd if=/dev/null of=/dev/mem
+dd: /dev/mem: Operation not permitted
+[exit 1]
+
+# dd if=/dev/vtbd1 of=/tmp/last.bin bs=512 skip=32767 count=1
+1+0 records in
+1+0 records out
+512 bytes transferred in 0.000290 secs (1767657 bytes/sec)
+[exit 0]
+
+# dd if=/tmp/last.bin of=/dev/vtbd1 bs=512 seek=32767 count=1
+1+0 records in
+1+0 records out
+512 bytes transferred in 0.000229 secs (2236355 bytes/sec)
+[exit 0]
+
+lines on the log disk: 25202   logged=3331 logerr=0
+
+== secure level 2
+
+# sysctl kern.securelevel=2
+kern.securelevel: 1 -> 2
+[exit 0]
+
+# sysctl kern.securelevel
+kern.securelevel: 2
+[exit 0]
+
+lines on the log disk: 25411   logged=3538 logerr=0
+
+# kldunload honey
+kldunload: can't unload file: Operation not permitted
+[exit 1]
+
+# kldload nullfs
+kldload: can't load nullfs: Operation not permitted
+[exit 1]
+
+# dd if=/dev/null of=/dev/mem
+dd: /dev/mem: Operation not permitted
+[exit 1]
+
+# dd if=/dev/vtbd1 of=/tmp/last.bin bs=512 skip=32767 count=1
+1+0 records in
+1+0 records out
+512 bytes transferred in 0.000286 secs (1787273 bytes/sec)
+[exit 0]
+
+# dd if=/tmp/last.bin of=/dev/vtbd1 bs=512 seek=32767 count=1
+dd: /dev/vtbd1: Operation not permitted
+[exit 1]
+
+lines on the log disk: 26897   logged=5024 logerr=0
+
+== at level 2: read the log disk, lower the level
+
+# dd if=/dev/vtbd1 of=/dev/null bs=512 count=8
+8+0 records in
+8+0 records out
+4096 bytes transferred in 0.000577 secs (7099857 bytes/sec)
+[exit 0]
+
+# sysctl kern.securelevel=0
+kern.securelevel: 2
+sysctl: kern.securelevel=0: Operation not permitted
+[exit 1]
+
+# kldstat | grep honey
+67    1 0xffffffff82c3e000     9790 honey.ko
+[exit 0]

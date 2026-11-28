@@ -1,0 +1,39 @@
+
+# service auditd onestatus
+auditd is running as pid 1515.
+[exit 0]
+
+== host
+
+# /root/honey/auditcond
+auditon(A_GETCOND) = 0, condition 1, ok
+cannot_audit(0) = 0
+getaudit_addr = 0, ok
+setaudit_addr = 0, ok
+[exit 0]
+
+== jail, default permissions
+
+# jexec ja /root/honey/auditcond
+auditon(A_GETCOND) = -1, condition -1, Function not implemented
+cannot_audit(0) = 1
+getaudit_addr = -1, Function not implemented
+[exit 0]
+
+== jail with allow.setaudit
+
+# jls -j jb name allow.setaudit
+jb true
+[exit 0]
+
+# jexec jb /root/honey/auditcond
+auditon(A_GETCOND) = -1, condition -1, Function not implemented
+cannot_audit(0) = 1
+getaudit_addr = 0, ok
+setaudit_addr = 0, ok
+[exit 0]
+
+# service auditd onestatus; jls | wc -l
+auditd is not running.
+       1
+[exit 0]

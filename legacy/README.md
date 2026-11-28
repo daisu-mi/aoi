@@ -1,6 +1,6 @@
 # The 2001 version
 
-`honey-linux-2.2.16.patch` is the recorder as it was in September 2001: a
+`honey-linux-2.2.16.patch` is the recorder as it was in August 2001 (its files were last changed between 23 and 29 August): a
 patch to the Linux 2.2.16 kernel. It is the implementation described in
 
 - 宮本 大輔, 久保 聡之, 大江 将史, 門林 雄基, "侵入監視のための Honeypot の実装と評価",

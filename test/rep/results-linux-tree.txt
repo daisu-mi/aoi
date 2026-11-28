@@ -1,0 +1,10 @@
+linux/01 {"roots": 1, "tree_processes": 8, "tracer_lines": 805, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/02 {"roots": 1, "tree_processes": 8, "tracer_lines": 809, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/03 {"roots": 1, "tree_processes": 8, "tracer_lines": 808, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/04 {"roots": 1, "tree_processes": 8, "tracer_lines": 808, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/05 {"roots": 1, "tree_processes": 8, "tracer_lines": 812, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/06 {"roots": 1, "tree_processes": 8, "tracer_lines": 811, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/07 {"roots": 1, "tree_processes": 8, "tracer_lines": 810, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/08 {"roots": 1, "tree_processes": 8, "tracer_lines": 808, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/09 {"roots": 1, "tree_processes": 8, "tracer_lines": 809, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}
+linux/10 {"roots": 1, "tree_processes": 8, "tracer_lines": 812, "labelled": 261, "in_tree": 261, "labelled_in_tree": 261, "labelled_outside_tree": 0, "tree_without_label": 0}

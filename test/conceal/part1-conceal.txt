@@ -1,0 +1,163 @@
+== setup
+
+# uname -rv | cut -c1-60
+15.1-RELEASE-p7 FreeBSD 15.1-RELEASE-p7 releng/15.1-n283696-
+[exit 0]
+
+# sysctl kern.securelevel
+kern.securelevel: -1
+[exit 0]
+
+== check 3: write statistics of the log disk, direct path (rawdirect=1)
+
+# sysctl security.mac.honey.logdev security.mac.honey.rawdirect
+security.mac.honey.logdev: vtbd1
+security.mac.honey.rawdirect: 1
+[exit 0]
+
+# iostat -Ix vtbd1 | tail -2
+device           r/i         w/i         kr/i         kw/i qlen   tsvc_t/i      sb/i  
+vtbd1          168.0        64.0        279.0         32.0    0        0.0       0.0 
+[exit 0]
+
+# sysctl -n security.mac.honey.logged
+86
+[exit 0]
+
+# sysctl -n security.mac.honey.logged security.mac.honey.dropped security.mac.honey.logerr
+4915
+0
+0
+[exit 0]
+
+# iostat -Ix vtbd1 | tail -2
+device           r/i         w/i         kr/i         kw/i qlen   tsvc_t/i      sb/i  
+vtbd1          168.0        64.0        279.0         32.0    0        0.0       0.0 
+[exit 0]
+
+# sh /root/honey/honeydump.sh /dev/vtbd1 | wc -l
+    5597
+[exit 0]
+
+== check 2: the recorder holds no open file
+
+# pgrep -S -l honey
+70724 honey
+[exit 0]
+
+# procstat -f $(pgrep -S honey)
+  PID COMM                FD T V FLAGS    REF  OFFSET PRO NAME        
+70724 honey              cwd v d r-------   -       - -   /                 
+70724 honey             root v d r-------   -       - -   /                 
+[exit 0]
+
+# fstat | grep -c vtbd1
+0
+[exit 1]
+
+# fstat | grep -i honey | grep -v 'honey.ko' | wc -l
+       2
+[exit 0]
+
+== check 1: recording causes no network traffic
+
+records written during the capture: 4817
+
+# tcpdump -n -r /tmp/c0.pcap 2>/dev/null | wc -l; tcpdump -n -r /tmp/c0.pcap 2>/dev/null | head -20
+       0
+[exit 0]
+
+# tcpdump -n -r /tmp/c1.pcap 2>/dev/null | wc -l; tcpdump -n -r /tmp/c1.pcap 2>/dev/null | head -20
+       0
+[exit 0]
+
+== check 4: the device file does not exist
+
+# ls -l /dev/vtbd1
+crw-r-----  1 root operator 0x42 Nov 22 18:50 /dev/vtbd1
+[exit 0]
+
+# devfs rule -s 10 add path 'vtbd1*' hide; devfs -m /dev rule -s 10 applyset
+[exit 0]
+
+# ls -l /dev/vtbd1
+ls: /dev/vtbd1: No such file or directory
+[exit 1]
+
+# cat /dev/vtbd1 | head -c 8
+cat: /dev/vtbd1: No such file or directory
+[exit 0]
+
+# ls /dev | grep -c vtbd1
+0
+[exit 1]
+
+# ls -l /dev/vtbd0 | awk '{print $5, $6}'
+0x2f Nov
+[exit 0]
+
+# mknod /tmp/fake-vtbd1 c 0x5e; ls -l /tmp/fake-vtbd1; head -c 8 /tmp/fake-vtbd1; rm -f /tmp/fake-vtbd1
+usage: mknod name
+       mknod name [b | c] major minor [owner:group]
+ls: /tmp/fake-vtbd1: No such file or directory
+head: /tmp/fake-vtbd1: No such file or directory
+[exit 0]
+
+records written while the node is hidden: 4817, errors: 0
+
+# devfs -m /dev rule apply path 'vtbd1*' unhide; devfs rule -s 10 delset; ls /dev | grep -c '^vtbd1'
+1
+[exit 0]
+
+# sh /root/honey/honeydump.sh /dev/vtbd1 | wc -l
+   16116
+[exit 0]
+
+== what root on the host still sees (no jail)
+
+# kldstat | grep honey
+65    1 0xffffffff82c3e000     9790 honey.ko
+[exit 0]
+
+# ps ax | grep '\[honey\]' | grep -v grep
+70724  -  DL       0:00.27 [honey]
+[exit 0]
+
+# sysctl security.mac.honey | cut -c1-70
+security.mac.honey.logerr: 0
+security.mac.honey.dropped: 0
+security.mac.honey.logged: 15751
+security.mac.honey.queued: 0
+security.mac.honey.alertdev: 
+security.mac.honey.rawdirect: 1
+security.mac.honey.logdev: vtbd1
+security.mac.honey.logfile: /var/log/honey.log
+security.mac.honey.jailonly: 0
+security.mac.honey.enabled: 1
+[exit 0]
+
+# sysctl kern.disks
+kern.disks: cd0 vtbd1 vtbd0
+[exit 0]
+
+== check 3 again, ordinary path (rawdirect=0), for comparison
+
+# sysctl security.mac.honey.rawdirect
+security.mac.honey.rawdirect: 0
+[exit 0]
+
+# iostat -Ix vtbd1 | tail -2
+device           r/i         w/i         kr/i         kw/i qlen   tsvc_t/i      sb/i  
+vtbd1         3800.0       110.0       2160.0         55.0    1        0.3       0.3 
+[exit 0]
+
+records written: 4817
+
+# iostat -Ix vtbd1 | tail -2
+device           r/i         w/i         kr/i         kw/i qlen   tsvc_t/i      sb/i  
+vtbd1         3800.0      5041.0       2160.0       2520.5    1        0.7       0.7 
+[exit 0]
+
+# kldstat | grep -c honey
+0
+[exit 1]
